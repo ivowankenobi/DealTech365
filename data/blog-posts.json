@@ -1,0 +1,154 @@
+{
+  "posts": [
+    {
+      "id": "smartphones-2025",
+      "url": "blog/smartphones-cual-comprar.html",
+      "image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=1920&q=80",
+      "imageAlt": {
+        "es": "Smartphones 2025",
+        "en": "Smartphones 2025"
+      },
+      "category": {
+        "es": "📱 Smartphones",
+        "en": "📱 Smartphones"
+      },
+      "title": {
+        "es": "Mejores Smartphones Black Friday 2025",
+        "en": "Best Smartphones Black Friday 2025"
+      },
+      "description": {
+        "es": "iPhone vs Android: guía completa de los flagship más potentes",
+        "en": "iPhone vs Android: complete guide to the most powerful flagships"
+      },
+      "cta": {
+        "es": "Leer artículo →",
+        "en": "Read article →"
+      }
+    },
+    {
+      "id": "gadgets-2025",
+      "url": "blog/gadgets-imprescindibles-2025.html",
+      "image": "https://images.unsplash.com/photo-1468495244123-6c6c332eeece?auto=format&fit=crop&w=1920&q=80",
+      "imageAlt": {
+        "es": "Gadgets 2025",
+        "en": "Gadgets 2025"
+      },
+      "category": {
+        "es": "💡 Tech & Innovación",
+        "en": "💡 Tech & Innovation"
+      },
+      "title": {
+        "es": "Los 10 Gadgets Imprescindibles de 2025",
+        "en": "Top 10 Essential Gadgets of 2025"
+      },
+      "description": {
+        "es": "Dispositivos innovadores que transforman tu día a día",
+        "en": "Innovative devices that transform your daily life"
+      },
+      "cta": {
+        "es": "Leer artículo →",
+        "en": "Read article →"
+      }
+    },
+    {
+      "id": "gaming-accessories",
+      "url": "blog/top-accesorios-gaming.html",
+      "image": "https://images.unsplash.com/photo-1538481199705-c710c4e965fc?auto=format&fit=crop&w=1920&q=80",
+      "imageAlt": {
+        "es": "Gaming",
+        "en": "Gaming"
+      },
+      "category": {
+        "es": "🎮 Gaming",
+        "en": "🎮 Gaming"
+      },
+      "title": {
+        "es": "Top 7 Accesorios Gaming 2025",
+        "en": "Top 7 Gaming Accessories 2025"
+      },
+      "description": {
+        "es": "Mejora tu setup y performance con estos productos premium",
+        "en": "Upgrade your setup and performance with these premium products"
+      },
+      "cta": {
+        "es": "Leer artículo →",
+        "en": "Read article →"
+      }
+    },
+    {
+      "id": "premium-headphones",
+      "url": "blog/auriculares-premium-descuento.html",
+      "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=1920&q=80",
+      "imageAlt": {
+        "es": "Auriculares",
+        "en": "Headphones"
+      },
+      "category": {
+        "es": "🎧 Audio & Sonido",
+        "en": "🎧 Audio & Sound"
+      },
+      "title": {
+        "es": "Los 5 Mejores Auriculares Premium",
+        "en": "The 5 Best Premium Headphones"
+      },
+      "description": {
+        "es": "Noise cancelling, calidad de sonido y autonomía superior",
+        "en": "Noise cancelling, sound quality and superior battery life"
+      },
+      "cta": {
+        "es": "Leer artículo →",
+        "en": "Read article →"
+      }
+    },
+    {
+      "id": "black-friday-tips",
+      "url": "blog/consejos-black-friday.html",
+      "image": "https://images.unsplash.com/photo-1607083206869-4c7672e72a8a?auto=format&fit=crop&w=1920&q=80",
+      "imageAlt": {
+        "es": "Black Friday",
+        "en": "Black Friday"
+      },
+      "category": {
+        "es": "💰 Guías & Tips",
+        "en": "💰 Guides & Tips"
+      },
+      "title": {
+        "es": "Consejos Black Friday 2025",
+        "en": "Black Friday 2025 Tips"
+      },
+      "description": {
+        "es": "Compra inteligente, evita estafas y maximiza tu ahorro",
+        "en": "Shop smart, avoid scams and maximize your savings"
+      },
+      "cta": {
+        "es": "Leer artículo →",
+        "en": "Read article →"
+      }
+    },
+    {
+      "id": "laptops-black-friday",
+      "url": "blog/laptops-black-friday-2025.html",
+      "image": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=1920&q=80",
+      "imageAlt": {
+        "es": "Laptops",
+        "en": "Laptops"
+      },
+      "category": {
+        "es": "💻 Laptops",
+        "en": "💻 Laptops"
+      },
+      "title": {
+        "es": "Mejores Laptops Black Friday 2025",
+        "en": "Best Laptops Black Friday 2025"
+      },
+      "description": {
+        "es": "Guía completa de portátiles con mejor relación calidad-precio",
+        "en": "Complete guide to laptops with the best value for money"
+      },
+      "cta": {
+        "es": "Leer artículo →",
+        "en": "Read article →"
+      }
+    }
+  ]
+}
