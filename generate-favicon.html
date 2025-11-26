@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generar Favicons - DealTech365</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            padding: 40px;
+            background: #f5f5f5;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h1 {
+            color: #2563EB;
+            margin-bottom: 30px;
+        }
+        .canvas-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        .canvas-item {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        canvas {
+            display: block;
+            margin: 15px auto;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+        }
+        button {
+            background: linear-gradient(90deg, #2563EB, #10B981);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 14px;
+            margin: 5px;
+            transition: transform 0.2s;
+        }
+        button:hover {
+            transform: translateY(-2px);
+        }
+        .info {
+            background: #e3f2fd;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border-left: 4px solid #2563EB;
+        }
+        h3 {
+            margin-top: 0;
+            color: #333;
+        }
+        p {
+            color: #666;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <h1>🎨 Generador de Favicons - DealTech365</h1>
+
+    <div class="info">
+        <p><strong>Instrucciones:</strong> Haz clic en "Descargar" debajo de cada favicon para guardarlo. Luego mueve los archivos a la carpeta /images/ de tu proyecto.</p>
+    </div>
+
+    <div class="canvas-container">
+        <div class="canvas-item">
+            <h3>favicon.ico (32x32)</h3>
+            <canvas id="favicon32" width="32" height="32"></canvas>
+            <button onclick="downloadCanvas('favicon32', 'favicon-32x32.png')">Descargar PNG</button>
+        </div>
+
+        <div class="canvas-item">
+            <h3>favicon (16x16)</h3>
+            <canvas id="favicon16" width="16" height="16"></canvas>
+            <button onclick="downloadCanvas('favicon16', 'favicon-16x16.png')">Descargar PNG</button>
+        </div>
+
+        <div class="canvas-item">
+            <h3>Apple Touch Icon (180x180)</h3>
+            <canvas id="apple180" width="180" height="180"></canvas>
+            <button onclick="downloadCanvas('apple180', 'apple-touch-icon.png')">Descargar PNG</button>
+        </div>
+
+        <div class="canvas-item">
+            <h3>Android Chrome (192x192)</h3>
+            <canvas id="android192" width="192" height="192"></canvas>
+            <button onclick="downloadCanvas('android192', 'android-chrome-192x192.png')">Descargar PNG</button>
+        </div>
+
+        <div class="canvas-item">
+            <h3>Android Chrome (512x512)</h3>
+            <canvas id="android512" width="512" height="512"></canvas>
+            <button onclick="downloadCanvas('android512', 'android-chrome-512x512.png')">Descargar PNG</button>
+        </div>
+    </div>
+
+    <script>
+        function drawLogo(canvas) {
+            const ctx = canvas.getContext('2d');
+            const size = canvas.width;
+            const center = size / 2;
+            const radius = size * 0.42;
+            const ringWidth = size * 0.08;
+
+            // Clear canvas
+            ctx.clearRect(0, 0, size, size);
+
+            // Create gradient for ring
+            const gradient = ctx.createLinearGradient(0, 0, size, size);
+            gradient.addColorStop(0, '#2563EB');
+            gradient.addColorStop(0.5, '#3b82f6');
+            gradient.addColorStop(1, '#60a5fa');
+
+            // Draw outer circle (ring)
+            ctx.beginPath();
+            ctx.arc(center, center, radius, 0, Math.PI * 2);
+            ctx.strokeStyle = gradient;
+            ctx.lineWidth = ringWidth;
+            ctx.stroke();
+
+            // Draw "D" text
+            ctx.font = `bold ${size * 0.5}px 'Arial Black', sans-serif`;
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+
+            // Create gradient for text
+            const textGradient = ctx.createLinearGradient(0, 0, size, size);
+            textGradient.addColorStop(0, '#2563EB');
+            textGradient.addColorStop(1, '#3b82f6');
+
+            ctx.fillStyle = textGradient;
+            ctx.fillText('D', center, center);
+        }
+
+        // Draw all logos
+        ['favicon32', 'favicon16', 'apple180', 'android192', 'android512'].forEach(id => {
+            const canvas = document.getElementById(id);
+            drawLogo(canvas);
+        });
+
+        function downloadCanvas(canvasId, filename) {
+            const canvas = document.getElementById(canvasId);
+            const link = document.createElement('a');
+            link.download = filename;
+            link.href = canvas.toDataURL('image/png');
+            link.click();
+        }
+
+        // Auto-download all function
+        function downloadAll() {
+            setTimeout(() => downloadCanvas('favicon32', 'favicon-32x32.png'), 100);
+            setTimeout(() => downloadCanvas('favicon16', 'favicon-16x16.png'), 300);
+            setTimeout(() => downloadCanvas('apple180', 'apple-touch-icon.png'), 500);
+            setTimeout(() => downloadCanvas('android192', 'android-chrome-192x192.png'), 700);
+            setTimeout(() => downloadCanvas('android512', 'android-chrome-512x512.png'), 900);
+        }
+    </script>
+
+    <div style="text-align: center; margin-top: 30px;">
+        <button onclick="downloadAll()" style="font-size: 16px; padding: 15px 30px;">
+            📥 Descargar Todos los Favicons
+        </button>
+    </div>
+
+    <div style="margin-top: 40px; padding: 20px; background: white; border-radius: 12px;">
+        <h3>📋 Archivos generados:</h3>
+        <ul style="line-height: 1.8; color: #666;">
+            <li><code>favicon-16x16.png</code> - Para pestañas del navegador (pequeño)</li>
+            <li><code>favicon-32x32.png</code> - Para pestañas del navegador (estándar)</li>
+            <li><code>apple-touch-icon.png</code> - Para iOS cuando se guarda en pantalla de inicio</li>
+            <li><code>android-chrome-192x192.png</code> - Para Android</li>
+            <li><code>android-chrome-512x512.png</code> - Para Android (alta resolución)</li>
+        </ul>
+        <p><strong>Nota:</strong> Después de descargar, mueve los archivos a la carpeta <code>/images/</code> de tu proyecto.</p>
+    </div>
+</body>
+</html>

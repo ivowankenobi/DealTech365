@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Idioma y Región - DealTech365</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.min.css">
+  <script src="../js/i18n.min.js"></script>
+  <style>
+    .language-page {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+    }
+
+    .language-page__header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .language-page__back {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+      transition: color 0.2s;
+    }
+
+    .language-page__back:hover {
+      color: var(--primary);
+    }
+
+    .language-page__title {
+      font-size: 2rem;
+      font-weight: 700;
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 0.5rem;
+    }
+
+    .language-page__subtitle {
+      color: var(--text-secondary);
+      font-size: 1rem;
+    }
+
+    .language-section {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .language-section__title {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .language-section__description {
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+      margin-bottom: 1.5rem;
+      line-height: 1.5;
+    }
+
+    .language-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+
+    .language-card {
+      position: relative;
+      cursor: pointer;
+    }
+
+    .language-card__input {
+      position: absolute;
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .language-card__label {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: var(--bg-primary);
+      border: 3px solid var(--border);
+      border-radius: 12px;
+      padding: 1.5rem 1rem;
+      transition: all 0.3s;
+      height: 100%;
+      min-height: 120px;
+    }
+
+    .language-card__label:hover {
+      border-color: var(--primary);
+      transform: translateY(-4px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    }
+
+    .language-card__input:checked + .language-card__label {
+      border-color: var(--primary);
+      background: linear-gradient(135deg, rgba(0, 200, 150, 0.1), var(--bg-primary));
+      box-shadow: 0 8px 24px rgba(0, 200, 150, 0.2);
+    }
+
+    .language-card__flag {
+      font-size: 3rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .language-card__name {
+      font-weight: 600;
+      font-size: 1.05rem;
+      color: var(--text-primary);
+      margin-bottom: 0.25rem;
+    }
+
+    .language-card__code {
+      font-size: 0.8rem;
+      color: var(--text-secondary);
+      text-transform: uppercase;
+    }
+
+    .language-card__badge {
+      position: absolute;
+      top: 0.5rem;
+      right: 0.5rem;
+      background: var(--primary);
+      color: white;
+      padding: 0.25rem 0.75rem;
+      border-radius: 20px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    .language-card__input:checked + .language-card__label .language-card__badge {
+      opacity: 1;
+    }
+
+    .coming-soon {
+      opacity: 0.5;
+      pointer-events: none;
+    }
+
+    .coming-soon-label {
+      position: absolute;
+      top: 0.5rem;
+      right: 0.5rem;
+      background: var(--text-secondary);
+      color: white;
+      padding: 0.25rem 0.75rem;
+      border-radius: 20px;
+      font-size: 0.75rem;
+      font-weight: 600;
+    }
+
+    .region-selector {
+      background: var(--bg-primary);
+      border: 2px solid var(--border);
+      border-radius: 12px;
+      padding: 1rem;
+      width: 100%;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1rem;
+      color: var(--text-primary);
+      cursor: pointer;
+      transition: all 0.3s;
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%2300c896' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 1rem center;
+      padding-right: 3rem;
+    }
+
+    .region-selector:hover {
+      border-color: var(--primary);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .region-selector:focus {
+      outline: none;
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(0, 200, 150, 0.1);
+    }
+
+    .region-selector option {
+      padding: 1rem;
+      background: var(--bg-primary);
+      color: var(--text-primary);
+    }
+
+    .info-box {
+      margin-top: 1.5rem;
+      padding: 1rem 1.25rem;
+      background: linear-gradient(135deg, rgba(0, 200, 150, 0.1), rgba(0, 200, 150, 0.05));
+      border-left: 4px solid var(--primary);
+      border-radius: 8px;
+    }
+
+    .info-box__content {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    .info-box__content strong {
+      color: var(--text-primary);
+    }
+
+    .success-message {
+      display: none;
+      margin-top: 1.5rem;
+      padding: 1rem 1.25rem;
+      background: #d1fae5;
+      border: 2px solid #6ee7b7;
+      border-radius: 12px;
+      color: #065f46;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      animation: slideDown 0.3s ease-out;
+    }
+
+    .success-message.show {
+      display: flex;
+    }
+
+    @keyframes slideDown {
+      from {
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .action-buttons {
+      display: flex;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    .btn-save {
+      flex: 1;
+      padding: 1rem 2rem;
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .btn-save:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0, 200, 150, 0.4);
+    }
+
+    .btn-save:active {
+      transform: translateY(0);
+    }
+
+    .btn-reset {
+      padding: 1rem 2rem;
+      background: var(--bg-primary);
+      color: var(--text-secondary);
+      border: 2px solid var(--border);
+      border-radius: 10px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .btn-reset:hover {
+      border-color: var(--text-secondary);
+      color: var(--text-primary);
+      background: var(--bg-secondary);
+    }
+
+    @media (max-width: 768px) {
+      .language-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .action-buttons {
+        flex-direction: column;
+      }
+
+      .btn-reset {
+        order: -1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="language-page">
+      <div class="language-page__header">
+        <a href="../index.html#profile" class="language-page__back" data-i18n="language_back">
+          ← Volver al perfil
+        </a>
+        <h1 class="language-page__title" data-i18n="language_title">Idioma y Región</h1>
+        <p class="language-page__subtitle" data-i18n="language_subtitle">Personaliza tu experiencia de navegación</p>
+      </div>
+
+      <!-- Language Selection -->
+      <div class="language-section">
+        <h2 class="language-section__title">
+          <span>🌐</span> <span data-i18n="language_interface_title">Idioma de la interfaz</span>
+        </h2>
+        <p class="language-section__description" data-i18n="language_interface_desc">
+          Selecciona el idioma en el que deseas ver todo el contenido de DealTech365
+        </p>
+
+        <div class="language-grid">
+          <div class="language-card">
+            <input type="radio" name="language" value="es" id="lang-es" class="language-card__input" checked>
+            <label for="lang-es" class="language-card__label">
+              <div class="language-card__badge" data-i18n="language_badge_active">✓ Activo</div>
+              <div class="language-card__flag">🇪🇸</div>
+              <div class="language-card__name">Español</div>
+              <div class="language-card__code">ES</div>
+            </label>
+          </div>
+
+          <div class="language-card">
+            <input type="radio" name="language" value="en" id="lang-en" class="language-card__input">
+            <label for="lang-en" class="language-card__label">
+              <div class="language-card__badge" data-i18n="language_badge_active">✓ Activo</div>
+              <div class="language-card__flag">🇺🇸</div>
+              <div class="language-card__name">English</div>
+              <div class="language-card__code">EN</div>
+            </label>
+          </div>
+
+          <div class="language-card coming-soon">
+            <input type="radio" name="language" value="pt" id="lang-pt" class="language-card__input" disabled>
+            <label for="lang-pt" class="language-card__label">
+              <div class="coming-soon-label" data-i18n="language_badge_soon">Próximamente</div>
+              <div class="language-card__flag">🇧🇷</div>
+              <div class="language-card__name">Português</div>
+              <div class="language-card__code">PT</div>
+            </label>
+          </div>
+
+          <div class="language-card coming-soon">
+            <input type="radio" name="language" value="fr" id="lang-fr" class="language-card__input" disabled>
+            <label for="lang-fr" class="language-card__label">
+              <div class="coming-soon-label" data-i18n="language_badge_soon">Próximamente</div>
+              <div class="language-card__flag">🇫🇷</div>
+              <div class="language-card__name">Français</div>
+              <div class="language-card__code">FR</div>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <!-- Region Selection -->
+      <div class="language-section">
+        <h2 class="language-section__title">
+          <span>📍</span> <span data-i18n="language_region_title">Región de ofertas</span>
+        </h2>
+        <p class="language-section__description" data-i18n="language_region_desc">
+          Selecciona tu región para ver ofertas y precios en tu moneda local
+        </p>
+
+        <select id="regionSelect" class="region-selector">
+          <option value="auto" data-i18n="language_region_auto">🌍 Detección automática (Recomendado)</option>
+          <option value="eu" data-i18n="language_region_eu">🇪🇺 Europa (€ EUR)</option>
+          <option value="us" data-i18n="language_region_us">🇺🇸 Estados Unidos ($ USD)</option>
+          <option value="mx" data-i18n="language_region_mx">🇲🇽 México ($ MXN)</option>
+          <option value="latam" data-i18n="language_region_latam">🌎 Latinoamérica ($ USD)</option>
+        </select>
+
+        <div class="info-box">
+          <p class="info-box__content" data-i18n="language_note">
+            💡 <strong>Detección automática:</strong> Usamos tu zona horaria y ubicación para determinar la mejor región y moneda para ti. Si prefieres, puedes seleccionar manualmente tu región arriba.
+          </p>
+        </div>
+      </div>
+
+      <!-- Success Message -->
+      <div id="successMessage" class="success-message">
+        <span style="font-size: 1.25rem;">✅</span>
+        <span data-i18n="language_saved">Configuración guardada correctamente</span>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="action-buttons">
+        <button id="saveBtn" class="btn-save">
+          <span>💾</span> <span data-i18n="language_save">Guardar configuración</span>
+        </button>
+        <button id="resetBtn" class="btn-reset">
+          <span>🔄</span> <span data-i18n="language_reset">Restablecer</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="../js/region.js"></script>
+  <script>
+    // Language and Region Settings Manager
+
+    // Load saved preferences
+    function loadPreferences() {
+      const savedLang = localStorage.getItem('preferredLanguage') || 'es';
+      const savedRegion = localStorage.getItem('preferredRegion') || 'auto';
+
+      // Set language radio
+      const langRadio = document.getElementById(`lang-${savedLang}`);
+      if (langRadio) {
+        langRadio.checked = true;
+      }
+
+      // Set region select
+      const regionSelect = document.getElementById('regionSelect');
+      if (regionSelect) {
+        regionSelect.value = savedRegion;
+      }
+
+      console.log('📋 Loaded preferences:', { language: savedLang, region: savedRegion });
+    }
+
+    // Save preferences
+    function savePreferences() {
+      const selectedLang = document.querySelector('input[name="language"]:checked').value;
+      const selectedRegion = document.getElementById('regionSelect').value;
+
+      // Save to localStorage
+      localStorage.setItem('preferredLanguage', selectedLang);
+      localStorage.setItem('preferredRegion', selectedRegion);
+
+      console.log('💾 Saved preferences:', { language: selectedLang, region: selectedRegion });
+
+      // Update region if not auto
+      if (selectedRegion !== 'auto') {
+        updateRegionManually(selectedRegion);
+      } else {
+        // Clear manual override and re-detect
+        localStorage.removeItem('userRegion');
+        if (window.detectUserRegion) {
+          window.detectUserRegion();
+        }
+      }
+
+      // Show success message
+      const successMsg = document.getElementById('successMessage');
+      successMsg.classList.add('show');
+
+      setTimeout(() => {
+        successMsg.classList.remove('show');
+      }, 3000);
+
+      // Track in analytics
+      if (window.Analytics) {
+        window.Analytics.trackEvent('language_region_changed', {
+          language: selectedLang,
+          region: selectedRegion
+        });
+      }
+    }
+
+    // Update region manually based on selection
+    function updateRegionManually(regionCode) {
+      let newRegion;
+
+      switch(regionCode) {
+        case 'eu':
+          newRegion = {
+            continent: 'EU',
+            country: 'Europe',
+            countryCode: 'EU',
+            currency: 'EUR',
+            currencySymbol: '€',
+            isEurope: true,
+            timezone: Intl.DateTimeFormat().resolvedOptions().timeZone,
+            manual: true
+          };
+          break;
+        case 'us':
+          newRegion = {
+            continent: 'NA',
+            country: 'United States',
+            countryCode: 'US',
+            currency: 'USD',
+            currencySymbol: '$',
+            isEurope: false,
+            timezone: Intl.DateTimeFormat().resolvedOptions().timeZone,
+            manual: true
+          };
+          break;
+        case 'mx':
+          newRegion = {
+            continent: 'NA',
+            country: 'Mexico',
+            countryCode: 'MX',
+            currency: 'MXN',
+            currencySymbol: '$',
+            isEurope: false,
+            timezone: Intl.DateTimeFormat().resolvedOptions().timeZone,
+            manual: true
+          };
+          break;
+        case 'latam':
+          newRegion = {
+            continent: 'SA',
+            country: 'Latin America',
+            countryCode: 'LATAM',
+            currency: 'USD',
+            currencySymbol: '$',
+            isEurope: false,
+            timezone: Intl.DateTimeFormat().resolvedOptions().timeZone,
+            manual: true
+          };
+          break;
+      }
+
+      if (newRegion) {
+        localStorage.setItem('userRegion', JSON.stringify(newRegion));
+
+        // Update global region if available
+        if (window.userRegion) {
+          window.userRegion = newRegion;
+        }
+
+        // Update indicator
+        if (window.updateRegionIndicator) {
+          window.updateRegionIndicator();
+        }
+
+        console.log('✅ Region manually updated:', newRegion);
+      }
+    }
+
+    // Reset to defaults
+    function resetPreferences() {
+      const confirmMsg = window.i18n ? window.i18n.t('language_reset_confirm') : '¿Seguro que quieres restablecer la configuración a los valores predeterminados?';
+      if (confirm(confirmMsg)) {
+        localStorage.removeItem('preferredLanguage');
+        localStorage.removeItem('preferredRegion');
+        localStorage.removeItem('userRegion');
+
+        // Reload preferences
+        loadPreferences();
+
+        // Re-detect region
+        if (window.detectUserRegion) {
+          window.detectUserRegion();
+        }
+
+        // Show success
+        const successMsg = document.getElementById('successMessage');
+        const messageText = successMsg.querySelector('span:last-child');
+        messageText.textContent = 'Configuración restablecida';
+        successMsg.classList.add('show');
+
+        setTimeout(() => {
+          successMsg.classList.remove('show');
+          messageText.textContent = 'Configuración guardada correctamente';
+        }, 3000);
+      }
+    }
+
+    // Event listeners
+    document.getElementById('saveBtn').addEventListener('click', savePreferences);
+    document.getElementById('resetBtn').addEventListener('click', resetPreferences);
+
+    // Load preferences on page load
+    document.addEventListener('DOMContentLoaded', () => {
+      loadPreferences();
+
+      // Detect region if detectUserRegion is available
+      if (window.detectUserRegion) {
+        window.detectUserRegion();
+      }
+    });
+  </script>
+</body>
+</html>

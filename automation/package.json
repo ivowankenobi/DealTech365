@@ -1,0 +1,39 @@
+{
+  "name": "dealtech365-automation",
+  "version": "1.0.0",
+  "description": "Sistema de automatización de ofertas para DealTech365",
+  "main": "index.js",
+  "scripts": {
+    "scrape": "node scraper/amazon-scraper.js",
+    "scrape:es": "REGION=ES node scraper/amazon-scraper.js",
+    "scrape:us": "REGION=US node scraper/amazon-scraper.js",
+    "scrape:headful": "HEADLESS=false node scraper/amazon-scraper.js",
+    "import": "node scripts/import-to-firestore.js",
+    "sync-web": "node scripts/sync-to-web.js",
+    "update": "npm run scrape && npm run sync-web",
+    "sync": "npm run scrape && npm run import",
+    "serve": "node api/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "amazon",
+    "scraper",
+    "deals",
+    "automation"
+  ],
+  "author": "DealTech365",
+  "license": "MIT",
+  "dependencies": {
+    "puppeteer": "^21.6.0",
+    "cheerio": "^1.0.0-rc.12",
+    "axios": "^1.6.2",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "firebase-admin": "^12.0.0",
+    "node-cron": "^3.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}

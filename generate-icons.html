@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generador de Iconos - DealTech365</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #0a0a0a;
+      color: #ffffff;
+      padding: 2rem;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+      background: linear-gradient(135deg, #22C55E, #10B981);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .subtitle {
+      color: #888;
+      margin-bottom: 2rem;
+    }
+
+    .section {
+      background: #1a1a1a;
+      border: 1px solid #333;
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .section h2 {
+      font-size: 1.25rem;
+      margin-bottom: 1rem;
+      color: #22C55E;
+    }
+
+    .preview-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 1rem;
+      margin: 1.5rem 0;
+    }
+
+    .icon-preview {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .icon-preview canvas {
+      border: 1px solid #333;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    }
+
+    .icon-label {
+      font-size: 0.75rem;
+      color: #888;
+      text-align: center;
+    }
+
+    button {
+      background: linear-gradient(135deg, #22C55E, #10B981);
+      color: white;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+      margin: 0.5rem 0.5rem 0.5rem 0;
+    }
+
+    button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(34, 197, 94, 0.4);
+    }
+
+    button:active {
+      transform: translateY(0);
+    }
+
+    .instructions {
+      background: #111;
+      border-left: 3px solid #22C55E;
+      padding: 1rem;
+      margin: 1rem 0;
+      border-radius: 4px;
+    }
+
+    .instructions p {
+      color: #ccc;
+      line-height: 1.6;
+      font-size: 0.9rem;
+    }
+
+    .instructions ol {
+      margin-left: 1.5rem;
+      margin-top: 0.5rem;
+      color: #ccc;
+    }
+
+    .instructions li {
+      margin-bottom: 0.5rem;
+      line-height: 1.6;
+    }
+
+    .success {
+      background: rgba(34, 197, 94, 0.1);
+      border: 1px solid #22C55E;
+      color: #22C55E;
+      padding: 1rem;
+      border-radius: 8px;
+      margin: 1rem 0;
+      display: none;
+    }
+
+    .download-all {
+      background: linear-gradient(135deg, #3B82F6, #2563EB);
+    }
+
+    .download-all:hover {
+      box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
+    }
+
+    code {
+      background: #000;
+      padding: 0.2rem 0.5rem;
+      border-radius: 4px;
+      font-family: 'Courier New', monospace;
+      color: #22C55E;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🎨 Generador de Iconos DealTech365</h1>
+    <p class="subtitle">Genera todos los favicons y assets PWA necesarios para tu sitio</p>
+
+    <div class="section">
+      <h2>📋 Instrucciones</h2>
+      <div class="instructions">
+        <p><strong>Estos iconos son temporales y básicos.</strong> Úsalos para lanzar rápidamente, pero considera crear iconos profesionales después.</p>
+        <ol>
+          <li>Haz click en <strong>"Generar Todos los Iconos"</strong></li>
+          <li>Haz click derecho en cada ícono y selecciona <strong>"Guardar imagen como..."</strong></li>
+          <li>Guarda cada imagen con el nombre exacto que se indica debajo</li>
+          <li>Coloca los archivos en la carpeta <code>/images/</code> de tu proyecto</li>
+          <li>El <code>favicon.ico</code> va en la raíz del proyecto</li>
+        </ol>
+      </div>
+
+      <button onclick="generateAllIcons()">🎨 Generar Todos los Iconos</button>
+      <div id="success" class="success">
+        ✅ ¡Iconos generados! Haz click derecho en cada uno → "Guardar imagen como..." con el nombre indicado.
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>🎯 Favicons</h2>
+      <div class="preview-grid">
+        <div class="icon-preview">
+          <canvas id="favicon-16" width="16" height="16"></canvas>
+          <span class="icon-label">favicon-16x16.png</span>
+          <button onclick="downloadIcon('favicon-16', 'favicon-16x16.png')">💾 Descargar</button>
+        </div>
+        <div class="icon-preview">
+          <canvas id="favicon-32" width="32" height="32"></canvas>
+          <span class="icon-label">favicon-32x32.png</span>
+          <button onclick="downloadIcon('favicon-32', 'favicon-32x32.png')">💾 Descargar</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>🍎 Apple Touch Icon</h2>
+      <div class="preview-grid">
+        <div class="icon-preview">
+          <canvas id="apple-180" width="180" height="180"></canvas>
+          <span class="icon-label">apple-touch-icon.png</span>
+          <button onclick="downloadIcon('apple-180', 'apple-touch-icon.png')">💾 Descargar</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>📱 PWA Icons</h2>
+      <div class="preview-grid">
+        <div class="icon-preview">
+          <canvas id="icon-192" width="192" height="192"></canvas>
+          <span class="icon-label">icon-192x192.png<br><strong>⚠️ CRÍTICO</strong></span>
+          <button onclick="downloadIcon('icon-192', 'icon-192x192.png')">💾 Descargar</button>
+        </div>
+        <div class="icon-preview">
+          <canvas id="icon-512" width="512" height="512"></canvas>
+          <span class="icon-label">icon-512x512.png<br><strong>⚠️ CRÍTICO</strong></span>
+          <button onclick="downloadIcon('icon-512', 'icon-512x512.png')">💾 Descargar</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>🎨 Assets Opcionales (Recomendados)</h2>
+      <div class="preview-grid">
+        <div class="icon-preview">
+          <canvas id="icon-72" width="72" height="72"></canvas>
+          <span class="icon-label">icon-72x72.png</span>
+          <button onclick="downloadIcon('icon-72', 'icon-72x72.png')">💾 Descargar</button>
+        </div>
+        <div class="icon-preview">
+          <canvas id="icon-96" width="96" height="96"></canvas>
+          <span class="icon-label">icon-96x96.png</span>
+          <button onclick="downloadIcon('icon-96', 'icon-96x96.png')">💾 Descargar</button>
+        </div>
+        <div class="icon-preview">
+          <canvas id="icon-128" width="128" height="128"></canvas>
+          <span class="icon-label">icon-128x128.png</span>
+          <button onclick="downloadIcon('icon-128', 'icon-128x128.png')">💾 Descargar</button>
+        </div>
+        <div class="icon-preview">
+          <canvas id="icon-144" width="144" height="144"></canvas>
+          <span class="icon-label">icon-144x144.png</span>
+          <button onclick="downloadIcon('icon-144', 'icon-144x144.png')">💾 Descargar</button>
+        </div>
+        <div class="icon-preview">
+          <canvas id="icon-152" width="152" height="152"></canvas>
+          <span class="icon-label">icon-152x152.png</span>
+          <button onclick="downloadIcon('icon-152', 'icon-152x152.png')">💾 Descargar</button>
+        </div>
+        <div class="icon-preview">
+          <canvas id="icon-384" width="384" height="384"></canvas>
+          <span class="icon-label">icon-384x384.png</span>
+          <button onclick="downloadIcon('icon-384', 'icon-384x384.png')">💾 Descargar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const PRIMARY_COLOR = '#22C55E';
+    const BG_COLOR = '#000000';
+    const TEXT_COLOR = '#FFFFFF';
+
+    function drawIcon(canvas) {
+      const ctx = canvas.getContext('2d');
+      const size = canvas.width;
+
+      // Clear canvas
+      ctx.clearRect(0, 0, size, size);
+
+      // Background
+      ctx.fillStyle = BG_COLOR;
+      ctx.fillRect(0, 0, size, size);
+
+      // Draw diamond shape
+      const center = size / 2;
+      const diamondSize = size * 0.5;
+
+      ctx.beginPath();
+      ctx.moveTo(center, center - diamondSize);
+      ctx.lineTo(center + diamondSize, center);
+      ctx.lineTo(center, center + diamondSize);
+      ctx.lineTo(center - diamondSize, center);
+      ctx.closePath();
+
+      // Gradient fill
+      const gradient = ctx.createLinearGradient(0, 0, size, size);
+      gradient.addColorStop(0, PRIMARY_COLOR);
+      gradient.addColorStop(1, '#10B981');
+      ctx.fillStyle = gradient;
+      ctx.fill();
+
+      // Add text for larger icons
+      if (size >= 72) {
+        ctx.fillStyle = BG_COLOR;
+        ctx.font = `bold ${size * 0.25}px Arial`;
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+
+        if (size >= 144) {
+          ctx.fillText('DT', center, center - size * 0.05);
+          ctx.font = `${size * 0.12}px Arial`;
+          ctx.fillText('365', center, center + size * 0.12);
+        } else {
+          ctx.fillText('DT', center, center);
+        }
+      }
+
+      // Add border for clarity
+      ctx.strokeStyle = PRIMARY_COLOR;
+      ctx.lineWidth = size / 64;
+      ctx.strokeRect(0, 0, size, size);
+    }
+
+    function downloadIcon(canvasId, filename) {
+      const canvas = document.getElementById(canvasId);
+      const link = document.createElement('a');
+      link.download = filename;
+      link.href = canvas.toDataURL('image/png');
+      link.click();
+    }
+
+    function generateAllIcons() {
+      const iconIds = [
+        'favicon-16', 'favicon-32', 'apple-180',
+        'icon-72', 'icon-96', 'icon-128', 'icon-144',
+        'icon-152', 'icon-192', 'icon-384', 'icon-512'
+      ];
+
+      iconIds.forEach(id => {
+        const canvas = document.getElementById(id);
+        if (canvas) {
+          drawIcon(canvas);
+        }
+      });
+
+      // Show success message
+      document.getElementById('success').style.display = 'block';
+
+      // Scroll to top
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // Generate icons on page load
+    window.addEventListener('DOMContentLoaded', generateAllIcons);
+  </script>
+</body>
+</html>

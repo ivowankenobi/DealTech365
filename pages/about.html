@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acerca de - DealTech365</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.min.css">
+  <style>
+    .about-page {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+    }
+
+    .about-page__header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .about-page__back {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+      transition: color 0.2s;
+    }
+
+    .about-page__back:hover {
+      color: var(--primary);
+    }
+
+    .about-page__logo {
+      font-size: 5rem;
+      margin-bottom: 1rem;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    .about-page__title {
+      font-size: 2.5rem;
+      font-weight: 700;
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 0.5rem;
+    }
+
+    .about-page__version {
+      color: var(--text-secondary);
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .about-page__tagline {
+      color: var(--text-primary);
+      font-size: 1.1rem;
+      line-height: 1.6;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 3rem;
+    }
+
+    .stat-card {
+      background: linear-gradient(135deg, var(--bg-secondary), var(--bg-primary));
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 1.75rem 1.5rem;
+      text-align: center;
+      transition: all 0.3s;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .stat-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--primary), var(--accent));
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    .stat-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+      border-color: var(--primary);
+    }
+
+    .stat-card:hover::before {
+      opacity: 1;
+    }
+
+    .stat-card__icon {
+      font-size: 2.5rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .stat-card__value {
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 0.25rem;
+    }
+
+    .stat-card__label {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+    }
+
+    .section {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .section__title {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .section__description {
+      color: var(--text-secondary);
+      line-height: 1.7;
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.25rem;
+    }
+
+    .feature-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      padding: 1rem;
+      background: var(--bg-primary);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      transition: all 0.3s;
+    }
+
+    .feature-item:hover {
+      border-color: var(--primary);
+      transform: translateX(4px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .feature-item__icon {
+      font-size: 2rem;
+      flex-shrink: 0;
+    }
+
+    .feature-item__content {
+      flex: 1;
+    }
+
+    .feature-item__title {
+      font-weight: 600;
+      color: var(--text-primary);
+      margin-bottom: 0.25rem;
+    }
+
+    .feature-item__description {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      line-height: 1.5;
+    }
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+
+    .info-item {
+      padding: 0.75rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .info-item:last-child {
+      border-bottom: none;
+    }
+
+    .info-item__label {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      margin-bottom: 0.25rem;
+    }
+
+    .info-item__value {
+      font-weight: 600;
+      color: var(--text-primary);
+      font-size: 1rem;
+    }
+
+    .tech-stack {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-top: 1rem;
+    }
+
+    .tech-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 1rem;
+      background: var(--bg-primary);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--text-primary);
+      transition: all 0.2s;
+    }
+
+    .tech-badge:hover {
+      border-color: var(--primary);
+      background: linear-gradient(135deg, rgba(0, 200, 150, 0.1), var(--bg-primary));
+      transform: translateY(-2px);
+    }
+
+    .cta-section {
+      text-align: center;
+      margin-top: 3rem;
+      padding: 2rem;
+      background: linear-gradient(135deg, rgba(0, 200, 150, 0.1), rgba(0, 200, 150, 0.05));
+      border-radius: 16px;
+      border: 1px dashed var(--primary);
+    }
+
+    .cta-section__title {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 0.75rem;
+    }
+
+    .cta-section__description {
+      color: var(--text-secondary);
+      margin-bottom: 1.5rem;
+    }
+
+    .cta-buttons {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn-primary {
+      padding: 0.85rem 2rem;
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 1rem;
+      font-weight: 600;
+      text-decoration: none;
+      cursor: pointer;
+      transition: all 0.2s;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0, 200, 150, 0.4);
+    }
+
+    .btn-secondary {
+      padding: 0.85rem 2rem;
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      border: 2px solid var(--border);
+      border-radius: 10px;
+      font-size: 1rem;
+      font-weight: 600;
+      text-decoration: none;
+      cursor: pointer;
+      transition: all 0.2s;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .btn-secondary:hover {
+      border-color: var(--primary);
+      background: var(--bg-secondary);
+    }
+
+    @media (max-width: 768px) {
+      .about-page__title {
+        font-size: 2rem;
+      }
+
+      .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .features-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .cta-buttons {
+        flex-direction: column;
+      }
+
+      .btn-primary,
+      .btn-secondary {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="about-page">
+      <!-- Header -->
+      <div class="about-page__header">
+        <a href="../index.html#profile" class="about-page__back">
+          ← Volver al perfil
+        </a>
+        <div class="about-page__logo">🛍️</div>
+        <h1 class="about-page__title">DealTech365</h1>
+        <p class="about-page__version">Versión 2.0 · Black Friday 2025</p>
+        <p class="about-page__tagline">
+          Tu plataforma definitiva para descubrir las mejores ofertas en tecnología,
+          con alertas en tiempo real y análisis inteligente de precios.
+        </p>
+      </div>
+
+      <!-- Stats -->
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-card__icon">🎯</div>
+          <div class="stat-card__value">5000+</div>
+          <div class="stat-card__label">Ofertas activas</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-card__icon">🏪</div>
+          <div class="stat-card__value">50+</div>
+          <div class="stat-card__label">Retailers</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-card__icon">⚡</div>
+          <div class="stat-card__value">24/7</div>
+          <div class="stat-card__label">Monitoreo</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-card__icon">💰</div>
+          <div class="stat-card__value">70%</div>
+          <div class="stat-card__label">Ahorro promedio</div>
+        </div>
+      </div>
+
+      <!-- Mission -->
+      <div class="section">
+        <h2 class="section__title">
+          🎯 Nuestra Misión
+        </h2>
+        <p class="section__description">
+          DealTech365 nace con el objetivo de democratizar el acceso a las mejores ofertas tecnológicas.
+          Reunimos, analizamos y presentamos descuentos exclusivos de los principales retailers,
+          facilitando que encuentres exactamente lo que buscas al mejor precio posible.
+        </p>
+        <p class="section__description">
+          Nuestro sistema de alertas inteligentes te mantiene informado en tiempo real sobre ofertas relámpago,
+          descuentos exclusivos y tendencias de precio, asegurando que nunca pierdas una oportunidad de ahorro.
+        </p>
+      </div>
+
+      <!-- Features -->
+      <div class="section">
+        <h2 class="section__title">
+          ✨ Características principales
+        </h2>
+        <div class="features-grid">
+          <div class="feature-item">
+            <div class="feature-item__icon">🔍</div>
+            <div class="feature-item__content">
+              <div class="feature-item__title">Búsqueda Avanzada</div>
+              <p class="feature-item__description">
+                Filtra por categoría, marca, precio y región para encontrar exactamente lo que necesitas.
+              </p>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-item__icon">📊</div>
+            <div class="feature-item__content">
+              <div class="feature-item__title">Comparación de Precios</div>
+              <p class="feature-item__description">
+                Compara precios entre retailers y ve históricos para tomar decisiones informadas.
+              </p>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-item__icon">⚡</div>
+            <div class="feature-item__content">
+              <div class="feature-item__title">Alertas Flash</div>
+              <p class="feature-item__description">
+                Recibe notificaciones instantáneas de ofertas relámpago y descuentos tiempo limitado.
+              </p>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-item__icon">❤️</div>
+            <div class="feature-item__content">
+              <div class="feature-item__title">Listas Personalizadas</div>
+              <p class="feature-item__description">
+                Guarda tus productos favoritos y recibe alertas cuando bajen de precio.
+              </p>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-item__icon">🌐</div>
+            <div class="feature-item__content">
+              <div class="feature-item__title">Multi-región</div>
+              <p class="feature-item__description">
+                Soporte para múltiples regiones y monedas (EUR, USD, MXN y más).
+              </p>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-item__icon">🤖</div>
+            <div class="feature-item__content">
+              <div class="feature-item__title">IA & Automatización</div>
+              <p class="feature-item__description">
+                Análisis inteligente de tendencias y recomendaciones personalizadas.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tech Stack -->
+      <div class="section">
+        <h2 class="section__title">
+          🛠️ Tecnología
+        </h2>
+        <p class="section__description">
+          Construido con tecnologías modernas para ofrecer la mejor experiencia de usuario:
+        </p>
+        <div class="tech-stack">
+          <div class="tech-badge">⚡ Vanilla JavaScript</div>
+          <div class="tech-badge">🎨 CSS Grid & Flexbox</div>
+          <div class="tech-badge">📱 Responsive Design</div>
+          <div class="tech-badge">🌐 i18n (ES/EN)</div>
+          <div class="tech-badge">📊 LocalStorage API</div>
+          <div class="tech-badge">🔔 Web Notifications</div>
+          <div class="tech-badge">🎯 Google Analytics</div>
+          <div class="tech-badge">🍪 Cookie Consent</div>
+        </div>
+      </div>
+
+      <!-- Legal Info -->
+      <div class="section">
+        <h2 class="section__title">
+          📋 Información Legal
+        </h2>
+        <div class="info-grid">
+          <div class="info-item">
+            <div class="info-item__label">Desarrollado por</div>
+            <div class="info-item__value">Equipo DealTech365</div>
+          </div>
+          <div class="info-item">
+            <div class="info-item__label">Versión</div>
+            <div class="info-item__value">2.0.0</div>
+          </div>
+          <div class="info-item">
+            <div class="info-item__label">Última actualización</div>
+            <div class="info-item__value">Noviembre 2025</div>
+          </div>
+          <div class="info-item">
+            <div class="info-item__label">Licencia</div>
+            <div class="info-item__value">Propietaria</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CTA Section -->
+      <div class="cta-section">
+        <h3 class="cta-section__title">¿Necesitas ayuda o tienes sugerencias?</h3>
+        <p class="cta-section__description">
+          Estamos aquí para ayudarte. Contacta con nuestro equipo de soporte.
+        </p>
+        <div class="cta-buttons">
+          <a href="mailto:hello@dealtech365.com" class="btn-primary">
+            ✉️ Contactar Soporte
+          </a>
+          <a href="../index.html#blog" class="btn-secondary">
+            📖 Ver Blog
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

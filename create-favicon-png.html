@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Crear Favicon PNG - DealTech365</title>
+</head>
+<body>
+    <h1>Creando favicon PNG 32x32...</h1>
+    <canvas id="canvas" width="32" height="32"></canvas>
+    <p id="status">Procesando...</p>
+
+    <script>
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+        const size = 32;
+        const center = size / 2;
+        const radius = size * 0.42;
+        const ringWidth = size * 0.08;
+
+        // Clear
+        ctx.clearRect(0, 0, size, size);
+
+        // Gradient for ring
+        const gradient = ctx.createLinearGradient(0, 0, size, size);
+        gradient.addColorStop(0, '#2563EB');
+        gradient.addColorStop(0.5, '#3b82f6');
+        gradient.addColorStop(1, '#60a5fa');
+
+        // Draw ring
+        ctx.beginPath();
+        ctx.arc(center, center, radius, 0, Math.PI * 2);
+        ctx.strokeStyle = gradient;
+        ctx.lineWidth = ringWidth;
+        ctx.stroke();
+
+        // Draw "D"
+        ctx.font = '900 16px Arial, sans-serif';
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+
+        const textGradient = ctx.createLinearGradient(0, 0, size, size);
+        textGradient.addColorStop(0, '#2563EB');
+        textGradient.addColorStop(1, '#3b82f6');
+
+        ctx.fillStyle = textGradient;
+        ctx.fillText('D', center, center);
+
+        // Convert to blob and download
+        canvas.toBlob(function(blob) {
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'favicon-temp.png';
+            a.click();
+            document.getElementById('status').innerHTML = '✅ PNG creado. Ahora sube este archivo a <a href="https://www.icoconverter.com/" target="_blank">icoconverter.com</a> para convertirlo a ICO.';
+        }, 'image/png');
+    </script>
+</body>
+</html>

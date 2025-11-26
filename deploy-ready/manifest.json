@@ -1,0 +1,97 @@
+{
+  "name": "DealTech365 - Ofertas en Tecnología",
+  "short_name": "DealTech365",
+  "description": "Las mejores ofertas en tecnología todo el año. Descuentos exclusivos en laptops, smartphones, audio y gaming.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#2563EB",
+  "background_color": "#FFFFFF",
+  "categories": ["shopping", "lifestyle", "productivity"],
+  "lang": "es",
+  "dir": "ltr",
+  "icons": [
+    {
+      "src": "/images/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/images/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/images/screenshot-mobile.png",
+      "sizes": "390x844",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Vista principal de ofertas en móvil"
+    },
+    {
+      "src": "/images/screenshot-desktop.png",
+      "sizes": "1920x1080",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Vista principal de ofertas en desktop"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Ver Ofertas",
+      "short_name": "Ofertas",
+      "description": "Ver todas las ofertas disponibles",
+      "url": "/pages/favorites.html",
+      "icons": [
+        {
+          "src": "/images/shortcut-deals.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Mis Favoritos",
+      "short_name": "Favoritos",
+      "description": "Ver productos guardados",
+      "url": "/pages/favorites.html",
+      "icons": [
+        {
+          "src": "/images/shortcut-favorites.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Blog",
+      "short_name": "Blog",
+      "description": "Leer guías y comparativas",
+      "url": "/index.html#blog",
+      "icons": [
+        {
+          "src": "/images/shortcut-blog.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
+    }
+  ],
+  "share_target": {
+    "action": "/share",
+    "method": "POST",
+    "enctype": "multipart/form-data",
+    "params": {
+      "title": "title",
+      "text": "text",
+      "url": "url"
+    }
+  },
+  "related_applications": [],
+  "prefer_related_applications": false
+}

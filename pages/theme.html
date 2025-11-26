@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tema - DealTech365</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.min.css">
+  <script src="../js/i18n.min.js"></script>
+  <style>
+    .theme-page {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+    }
+
+    .theme-page__header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .theme-page__back {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+      transition: color 0.2s;
+    }
+
+    .theme-page__back:hover {
+      color: var(--primary);
+    }
+
+    .theme-page__title {
+      font-size: 2rem;
+      font-weight: 700;
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 0.5rem;
+    }
+
+    .theme-page__subtitle {
+      color: var(--text-secondary);
+      font-size: 1rem;
+    }
+
+    .theme-section {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .theme-section__title {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .theme-options {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .theme-option {
+      position: relative;
+      cursor: pointer;
+    }
+
+    .theme-option__input {
+      position: absolute;
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .theme-option__card {
+      background: var(--bg-primary);
+      border: 3px solid var(--border);
+      border-radius: 12px;
+      padding: 1.5rem;
+      transition: all 0.3s;
+      height: 100%;
+    }
+
+    .theme-option__card:hover {
+      border-color: var(--primary);
+      transform: translateY(-4px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    }
+
+    .theme-option__input:checked + .theme-option__card {
+      border-color: var(--primary);
+      background: linear-gradient(135deg, rgba(var(--primary-rgb, 0, 200, 150), 0.1), var(--bg-primary));
+      box-shadow: 0 8px 24px rgba(0, 200, 150, 0.2);
+    }
+
+    .theme-option__preview {
+      width: 100%;
+      height: 120px;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .theme-option__preview--light {
+      background: linear-gradient(135deg, #f0f0f0, #ffffff);
+    }
+
+    .theme-option__preview--dark {
+      background: linear-gradient(135deg, #1a1a1a, #000000);
+    }
+
+    .theme-option__preview--auto {
+      background: linear-gradient(135deg, #f0f0f0 0%, #f0f0f0 50%, #1a1a1a 50%, #1a1a1a 100%);
+    }
+
+    .theme-option__name {
+      font-weight: 600;
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .theme-option__description {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      line-height: 1.4;
+    }
+
+    .theme-option__badge {
+      position: absolute;
+      top: 0.5rem;
+      right: 0.5rem;
+      background: var(--primary);
+      color: white;
+      padding: 0.25rem 0.75rem;
+      border-radius: 20px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    .theme-option__input:checked + .theme-option__card .theme-option__badge {
+      opacity: 1;
+    }
+
+    .coming-soon-badge {
+      background: var(--text-secondary) !important;
+      opacity: 1 !important;
+    }
+
+    .save-button {
+      width: 100%;
+      padding: 1rem 2rem;
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+      margin-top: 2rem;
+    }
+
+    .save-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0, 200, 150, 0.4);
+    }
+
+    @media (max-width: 768px) {
+      .theme-options {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="theme-page">
+      <div class="theme-page__header">
+        <a href="../index.html#profile" class="theme-page__back" data-i18n="theme_back">
+          ← Volver al perfil
+        </a>
+        <h1 class="theme-page__title" data-i18n="theme_title">Tema</h1>
+        <p class="theme-page__subtitle" data-i18n="theme_subtitle">Personaliza la apariencia de DealTech365</p>
+      </div>
+
+      <!-- Theme Mode Section -->
+      <div class="theme-section">
+        <h2 class="theme-section__title">
+          <span>🎨</span> <span data-i18n="theme_mode_title">Modo de Visualización</span>
+        </h2>
+        <div class="theme-options">
+          <label class="theme-option">
+            <input type="radio" name="theme" value="light" class="theme-option__input" checked>
+            <div class="theme-option__card">
+              <div class="theme-option__badge" data-i18n="theme_badge_current">✓ Actual</div>
+              <div class="theme-option__preview theme-option__preview--light">
+                ☀️
+              </div>
+              <div class="theme-option__name" data-i18n="theme_mode_light">Modo Claro</div>
+              <p class="theme-option__description" data-i18n="theme_mode_light_desc">
+                Colores brillantes y alto contraste. Ideal para uso diurno y mejor legibilidad.
+              </p>
+            </div>
+          </label>
+
+          <label class="theme-option">
+            <input type="radio" name="theme" value="dark" class="theme-option__input">
+            <div class="theme-option__card">
+              <div class="theme-option__badge coming-soon-badge" data-i18n="theme_badge_soon">Próximamente</div>
+              <div class="theme-option__preview theme-option__preview--dark">
+                🌙
+              </div>
+              <div class="theme-option__name" data-i18n="theme_mode_dark">Modo Oscuro</div>
+              <p class="theme-option__description" data-i18n="theme_mode_dark_desc">
+                Reduce la fatiga visual en ambientes con poca luz. Ahorra batería en pantallas OLED.
+              </p>
+            </div>
+          </label>
+
+          <label class="theme-option">
+            <input type="radio" name="theme" value="auto" class="theme-option__input">
+            <div class="theme-option__card">
+              <div class="theme-option__preview theme-option__preview--auto">
+                🔄
+              </div>
+              <div class="theme-option__name" data-i18n="theme_mode_auto">Automático</div>
+              <p class="theme-option__description" data-i18n="theme_mode_auto_desc">
+                Se adapta automáticamente según la configuración de tu sistema operativo.
+              </p>
+            </div>
+          </label>
+        </div>
+      </div>
+
+      <!-- Font Size Section -->
+      <div class="theme-section">
+        <h2 class="theme-section__title">
+          <span>📝</span> <span data-i18n="theme_fontsize_title">Tamaño de Texto</span>
+        </h2>
+        <div class="theme-options">
+          <label class="theme-option">
+            <input type="radio" name="fontsize" value="small" class="theme-option__input">
+            <div class="theme-option__card">
+              <div class="theme-option__preview" style="background: linear-gradient(135deg, var(--bg-secondary), var(--bg-primary));">
+                <div style="font-size: 0.85rem; color: var(--text-primary);">Aa</div>
+              </div>
+              <div class="theme-option__name" data-i18n="theme_fontsize_small">Pequeño</div>
+              <p class="theme-option__description" data-i18n="theme_fontsize_small_desc">
+                Compacto y eficiente. Más contenido visible en pantalla.
+              </p>
+            </div>
+          </label>
+
+          <label class="theme-option">
+            <input type="radio" name="fontsize" value="medium" class="theme-option__input" checked>
+            <div class="theme-option__card">
+              <div class="theme-option__badge" data-i18n="theme_badge_current">✓ Actual</div>
+              <div class="theme-option__preview" style="background: linear-gradient(135deg, var(--bg-secondary), var(--bg-primary));">
+                <div style="font-size: 1.2rem; color: var(--text-primary);">Aa</div>
+              </div>
+              <div class="theme-option__name" data-i18n="theme_fontsize_medium">Mediano</div>
+              <p class="theme-option__description" data-i18n="theme_fontsize_medium_desc">
+                Equilibrio perfecto entre legibilidad y espacio. Recomendado.
+              </p>
+            </div>
+          </label>
+
+          <label class="theme-option">
+            <input type="radio" name="fontsize" value="large" class="theme-option__input">
+            <div class="theme-option__card">
+              <div class="theme-option__preview" style="background: linear-gradient(135deg, var(--bg-secondary), var(--bg-primary));">
+                <div style="font-size: 1.5rem; color: var(--text-primary);">Aa</div>
+              </div>
+              <div class="theme-option__name" data-i18n="theme_fontsize_large">Grande</div>
+              <p class="theme-option__description" data-i18n="theme_fontsize_large_desc">
+                Máxima legibilidad. Ideal para lectura prolongada o accesibilidad.
+              </p>
+            </div>
+          </label>
+        </div>
+      </div>
+
+      <button class="save-button" onclick="saveThemeSettings()">
+        <span>💾</span> <span data-i18n="theme_save">Guardar Configuración</span>
+      </button>
+    </div>
+  </div>
+
+  <script>
+    // Load saved theme settings
+    function loadThemeSettings() {
+      const savedTheme = localStorage.getItem('theme') || 'light';
+      const savedFontSize = localStorage.getItem('fontSize') || 'medium';
+
+      document.querySelector(`input[name="theme"][value="${savedTheme}"]`).checked = true;
+      document.querySelector(`input[name="fontsize"][value="${savedFontSize}"]`).checked = true;
+    }
+
+    // Save theme settings
+    function saveThemeSettings() {
+      const theme = document.querySelector('input[name="theme"]:checked').value;
+      const fontSize = document.querySelector('input[name="fontsize"]:checked').value;
+
+      // Check if dark mode is selected (not yet available)
+      if (theme === 'dark') {
+        alert('🌙 El modo oscuro estará disponible próximamente. Por ahora, se mantendrá el modo claro.');
+        return;
+      }
+
+      localStorage.setItem('theme', theme);
+      localStorage.setItem('fontSize', fontSize);
+
+      // Apply font size
+      document.documentElement.style.fontSize = {
+        small: '14px',
+        medium: '16px',
+        large: '18px'
+      }[fontSize];
+
+      // Show success message
+      const button = document.querySelector('.save-button');
+      const buttonText = button.querySelector('span[data-i18n="theme_save"]');
+      const originalText = buttonText.textContent;
+      buttonText.textContent = window.i18n ? window.i18n.t('theme_saved') : '✅ Guardado correctamente';
+      button.style.background = '#22c55e';
+
+      setTimeout(() => {
+        buttonText.textContent = originalText;
+        button.style.background = '';
+      }, 2000);
+
+      // Track in analytics
+      if (window.Analytics) {
+        window.Analytics.trackEvent('theme_changed', {
+          theme: theme,
+          fontSize: fontSize
+        });
+      }
+    }
+
+    // Load settings on page load
+    window.addEventListener('DOMContentLoaded', loadThemeSettings);
+  </script>
+</body>
+</html>

@@ -1,0 +1,311 @@
+═══════════════════════════════════════════════════════════════════════
+  🔍 COMPARACIÓN: Archivo Correcto vs Archivo que Subiste
+═══════════════════════════════════════════════════════════════════════
+
+PROBLEMA DETECTADO:
+-------------------
+Has subido archivos de la versión ANTIGUA del proyecto
+El CSS carga correctamente porque SÍ subiste ese archivo bien
+Pero el HTML que subiste es de la versión vieja ("Black Friday Tech")
+
+
+═══════════════════════════════════════════════════════════════════════
+  ❌ LO QUE VES EN TU SITIO (INCORRECTO)
+═══════════════════════════════════════════════════════════════════════
+
+URL: https://dealtech365.com
+Header muestra: "Black Friday Tech"
+Estilo: Sin CSS, página en blanco con texto negro
+Problema: Archivo index.html de versión antigua
+
+
+═══════════════════════════════════════════════════════════════════════
+  ✅ LO QUE DEBERÍA VER (CORRECTO)
+═══════════════════════════════════════════════════════════════════════
+
+URL: https://dealtech365.com
+Header debe mostrar: "DealTech365"
+Estilo: Fondo negro, texto blanco, acentos verdes (#22C55E)
+Diseño: Moderno, responsive, profesional
+
+
+═══════════════════════════════════════════════════════════════════════
+  📄 ARCHIVO CORRECTO (deploy-ready/index.html)
+═══════════════════════════════════════════════════════════════════════
+
+Línea 17:
+<title>DealTech365 - Las Mejores Ofertas en Tecnología Todo el Año</title>
+         ^^^^^^^^^^^
+         CORRECTO
+
+Línea 65:
+<link rel="stylesheet" href="css/styles.min.css">
+                             ^^^^^^^^^^^^^^^^^^
+                             RUTA CORRECTA
+
+Línea 79:
+"name": "DealTech365",
+         ^^^^^^^^^^^
+         CORRECTO
+
+
+═══════════════════════════════════════════════════════════════════════
+  📄 ARCHIVO INCORRECTO (El que subiste)
+═══════════════════════════════════════════════════════════════════════
+
+Título probable:
+<title>Black Friday Tech - Ofertas...</title>
+        ^^^^^^^^^^^^^^^^^
+        INCORRECTO (versión antigua)
+
+CSS link probable:
+<link rel="stylesheet" href="css/styles.css">  ← Sin .min
+O tal vez:
+<link rel="stylesheet" href="styles.css">      ← Ruta incorrecta
+
+
+═══════════════════════════════════════════════════════════════════════
+  🔎 CÓMO VERIFICAR QUÉ SUBISTE
+═══════════════════════════════════════════════════════════════════════
+
+EN CPANEL FILE MANAGER:
+
+1. Ve a: public_html/
+2. Click derecho en: index.html
+3. Selecciona: "View" o "Edit"
+4. Busca la línea 17 (o busca <title>)
+
+SI DICE:
+   <title>Black Friday Tech...    ← INCORRECTO, necesitas resubir
+
+SI DICE:
+   <title>DealTech365...          ← CORRECTO, el problema es otro
+
+
+═══════════════════════════════════════════════════════════════════════
+  📁 ARCHIVOS QUE DEBES SUBIR
+═══════════════════════════════════════════════════════════════════════
+
+UBICACIÓN EN TU PC:
+C:\BLACK FRIDAY EVERYDAY\deploy-ready\
+
+CONTENIDO (40 archivos, 0.26 MB):
+
+ROOT:
+  ✅ index.html              (HTML principal - CRÍTICO)
+  ✅ sitemap.xml
+  ✅ robots.txt
+  ✅ manifest.json
+  ✅ .htaccess
+  ✅ favicon.ico
+
+CARPETAS:
+  ✅ css/
+     └─ styles.min.css       (20.29 KB)
+
+  ✅ js/
+     ├─ deals.min.js         (18.74 KB)
+     ├─ region.min.js        (3.58 KB)
+     ├─ cookie-consent.min.js (5.97 KB)
+     └─ analytics.min.js     (2.73 KB)
+
+  ✅ images/
+     ├─ logo.svg
+     ├─ icon-192x192.png
+     ├─ icon-512x512.png
+     ├─ favicon-16x16.png
+     ├─ favicon-32x32.png
+     ├─ apple-touch-icon.png
+     ├─ og-image.png
+     └─ (más imágenes)
+
+  ✅ pages/
+     ├─ favorites.html
+     ├─ notifications.html
+     ├─ contact.html
+     ├─ privacy-policy.html
+     ├─ terms.html
+     └─ affiliate-disclosure.html
+
+  ✅ blog/
+     ├─ laptops-black-friday-2025.html
+     ├─ gadgets-imprescindibles-2025.html
+     ├─ auriculares-premium-descuento.html
+     ├─ smartphones-cual-comprar.html
+     ├─ top-accesorios-gaming.html
+     └─ consejos-black-friday.html
+
+
+═══════════════════════════════════════════════════════════════════════
+  ⚠️  NO SUBAS ESTOS ARCHIVOS
+═══════════════════════════════════════════════════════════════════════
+
+❌ index.html (del root del proyecto - versión desarrollo)
+❌ index.production.html (este YA está renombrado en deploy-ready/)
+❌ css/styles.css (versión sin minificar)
+❌ js/deals.js (versión sin minificar)
+❌ Archivos .backup
+❌ Carpeta node_modules/
+❌ Archivos de documentación (.md, .txt)
+❌ Scripts .js del root
+
+
+═══════════════════════════════════════════════════════════════════════
+  ✅ SOLUCIÓN RÁPIDA (3 PASOS)
+═══════════════════════════════════════════════════════════════════════
+
+PASO 1: Borrar todo en cPanel
+   → File Manager → public_html
+   → Seleccionar TODO (Ctrl+A)
+   → Delete
+
+PASO 2: Subir archivos correctos
+   → Abrir carpeta: C:\BLACK FRIDAY EVERYDAY\deploy-ready\
+   → Seleccionar TODO dentro de deploy-ready/
+   → Arrastrar y soltar en File Manager (public_html)
+   → Esperar a que termine (5-10 min)
+
+PASO 3: Limpiar cache y probar
+   → Navegador: Ctrl + Shift + Delete
+   → Borrar "Imágenes y archivos en caché"
+   → Abrir en modo incógnito: https://dealtech365.com
+   → Verificar que dice "DealTech365" y CSS carga
+
+
+═══════════════════════════════════════════════════════════════════════
+  🎯 VERIFICACIÓN DESPUÉS DE SUBIR
+═══════════════════════════════════════════════════════════════════════
+
+VERIFICA EN EL NAVEGADOR:
+
+1. URL: https://dealtech365.com
+   ✅ Título de pestaña: "DealTech365 - Las Mejores Ofertas..."
+   ❌ Si dice: "Black Friday Tech" → Archivo incorrecto
+
+2. Header del sitio:
+   ✅ Debe decir: "DealTech365"
+   ❌ Si dice: "Black Friday Tech" → Archivo incorrecto
+
+3. Diseño visual:
+   ✅ Fondo negro (#000000)
+   ✅ Texto blanco
+   ✅ Botones verdes (#22C55E)
+   ✅ Diseño moderno
+   ❌ Si es texto negro sobre blanco → CSS no carga
+
+4. Consola (F12):
+   ✅ Sin errores 404
+   ✅ Sin errores de carga de CSS
+   ❌ Si hay errores → Revisa rutas
+
+
+═══════════════════════════════════════════════════════════════════════
+  📊 COMPARACIÓN DE CARPETAS
+═══════════════════════════════════════════════════════════════════════
+
+❌ NO SUBIR DESDE AQUÍ:
+C:\BLACK FRIDAY EVERYDAY\
+├── index.html                  ← DESARROLLO (no subir)
+├── index.production.html       ← Este ya está renombrado
+├── css/styles.css              ← NO minificado (no subir)
+├── js/deals.js                 ← NO minificado (no subir)
+└── ...
+
+✅ SUBIR DESDE AQUÍ:
+C:\BLACK FRIDAY EVERYDAY\deploy-ready\
+├── index.html                  ← YA renombrado, optimizado
+├── css/styles.min.css          ← Minificado
+├── js/deals.min.js             ← Minificado
+└── ...                         ← TODO optimizado
+
+
+═══════════════════════════════════════════════════════════════════════
+  💡 POR QUÉ EL CSS CARGA DIRECTAMENTE PERO NO EN LA PÁGINA
+═══════════════════════════════════════════════════════════════════════
+
+SITUACIÓN ACTUAL:
+
+1. ✅ css/styles.min.css EXISTE en el servidor
+   → Por eso carga cuando accedes directamente:
+   → https://dealtech365.com/css/styles.min.css
+
+2. ❌ index.html es de versión ANTIGUA
+   → Probablemente busca: css/styles.css (sin .min)
+   → O tiene una ruta diferente
+   → O el <link> tag está mal
+
+3. RESULTADO:
+   → El archivo CSS existe
+   → Pero el HTML no lo encuentra
+   → Porque el HTML busca otro archivo o otra ruta
+
+
+ANALOGÍA:
+---------
+Es como si el CSS fuera un libro que SÍ está en la biblioteca,
+pero el índice (HTML) tiene la referencia incorrecta al libro.
+
+El libro existe (CSS en servidor) ✅
+El índice es viejo (HTML de versión antigua) ❌
+Por eso no encuentra el libro ❌
+
+
+═══════════════════════════════════════════════════════════════════════
+  🎉 RESULTADO ESPERADO DESPUÉS DEL FIX
+═══════════════════════════════════════════════════════════════════════
+
+Cuando abras https://dealtech365.com verás:
+
+🎨 DISEÑO:
+   ✅ Fondo negro elegante
+   ✅ Texto blanco limpio
+   ✅ Botones verdes (#22C55E)
+   ✅ Gradientes suaves
+   ✅ Sombras profesionales
+   ✅ Animaciones suaves
+
+📱 RESPONSIVE:
+   ✅ Se adapta a móvil
+   ✅ Menú hamburguesa en móvil
+   ✅ Grid de productos responsive
+
+🏷️ BRANDING:
+   ✅ Header: "DealTech365"
+   ✅ Footer: "DealTech365"
+   ✅ Título de pestaña: "DealTech365"
+   ✅ Sin referencias a "Black Friday Tech"
+
+⚡ FUNCIONALIDAD:
+   ✅ Filtros funcionan
+   ✅ Búsqueda funciona
+   ✅ Links funcionan
+   ✅ Favoritos funcionan
+   ✅ Cookie consent aparece
+
+
+═══════════════════════════════════════════════════════════════════════
+  📞 SI NECESITAS AYUDA
+═══════════════════════════════════════════════════════════════════════
+
+1. Lee: SOLUCION-CSS-NO-CARGA.md
+   → Guía paso a paso detallada
+
+2. Verifica: Este archivo (COMPARACION-ARCHIVOS.txt)
+   → Para entender qué está mal
+
+3. Checklist: BANA-HOSTING-CHECKLIST.txt
+   → Para no olvidar ningún paso
+
+
+═══════════════════════════════════════════════════════════════════════
+
+                    🎯 RESUMEN: ¿QUÉ HACER?
+
+            1. Borra todo en public_html
+            2. Sube TODO desde deploy-ready/
+            3. Limpia cache del navegador
+            4. Prueba en modo incógnito
+
+                 ⏱️  Tiempo: 20 minutos
+
+═══════════════════════════════════════════════════════════════════════

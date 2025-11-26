@@ -1,0 +1,32 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(for file in \"c:\\BLACK FRIDAY EVERYDAY\\pages\"/*.html)",
+      "Bash(do grep -n \"styles\\.css\" \"$file\")",
+      "Bash(done)",
+      "Bash(start \"c:\\BLACK FRIDAY EVERYDAY\\test-deals.html\")",
+      "Bash(for file in \"c:\\Dealtech365\\pages\"/*.html)",
+      "Bash(do grep -l \"💎 DealTech365\" \"$file\")",
+      "Bash(npx postcss:*)",
+      "Bash(start \"c:\\Dealtech365\\index.html\")",
+      "Bash(start \"c:\\Dealtech365\\generate-favicon.html\")",
+      "Bash(start \"c:\\Dealtech365\\auto-generate-favicon.html\")",
+      "Bash(echo:*)",
+      "Bash(tree:*)",
+      "Bash(start \"c:\\Dealtech365\\automation\\admin-dashboard.html\")",
+      "Bash(npm --version:*)",
+      "Bash(npm install:*)",
+      "Bash(test -f:*)",
+      "Bash(npm run scrape:*)",
+      "Bash(cat:*)",
+      "Bash(dir:*)",
+      "Bash(npm run sync-web:*)",
+      "Bash(node -c:*)",
+      "Bash(node -e:*)",
+      "Bash(start \"c:\\Dealtech365\\test-deals-simple.html\")",
+      "Bash(start \"c:\\Dealtech365\\debug-deals.html\")"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

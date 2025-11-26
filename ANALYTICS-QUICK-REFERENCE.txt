@@ -1,0 +1,330 @@
+═══════════════════════════════════════════════════════════════════════
+  📊 ANALYTICS - REFERENCIA RÁPIDA
+═══════════════════════════════════════════════════════════════════════
+
+🎯 OBJETIVO:
+Trackear el comportamiento de usuarios y medir el éxito de tu sitio de
+afiliados DealTech365.
+
+═══════════════════════════════════════════════════════════════════════
+  🚀 CONFIGURACIÓN INICIAL (5 MINUTOS)
+═══════════════════════════════════════════════════════════════════════
+
+1. OBTENER MEASUREMENT ID:
+   → Ve a: https://analytics.google.com
+   → Admin → Data Streams → Web
+   → Copia: G-XXXXXXXXXX
+
+2. CONFIGURAR EN TU CÓDIGO:
+   → Abre: js/analytics.js
+   → Línea 20: GA4_MEASUREMENT_ID = 'G-TU-ID-AQUI'
+   → Guarda
+
+3. RECONSTRUIR:
+   → Ejecuta: npm run build
+
+4. VERIFICAR:
+   → Abre tu sitio
+   → F12 → Console
+   → Acepta cookies
+   → Verifica: "Google Analytics 4 initialized successfully"
+
+═══════════════════════════════════════════════════════════════════════
+  📝 API - USO EN TU CÓDIGO
+═══════════════════════════════════════════════════════════════════════
+
+TRACK PRODUCT CLICK (Affiliate Link):
+──────────────────────────────────────
+Analytics.trackProductClick(product, 'amazon');
+
+Ejemplo:
+  const product = {
+    name: 'MacBook Air M2',
+    category: 'laptops',
+    basePrice: 1199,
+    discount: 25,
+    asin: 'B0B3C2R8MP'
+  };
+  Analytics.trackProductClick(product, 'amazon');
+
+
+TRACK SEARCH:
+─────────────
+Analytics.trackSearch(searchTerm, resultsCount);
+
+Ejemplo:
+  Analytics.trackSearch('macbook', 5);
+
+
+TRACK FILTER:
+─────────────
+Analytics.trackFilter(filterType, filterValue);
+
+Ejemplo:
+  Analytics.trackFilter('category', 'laptops');
+  Analytics.trackFilter('price', '500-1000');
+
+
+TRACK NEWSLETTER SIGNUP:
+────────────────────────
+Analytics.trackNewsletterSignup(email, source);
+
+Ejemplo:
+  Analytics.trackNewsletterSignup('user@example.com', 'footer');
+
+
+TRACK ADD TO WISHLIST:
+──────────────────────
+Analytics.trackAddToWishlist(product);
+
+Ejemplo:
+  Analytics.trackAddToWishlist(product);
+
+
+TRACK REMOVE FROM WISHLIST:
+───────────────────────────
+Analytics.trackRemoveFromWishlist(product);
+
+Ejemplo:
+  Analytics.trackRemoveFromWishlist(product);
+
+
+TRACK CUSTOM EVENT:
+───────────────────
+Analytics.track(eventName, eventParams);
+
+Ejemplo:
+  Analytics.track('promo_clicked', {
+    promo_name: 'Black Friday Banner',
+    promo_location: 'homepage'
+  });
+
+
+═══════════════════════════════════════════════════════════════════════
+  🎨 EVENTOS AUTOMÁTICOS (No requieren código)
+═══════════════════════════════════════════════════════════════════════
+
+✅ Page views              → Al cargar cada página
+✅ Scroll depth             → 25%, 50%, 75%, 90%, 100%
+✅ Time on page             → 10s, 30s, 60s, 120s, 300s
+✅ Outbound links           → Clicks en links externos
+✅ UTM parameters           → Tracking de campañas
+✅ Performance metrics      → Velocidad de carga
+✅ Error tracking           → Errores de JavaScript
+✅ Session tracking         → Duración y engagement
+
+═══════════════════════════════════════════════════════════════════════
+  📊 MÉTRICAS CLAVE EN GA4
+═══════════════════════════════════════════════════════════════════════
+
+VER EN TIEMPO REAL:
+───────────────────
+GA4 → Informes → Tiempo real
+
+Verás:
+  • Usuarios activos ahora
+  • Páginas que están viendo
+  • Eventos que se disparan
+  • Ubicación geográfica
+
+EVENTOS IMPORTANTES:
+────────────────────
+  • affiliate_click        → Clicks en "Ver oferta"
+  • sign_up                → Suscripciones a newsletter
+  • select_item            → Producto clickeado
+  • add_to_wishlist        → Agregado a favoritos
+  • search                 → Búsquedas realizadas
+
+MÉTRICAS DIARIAS:
+─────────────────
+  • Usuarios               → Cuántos visitantes
+  • Sesiones               → Cuántas visitas
+  • Affiliate clicks       → Cuántos clicks en ofertas
+  • Revenue estimado       → Ingresos estimados
+  • Newsletter signups     → Nuevos suscriptores
+
+═══════════════════════════════════════════════════════════════════════
+  🔥 TOP 5 INFORMES A REVISAR
+═══════════════════════════════════════════════════════════════════════
+
+1. TIEMPO REAL:
+   GA4 → Informes → Tiempo real
+   Verifica que eventos se estén trackeando
+
+2. TOP PRODUCTS:
+   GA4 → Explorar → Exploración libre
+   Dimensión: item_name
+   Métrica: event_count (select_item)
+   Ver: Productos más clickeados
+
+3. AFFILIATE REVENUE:
+   GA4 → Explorar → Exploración libre
+   Dimensión: product_category, retailer
+   Métrica: estimated_revenue
+   Ver: Ingresos estimados por categoría/retailer
+
+4. CONVERSION FUNNEL:
+   GA4 → Explorar → Análisis de embudo
+   Pasos: page_view → view_item → affiliate_click → sign_up
+   Ver: % de usuarios que completa cada paso
+
+5. ENGAGEMENT:
+   GA4 → Informes → Engagement
+   Ver: Promedio de engagement, scroll, tiempo en página
+
+═══════════════════════════════════════════════════════════════════════
+  ⚡ COMANDOS RÁPIDOS
+═══════════════════════════════════════════════════════════════════════
+
+ACTUALIZAR ANALYTICS:
+  node upgrade-to-enhanced-analytics.js    # Upgrade a versión mejorada
+
+RECONSTRUIR SITIO:
+  npm run build                            # Minifica incluyendo analytics
+
+VERIFICAR ARCHIVOS:
+  npm run verify                           # Verifica que todo está OK
+
+DEPLOYMENT:
+  npm run deploy                           # Build + verify + prepare
+
+═══════════════════════════════════════════════════════════════════════
+  🐛 TROUBLESHOOTING
+═══════════════════════════════════════════════════════════════════════
+
+PROBLEMA: Eventos no aparecen en GA4
+SOLUCIÓN:
+  1. Verifica Tiempo Real (aparecen instantáneamente)
+  2. Abre consola (F12) y verifica logs
+  3. Verifica Measurement ID es correcto
+  4. Verifica que aceptaste cookies analíticas
+
+PROBLEMA: "Analytics is not defined"
+SOLUCIÓN:
+  1. Verifica que analytics.min.js está cargado
+  2. Verifica en consola si hay errores de carga
+  3. Verifica que el script está antes que deals.js
+
+PROBLEMA: Datos históricos no aparecen
+SOLUCIÓN:
+  Los datos históricos tardan 24-48 horas en procesarse.
+  Usa "Tiempo Real" para verificación inmediata.
+
+PROBLEMA: Revenue estimation no funciona
+SOLUCIÓN:
+  1. Configura dimensiones personalizadas en GA4
+  2. Admin → Custom definitions
+  3. Crea "estimated_revenue" como número
+  4. Espera 24 horas para que procese
+
+═══════════════════════════════════════════════════════════════════════
+  📚 DOCUMENTACIÓN COMPLETA
+═══════════════════════════════════════════════════════════════════════
+
+GUÍA BÁSICA:
+  GA4-SETUP-GUIDE.md
+  → Setup inicial, configuración básica
+
+GUÍA MEJORADA:
+  ANALYTICS-ENHANCED-GUIDE.md
+  → Features avanzadas, tracking completo
+
+CONFIGURACIÓN DASHBOARD:
+  analytics-dashboard-config.json
+  → Custom dimensions, metrics, audiences
+
+UPGRADE SCRIPT:
+  upgrade-to-enhanced-analytics.js
+  → Migrar de básico a mejorado
+
+═══════════════════════════════════════════════════════════════════════
+  💰 ESTIMACIÓN DE INGRESOS
+═══════════════════════════════════════════════════════════════════════
+
+El sistema estima ingresos de afiliados automáticamente:
+
+TASAS POR DEFECTO (Configurables en línea 30-35 de analytics.js):
+  Laptops:      2.0%
+  Smartphones:  1.5%
+  Audio:        3.0%
+  Gaming:       2.5%
+
+CÁLCULO:
+  Revenue = Precio del producto × Tasa de comisión
+
+EJEMPLO:
+  MacBook Air M2: $899 (con descuento)
+  Categoría: Laptops (2%)
+  Revenue estimado: $899 × 0.02 = $17.98 por click
+
+AJUSTAR TASAS:
+  Abre: js/analytics.js
+  Líneas 30-35: Cambia las tasas a tus valores reales
+  Guarda y rebuild: npm run build
+
+═══════════════════════════════════════════════════════════════════════
+  📱 MOBILE TRACKING
+═══════════════════════════════════════════════════════════════════════
+
+Descarga la app de Google Analytics:
+  iOS: App Store → "Google Analytics"
+  Android: Play Store → "Google Analytics"
+
+Verás en tiempo real:
+  • Usuarios activos
+  • Eventos
+  • Páginas más vistas
+  • Métricas clave
+
+Configura notificaciones para:
+  • Picos de tráfico
+  • Nuevas conversiones
+  • Alertas personalizadas
+
+═══════════════════════════════════════════════════════════════════════
+  🎯 METAS SUGERIDAS
+═══════════════════════════════════════════════════════════════════════
+
+MES 1:
+  • 1,000+ visitantes
+  • 50+ affiliate clicks
+  • 20+ newsletter signups
+  • $50+ revenue estimado
+
+MES 3:
+  • 5,000+ visitantes
+  • 250+ affiliate clicks
+  • 100+ newsletter signups
+  • $250+ revenue estimado
+
+MES 6:
+  • 10,000+ visitantes
+  • 500+ affiliate clicks
+  • 200+ newsletter signups
+  • $500+ revenue estimado
+
+═══════════════════════════════════════════════════════════════════════
+  ✅ CHECKLIST SETUP
+═══════════════════════════════════════════════════════════════════════
+
+[ ] Cuenta de Google Analytics creada
+[ ] Measurement ID obtenido
+[ ] ID configurado en analytics.js
+[ ] Tasas de comisión configuradas
+[ ] Sitio reconstruido (npm run build)
+[ ] Verificado en consola (F12)
+[ ] Eventos verificados en Tiempo Real
+[ ] Custom dimensions creadas en GA4
+[ ] Conversion events marcados
+[ ] Alertas configuradas
+[ ] Dashboard creado en Looker Studio
+[ ] App móvil descargada
+
+═══════════════════════════════════════════════════════════════════════
+
+¿Necesitas ayuda? Consulta:
+  • ANALYTICS-ENHANCED-GUIDE.md - Guía completa
+  • GA4-SETUP-GUIDE.md - Setup básico
+  • https://support.google.com/analytics/ - Google Help
+
+═══════════════════════════════════════════════════════════════════════

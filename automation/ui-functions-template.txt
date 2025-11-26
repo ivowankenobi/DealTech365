@@ -1,0 +1,198 @@
+// Initialize deals on page load
+let allDeals = [];
+
+document.addEventListener('DOMContentLoaded', () => {
+  // Get user region
+  const userRegion = window.getUserRegion ? window.getUserRegion() : {
+    isEurope: true,
+    currency: 'EUR',
+    currencySymbol: '€'
+  };
+
+  // Generate deals (Try service first, fallback to local generation)
+  if (window.dealsService) {
+    // Show loading state if needed, or just wait
+    window.dealsService.getAllDeals(userRegion.isEurope ? 'EU' : 'US').then(result => {
+      allDeals = result.deals;
+      displayDeals();
+
+      // Update favorite buttons after deals are loaded
+      setTimeout(() => {
+        updateFavoriteButtons();
+      }, 100);
+    });
+  } else {
+    allDeals = generateDeals(userRegion);
+    displayDeals();
+  }
+
+  // Update favorite buttons after a short delay to ensure DOM is ready
+  setTimeout(() => {
+    updateFavoriteButtons();
+    console.log('✅ Favorite buttons updated on page load');
+  }, 100);
+
+  // Also update when deals are displayed
+  const dealsGrid = document.getElementById('dealsGrid');
+  if (dealsGrid) {
+    const observer = new MutationObserver(() => {
+      updateFavoriteButtons();
+    });
+    observer.observe(dealsGrid, { childList: true, subtree: true });
+  }
+});
+
+// Display deals function
+function displayDeals(dealsToShow = null) {
+  const container = document.getElementById('dealsGrid');
+  if (!container) return;
+
+  const deals = dealsToShow || allDeals;
+
+  if (!deals || deals.length === 0) {
+    container.innerHTML = '<p style="text-align:center;padding:40px;color:#666;">No se encontraron productos.</p>';
+    return;
+  }
+
+  container.innerHTML = deals.map(deal => `
+    <div class="deal-card" data-category="${deal.category}" data-brand="${deal.brand.toLowerCase()}">
+      <div class="deal-image" style="background-image: url('${deal.image}')">
+        <div class="deal-badge">${deal.discount}% OFF</div>
+      </div>
+      <div class="deal-content">
+        <div class="deal-header">
+          <h3 class="deal-title">${deal.name}</h3>
+          <div class="deal-store-badge" data-store="amazon">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon" style="height: 14px; width: auto; vertical-align: middle;">
+          </div>
+        </div>
+
+        <div class="deal-content-main">
+          <p class="deal-brand">${deal.brand}</p>
+
+          <div class="deal-specs">
+            ${Object.entries(deal.specs).map(([key, value]) =>
+    `<span class="spec-item"><strong>${key}:</strong> ${value}</span>`
+  ).join('')}
+          </div>
+        </div>
+
+        <div class="deal-price">
+          <span class="deal-price-current">${deal.currencySymbol}${deal.finalPrice}</span>
+          <span class="deal-price-original">${deal.currencySymbol}${deal.basePrice}</span>
+        </div>
+
+        <div class="deal-actions">
+          <a href="${deal.affiliateLink}"
+             target="_blank"
+             rel="noopener noreferrer"
+             class="deal-btn-premium">
+            Ver oferta
+          </a>
+          <button class="deal-btn-favorite" onclick="toggleFavorite('${deal.asin}')" aria-label="Add to favorites">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  `).join('');
+}
+
+// Favorites functionality
+function toggleFavorite(asin) {
+  const favorites = JSON.parse(localStorage.getItem('favorites') || '[]');
+  const index = favorites.indexOf(asin);
+
+  if (index > -1) {
+    favorites.splice(index, 1);
+  } else {
+    favorites.push(asin);
+  }
+
+  localStorage.setItem('favorites', JSON.stringify(favorites));
+  updateFavoriteButtons();
+
+  // Sync with Firebase if user is logged in
+  if (window.authSystem && window.authSystem.currentUser) {
+    window.authSystem.saveFavorite(asin);
+  }
+}
+
+function updateFavoriteButtons() {
+  const favorites = JSON.parse(localStorage.getItem('favorites') || '[]');
+  document.querySelectorAll('.deal-btn-favorite').forEach(btn => {
+    const card = btn.closest('.deal-card');
+    const asin = card.querySelector('.deal-btn-premium').href.match(/\/dp\/([A-Z0-9]+)/)[1];
+    if (favorites.includes(asin)) {
+      btn.classList.add('active');
+    } else {
+      btn.classList.remove('active');
+    }
+  });
+}
+
+// Filter and search functions
+function filterByCategory(category) {
+  if (category === 'all') {
+    displayDeals(allDeals);
+  } else {
+    const filtered = allDeals.filter(deal => deal.category === category);
+    displayDeals(filtered);
+  }
+}
+
+function filterByBrand(brand) {
+  if (brand === 'all') {
+    displayDeals(allDeals);
+  } else {
+    const filtered = allDeals.filter(deal => deal.brand.toLowerCase() === brand.toLowerCase());
+    displayDeals(filtered);
+  }
+}
+
+function searchDeals(query) {
+  const lowerQuery = query.toLowerCase();
+  const filtered = allDeals.filter(deal =>
+    deal.name.toLowerCase().includes(lowerQuery) ||
+    deal.brand.toLowerCase().includes(lowerQuery) ||
+    Object.values(deal.specs).some(spec =>
+      spec.toString().toLowerCase().includes(lowerQuery)
+    )
+  );
+  displayDeals(filtered);
+}
+
+function sortDeals(sortBy) {
+  let sorted = [...allDeals];
+
+  switch (sortBy) {
+    case 'price-asc':
+      sorted.sort((a, b) => a.finalPrice - b.finalPrice);
+      break;
+    case 'price-desc':
+      sorted.sort((a, b) => b.finalPrice - a.finalPrice);
+      break;
+    case 'discount':
+      sorted.sort((a, b) => b.discount - a.discount);
+      break;
+    case 'name':
+      sorted.sort((a, b) => a.name.localeCompare(b.name));
+      break;
+  }
+
+  displayDeals(sorted);
+}
+
+// Export for use in other scripts
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports = { DEAL_CATEGORIES, generateDeals };
+}
+
+// Make functions available globally for event listeners
+window.filterByCategory = filterByCategory;
+window.filterByBrand = filterByBrand;
+window.searchDeals = searchDeals;
+window.sortDeals = sortDeals;
+window.generateDeals = generateDeals;

@@ -1,0 +1,47 @@
+name: Automate Blog & Deploy
+
+on:
+  # Schedule: Mon, Wed, Fri at 10:00 AM UTC
+  schedule:
+    - cron: '0 10 * * 1,3,5'
+  # Allow manual trigger
+  workflow_dispatch:
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Generate Blog Post
+      run: |
+        # Randomly choose type: single, comparison, or top
+        TYPES=("single" "comparison" "top")
+        RANDOM_TYPE=${TYPES[$RANDOM % ${#TYPES[@]}]}
+        echo "Generating post type: $RANDOM_TYPE"
+        node scripts/auto-generate-post.js $RANDOM_TYPE
+
+    - name: Update Blog HTML
+      run: node scripts/generate-blog.js
+
+    - name: Commit and Push changes
+      run: |
+        git config --global user.name 'DealTech365 Bot'
+        git config --global user.email 'bot@dealtech365.com'
+        git add blog/posts/*.md blog/*.html blog/index.json
+        git commit -m "🤖 Auto-generated blog post [skip ci]" || echo "No changes to commit"
+        git push
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

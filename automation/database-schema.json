@@ -1,0 +1,235 @@
+{
+  "collections": {
+    "deals": {
+      "description": "Colección principal de ofertas - Compatible con estructura actual",
+      "fields": {
+        "id": {
+          "type": "string",
+          "description": "ID único autogenerado",
+          "required": true,
+          "indexed": true
+        },
+        "asin": {
+          "type": "string",
+          "description": "Amazon Standard Identification Number",
+          "required": true,
+          "indexed": true,
+          "unique": true
+        },
+        "name": {
+          "type": "string",
+          "description": "Nombre del producto",
+          "required": true
+        },
+        "brand": {
+          "type": "string",
+          "description": "Marca del producto",
+          "required": true,
+          "indexed": true
+        },
+        "category": {
+          "type": "string",
+          "description": "Categoría: laptops, audio, smartphones, gaming",
+          "required": true,
+          "indexed": true,
+          "enum": ["laptops", "audio", "smartphones", "gaming"]
+        },
+        "basePrice": {
+          "type": "number",
+          "description": "Precio base sin descuento",
+          "required": true
+        },
+        "currentPrice": {
+          "type": "number",
+          "description": "Precio actual (calculado automáticamente)",
+          "required": true
+        },
+        "discount": {
+          "type": "number",
+          "description": "Porcentaje de descuento",
+          "required": true,
+          "min": 0,
+          "max": 100
+        },
+        "image": {
+          "type": "string",
+          "description": "URL de imagen del producto",
+          "required": true
+        },
+        "specs": {
+          "type": "object",
+          "description": "Especificaciones técnicas del producto",
+          "required": false,
+          "properties": {
+            "ram": "string",
+            "storage": "string",
+            "screen": "string",
+            "processor": "string",
+            "battery": "string",
+            "weight": "string"
+          }
+        },
+        "affiliateLinks": {
+          "type": "object",
+          "description": "Enlaces de afiliado por región",
+          "required": true,
+          "properties": {
+            "US": {
+              "amazon": "string"
+            },
+            "EU": {
+              "amazon": "string"
+            }
+          }
+        },
+        "active": {
+          "type": "boolean",
+          "description": "Si la oferta está activa",
+          "required": true,
+          "default": true,
+          "indexed": true
+        },
+        "featured": {
+          "type": "boolean",
+          "description": "Si es oferta destacada",
+          "required": false,
+          "default": false
+        },
+        "source": {
+          "type": "string",
+          "description": "Origen de la oferta: manual, scraper, api, affiliate_feed",
+          "required": true,
+          "enum": ["manual", "scraper", "api", "affiliate_feed"],
+          "indexed": true
+        },
+        "createdAt": {
+          "type": "timestamp",
+          "description": "Fecha de creación",
+          "required": true,
+          "indexed": true
+        },
+        "updatedAt": {
+          "type": "timestamp",
+          "description": "Última actualización",
+          "required": true
+        },
+        "lastPriceCheck": {
+          "type": "timestamp",
+          "description": "Última vez que se verificó el precio",
+          "required": false
+        },
+        "expiresAt": {
+          "type": "timestamp",
+          "description": "Fecha de expiración de la oferta (opcional)",
+          "required": false,
+          "indexed": true
+        },
+        "views": {
+          "type": "number",
+          "description": "Número de veces vista",
+          "default": 0
+        },
+        "clicks": {
+          "type": "number",
+          "description": "Número de clics en el enlace de afiliado",
+          "default": 0
+        },
+        "metadata": {
+          "type": "object",
+          "description": "Datos adicionales del scraper/API",
+          "required": false,
+          "properties": {
+            "scrapedFrom": "string",
+            "amazonUrl": "string",
+            "stockStatus": "string",
+            "rating": "number",
+            "reviewCount": "number"
+          }
+        }
+      }
+    },
+    "price_history": {
+      "description": "Histórico de precios para tracking",
+      "fields": {
+        "asin": {
+          "type": "string",
+          "required": true,
+          "indexed": true
+        },
+        "price": {
+          "type": "number",
+          "required": true
+        },
+        "discount": {
+          "type": "number",
+          "required": true
+        },
+        "timestamp": {
+          "type": "timestamp",
+          "required": true,
+          "indexed": true
+        },
+        "source": {
+          "type": "string",
+          "required": true
+        }
+      }
+    },
+    "scraper_logs": {
+      "description": "Logs de ejecuciones del scraper",
+      "fields": {
+        "executionId": {
+          "type": "string",
+          "required": true,
+          "indexed": true
+        },
+        "startedAt": {
+          "type": "timestamp",
+          "required": true
+        },
+        "completedAt": {
+          "type": "timestamp",
+          "required": false
+        },
+        "status": {
+          "type": "string",
+          "enum": ["running", "completed", "failed"],
+          "required": true
+        },
+        "productsScraped": {
+          "type": "number",
+          "default": 0
+        },
+        "productsAdded": {
+          "type": "number",
+          "default": 0
+        },
+        "productsUpdated": {
+          "type": "number",
+          "default": 0
+        },
+        "errors": {
+          "type": "array",
+          "items": "object"
+        }
+      }
+    }
+  },
+  "indexes": [
+    {
+      "collection": "deals",
+      "fields": ["active", "category", "createdAt"],
+      "description": "Query de ofertas activas por categoría ordenadas por fecha"
+    },
+    {
+      "collection": "deals",
+      "fields": ["asin"],
+      "description": "Búsqueda rápida por ASIN"
+    },
+    {
+      "collection": "price_history",
+      "fields": ["asin", "timestamp"],
+      "description": "Histórico de precios por producto"
+    }
+  ]
+}

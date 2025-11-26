@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Auto-Generar Favicons</title>
+</head>
+<body>
+    <h1>Generando favicons...</h1>
+    <canvas id="canvas" style="display: none;"></canvas>
+    <div id="status"></div>
+
+    <script>
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+        const status = document.getElementById('status');
+
+        function drawLogo(size) {
+            canvas.width = size;
+            canvas.height = size;
+            const center = size / 2;
+            const radius = size * 0.42;
+            const ringWidth = size * 0.08;
+
+            // Clear
+            ctx.clearRect(0, 0, size, size);
+
+            // Create gradient for ring
+            const gradient = ctx.createLinearGradient(0, 0, size, size);
+            gradient.addColorStop(0, '#2563EB');
+            gradient.addColorStop(0.5, '#3b82f6');
+            gradient.addColorStop(1, '#60a5fa');
+
+            // Draw ring
+            ctx.beginPath();
+            ctx.arc(center, center, radius, 0, Math.PI * 2);
+            ctx.strokeStyle = gradient;
+            ctx.lineWidth = ringWidth;
+            ctx.stroke();
+
+            // Draw "D"
+            ctx.font = `900 ${size * 0.5}px Arial, sans-serif`;
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+
+            const textGradient = ctx.createLinearGradient(0, 0, size, size);
+            textGradient.addColorStop(0, '#2563EB');
+            textGradient.addColorStop(1, '#3b82f6');
+
+            ctx.fillStyle = textGradient;
+            ctx.fillText('D', center, center);
+        }
+
+        async function generateAndDownload(size, filename) {
+            drawLogo(size);
+            const blob = await new Promise(resolve => canvas.toBlob(resolve, 'image/png'));
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = filename;
+            a.click();
+            URL.revokeObjectURL(url);
+            status.innerHTML += `<p>✅ ${filename} generado</p>`;
+        }
+
+        async function generateAll() {
+            status.innerHTML = '<p>Generando favicons...</p>';
+
+            await generateAndDownload(16, 'favicon-16x16.png');
+            await new Promise(r => setTimeout(r, 100));
+
+            await generateAndDownload(32, 'favicon-32x32.png');
+            await new Promise(r => setTimeout(r, 100));
+
+            await generateAndDownload(180, 'apple-touch-icon.png');
+            await new Promise(r => setTimeout(r, 100));
+
+            await generateAndDownload(192, 'android-chrome-192x192.png');
+            await new Promise(r => setTimeout(r, 100));
+
+            await generateAndDownload(512, 'android-chrome-512x512.png');
+
+            status.innerHTML += '<p><strong>✅ ¡Todos los favicons generados!</strong></p>';
+            status.innerHTML += '<p>Mueve los archivos descargados a: c:\\Dealtech365\\images\\</p>';
+        }
+
+        // Auto-start
+        window.onload = () => {
+            setTimeout(generateAll, 500);
+        };
+    </script>
+</body>
+</html>

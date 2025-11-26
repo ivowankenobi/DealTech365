@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DealTech365 - Minimal Test</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <main class="main-content">
+        <section class="deals">
+            <div class="container">
+                <h2>Ofertas Tech del Día</h2>
+
+                <div class="deals__filters">
+                    <button class="filter-btn active" data-category="all">Todas</button>
+                    <button class="filter-btn" data-category="audio">🎧 Audio</button>
+                    <button class="filter-btn" data-category="smartphones">📱 Smartphones</button>
+                </div>
+
+                <div id="dealsGrid" class="deals__grid">
+                    <p style="text-align:center;padding:40px;">Cargando ofertas...</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Mock getUserRegion
+        window.getUserRegion = function() {
+            return {
+                isEurope: true,
+                currency: 'EUR',
+                currencySymbol: '€'
+            };
+        };
+    </script>
+
+    <script src="js/deals.js?v=1764169461"></script>
+
+    <script>
+        // Debug output
+        setTimeout(() => {
+            console.log('=== DEBUG INFO ===');
+            console.log('DEAL_CATEGORIES:', typeof DEAL_CATEGORIES !== 'undefined' ? Object.keys(DEAL_CATEGORIES) : 'NOT DEFINED');
+            console.log('allDeals:', typeof allDeals !== 'undefined' ? allDeals.length : 'NOT DEFINED');
+            console.log('displayDeals:', typeof displayDeals);
+            console.log('dealsGrid innerHTML length:', document.getElementById('dealsGrid').innerHTML.length);
+        }, 2000);
+
+        // Filter buttons
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const category = this.dataset.category;
+                    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+
+                    if (typeof window.filterByCategory === 'function') {
+                        window.filterByCategory(category);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

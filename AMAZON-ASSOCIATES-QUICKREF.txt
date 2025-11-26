@@ -1,0 +1,187 @@
+═══════════════════════════════════════════════════════════════════════
+  📋 AMAZON ASSOCIATES - REFERENCIA RÁPIDA
+═══════════════════════════════════════════════════════════════════════
+
+🔗 REGISTRARSE:
+   España: https://afiliados.amazon.es
+   México: https://afiliados.amazon.com.mx
+   USA: https://affiliate-program.amazon.com
+
+   Datos necesarios:
+   ✅ Nombre sitio: DealTech365
+   ✅ URL: https://dealtech365.com
+   ✅ Descripción: Ofertas en tecnología
+   ✅ Categorías: Electrónica, Ordenadores
+
+═══════════════════════════════════════════════════════════════════════
+
+📝 OBTENER TU TAG:
+   1. Dashboard → Account Settings
+   2. Busca "Associate ID" o "Tag ID"
+   3. Copia (ejemplo: dealtech365-21)
+
+═══════════════════════════════════════════════════════════════════════
+
+⚡ ACTUALIZAR LINKS (AUTOMÁTICO):
+
+   # Mismo tag para US y EU:
+   node update-affiliate-tags.js dealtech365-21
+
+   # Tags diferentes:
+   node update-affiliate-tags.js dealtech365-20 dealtech365-21
+
+   # Después:
+   npm run build
+   npm run deploy:prepare
+   # Sube deploy-ready/
+
+═══════════════════════════════════════════════════════════════════════
+
+🔧 ACTUALIZAR LINKS (MANUAL):
+
+   1. Abre: js/deals.js
+
+   2. Busca:
+      amazon: 'https://www.amazon.com/dp/XXXXX?tag=blackfridaytech-20'
+
+   3. Reemplaza con:
+      amazon: 'https://www.amazon.com/dp/XXXXX?tag=TU-TAG-20'
+
+   4. Para EU agrega tag si no existe:
+      amazon: 'https://www.amazon.es/dp/XXXXX?tag=TU-TAG-21'
+
+   5. Guarda y ejecuta: npm run build
+
+═══════════════════════════════════════════════════════════════════════
+
+➕ AGREGAR NUEVOS PRODUCTOS:
+
+   1. Ve a producto en Amazon
+   2. Usa SiteStripe (barra superior) → "Get Link"
+   3. O agrega manualmente:
+      https://www.amazon.es/dp/B0XXXXXX?tag=TU-TAG-21
+
+   4. Agregar a deals.js:
+      {
+        name: 'Producto',
+        brand: 'Marca',
+        basePrice: 999,
+        discount: 20,
+        asin: 'B0XXXXXX',
+        affiliateLinks: {
+          US: {
+            amazon: 'https://amazon.com/dp/B0XX?tag=TU-TAG-20'
+          },
+          EU: {
+            amazon: 'https://amazon.es/dp/B0XX?tag=TU-TAG-21'
+          }
+        }
+      }
+
+═══════════════════════════════════════════════════════════════════════
+
+💰 COMISIONES (España):
+   📱 Electrónica: 1-4%
+   💻 Ordenadores: 1-3%
+   🎮 Videojuegos: 1-3%
+   📚 Libros: 5-10%
+
+═══════════════════════════════════════════════════════════════════════
+
+📊 TRACKEAR RESULTADOS:
+   → Dashboard Amazon Associates
+   → Clicks, conversiones, ganancias
+   → Google Analytics (ya integrado)
+   → Actualiza productos más vendidos
+
+═══════════════════════════════════════════════════════════════════════
+
+⚠️  REGLAS IMPORTANTES:
+   ❌ NO usar tus propios links
+   ❌ NO pedir a familia/amigos
+   ❌ NO en emails
+   ✅ SÍ en sitio web
+   ✅ SÍ en redes sociales (con disclosure)
+   ✅ SÍ comparativas y reseñas
+
+═══════════════════════════════════════════════════════════════════════
+
+📖 DOCUMENTACIÓN COMPLETA:
+   → GUIA-AMAZON-ASSOCIATES.md
+
+   Incluye:
+   - Registro paso a paso
+   - Actualización de links
+   - Generar links nuevos
+   - Tips y mejores prácticas
+   - Troubleshooting
+
+═══════════════════════════════════════════════════════════════════════
+
+🔗 EJEMPLO DE LINK DE AFILIADO:
+
+   Link normal de Amazon:
+   https://www.amazon.es/dp/B0CTKZ8R19
+
+   Con tu tag de afiliado:
+   https://www.amazon.es/dp/B0CTKZ8R19?tag=dealtech365-21
+                                          ↑
+                                    TU TAG AQUÍ
+
+═══════════════════════════════════════════════════════════════════════
+
+✅ CHECKLIST RÁPIDO:
+
+   [ ] Registrado en Amazon Associates
+   [ ] Cuenta aprobada (1-3 días)
+   [ ] Tag obtenido (ejemplo: dealtech365-21)
+   [ ] Links actualizados en deals.js
+   [ ] npm run build ejecutado
+   [ ] Sitio actualizado en servidor
+   [ ] Disclosure visible en sitio (ya está)
+   [ ] Dashboard de Amazon Associates configurado
+   [ ] Primeros productos promocionados
+
+═══════════════════════════════════════════════════════════════════════
+
+💡 TIPS RÁPIDOS:
+
+   1. Espera a que tu sitio esté LIVE antes de aplicar
+      (Amazon necesita revisar un sitio accesible)
+
+   2. Tus primeras 3 ventas deben ser en 180 días
+      (Promociona en redes sociales)
+
+   3. Cookie de Amazon dura 24 horas
+      (Usuario tiene 24h para comprar después del click)
+
+   4. Puedes crear múltiples Tracking IDs
+      (Para diferentes campañas: blog, social, email)
+
+   5. Disclosure legal ya está en tu sitio
+      (Footer + página dedicada)
+
+═══════════════════════════════════════════════════════════════════════
+
+🚀 WORKFLOW TÍPICO:
+
+   1. Encuentra producto en Amazon
+   2. Genera link con tu tag
+   3. Agrega a deals.js
+   4. npm run build
+   5. npm run deploy:prepare
+   6. Sube a servidor
+   7. Promociona en redes sociales
+   8. Trackea resultados en dashboard
+   9. Optimiza productos top
+
+═══════════════════════════════════════════════════════════════════════
+
+📞 AYUDA:
+
+   Guía completa: GUIA-AMAZON-ASSOCIATES.md
+   Script actualización: update-affiliate-tags.js
+   Soporte Amazon: afiliados-soporte@amazon.es
+   Dashboard: https://afiliados.amazon.es
+
+═══════════════════════════════════════════════════════════════════════

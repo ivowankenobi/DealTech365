@@ -1,0 +1,47 @@
+{
+  "name": "dealtech365",
+  "version": "1.0.0",
+  "description": "DealTech365 - Ofertas en tecnología todo el año",
+  "private": true,
+  "scripts": {
+    "minify:css": "cleancss -o css/styles.min.css css/styles.css",
+    "minify:js": "npm run minify:js:i18n && npm run minify:js:language && npm run minify:js:region && npm run minify:js:cookie && npm run minify:js:analytics && npm run minify:js:deals && npm run minify:js:carousel",
+    "minify:js:i18n": "terser js/i18n.js -o js/i18n.min.js -c -m",
+    "minify:js:language": "terser js/language-switcher.js -o js/language-switcher.min.js -c -m",
+    "minify:js:region": "terser js/region.js -o js/region.min.js -c -m",
+    "minify:js:cookie": "terser js/cookie-consent.js -o js/cookie-consent.min.js -c -m",
+    "minify:js:analytics": "terser js/analytics.js -o js/analytics.min.js -c -m",
+    "minify:js:analytics:enhanced": "terser js/analytics-enhanced.js -o js/analytics-enhanced.min.js -c -m",
+    "minify:js:deals": "terser js/deals.js -o js/deals.min.js -c -m",
+    "minify:js:carousel": "terser js/blog-carousel.js -o js/blog-carousel.min.js -c -m",
+    "minify": "npm run minify:css && npm run minify:js",
+    "build": "npm run minify",
+    "watch:css": "cleancss -o css/styles.min.css css/styles.css --watch",
+    "dev": "npm run watch:css",
+    "verify": "node verify-deployment.js",
+    "prebuild": "node verify-deployment.js || true",
+    "generate:icons": "node generate-icons.js",
+    "generate:optional": "node generate-optional-images.js",
+    "analytics:upgrade": "node upgrade-to-enhanced-analytics.js",
+    "deploy:prepare": "node prepare-deployment.js",
+    "deploy": "npm run build && npm run verify && npm run deploy:prepare"
+  },
+  "keywords": [
+    "dealtech365",
+    "tech-deals",
+    "affiliate",
+    "ecommerce",
+    "technology"
+  ],
+  "author": "DealTech365",
+  "license": "MIT",
+  "devDependencies": {
+    "clean-css-cli": "^5.6.3",
+    "front-matter": "^4.0.2",
+    "marked": "^17.0.1",
+    "terser": "^5.36.0"
+  },
+  "dependencies": {
+    "canvas": "^3.2.0"
+  }
+}

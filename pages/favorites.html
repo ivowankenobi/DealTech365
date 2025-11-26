@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mis Favoritos - DealTech365</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800;900&family=Archivo+Black&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.min.css?v=2.0">
+
+  <!-- Firebase JS SDK -->
+  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-analytics-compat.js"></script>
+
+  <!-- Initialize Firebase -->
+  <!-- Firebase Configuration -->
+  <script src="../js/firebase-config.js"></script>
+  <script>
+    window.initFirebase();
+  </script>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HEZ2Z57ZZ6"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-HEZ2Z57ZZ6');
+  </script>
+</head>
+
+<body>
+  <!-- Navigation Menu -->
+  <nav class="navbar">
+    <div class="navbar__container">
+      <div class="navbar__logo">
+        <a href="../index.html">
+          <div class="navbar__logo-icon">
+            <div class="navbar__logo-icon-ring"></div>
+            <span class="navbar__logo-icon-center">D</span>
+          </div>
+          <div class="navbar__logo-wordmark">
+            <span class="navbar__logo-deal">Deal</span><span class="navbar__logo-tech">Tech</span><span
+              class="navbar__logo-number">365</span>
+          </div>
+        </a>
+      </div>
+      <ul class="navbar__menu">
+        <li><a href="../index.html#blog" class="navbar__link">Blog</a></li>
+        <li><a href="../index.html#deals" class="navbar__link">Ofertas</a></li>
+        <li><a href="favorites.html" class="navbar__link active">💚 Favoritos</a></li>
+        <li><a href="../index.html#newsletter" class="navbar__link">Newsletter</a></li>
+        <li><a href="../index.html#profile" class="navbar__link">Perfil</a></li>
+      </ul>
+      <div class="navbar__region">
+        <span id="regionIndicator">🌍 Detectando región...</span>
+      </div>
+    </div>
+  </nav>
+
+  <div class="page">
+    <div class="subpage-header">
+      <a href="../index.html#profile" class="btn ghost">← Volver al perfil</a>
+      <h1>Mis Favoritos</h1>
+      <p class="text-secondary">Tus productos favoritos y ofertas guardadas</p>
+    </div>
+
+    <section class="profile">
+      <div style="margin-bottom: 2rem;">
+        <div style="display: flex; gap: 1rem; margin-bottom: 1rem; flex-wrap: wrap;">
+          <input type="text" id="searchInput" placeholder="Buscar ofertas..."
+            style="flex: 1; min-width: 200px; padding: 0.85rem 1rem; border-radius: 8px; border: 1px solid var(--border); font-family: 'Space Grotesk', sans-serif;">
+          <select id="categoryFilter"
+            style="padding: 0.85rem 1rem; border-radius: 8px; border: 1px solid var(--border); font-family: 'Space Grotesk', sans-serif;">
+            <option value="">Todas las categorías</option>
+            <option value="laptops">Laptops</option>
+            <option value="audio">Audio</option>
+            <option value="smartphones">Smartphones</option>
+            <option value="gaming">Gaming</option>
+          </select>
+          <select id="brandFilter"
+            style="padding: 0.85rem 1rem; border-radius: 8px; border: 1px solid var(--border); font-family: 'Space Grotesk', sans-serif;">
+            <option value="">Todas las marcas</option>
+          </select>
+          <button class="btn primary" onclick="refreshDeals()">🔄 Actualizar</button>
+        </div>
+      </div>
+
+      <div id="dealsContainer" class="deals-grid">
+        <!-- Deals will be loaded here by JavaScript -->
+      </div>
+
+      <div id="loadingIndicator" style="text-align: center; padding: 2rem; display: none;">
+        <p style="color: var(--text-secondary);">Buscando las mejores ofertas...</p>
+      </div>
+    </section>
+  </div>
+
+  <footer
+    style="margin-top: auto; padding: 1.5rem 1rem; border-top: 1px solid var(--border); color: var(--text-secondary); display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 1rem; text-align: center;">
+    <p style="font-size: 0.75rem; margin: 0;">
+      En calidad de Afiliado de Amazon, obtengo ingresos por las compras adscritas que cumplen los requisitos
+      aplicables.
+    </p>
+    <span style="font-size: 0.75rem; opacity: 0.5;">|</span>
+    <a href="../index.html"
+      style="color: var(--text-primary); text-decoration: none; font-size: 0.75rem; margin: 0;">&copy; 2025
+      DealTech365</a>
+  </footer>
+
+  <script src="../js/region.js?v=2"></script>
+  <script src="../js/deals.js?v=2"></script>
+  <script src="../js/deals-service.js"></script>
+  <script>
+    window.allDeals = window.allDeals || [];
+    window.currentCategory = window.currentCategory || '';
+    window.currentBrand = window.currentBrand || '';
+    window.currentSearch = window.currentSearch || '';
+
+    async function initializeDeals() {
+      try {
+        // Wait for region detection
+        if (window.detectUserRegion) {
+          await window.detectUserRegion();
+        }
+
+        await new Promise(resolve => setTimeout(resolve, 100));
+
+        // Generate deals
+        const region = (window.getRegion && window.getRegion()) || window.userRegion || 'EU';
+
+        if (typeof generateDeals !== 'function') {
+          console.error('generateDeals function not found');
+          document.getElementById('dealsContainer').innerHTML = '<p style="text-align:center;padding:2rem;color:red;">Error cargando las ofertas. Por favor recarga la página.</p>';
+          return;
+        }
+
+        if (window.dealsService) {
+          const result = await window.dealsService.getAllDeals(region);
+          window.allDeals = result.deals;
+        } else {
+          window.allDeals = generateDeals(region);
+        }
+
+        // Load favorites from localStorage
+        const favorites = JSON.parse(localStorage.getItem('favorites') || '[]');
+
+        // Mark deals as favorites using ASIN
+        window.allDeals.forEach(deal => {
+          deal.isFavorite = favorites.includes(deal.asin);
+        });
+
+        // Populate brand filter
+        populateBrandFilter();
+
+        // Display only favorited deals
+        displayDeals();
+
+        console.log('✅ Favorites page initialized');
+        console.log('📦 Favorites:', favorites);
+        console.log('🎯 Favorited deals:', window.allDeals.filter(d => d.isFavorite).length);
+      } catch (error) {
+        console.error('Error initializing favorites:', error);
+        document.getElementById('dealsContainer').innerHTML = `<p style="text-align:center;padding:2rem;color:red;">Error: ${error.message}</p>`;
+      }
+    }
+
+    function populateBrandFilter() {
+      const brandFilter = document.getElementById('brandFilter');
+      if (!brandFilter) return;
+
+      // Get unique brands from all deals
+      const brands = [...new Set(window.allDeals.map(deal => deal.brand))].sort();
+
+      // Clear and rebuild
+      brandFilter.innerHTML = '<option value="">Todas las marcas</option>';
+      brands.forEach(brand => {
+        const option = document.createElement('option');
+        option.value = brand;
+        option.textContent = brand;
+        brandFilter.appendChild(option);
+      });
+    }
+
+    function displayDeals() {
+      const container = document.getElementById('dealsContainer');
+      if (!container) return;
+
+      // Filter deals
+      let filtered = window.allDeals.filter(deal => deal.isFavorite);
+
+      // Apply category filter
+      if (window.currentCategory) {
+        filtered = filtered.filter(deal =>
+          deal.category.toLowerCase().replace(' ', '') === window.currentCategory
+        );
+      }
+
+      // Apply brand filter
+      if (window.currentBrand) {
+        filtered = filtered.filter(deal => deal.brand === window.currentBrand);
+      }
+
+      // Apply search filter
+      if (window.currentSearch) {
+        const searchTerm = window.currentSearch.toLowerCase();
+        filtered = filtered.filter(deal =>
+          deal.name.toLowerCase().includes(searchTerm) ||
+          deal.brand.toLowerCase().includes(searchTerm) ||
+          deal.category.toLowerCase().includes(searchTerm)
+        );
+      }
+
+      // Display
+      if (filtered.length === 0) {
+        container.innerHTML = `
+          <div style="grid-column: 1/-1; text-align: center; padding: 3rem;">
+            <p style="font-size: 3rem; margin-bottom: 1rem;">❤️</p>
+            <h3 style="margin-bottom: 0.5rem;">No tienes favoritos guardados</h3>
+            <p style="color: var(--text-secondary);">Marca productos con el corazón para verlos aquí</p>
+            <a href="../index.html#deals" class="btn primary" style="margin-top: 1rem; display: inline-block;">Ver ofertas</a>
+          </div>
+        `;
+        return;
+      }
+
+      container.innerHTML = filtered.map(deal => {
+        const category = deal.category.toLowerCase().replace(' ', '');
+
+        // Generate specs HTML based on available specs
+        let specsHTML = '';
+        if (deal.specs && Object.keys(deal.specs).length > 0) {
+          specsHTML = '<div class="deal-card__specs">';
+          Object.entries(deal.specs).forEach(([key, value]) => {
+            specsHTML += `<span class="spec-item"><strong>${value}</strong></span>`;
+          });
+          specsHTML += '</div>';
+        }
+
+        return `
+          <article class="deal-card" data-category="${category}">
+            <div class="deal-card__image">
+              <img src="${deal.image}" alt="${deal.name}" loading="lazy">
+              <span class="deal-card__badge">-${deal.discount}%</span>
+            </div>
+            <div class="deal-card__content">
+              <p class="deal-card__category">${deal.category}</p>
+              <h3 class="deal-card__title">${deal.name}</h3>
+              <p class="deal-card__brand">${deal.brand}</p>
+              ${specsHTML}
+              <div class="deal-card__price">
+                <span class="deal-card__current">${deal.currencySymbol}${deal.finalPrice}</span>
+                <span class="deal-card__original">${deal.currencySymbol}${deal.basePrice}</span>
+              </div>
+              <div class="deal-card__actions">
+                <a href="${deal.affiliateLink}" target="_blank" rel="noopener noreferrer" class="deal-btn-premium">
+                  Ver oferta
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                  </svg>
+                </a>
+                <button class="btn ghost favorite-btn" data-asin="${deal.asin}" aria-label="Remover de favoritos">
+                  💚
+                </button>
+              </div>
+              <div class="deal-store-badge" data-store="${deal.network}">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon" style="height: 14px; width: auto; vertical-align: middle;">
+              </div>
+            </div>
+          </article>
+        `;
+      }).join('');
+
+      // Add event listeners for favorite buttons
+      document.querySelectorAll('.favorite-btn').forEach(btn => {
+        btn.addEventListener('click', function () {
+          toggleFavorite(this.dataset.asin);
+        });
+      });
+    }
+
+    function toggleFavorite(asin) {
+      const deal = window.allDeals.find(d => d.asin === asin);
+      if (!deal) return;
+
+      deal.isFavorite = !deal.isFavorite;
+
+      // Update localStorage
+      const favorites = JSON.parse(localStorage.getItem('favorites') || '[]');
+      if (deal.isFavorite) {
+        if (!favorites.includes(asin)) {
+          favorites.push(asin);
+        }
+      } else {
+        const index = favorites.indexOf(asin);
+        if (index > -1) {
+          favorites.splice(index, 1);
+        }
+      }
+      localStorage.setItem('favorites', JSON.stringify(favorites));
+
+      // Sync with Firebase if user is logged in
+      if (window.authSystem && window.authSystem.currentUser) {
+        window.authSystem.saveFavorite(asin);
+      }
+
+      // Refresh display
+      displayDeals();
+    }
+
+    function refreshDeals() {
+      // Reset filters
+      window.currentCategory = '';
+      window.currentBrand = '';
+      window.currentSearch = '';
+      document.getElementById('categoryFilter').value = '';
+      document.getElementById('brandFilter').value = '';
+      document.getElementById('searchInput').value = '';
+
+      // Regenerate deals with new discounts
+      const region = window.getRegion ? window.getRegion() : window.userRegion;
+      window.allDeals = generateDeals(region);
+
+      // Restore favorites using ASIN
+      const favorites = JSON.parse(localStorage.getItem('favorites') || '[]');
+      window.allDeals.forEach(deal => {
+        deal.isFavorite = favorites.includes(deal.asin);
+      });
+
+      displayDeals();
+    }
+
+    // Event listeners
+    document.addEventListener('DOMContentLoaded', async () => {
+      await initializeDeals();
+
+      // Category filter
+      document.getElementById('categoryFilter').addEventListener('change', function () {
+        window.currentCategory = this.value;
+        displayDeals();
+      });
+
+      // Brand filter
+      document.getElementById('brandFilter').addEventListener('change', function () {
+        window.currentBrand = this.value;
+        displayDeals();
+      });
+
+      // Search
+      document.getElementById('searchInput').addEventListener('input', function () {
+        window.currentSearch = this.value;
+        displayDeals();
+      });
+    });
+  </script>
+</body>
+
+</html>

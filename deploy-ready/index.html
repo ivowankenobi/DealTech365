@@ -1,0 +1,604 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Firebase JS SDK - Load synchronously FIRST -->
+  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-analytics-compat.js"></script>
+
+  <!-- Initialize Firebase immediately after loading -->
+  <!-- Firebase Configuration -->
+  <script src="js/firebase-config.min.js"></script>
+  <script>
+    // Initialize Firebase
+    window.initFirebase();
+  </script>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HEZ2Z57ZZ6"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-HEZ2Z57ZZ6');
+  </script>
+
+
+  <!-- Primary Meta Tags -->
+  <title>DealTech365 - Las Mejores Ofertas en Tecnología Todo el Año</title>
+  <meta name="title" content="DealTech365 - Las Mejores Ofertas en Tecnología Todo el Año">
+  <meta name="description"
+    content="Descubre las mejores ofertas en tecnología todo el año: laptops, smartphones, audio y gaming. Descuentos exclusivos actualizados diariamente para tu región.">
+  <meta name="keywords"
+    content="ofertas tecnología, laptops baratos, smartphones descuento, auriculares oferta, gaming ofertas, amazon ofertas, descuentos tecnología, black friday, cyber monday">
+  <meta name="author" content="DealTech365">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://dealtech365.com/">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://dealtech365.com/">
+  <meta property="og:title" content="DealTech365 - Las Mejores Ofertas en Tecnología Todo el Año">
+  <meta property="og:description"
+    content="Descubre las mejores ofertas en tecnología todo el año: laptops, smartphones, audio y gaming. Descuentos exclusivos actualizados diariamente para tu región.">
+  <meta property="og:image" content="https://dealtech365.com/images/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:site_name" content="DealTech365">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://dealtech365.com/">
+  <meta property="twitter:title" content="DealTech365 - Las Mejores Ofertas en Tecnología">
+  <meta property="twitter:description"
+    content="Descubre las mejores ofertas en tecnología todo el año: laptops, smartphones, audio y gaming. Descuentos exclusivos actualizados diariamente para tu región.">
+  <meta property="twitter:image" content="https://dealtech365.com/images/og-image.jpg">
+  <meta name="twitter:creator" content="@dealtech365">
+
+  <!-- Additional Meta Tags -->
+  <meta name="theme-color" content="#2563EB">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="DealTech365">
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg?v=1764169647.0">
+  <link rel="shortcut icon" href="favicon.svg?v=1764169647.0" type="image/svg+xml">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+
+  <!-- Manifest -->
+  <link rel="manifest" href="/manifest.json">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800;900&family=Archivo+Black&display=swap"
+    rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.min.css?v=1764169647.0">
+
+  <!-- Preload critical resources -->
+  <link rel="preload" href="css/styles.min.css?v=1764169647.0" as="style">
+  <link rel="preload" href="js/i18n.min.js" as="script">
+  <link rel="preload" href="js/language-switcher.min.js" as="script">
+  <link rel="preload" href="js/region.js" as="script">
+  <link rel="preload" href="js/cookie-consent.js" as="script">
+  <link rel="preload" href="js/analytics.js" as="script">
+  <link rel="preload" href="js/deals.min.js" as="script">
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "DealTech365",
+    "description": "Las mejores ofertas en tecnología todo el año. Descuentos en laptops, smartphones, audio y gaming.",
+    "url": "https://dealtech365.com/",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://dealtech365.com/pages/favorites.html?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "DealTech365",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://dealtech365.com/images/logo.png"
+      }
+    }
+  }
+  </script>
+</head>
+
+<body>
+  <!-- Login/Register Modal -->
+  <div id="authModal" data-mode="login"
+    style="display:none;position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.7);z-index:9999;align-items:center;justify-content:center;">
+    <div class="auth-modal-content"
+      style="background:var(--bg-primary);border-radius:16px;padding:2.5rem;max-width:420px;width:90%;box-shadow:0 20px 60px rgba(0,0,0,0.3);position:relative;">
+      <button onclick="authSystem.hideAuthModal()" class="auth-close"
+        style="position:absolute;top:1rem;right:1rem;background:none;border:none;font-size:1.5rem;cursor:pointer;color:var(--text-tertiary);transition:color 0.2s;"
+        onmouseover="this.style.color='var(--text-primary)'"
+        onmouseout="this.style.color='var(--text-tertiary)'">&times;</button>
+
+      <h2 id="authTitle" style="margin:0 0 1.5rem 0;color:var(--text-primary);font-size:1.75rem;">Iniciar sesión</h2>
+
+      <form id="authForm"
+        onsubmit="event.preventDefault(); const email = document.getElementById('authEmail').value; const password = document.getElementById('authPassword').value; authSystem.handleAuthSubmit(email, password);"
+        style="display:flex;flex-direction:column;gap:1.25rem;">
+        <div class="form-group">
+          <label for="authEmail"
+            style="display:block;margin-bottom:0.5rem;color:var(--text-secondary);font-size:0.9rem;font-weight:500;">Email</label>
+          <input type="email" id="authEmail" required placeholder="tu@email.com"
+            style="width:100%;padding:0.75rem 1rem;border:1px solid var(--border);border-radius:8px;font-size:1rem;transition:border-color 0.2s;"
+            onfocus="this.style.borderColor='var(--primary)'" onblur="this.style.borderColor='var(--border)'" />
+        </div>
+
+        <div class="form-group">
+          <label for="authPassword"
+            style="display:block;margin-bottom:0.5rem;color:var(--text-secondary);font-size:0.9rem;font-weight:500;">Contraseña</label>
+          <input type="password" id="authPassword" required placeholder="Mínimo 6 caracteres" minlength="6"
+            style="width:100%;padding:0.75rem 1rem;border:1px solid var(--border);border-radius:8px;font-size:1rem;transition:border-color 0.2s;"
+            onfocus="this.style.borderColor='var(--primary)'" onblur="this.style.borderColor='var(--border)'" />
+        </div>
+
+        <div id="authError" style="color:#ef4444;font-size:0.9rem;min-height:1.5rem;"></div>
+
+        <button type="submit" id="authSubmitBtn" class="btn primary"
+          style="width:100%;padding:0.875rem;font-size:1rem;font-weight:600;border:none;border-radius:8px;cursor:pointer;">
+          Iniciar sesión
+        </button>
+      </form>
+
+      <div style="margin-top:1.5rem;text-align:center;">
+        <button id="toggleAuthMode"
+          onclick="const isLogin = document.getElementById('authModal').dataset.mode === 'login'; authSystem.showAuthModal(!isLogin);"
+          style="background:none;border:none;color:var(--primary);cursor:pointer;font-size:0.9rem;text-decoration:underline;padding:0.5rem;">
+          ¿No tienes cuenta? Regístrate
+        </button>
+      </div>
+
+      <div
+        style="margin-top:1.5rem;padding-top:1.5rem;border-top:1px solid var(--border);text-align:center;color:var(--text-tertiary);font-size:0.85rem;">
+        <p style="margin:0;">🔒 Tus favoritos se sincronizarán automáticamente</p>
+      </div>
+    </div>
+  </div>
+  <!-- Navigation Menu -->
+
+  <nav class="navbar">
+    <div class="navbar__container">
+      <div class="navbar__logo">
+        <a href="index.html">
+          <div class="navbar__logo-icon">
+            <div class="navbar__logo-icon-ring"></div>
+            <span class="navbar__logo-icon-center">D</span>
+          </div>
+          <div class="navbar__logo-wordmark">
+            <span class="navbar__logo-deal">Deal</span><span class="navbar__logo-tech">Tech</span><span
+              class="navbar__logo-number">365</span>
+          </div>
+        </a>
+      </div>
+      <ul class="navbar__menu">
+        <li><a href="#blog" class="navbar__link" data-i18n="nav_blog">Blog</a></li>
+        <li><a href="#deals" class="navbar__link" data-i18n="nav_deals">Ofertas</a></li>
+        <li><a href="pages/favorites.html" class="navbar__link" data-i18n="nav_favorites">Favoritos</a></li>
+        <li><a href="#newsletter" class="navbar__link" data-i18n="nav_newsletter">Newsletter</a></li>
+        <li><a href="#profile" class="navbar__link" data-i18n="nav_profile">Perfil</a></li>
+      </ul>
+      <div class="navbar__region">
+        <span id="regionIndicator" data-i18n="region_detecting">🌍 Detectando región...</span>
+      </div>
+      <div id="userStatus" class="navbar__user-status">
+        <button class="btn primary"
+          onclick="if(window.authSystem) { authSystem.showAuthModal(true); } else { alert('Cargando sistema de autenticación...'); }">Iniciar
+          sesión</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Blog Carousel -->
+  <section class="blog-carousel" aria-label="Artículos destacados">
+    <div class="blog-carousel__wrapper">
+      <div class="blog-carousel__track">
+        <a href="blog/smartphones-cual-comprar.html" class="blog-carousel__slide">
+          <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=1920&q=80"
+            alt="Smartphones 2025">
+          <div class="blog-carousel__overlay">
+            <div class="blog-carousel__content">
+              <span class="blog-carousel__category">📱 Smartphones</span>
+              <h2>Mejores Smartphones Black Friday 2025</h2>
+              <p>iPhone vs Android: guía completa de los flagship más potentes</p>
+              <span class="blog-carousel__cta">Leer artículo →</span>
+            </div>
+          </div>
+        </a>
+        <a href="blog/gadgets-imprescindibles-2025.html" class="blog-carousel__slide">
+          <img src="https://images.unsplash.com/photo-1468495244123-6c6c332eeece?auto=format&fit=crop&w=1920&q=80"
+            alt="Gadgets 2025">
+          <div class="blog-carousel__overlay">
+            <div class="blog-carousel__content">
+              <span class="blog-carousel__category">💡 Tech & Innovación</span>
+              <h2>Los 10 Gadgets Imprescindibles de 2025</h2>
+              <p>Dispositivos innovadores que transforman tu día a día</p>
+              <span class="blog-carousel__cta">Leer artículo →</span>
+            </div>
+          </div>
+        </a>
+        <a href="blog/top-accesorios-gaming.html" class="blog-carousel__slide">
+          <img src="https://images.unsplash.com/photo-1538481199705-c710c4e965fc?auto=format&fit=crop&w=1920&q=80"
+            alt="Gaming">
+          <div class="blog-carousel__overlay">
+            <div class="blog-carousel__content">
+              <span class="blog-carousel__category">🎮 Gaming</span>
+              <h2>Top 7 Accesorios Gaming 2025</h2>
+              <p>Mejora tu setup y performance con estos productos premium</p>
+              <span class="blog-carousel__cta">Leer artículo →</span>
+            </div>
+          </div>
+        </a>
+        <a href="blog/auriculares-premium-descuento.html" class="blog-carousel__slide">
+          <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=1920&q=80"
+            alt="Auriculares">
+          <div class="blog-carousel__overlay">
+            <div class="blog-carousel__content">
+              <span class="blog-carousel__category">🎧 Audio & Sonido</span>
+              <h2>Los 5 Mejores Auriculares Premium</h2>
+              <p>Noise cancelling, calidad de sonido y autonomía superior</p>
+              <span class="blog-carousel__cta">Leer artículo →</span>
+            </div>
+          </div>
+        </a>
+        <a href="blog/consejos-black-friday.html" class="blog-carousel__slide">
+          <img src="https://images.unsplash.com/photo-1607083206869-4c7672e72a8a?auto=format&fit=crop&w=1920&q=80"
+            alt="Black Friday">
+          <div class="blog-carousel__overlay">
+            <div class="blog-carousel__content">
+              <span class="blog-carousel__category">💰 Guías & Tips</span>
+              <h2>Consejos Black Friday 2025</h2>
+              <p>Compra inteligente, evita estafas y maximiza tu ahorro</p>
+              <span class="blog-carousel__cta">Leer artículo →</span>
+            </div>
+          </div>
+        </a>
+      </div>
+      <button class="blog-carousel__btn blog-carousel__btn--prev" aria-label="Anterior">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <path d="M15 18l-6-6 6-6" />
+        </svg>
+      </button>
+      <button class="blog-carousel__btn blog-carousel__btn--next" aria-label="Siguiente">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <path d="M9 18l6-6-6-6" />
+        </svg>
+      </button>
+      <div class="blog-carousel__indicators"></div>
+    </div>
+  </section>
+
+  <div class="page">
+    <header class="hero">
+      <div class="hero__badge" data-i18n="hero_badge">Black Friday 2025 · Ofertas en Tecnología</div>
+      <h1 data-i18n="hero_title">Encuentra las mejores ofertas en tecnología</h1>
+      <p data-i18n="hero_description">
+        Descubre descuentos exclusivos en laptops, smartphones, audio y gaming.
+        Ofertas actualizadas diariamente, personalizadas para tu región.
+      </p>
+      <div class="hero__actions">
+        <a class="btn primary" href="#deals" data-i18n="hero_cta_primary">Ver ofertas destacadas</a>
+        <a class="btn ghost" href="#blog" data-i18n="hero_cta_secondary">Leer blog</a>
+      </div>
+      <div class="hero__value-proposition">
+        <p class="value-proposition__text">
+          <strong>Analizamos miles de productos tecnológicos</strong> para encontrar las ofertas más auténticas.
+          Cada enlace que compartimos incluye nuestro código de afiliado, lo que nos permite mantener este servicio
+          gratuito mientras tú obtienes el <strong>mismo precio</strong> (o mejor) que cualquier otro comprador.
+          Sin costos ocultos, sin trucos. Solo tecnología al mejor precio, <strong>seleccionada por expertos</strong>.
+        </p>
+      </div>
+    </header>
+
+    <!-- Deals Section -->
+    <section id="deals" class="deals" aria-label="Ofertas destacadas">
+      <header>
+        <p class="eyebrow" data-i18n="deals_eyebrow">Ofertas Black Friday</p>
+        <h2 data-i18n="deals_title">Las mejores ofertas en tecnología</h2>
+        <p data-i18n="deals_subtitle">Descuentos exclusivos actualizados para tu región</p>
+      </header>
+
+      <div class="deals__controls">
+        <input type="text" id="searchInput" class="deals__search" placeholder="🔍 Buscar productos..."
+          data-i18n="deals_search_placeholder" aria-label="Buscar productos">
+
+        <div class="deals__filters">
+          <button class="filter-btn active" data-category="all" data-i18n="deals_all_categories">Todos</button>
+          <button class="filter-btn" data-category="laptops" data-i18n="category_laptops">💻 Laptops</button>
+          <button class="filter-btn" data-category="audio" data-i18n="category_audio">🎧 Audio</button>
+          <button class="filter-btn" data-category="smartphones" data-i18n="category_smartphones">📱
+            Smartphones</button>
+          <button class="filter-btn" data-category="gaming" data-i18n="category_gaming">🎮 Gaming</button>
+        </div>
+
+        <div class="deals__brand-filter">
+          <select id="brandFilter" class="brand-select" aria-label="Filtrar por marca">
+            <option value="all" data-i18n="deals_all_brands">Todas las marcas</option>
+          </select>
+        </div>
+      </div>
+
+      <div id="dealsGrid" class="deals__grid">
+        <!-- Deals will be generated by JavaScript -->
+      </div>
+
+      <div class="deals__footer">
+        <a href="pages/favorites.html" class="btn ghost">Ver todas las ofertas →</a>
+      </div>
+    </section>
+
+    <section id="blog" class="blog" aria-label="Blog">
+      <header>
+        <p class="eyebrow">Blog</p>
+        <h2>Guías y análisis de productos</h2>
+        <p>Artículos actualizados con las mejores ofertas, comparativas y consejos de compra.</p>
+      </header>
+      <div class="blog__grid">
+        <article class="blog-card">
+          <a href="blog/smartphones-cual-comprar.html" class="blog-card__img-link"><img
+              src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=400&q=80"
+              alt="Mejores Smartphones 2025" class="blog-card__img"></a>
+          <div class="blog-card__content">
+            <a href="blog/smartphones-cual-comprar.html" class="blog-card__title-link">
+              <h3>Mejores Smartphones Black Friday 2025</h3>
+            </a>
+            <p class="blog-card__intro">Guía completa iPhone vs Android: análisis detallado de los flagship más
+              potentes. Compara cámara, rendimiento, batería y ecosistema para elegir tu próximo smartphone.</p>
+          </div>
+        </article>
+        <article class="blog-card">
+          <a href="blog/gadgets-imprescindibles-2025.html" class="blog-card__img-link"><img
+              src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80"
+              alt="Gadgets imprescindibles 2025" class="blog-card__img"></a>
+          <div class="blog-card__content">
+            <a href="blog/gadgets-imprescindibles-2025.html" class="blog-card__title-link">
+              <h3>Gadgets imprescindibles para 2025</h3>
+            </a>
+            <p class="blog-card__intro">Descubre los gadgets más innovadores y útiles del año: smartwatches, domótica,
+              accesorios para móvil y más. ¡Haz tu día a día más fácil y conectado!</p>
+          </div>
+        </article>
+        <article class="blog-card">
+          <a href="blog/auriculares-premium-descuento.html" class="blog-card__img-link"><img
+              src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?auto=format&fit=crop&w=400&q=80"
+              alt="Auriculares premium" class="blog-card__img"></a>
+          <div class="blog-card__content">
+            <a href="blog/auriculares-premium-descuento.html" class="blog-card__title-link">
+              <h3>Auriculares premium con descuento</h3>
+            </a>
+            <p class="blog-card__intro">Las mejores ofertas en auriculares de alta gama con cancelación de ruido.
+              Analizamos modelos como Sony WH-1000XM5, Bose 700 y AirPods Max.</p>
+          </div>
+        </article>
+        <article class="blog-card">
+          <a href="blog/smartphones-cual-comprar.html" class="blog-card__img-link"><img
+              src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=400&q=80"
+              alt="Smartphones Black Friday" class="blog-card__img"></a>
+          <div class="blog-card__content">
+            <a href="blog/smartphones-cual-comprar.html" class="blog-card__title-link">
+              <h3>Smartphones: ¿Cuál comprar?</h3>
+            </a>
+            <p class="blog-card__intro">Análisis de los mejores smartphones en oferta este Black Friday. Comparamos
+              cámaras, batería, pantalla y relación calidad-precio.</p>
+          </div>
+        </article>
+        <article class="blog-card">
+          <a href="blog/top-accesorios-gaming.html" class="blog-card__img-link"><img
+              src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80"
+              alt="Gaming Black Friday" class="blog-card__img"></a>
+          <div class="blog-card__content">
+            <a href="blog/top-accesorios-gaming.html" class="blog-card__title-link">
+              <h3>Top accesorios gaming en oferta</h3>
+            </a>
+            <p class="blog-card__intro">Selección de los mejores accesorios gaming con descuento: teclados, ratones,
+              monitores y sillas para mejorar tu setup.</p>
+          </div>
+        </article>
+        <article class="blog-card">
+          <a href="blog/consejos-black-friday.html" class="blog-card__img-link"><img
+              src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80"
+              alt="Consejos de compra" class="blog-card__img"></a>
+          <div class="blog-card__content">
+            <a href="blog/consejos-black-friday.html" class="blog-card__title-link">
+              <h3>Cómo elegir tecnología en Black Friday</h3>
+            </a>
+            <p class="blog-card__intro">Guía práctica para aprovechar al máximo las ofertas: cómo comparar productos,
+              evitar fraudes y elegir la mejor tienda online.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="newsletter" class="newsletter" aria-label="Newsletter">
+      <div class="newsletter__content">
+        <div class="newsletter__text">
+          <p class="eyebrow" data-i18n="newsletter_eyebrow">Newsletter</p>
+          <h2 data-i18n="newsletter_title">Nunca te pierdas las mejores ofertas</h2>
+          <p data-i18n="newsletter_description">Recibe ofertas exclusivas de tecnología, alertas de Black Friday y guías
+            de compra directamente en tu inbox. Sin spam, solo las mejores ofertas.</p>
+          <ul class="newsletter__benefits">
+            <li>✓ Ofertas exclusivas para suscriptores</li>
+            <li>✓ Alertas de relámpago en tiempo real</li>
+            <li>✓ Guías de compra semanales</li>
+          </ul>
+        </div>
+        <form class="newsletter__form" id="newsletterForm">
+          <div class="newsletter__input-wrapper">
+            <input type="email" placeholder="tu@email.com" data-i18n="newsletter_email_placeholder" required
+              class="newsletter__input" id="emailInput" aria-label="Correo electrónico">
+            <button type="submit" class="btn primary newsletter__btn"
+              data-i18n="newsletter_btn_subscribe">Suscribirme</button>
+          </div>
+          <p class="newsletter__privacy">Al suscribirte aceptas nuestra política de privacidad. Puedes cancelar en
+            cualquier momento.</p>
+          <div class="newsletter__message" id="newsletterMessage"></div>
+        </form>
+      </div>
+    </section>
+
+    <section id="profile" class="profile" aria-label="Perfil de usuario">
+      <header>
+        <h2>Configuración de Perfil</h2>
+      </header>
+
+      <div class="profile__section">
+        <h3 class="profile__category">ACCOUNT</h3>
+        <div class="profile__menu">
+          <a href="pages/edit-profile.html" class="profile__item">
+            <span class="profile__icon">👤</span>
+            <span class="profile__label">Edit Profile</span>
+            <span class="profile__arrow">›</span>
+          </a>
+          <a href="pages/notifications.html" class="profile__item">
+            <span class="profile__icon">🔔</span>
+            <span class="profile__label">Notifications</span>
+            <span class="profile__arrow">›</span>
+          </a>
+          <a href="pages/favorites.html" class="profile__item">
+            <span class="profile__icon">❤️</span>
+            <span class="profile__label">My Favorites</span>
+            <span class="profile__arrow">›</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="profile__section">
+        <h3 class="profile__category">PREFERENCES</h3>
+        <div class="profile__menu">
+          <a href="pages/theme.html" class="profile__item">
+            <span class="profile__icon">🎨</span>
+            <span class="profile__label">Theme</span>
+            <span class="profile__arrow">›</span>
+          </a>
+          <a href="pages/language.html" class="profile__item">
+            <span class="profile__icon">🌐</span>
+            <span class="profile__label">Language</span>
+            <span class="profile__arrow">›</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="profile__section">
+        <h3 class="profile__category">SUPPORT</h3>
+        <div class="profile__menu">
+          <a href="pages/about.html" class="profile__item">
+            <span class="profile__icon">ℹ️</span>
+            <span class="profile__label">About</span>
+            <span class="profile__arrow">›</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer
+      style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1rem; padding: 1.5rem 0; border-top: 1px solid var(--border); margin-top: 4rem;">
+      <div style="display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap;">
+        <span style="font-weight: 700; font-size: 0.9rem;">DealTech365</span>
+        <nav style="display: flex; gap: 1rem; font-size: 0.8rem;">
+          <a href="pages/privacy-policy.html"
+            style="color: var(--text-secondary); text-decoration: none;">Privacidad</a>
+          <a href="pages/terms.html" style="color: var(--text-secondary); text-decoration: none;">Términos</a>
+          <a href="pages/contact.html" style="color: var(--text-secondary); text-decoration: none;">Contacto</a>
+        </nav>
+      </div>
+      <p style="font-size: 0.75rem; color: var(--text-secondary); margin: 0; max-width: 500px; text-align: right;"
+        data-i18n="footer_affiliate_disclosure">
+        En calidad de Afiliado de Amazon, obtengo ingresos por las compras adscritas que cumplen los requisitos
+        aplicables.
+      </p>
+    </footer>
+  </div>
+
+  <!-- i18n System (must load first) -->
+  <script src="js/i18n.min.js"></script>
+  <script src="js/language-switcher.min.js"></script>
+
+  <script src="js/region.min.js"></script>
+  <script src="js/cookie-consent.min.js"></script>
+  <script src="js/analytics.min.js"></script>
+  <script src="js/auth.js"></script>
+  <script>
+    // Newsletter form handling
+    document.getElementById('newsletterForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const emailInput = document.getElementById('emailInput');
+      const messageDiv = document.getElementById('newsletterMessage');
+      const email = emailInput.value;
+
+      // Simple email validation
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+      if (!emailRegex.test(email)) {
+        messageDiv.className = 'newsletter__message error';
+        messageDiv.textContent = 'Por favor ingresa un correo electrónico válido.';
+        return;
+      }
+
+      // Simulate successful subscription
+      messageDiv.className = 'newsletter__message success';
+      messageDiv.textContent = '¡Gracias por suscribirte! Revisa tu correo para confirmar tu suscripción.';
+      emailInput.value = '';
+
+      // Track newsletter signup in analytics
+      if (window.Analytics) {
+        window.Analytics.trackNewsletterSignup(email);
+      }
+
+      // In production, you would send this to your backend/email service
+      console.log('Email subscribed:', email);
+
+      // Hide message after 5 seconds
+      setTimeout(() => {
+        messageDiv.className = 'newsletter__message';
+        messageDiv.textContent = '';
+      }, 5000);
+    });
+  </script>
+
+  <script src="js/deals.min.js?v=1764169647.4"></script>
+  <script src="js/deals-service.min.js?v=1764169647.4"></script>
+  <script src="js/blog-carousel.min.js"></script>
+  <script>
+    // Event listeners for filter buttons
+    document.addEventListener('DOMContentLoaded', function () {
+      // Filter buttons
+      document.querySelectorAll('.filter-btn').forEach(btn => {
+        btn.addEventListener('click', function () {
+          const category = this.dataset.category;
+
+          // Update active button
+          document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+          this.classList.add('active');
+
+          // Filter deals
+          if (typeof filterByCategory === 'function') {
+            filterByCategory(category);
+          }
+        });
+      });
+    });
+  </script>
+
+
+</body>
+
+</html>

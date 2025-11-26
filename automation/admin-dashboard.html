@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - DealTech365</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            background: #f5f7fa;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        header {
+            background: linear-gradient(135deg, #2563EB, #10B981);
+            color: white;
+            padding: 30px;
+            border-radius: 16px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 16px rgba(37, 99, 235, 0.2);
+        }
+
+        header h1 {
+            font-size: 2rem;
+            margin-bottom: 8px;
+        }
+
+        header p {
+            opacity: 0.9;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .stat-card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .stat-card h3 {
+            font-size: 0.85rem;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 10px;
+        }
+
+        .stat-card .value {
+            font-size: 2.5rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #2563EB, #10B981);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .actions {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+        }
+
+        .actions h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        button {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            font-size: 0.95rem;
+            transition: all 0.3s;
+            font-family: 'Outfit', sans-serif;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #2563EB, #3b82f6);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+        }
+
+        .btn-success {
+            background: linear-gradient(135deg, #10B981, #059669);
+            color: white;
+        }
+
+        .btn-success:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+        }
+
+        .btn-warning {
+            background: linear-gradient(135deg, #F59E0B, #D97706);
+            color: white;
+        }
+
+        .btn-danger {
+            background: linear-gradient(135deg, #EF4444, #DC2626);
+            color: white;
+        }
+
+        .deals-table {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            overflow: hidden;
+        }
+
+        .deals-table h2 {
+            padding: 25px;
+            background: #f8f9fa;
+            border-bottom: 1px solid #e0e0e0;
+            margin: 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        thead {
+            background: #f8f9fa;
+        }
+
+        th {
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+            color: #555;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        td {
+            padding: 15px;
+            border-top: 1px solid #f0f0f0;
+        }
+
+        tbody tr:hover {
+            background: #f8f9fa;
+        }
+
+        .product-cell {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .product-image {
+            width: 60px;
+            height: 60px;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+
+        .product-info h4 {
+            font-size: 0.95rem;
+            margin-bottom: 4px;
+        }
+
+        .product-info p {
+            font-size: 0.8rem;
+            color: #666;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        .badge.active {
+            background: #d1fae5;
+            color: #065f46;
+        }
+
+        .badge.inactive {
+            background: #fee2e2;
+            color: #991b1b;
+        }
+
+        .badge.discount {
+            background: #dbeafe;
+            color: #1e40af;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: #666;
+        }
+
+        #logOutput {
+            background: #1e1e1e;
+            color: #00ff00;
+            padding: 20px;
+            border-radius: 8px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.85rem;
+            max-height: 300px;
+            overflow-y: auto;
+            margin-top: 20px;
+            display: none;
+        }
+
+        #logOutput.show {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎯 Admin Dashboard - DealTech365</h1>
+            <p>Panel de control para gestión de ofertas y automatización</p>
+        </header>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <h3>Total Ofertas</h3>
+                <div class="value" id="totalDeals">-</div>
+            </div>
+            <div class="stat-card">
+                <h3>Ofertas Activas</h3>
+                <div class="value" id="activeDeals">-</div>
+            </div>
+            <div class="stat-card">
+                <h3>Descuento Promedio</h3>
+                <div class="value" id="avgDiscount">-%</div>
+            </div>
+            <div class="stat-card">
+                <h3>Última Actualización</h3>
+                <div class="value" style="font-size: 1.2rem;" id="lastUpdate">-</div>
+            </div>
+        </div>
+
+        <div class="actions">
+            <h2>⚡ Acciones Rápidas</h2>
+            <div class="button-group">
+                <button class="btn-primary" onclick="runScraper()">
+                    🕷️ Ejecutar Scraper
+                </button>
+                <button class="btn-success" onclick="importDeals()">
+                    📤 Importar a Firestore
+                </button>
+                <button class="btn-warning" onclick="runFull()">
+                    🔄 Scrape + Import (Full)
+                </button>
+                <button class="btn-primary" onclick="refreshData()">
+                    🔃 Refrescar Datos
+                </button>
+                <button class="btn-danger" onclick="clearLog()">
+                    🗑️ Limpiar Log
+                </button>
+            </div>
+            <div id="logOutput"></div>
+        </div>
+
+        <div class="deals-table">
+            <h2>📦 Ofertas Recientes</h2>
+            <div id="dealsContainer" class="loading">
+                Cargando ofertas...
+            </div>
+        </div>
+    </div>
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-compat.js"></script>
+
+    <script>
+        // Inicializar Firebase (usa tu configuración)
+        const firebaseConfig = {
+            apiKey: "AIzaSyB8i8SgsSzDlvc5xIOiyOco3JGUKLD6L6E",
+            authDomain: "dealtech365.firebaseapp.com",
+            projectId: "dealtech365",
+            storageBucket: "dealtech365.firebasestorage.app",
+            messagingSenderId: "222253855838",
+            appId: "1:222253855838:web:e6ecf1a41577605adbb0cf"
+        };
+
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore();
+
+        // Cargar datos
+        async function loadStats() {
+            try {
+                const snapshot = await db.collection('deals').get();
+                const deals = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+
+                const totalDeals = deals.length;
+                const activeDeals = deals.filter(d => d.active).length;
+                const avgDiscount = deals.reduce((sum, d) => sum + (d.discount || 0), 0) / totalDeals;
+
+                document.getElementById('totalDeals').textContent = totalDeals;
+                document.getElementById('activeDeals').textContent = activeDeals;
+                document.getElementById('avgDiscount').textContent = `${avgDiscount.toFixed(0)}%`;
+
+                // Última actualización
+                const latestDeal = deals.sort((a, b) =>
+                    new Date(b.updatedAt) - new Date(a.updatedAt)
+                )[0];
+
+                if (latestDeal) {
+                    const date = new Date(latestDeal.updatedAt);
+                    document.getElementById('lastUpdate').textContent = date.toLocaleString('es-ES', {
+                        day: '2-digit',
+                        month: 'short',
+                        hour: '2-digit',
+                        minute: '2-digit'
+                    });
+                }
+
+                renderDealsTable(deals);
+
+            } catch (error) {
+                console.error('Error loading stats:', error);
+                addLog('❌ Error cargando estadísticas: ' + error.message);
+            }
+        }
+
+        function renderDealsTable(deals) {
+            const container = document.getElementById('dealsContainer');
+
+            if (deals.length === 0) {
+                container.innerHTML = '<div class="loading">No hay ofertas disponibles</div>';
+                return;
+            }
+
+            const activeDeals = deals.filter(d => d.active).slice(0, 20);
+
+            const html = `
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Producto</th>
+                            <th>Categoría</th>
+                            <th>Precio</th>
+                            <th>Descuento</th>
+                            <th>Estado</th>
+                            <th>Fuente</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        ${activeDeals.map(deal => `
+                            <tr>
+                                <td>
+                                    <div class="product-cell">
+                                        <img src="${deal.image}" alt="${deal.name}" class="product-image" onerror="this.src='https://via.placeholder.com/60'">
+                                        <div class="product-info">
+                                            <h4>${deal.name.substring(0, 50)}${deal.name.length > 50 ? '...' : ''}</h4>
+                                            <p>${deal.brand}</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>${deal.category}</td>
+                                <td><strong>€${deal.currentPrice}</strong></td>
+                                <td><span class="badge discount">${deal.discount}% OFF</span></td>
+                                <td><span class="badge ${deal.active ? 'active' : 'inactive'}">${deal.active ? 'Activa' : 'Inactiva'}</span></td>
+                                <td>${deal.source || 'manual'}</td>
+                            </tr>
+                        `).join('')}
+                    </tbody>
+                </table>
+            `;
+
+            container.innerHTML = html;
+        }
+
+        function addLog(message) {
+            const log = document.getElementById('logOutput');
+            log.classList.add('show');
+            const timestamp = new Date().toLocaleTimeString();
+            log.innerHTML += `[${timestamp}] ${message}\n`;
+            log.scrollTop = log.scrollHeight;
+        }
+
+        function clearLog() {
+            document.getElementById('logOutput').innerHTML = '';
+            document.getElementById('logOutput').classList.remove('show');
+        }
+
+        function runScraper() {
+            addLog('🕷️ Iniciando scraper de Amazon...');
+            addLog('⚠️ Esta funcionalidad requiere Node.js backend');
+            addLog('💡 Ejecuta: cd automation && npm run scrape');
+        }
+
+        function importDeals() {
+            addLog('📤 Importando ofertas a Firestore...');
+            addLog('⚠️ Esta funcionalidad requiere Node.js backend');
+            addLog('💡 Ejecuta: cd automation && npm run import');
+        }
+
+        function runFull() {
+            addLog('🔄 Ejecutando proceso completo...');
+            addLog('⚠️ Esta funcionalidad requiere Node.js backend');
+            addLog('💡 Ejecuta: cd automation && npm run sync');
+        }
+
+        function refreshData() {
+            addLog('🔃 Refrescando datos...');
+            loadStats();
+        }
+
+        // Cargar al iniciar
+        window.addEventListener('DOMContentLoaded', () => {
+            loadStats();
+        });
+    </script>
+</body>
+</html>

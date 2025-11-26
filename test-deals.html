@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test - Deals</title>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background: #f5f5f5;
+    }
+    h1 {
+      color: #333;
+    }
+    #dealsGrid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+    .deal-card {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+    .deal-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+    .deal-image {
+      width: 100%;
+      height: 200px;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+    .deal-badge {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: #ff4757;
+      color: white;
+      padding: 6px 12px;
+      border-radius: 20px;
+      font-weight: bold;
+      font-size: 14px;
+    }
+    .deal-content {
+      padding: 20px;
+    }
+    .deal-title {
+      font-size: 18px;
+      font-weight: 600;
+      margin: 0 0 10px 0;
+      color: #2d3436;
+    }
+    .deal-price {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 15px 0;
+    }
+    .deal-price-current {
+      font-size: 24px;
+      font-weight: bold;
+      color: #00b894;
+    }
+    .deal-price-original {
+      font-size: 16px;
+      color: #636e72;
+      text-decoration: line-through;
+    }
+    .deal-btn-premium {
+      display: inline-block;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 12px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: transform 0.2s;
+    }
+    .deal-btn-premium:hover {
+      transform: scale(1.05);
+    }
+    .debug {
+      background: #fff3cd;
+      border: 1px solid #ffc107;
+      padding: 15px;
+      border-radius: 8px;
+      margin: 20px 0;
+    }
+    .debug pre {
+      margin: 5px 0;
+      font-size: 12px;
+    }
+  </style>
+</head>
+<body>
+  <h1>🧪 Test de Productos - DealTech365</h1>
+
+  <div class="debug" id="debug">
+    <strong>Estado:</strong> Cargando...
+  </div>
+
+  <div id="dealsGrid">
+    <!-- Products will be rendered here -->
+  </div>
+
+  <script>
+    const debug = document.getElementById('debug');
+
+    // Log function
+    function log(message) {
+      console.log(message);
+      debug.innerHTML += '<pre>' + message + '</pre>';
+    }
+
+    log('✅ Script iniciado');
+    log('🔍 Buscando contenedor dealsGrid...');
+
+    const container = document.getElementById('dealsGrid');
+    if (!container) {
+      log('❌ ERROR: No se encontró el contenedor dealsGrid');
+    } else {
+      log('✅ Contenedor encontrado');
+    }
+  </script>
+
+  <!-- Load deals.min.js -->
+  <script src="js/deals.min.js"></script>
+
+  <script>
+    // Wait a bit for deals to load
+    setTimeout(() => {
+      log('🔍 Verificando window.allDeals...');
+
+      if (typeof allDeals !== 'undefined') {
+        log('✅ allDeals encontrado: ' + allDeals.length + ' productos');
+      } else {
+        log('❌ allDeals no definido');
+      }
+
+      if (typeof DEAL_CATEGORIES !== 'undefined') {
+        log('✅ DEAL_CATEGORIES encontrado');
+        const categories = Object.keys(DEAL_CATEGORIES);
+        log('📦 Categorías: ' + categories.join(', '));
+
+        categories.forEach(cat => {
+          const products = DEAL_CATEGORIES[cat].products;
+          log('   - ' + cat + ': ' + products.length + ' productos');
+        });
+      } else {
+        log('❌ DEAL_CATEGORIES no definido');
+      }
+
+      // Try to manually generate deals
+      log('🔧 Intentando generar deals manualmente...');
+      if (typeof generateDeals === 'function') {
+        log('✅ Función generateDeals encontrada');
+        try {
+          const deals = generateDeals({ isEurope: true, currency: 'EUR', currencySymbol: '€' });
+          log('✅ Deals generados: ' + deals.length);
+
+          // Manually display deals
+          if (deals && deals.length > 0) {
+            log('🎨 Renderizando productos...');
+            displayDeals();
+            log('✅ PRODUCTOS RENDERIZADOS EXITOSAMENTE');
+          }
+        } catch (error) {
+          log('❌ ERROR al generar deals: ' + error.message);
+        }
+      } else {
+        log('❌ Función generateDeals no encontrada');
+      }
+    }, 2000);
+  </script>
+</body>
+</html>

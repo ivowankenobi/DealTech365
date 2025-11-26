@@ -1,0 +1,125 @@
+═══════════════════════════════════════════════════════════════════════
+  ✅ CHECKLIST: Re-subir Archivos Correctos
+═══════════════════════════════════════════════════════════════════════
+
+Imprime esta página y marca cada paso mientras lo completas.
+
+═══════════════════════════════════════════════════════════════════════
+
+[ ] PASO 1: ACCEDER A CPANEL
+    └─ Ve a: https://panel.banahosting.com
+    └─ Inicia sesión con tu email y contraseña
+    └─ Click en "File Manager"
+
+[ ] PASO 2: BORRAR TODO EN public_html
+    └─ Navega a carpeta: public_html
+    └─ Selecciona TODO (Ctrl+A o marca todas las casillas)
+    └─ Click en "Delete" (Eliminar)
+    └─ Confirma la eliminación
+    └─ Verifica que public_html está VACÍO
+
+[ ] PASO 3: ABRIR CARPETA deploy-ready EN TU PC
+    └─ Abre Windows Explorer
+    └─ Navega a: C:\BLACK FRIDAY EVERYDAY\deploy-ready\
+    └─ Verifica que ves estos archivos:
+        [ ] index.html
+        [ ] sitemap.xml
+        [ ] robots.txt
+        [ ] manifest.json
+        [ ] .htaccess
+        [ ] favicon.ico
+        [ ] Carpeta: css/
+        [ ] Carpeta: js/
+        [ ] Carpeta: images/
+        [ ] Carpeta: pages/
+        [ ] Carpeta: blog/
+
+[ ] PASO 4: SUBIR ARCHIVOS A CPANEL
+    └─ Selecciona TODO dentro de deploy-ready/
+    └─ Arrastra y suelta en File Manager (public_html)
+    └─ Espera a que termine la subida (5-10 minutos)
+    └─ NO cierres la ventana mientras sube
+
+[ ] PASO 5: VERIFICAR ARCHIVOS SUBIDOS
+    └─ En File Manager, verifica que public_html contiene:
+        [ ] index.html
+        [ ] sitemap.xml
+        [ ] robots.txt
+        [ ] manifest.json
+        [ ] .htaccess
+        [ ] favicon.ico
+        [ ] Carpeta: css/ (con styles.min.css dentro)
+        [ ] Carpeta: js/ (con 4 archivos .min.js)
+        [ ] Carpeta: images/ (con varios PNG y SVG)
+        [ ] Carpeta: pages/ (con 6 archivos HTML)
+        [ ] Carpeta: blog/ (con 6 archivos HTML)
+
+[ ] PASO 6: VERIFICAR CONTENIDO DE index.html
+    └─ Click derecho en index.html
+    └─ Selecciona "View" o "Edit"
+    └─ Busca la línea con <title>
+    └─ Verifica que dice: "DealTech365"
+    └─ NO debe decir: "Black Friday Tech"
+
+[ ] PASO 7: LIMPIAR CACHE DEL NAVEGADOR
+    └─ Presiona: Ctrl + Shift + Delete
+    └─ Selecciona: "Imágenes y archivos en caché"
+    └─ Rango: "Todo el tiempo"
+    └─ Click en: "Borrar datos"
+
+[ ] PASO 8: PROBAR EN MODO INCÓGNITO
+    └─ Abre ventana de incógnito: Ctrl + Shift + N
+    └─ Ve a: https://dealtech365.com
+    └─ Espera a que cargue
+
+[ ] PASO 9: VERIFICAR PÁGINA PRINCIPAL
+    [ ] Título de pestaña dice: "DealTech365"
+    [ ] Header del sitio dice: "DealTech365"
+    [ ] Fondo es NEGRO (#000000)
+    [ ] Texto es BLANCO
+    [ ] Botones son VERDES (#22C55E)
+    [ ] Diseño se ve profesional
+    [ ] NO dice "Black Friday Tech" en ningún lado
+
+[ ] PASO 10: PROBAR FUNCIONALIDADES
+    [ ] Filtros funcionan (categorías, precio)
+    [ ] Búsqueda funciona
+    [ ] Click en un producto abre detalles
+    [ ] Cookie consent aparece
+    [ ] Links del menú funcionan
+
+[ ] PASO 11: PROBAR EN MÓVIL
+    [ ] Abre https://dealtech365.com en tu móvil
+    [ ] Diseño responsive funciona
+    [ ] Menú hamburguesa aparece
+    [ ] CSS carga correctamente
+
+[ ] PASO 12: VERIFICAR CONSOLA (F12)
+    [ ] Presiona F12 en el navegador
+    [ ] Ve a pestaña "Console"
+    [ ] NO debe haber errores 404
+    [ ] NO debe haber errores de CSS
+    [ ] NO debe haber errores críticos
+
+═══════════════════════════════════════════════════════════════════════
+
+SI TODO ESTÁ MARCADO: ✅ ¡FELICIDADES! TU SITIO ESTÁ LIVE
+
+SI ALGO FALLA: Lee SOLUCION-CSS-NO-CARGA.md para troubleshooting
+
+═══════════════════════════════════════════════════════════════════════
+
+NOTAS:
+
+- NO subas archivos del root del proyecto (C:\BLACK FRIDAY EVERYDAY\)
+- SOLO sube archivos de deploy-ready/ (C:\BLACK FRIDAY EVERYDAY\deploy-ready\)
+- Si algo sale mal, borra todo y vuelve a empezar desde PASO 2
+- El archivo .htaccess es importante, asegúrate de subirlo
+
+═══════════════════════════════════════════════════════════════════════
+
+Tiempo estimado: 20-30 minutos
+
+Fecha: _______________
+
+═══════════════════════════════════════════════════════════════════════

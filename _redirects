@@ -1,0 +1,29 @@
+# Netlify Redirects Configuration
+# https://docs.netlify.com/routing/redirects/
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# 1. HTTPS REDIRECT (Automatic in Netlify, but included for clarity)
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+http://dealtech365.com/*    https://dealtech365.com/:splat    301!
+http://www.dealtech365.com/* https://dealtech365.com/:splat    301!
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# 2. WWW TO NON-WWW REDIRECT
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+https://www.dealtech365.com/* https://dealtech365.com/:splat 301!
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# 3. SPA FALLBACK (All routes serve index.html)
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# This allows HTML5 pushState routing to work
+/*    /index.html   200
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# 4. CUSTOM HEADERS
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# Security headers are configured in _headers file
+# See: _headers

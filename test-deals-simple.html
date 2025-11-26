@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Deals</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .deal-card {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+        }
+        .deal-price { font-size: 24px; font-weight: bold; color: #2563EB; }
+        .deal-title { margin: 0 0 10px 0; }
+    </style>
+</head>
+<body>
+    <h1>Test DealTech365 Deals</h1>
+    <div id="dealsGrid"></div>
+
+    <script>
+        // Simple getUserRegion mock
+        window.getUserRegion = function() {
+            return {
+                isEurope: true,
+                currency: 'EUR',
+                currencySymbol: '€'
+            };
+        };
+    </script>
+
+    <script src="js/deals.js?v=3.3"></script>
+
+    <script>
+        // Debug logging
+        setTimeout(() => {
+            console.log('DEAL_CATEGORIES:', typeof DEAL_CATEGORIES !== 'undefined' ? Object.keys(DEAL_CATEGORIES) : 'NOT DEFINED');
+            console.log('allDeals:', typeof allDeals !== 'undefined' ? allDeals.length : 'NOT DEFINED');
+            console.log('displayDeals:', typeof displayDeals !== 'undefined' ? 'DEFINED' : 'NOT DEFINED');
+
+            const container = document.getElementById('dealsGrid');
+            if (container) {
+                console.log('Container HTML length:', container.innerHTML.length);
+                console.log('Container content preview:', container.innerHTML.substring(0, 100));
+            }
+        }, 1000);
+    </script>
+</body>
+</html>

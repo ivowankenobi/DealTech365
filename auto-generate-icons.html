@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auto-Generador de Iconos - DealTech365</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #0a0a0a;
+      color: #ffffff;
+      padding: 2rem;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+      background: linear-gradient(135deg, #22C55E, #10B981);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .status {
+      background: #1a1a1a;
+      border: 1px solid #333;
+      border-radius: 12px;
+      padding: 2rem;
+      margin: 2rem 0;
+    }
+
+    .status h2 {
+      color: #22C55E;
+      margin-bottom: 1rem;
+    }
+
+    .progress {
+      list-style: none;
+      padding: 0;
+    }
+
+    .progress li {
+      padding: 0.5rem 0;
+      border-bottom: 1px solid #222;
+    }
+
+    .progress li:last-child {
+      border-bottom: none;
+    }
+
+    .done {
+      color: #22C55E;
+    }
+
+    .pending {
+      color: #888;
+    }
+
+    button {
+      background: linear-gradient(135deg, #22C55E, #10B981);
+      color: white;
+      border: none;
+      padding: 1rem 2rem;
+      border-radius: 8px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      cursor: pointer;
+      margin: 1rem 0;
+    }
+
+    button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(34, 197, 94, 0.4);
+    }
+
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🤖 Auto-Generador de Iconos DealTech365</h1>
+    <p style="color: #888; margin-bottom: 2rem;">
+      Esta herramienta generará y descargará automáticamente TODOS los iconos necesarios.
+    </p>
+
+    <div class="status">
+      <h2>📊 Estado</h2>
+      <ul class="progress" id="progress">
+        <li class="pending">⏳ Esperando inicio...</li>
+      </ul>
+    </div>
+
+    <button id="startBtn" onclick="startGeneration()">
+      🚀 Generar y Descargar TODOS los Iconos Automáticamente
+    </button>
+
+    <div id="canvases" class="hidden"></div>
+  </div>
+
+  <script>
+    const PRIMARY_COLOR = '#22C55E';
+    const BG_COLOR = '#000000';
+
+    const icons = [
+      { id: 'icon-16', size: 16, filename: 'favicon-16x16.png' },
+      { id: 'icon-32', size: 32, filename: 'favicon-32x32.png' },
+      { id: 'icon-180', size: 180, filename: 'apple-touch-icon.png' },
+      { id: 'icon-192', size: 192, filename: 'icon-192x192.png' },
+      { id: 'icon-512', size: 512, filename: 'icon-512x512.png' }
+    ];
+
+    function updateProgress(message, done = false) {
+      const progressList = document.getElementById('progress');
+      const li = document.createElement('li');
+      li.className = done ? 'done' : 'pending';
+      li.textContent = message;
+      progressList.appendChild(li);
+    }
+
+    function drawIcon(canvas, size) {
+      const ctx = canvas.getContext('2d');
+
+      // Clear canvas
+      ctx.clearRect(0, 0, size, size);
+
+      // Background
+      ctx.fillStyle = BG_COLOR;
+      ctx.fillRect(0, 0, size, size);
+
+      // Draw diamond shape
+      const center = size / 2;
+      const diamondSize = size * 0.5;
+
+      ctx.beginPath();
+      ctx.moveTo(center, center - diamondSize);
+      ctx.lineTo(center + diamondSize, center);
+      ctx.lineTo(center, center + diamondSize);
+      ctx.lineTo(center - diamondSize, center);
+      ctx.closePath();
+
+      // Gradient fill
+      const gradient = ctx.createLinearGradient(0, 0, size, size);
+      gradient.addColorStop(0, PRIMARY_COLOR);
+      gradient.addColorStop(1, '#10B981');
+      ctx.fillStyle = gradient;
+      ctx.fill();
+
+      // Add text for larger icons
+      if (size >= 72) {
+        ctx.fillStyle = BG_COLOR;
+        ctx.font = `bold ${size * 0.25}px Arial`;
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+
+        if (size >= 144) {
+          ctx.fillText('DT', center, center - size * 0.05);
+          ctx.font = `${size * 0.12}px Arial`;
+          ctx.fillText('365', center, center + size * 0.12);
+        } else {
+          ctx.fillText('DT', center, center);
+        }
+      }
+
+      // Add border
+      ctx.strokeStyle = PRIMARY_COLOR;
+      ctx.lineWidth = Math.max(1, size / 64);
+      ctx.strokeRect(0, 0, size, size);
+    }
+
+    function downloadCanvas(canvas, filename) {
+      return new Promise((resolve) => {
+        canvas.toBlob((blob) => {
+          const link = document.createElement('a');
+          link.download = filename;
+          link.href = URL.createObjectURL(blob);
+          link.click();
+          URL.revokeObjectURL(link.href);
+          setTimeout(resolve, 100); // Small delay between downloads
+        }, 'image/png');
+      });
+    }
+
+    async function startGeneration() {
+      const btn = document.getElementById('startBtn');
+      btn.disabled = true;
+      btn.textContent = '⏳ Generando...';
+
+      const progressList = document.getElementById('progress');
+      progressList.innerHTML = '';
+
+      updateProgress('🚀 Iniciando generación de iconos...', true);
+
+      const canvasContainer = document.getElementById('canvases');
+      canvasContainer.innerHTML = '';
+
+      for (const icon of icons) {
+        updateProgress(`📦 Generando ${icon.filename}...`);
+
+        // Create canvas
+        const canvas = document.createElement('canvas');
+        canvas.width = icon.size;
+        canvas.height = icon.size;
+        canvas.id = icon.id;
+        canvasContainer.appendChild(canvas);
+
+        // Draw icon
+        drawIcon(canvas, icon.size);
+
+        // Download
+        await downloadCanvas(canvas, icon.filename);
+
+        updateProgress(`✅ ${icon.filename} descargado`, true);
+      }
+
+      updateProgress('');
+      updateProgress('🎉 ¡TODOS LOS ICONOS GENERADOS Y DESCARGADOS!', true);
+      updateProgress('');
+      updateProgress('📁 Los archivos están en tu carpeta de Descargas');
+      updateProgress('📋 Mueve los archivos a la carpeta /images/ de tu proyecto:');
+      icons.forEach(icon => {
+        updateProgress(`   → ${icon.filename}`, true);
+      });
+      updateProgress('');
+      updateProgress('✅ Después ejecuta: npm run verify');
+
+      btn.textContent = '✅ Completado - Cerrar esta ventana';
+      btn.style.background = '#10B981';
+    }
+
+    // Auto-start after 2 seconds
+    window.addEventListener('DOMContentLoaded', () => {
+      setTimeout(() => {
+        const shouldAuto = confirm('¿Generar y descargar TODOS los iconos automáticamente?\n\nSe descargarán 5 archivos PNG a tu carpeta de Descargas.');
+        if (shouldAuto) {
+          startGeneration();
+        }
+      }, 500);
+    });
+  </script>
+</body>
+</html>

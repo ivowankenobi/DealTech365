@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Debug Deals</title>
+    <style>
+        body { font-family: monospace; padding: 20px; background: #f5f5f5; }
+        .log { background: white; padding: 15px; margin: 10px 0; border-radius: 5px; border-left: 4px solid #2563EB; }
+        .error { border-left-color: #ef4444; }
+        .success { border-left-color: #10b981; }
+        pre { background: #f9f9f9; padding: 10px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <h1>🔍 DealTech365 Debug</h1>
+    <div id="output"></div>
+
+    <script>
+        const output = document.getElementById('output');
+
+        function log(message, type = 'log') {
+            const div = document.createElement('div');
+            div.className = `log ${type}`;
+            div.innerHTML = `<strong>${new Date().toLocaleTimeString()}</strong>: ${message}`;
+            output.appendChild(div);
+            console.log(message);
+        }
+
+        log('🚀 Starting debug...', 'log');
+
+        // Step 1: Check if getUserRegion exists
+        setTimeout(() => {
+            if (typeof window.getUserRegion === 'function') {
+                const region = window.getUserRegion();
+                log('✅ getUserRegion found: ' + JSON.stringify(region), 'success');
+            } else {
+                log('❌ getUserRegion NOT found - creating mock', 'error');
+                window.getUserRegion = function() {
+                    return { isEurope: true, currency: 'EUR', currencySymbol: '€' };
+                };
+            }
+        }, 100);
+
+        // Step 2: Load deals.js
+        setTimeout(() => {
+            const script = document.createElement('script');
+            script.src = 'js/deals.js?v=3.4&debug=' + Date.now();
+            script.onload = () => {
+                log('✅ deals.js loaded', 'success');
+
+                // Check what's defined
+                setTimeout(() => {
+                    log('Checking DEAL_CATEGORIES...', 'log');
+                    if (typeof DEAL_CATEGORIES !== 'undefined') {
+                        log('✅ DEAL_CATEGORIES found: ' + Object.keys(DEAL_CATEGORIES).join(', '), 'success');
+                        log('📊 Audio products: ' + DEAL_CATEGORIES.audio.products.length, 'success');
+                        log('📊 Smartphones products: ' + DEAL_CATEGORIES.smartphones.products.length, 'success');
+                    } else {
+                        log('❌ DEAL_CATEGORIES NOT defined', 'error');
+                    }
+
+                    log('Checking generateDeals...', 'log');
+                    if (typeof generateDeals !== 'undefined') {
+                        log('✅ generateDeals found', 'success');
+                    } else {
+                        log('❌ generateDeals NOT defined', 'error');
+                    }
+
+                    log('Checking allDeals...', 'log');
+                    if (typeof allDeals !== 'undefined') {
+                        log('✅ allDeals found: ' + allDeals.length + ' items', 'success');
+                        if (allDeals.length > 0) {
+                            log('<pre>' + JSON.stringify(allDeals[0], null, 2).substring(0, 500) + '...</pre>', 'success');
+                        }
+                    } else {
+                        log('❌ allDeals NOT defined', 'error');
+                    }
+
+                    log('Checking displayDeals...', 'log');
+                    if (typeof displayDeals !== 'undefined') {
+                        log('✅ displayDeals found', 'success');
+                    } else {
+                        log('❌ displayDeals NOT defined', 'error');
+                    }
+                }, 1000);
+            };
+            script.onerror = () => {
+                log('❌ ERROR loading deals.js', 'error');
+            };
+            document.head.appendChild(script);
+        }, 200);
+
+        // Step 3: Load deals-service.js
+        setTimeout(() => {
+            const script = document.createElement('script');
+            script.src = 'js/deals-service.js?v=3.4&debug=' + Date.now();
+            script.onload = () => {
+                log('✅ deals-service.js loaded', 'success');
+
+                setTimeout(() => {
+                    if (window.dealsService) {
+                        log('✅ dealsService found', 'success');
+                    } else {
+                        log('❌ dealsService NOT found', 'error');
+                    }
+                }, 100);
+            };
+            script.onerror = () => {
+                log('❌ ERROR loading deals-service.js', 'error');
+            };
+            document.head.appendChild(script);
+        }, 1500);
+    </script>
+</body>
+</html>

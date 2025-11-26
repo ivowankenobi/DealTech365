@@ -1,0 +1,169 @@
+═══════════════════════════════════════════════════════════
+  ARCHIVOS A SUBIR AL HOSTING - DealTech365.com
+═══════════════════════════════════════════════════════════
+
+📋 CHECKLIST DE ARCHIVOS PARA PRODUCCIÓN
+
+Marca [✓] cada archivo/carpeta a medida que lo subes.
+
+
+🔴 CRÍTICOS (Sin estos NO funciona):
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+RAÍZ DEL PROYECTO:
+[ ] index.production.html  →  RENOMBRAR a "index.html" al subir ⚠️
+[ ] sitemap.xml
+[ ] robots.txt
+[ ] manifest.json
+
+CARPETA /css/:
+[ ] styles.min.css  (NO subir styles.css)
+
+CARPETA /js/:
+[ ] region.min.js
+[ ] cookie-consent.min.js
+[ ] analytics.min.js
+[ ] deals.min.js
+
+CARPETA /pages/:
+[ ] favorites.html
+[ ] notifications.html
+[ ] edit-profile.html
+[ ] language.html
+[ ] theme.html
+[ ] about.html
+[ ] contact.html
+[ ] privacy-policy.html
+[ ] terms.html
+[ ] affiliate-disclosure.html
+
+CARPETA /blog/:
+[ ] laptops-black-friday-2025.html
+[ ] gadgets-imprescindibles-2025.html
+[ ] auriculares-premium-descuento.html
+[ ] smartphones-cual-comprar.html
+[ ] top-accesorios-gaming.html
+[ ] consejos-black-friday.html
+
+
+🟡 IMPORTANTES (Para PWA y SEO):
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+CARPETA /images/:
+[ ] icon-192x192.png  ⚠️ CRÍTICO PARA PWA
+[ ] icon-512x512.png  ⚠️ CRÍTICO PARA PWA
+[ ] favicon-16x16.png
+[ ] favicon-32x32.png
+[ ] apple-touch-icon.png
+[ ] og-image.jpg  (para compartir en redes sociales)
+
+RAÍZ (opcional):
+[ ] favicon.ico
+
+
+🟢 IMÁGENES DE PRODUCTOS (Si existen en tu proyecto):
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+CARPETA /images/:
+[ ] Todas las imágenes de productos (laptops, smartphones, etc.)
+[ ] logo.svg (si lo tienes)
+
+
+❌ NO SUBIR (Archivos de desarrollo):
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+[ ] ❌ index.html (versión de desarrollo)
+[ ] ❌ css/styles.css (sin minificar)
+[ ] ❌ js/region.js (sin minificar)
+[ ] ❌ js/cookie-consent.js (sin minificar)
+[ ] ❌ js/analytics.js (sin minificar)
+[ ] ❌ js/deals.js (sin minificar)
+[ ] ❌ node_modules/ (carpeta entera)
+[ ] ❌ package.json
+[ ] ❌ package-lock.json
+[ ] ❌ *.md (archivos de documentación)
+[ ] ❌ generate-icons.html
+[ ] ❌ .git/ (si tienes control de versiones)
+[ ] ❌ .gitignore
+[ ] ❌ FILES-TO-UPLOAD.txt (este archivo)
+
+
+═══════════════════════════════════════════════════════════
+  ESTRUCTURA FINAL EN EL HOSTING
+═══════════════════════════════════════════════════════════
+
+public_html/  (o www/ o htdocs/)
+│
+├── index.html  ← (era index.production.html)
+├── sitemap.xml
+├── robots.txt
+├── manifest.json
+├── favicon.ico (opcional)
+│
+├── css/
+│   └── styles.min.css
+│
+├── js/
+│   ├── region.min.js
+│   ├── cookie-consent.min.js
+│   ├── analytics.min.js
+│   └── deals.min.js
+│
+├── images/
+│   ├── icon-192x192.png
+│   ├── icon-512x512.png
+│   ├── favicon-16x16.png
+│   ├── favicon-32x32.png
+│   ├── apple-touch-icon.png
+│   ├── og-image.jpg
+│   └── [imágenes de productos]
+│
+├── pages/
+│   └── [todos los .html]
+│
+└── blog/
+    └── [todos los .html]
+
+
+═══════════════════════════════════════════════════════════
+  VERIFICACIÓN POST-UPLOAD
+═══════════════════════════════════════════════════════════
+
+Después de subir, verifica:
+
+1. [ ] https://dealtech365.com carga correctamente
+2. [ ] CSS se aplica (página NO es solo texto plano)
+3. [ ] Cookie banner aparece al cargar
+4. [ ] Puedes clickear en productos
+5. [ ] Favoritos funcionan (corazón)
+6. [ ] No hay errores en consola (F12)
+7. [ ] https://dealtech365.com/sitemap.xml es accesible
+8. [ ] https://dealtech365.com/manifest.json es accesible
+
+
+═══════════════════════════════════════════════════════════
+  COMANDOS ÚTILES (Si usas terminal/FTP)
+═══════════════════════════════════════════════════════════
+
+# Listar archivos críticos que debes tener:
+ls index.production.html sitemap.xml robots.txt manifest.json
+
+# Listar archivos minificados:
+ls css/*.min.css js/*.min.js
+
+# Verificar tamaño total (debe ser ~2-3 MB sin imágenes):
+du -sh .
+
+
+═══════════════════════════════════════════════════════════
+
+✅ CUANDO TERMINES:
+
+1. Todos los archivos marcados con [✓]
+2. index.production.html renombrado a index.html
+3. Sitio probado en https://dealtech365.com
+4. Leer DEPLOYMENT-DEALTECH365.md para configuración final
+
+🚀 ¡Listo para lanzar!
+
+═══════════════════════════════════════════════════════════

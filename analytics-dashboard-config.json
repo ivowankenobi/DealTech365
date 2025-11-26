@@ -1,0 +1,586 @@
+{
+  "dashboardName": "DealTech365 - Analytics Dashboard",
+  "description": "Comprehensive analytics dashboard for affiliate performance tracking",
+  "version": "1.0.0",
+  "created": "2025-11-19",
+
+  "customDimensions": [
+    {
+      "name": "Estimated Commission",
+      "parameter": "estimated_commission",
+      "scope": "event",
+      "type": "number",
+      "description": "Estimated affiliate commission from product clicks"
+    },
+    {
+      "name": "Estimated Revenue",
+      "parameter": "estimated_revenue",
+      "scope": "event",
+      "type": "number",
+      "description": "Estimated revenue from affiliate clicks"
+    },
+    {
+      "name": "Engagement Score",
+      "parameter": "engagement_score",
+      "scope": "event",
+      "type": "number",
+      "description": "User engagement score based on actions"
+    },
+    {
+      "name": "Retailer",
+      "parameter": "retailer",
+      "scope": "event",
+      "type": "text",
+      "description": "Affiliate retailer (Amazon, Newegg, BestBuy, etc.)"
+    },
+    {
+      "name": "Product Category",
+      "parameter": "product_category",
+      "scope": "event",
+      "type": "text",
+      "description": "Category of product (laptops, smartphones, audio, gaming)"
+    },
+    {
+      "name": "Discount Percentage",
+      "parameter": "discount_percentage",
+      "scope": "event",
+      "type": "number",
+      "description": "Product discount percentage"
+    },
+    {
+      "name": "ASIN",
+      "parameter": "asin",
+      "scope": "event",
+      "type": "text",
+      "description": "Amazon Standard Identification Number"
+    },
+    {
+      "name": "Results Count",
+      "parameter": "results_count",
+      "scope": "event",
+      "type": "number",
+      "description": "Number of search results"
+    },
+    {
+      "name": "Scroll Percent",
+      "parameter": "percent",
+      "scope": "event",
+      "type": "number",
+      "description": "Scroll depth percentage"
+    },
+    {
+      "name": "Time Seconds",
+      "parameter": "seconds",
+      "scope": "event",
+      "type": "number",
+      "description": "Time on page in seconds"
+    },
+    {
+      "name": "Funnel Name",
+      "parameter": "funnel_name",
+      "scope": "event",
+      "type": "text",
+      "description": "Name of conversion funnel"
+    },
+    {
+      "name": "Step Name",
+      "parameter": "step_name",
+      "scope": "event",
+      "type": "text",
+      "description": "Name of funnel step"
+    },
+    {
+      "name": "Step Number",
+      "parameter": "step_number",
+      "scope": "event",
+      "type": "number",
+      "description": "Number of funnel step"
+    }
+  ],
+
+  "customMetrics": [
+    {
+      "name": "Total Estimated Revenue",
+      "calculation": "SUM(estimated_revenue)",
+      "unit": "currency",
+      "description": "Total estimated revenue from all affiliate clicks"
+    },
+    {
+      "name": "Average Engagement Score",
+      "calculation": "AVG(engagement_score)",
+      "unit": "standard",
+      "description": "Average user engagement score"
+    },
+    {
+      "name": "Affiliate Click Rate",
+      "calculation": "COUNT(affiliate_click) / COUNT(page_view)",
+      "unit": "percent",
+      "description": "Percentage of page views that result in affiliate clicks"
+    },
+    {
+      "name": "Newsletter Conversion Rate",
+      "calculation": "COUNT(sign_up) / COUNT(page_view)",
+      "unit": "percent",
+      "description": "Percentage of page views that result in newsletter signups"
+    }
+  ],
+
+  "conversionEvents": [
+    {
+      "eventName": "affiliate_click",
+      "displayName": "Affiliate Click",
+      "value": 1.00,
+      "countingMethod": "once_per_session",
+      "description": "User clicked on an affiliate link"
+    },
+    {
+      "eventName": "sign_up",
+      "displayName": "Newsletter Signup",
+      "value": 5.00,
+      "countingMethod": "once_per_event",
+      "description": "User signed up for newsletter"
+    },
+    {
+      "eventName": "add_to_wishlist",
+      "displayName": "Add to Wishlist",
+      "value": 0.50,
+      "countingMethod": "once_per_event",
+      "description": "User added product to wishlist"
+    }
+  ],
+
+  "audiences": [
+    {
+      "name": "High Intent Users",
+      "description": "Users who clicked on affiliate links",
+      "conditions": [
+        {
+          "type": "event",
+          "event": "affiliate_click",
+          "operator": ">=",
+          "value": 1
+        }
+      ],
+      "membershipDuration": 30,
+      "useCase": "Remarketing to users who showed purchase intent"
+    },
+    {
+      "name": "Newsletter Subscribers",
+      "description": "Users who signed up for newsletter",
+      "conditions": [
+        {
+          "type": "event",
+          "event": "sign_up",
+          "parameter": "method",
+          "operator": "=",
+          "value": "newsletter"
+        }
+      ],
+      "membershipDuration": 365,
+      "useCase": "Email marketing audience"
+    },
+    {
+      "name": "Engaged Users",
+      "description": "Users with high engagement score",
+      "conditions": [
+        {
+          "type": "parameter",
+          "parameter": "engagement_score",
+          "operator": ">=",
+          "value": 50
+        }
+      ],
+      "membershipDuration": 30,
+      "useCase": "Target users most likely to convert"
+    },
+    {
+      "name": "Deep Scrollers",
+      "description": "Users who scrolled at least 75%",
+      "conditions": [
+        {
+          "type": "event",
+          "event": "scroll_depth",
+          "parameter": "percent",
+          "operator": ">=",
+          "value": 75
+        }
+      ],
+      "membershipDuration": 30,
+      "useCase": "Users who consume content thoroughly"
+    },
+    {
+      "name": "Product Researchers",
+      "description": "Users who used search or filters",
+      "conditions": [
+        {
+          "type": "event",
+          "event": "search",
+          "operator": ">=",
+          "value": 1
+        },
+        {
+          "type": "event",
+          "event": "filter_applied",
+          "operator": ">=",
+          "value": 1,
+          "logic": "OR"
+        }
+      ],
+      "membershipDuration": 30,
+      "useCase": "Users actively researching products"
+    }
+  ],
+
+  "explorations": [
+    {
+      "name": "Affiliate Revenue Dashboard",
+      "type": "freeform",
+      "description": "Overview of affiliate performance and revenue",
+      "dimensions": [
+        "product_name",
+        "retailer",
+        "product_category",
+        "date"
+      ],
+      "metrics": [
+        "event_count (affiliate_click)",
+        "estimated_revenue",
+        "discount_percentage (avg)"
+      ],
+      "visualization": "table",
+      "filters": [
+        {
+          "dimension": "event_name",
+          "operator": "=",
+          "value": "affiliate_click"
+        }
+      ],
+      "breakdown": "retailer"
+    },
+    {
+      "name": "Conversion Funnel",
+      "type": "funnel",
+      "description": "User journey from landing to conversion",
+      "steps": [
+        {
+          "name": "Landing",
+          "event": "page_view",
+          "page": "/"
+        },
+        {
+          "name": "Browse Products",
+          "event": "funnel_step",
+          "parameter": "step_name",
+          "value": "browse_products"
+        },
+        {
+          "name": "View Product",
+          "event": "view_item"
+        },
+        {
+          "name": "Click Affiliate Link",
+          "event": "affiliate_click"
+        },
+        {
+          "name": "Newsletter Signup",
+          "event": "sign_up"
+        }
+      ],
+      "timeWindow": "30_days"
+    },
+    {
+      "name": "Engagement Analysis",
+      "type": "freeform",
+      "description": "User engagement metrics by page",
+      "dimensions": [
+        "page_path",
+        "device_category"
+      ],
+      "metrics": [
+        "engagement_score (avg)",
+        "scroll_depth (avg)",
+        "time_on_page (avg)",
+        "bounce_rate"
+      ],
+      "visualization": "bar_chart",
+      "sortBy": "engagement_score",
+      "sortOrder": "descending"
+    },
+    {
+      "name": "Search Terms Analysis",
+      "type": "freeform",
+      "description": "Most searched terms and their success rate",
+      "dimensions": [
+        "search_term",
+        "results_count"
+      ],
+      "metrics": [
+        "event_count (search)",
+        "event_count (affiliate_click after search)"
+      ],
+      "visualization": "table",
+      "filters": [
+        {
+          "dimension": "event_name",
+          "operator": "=",
+          "value": "search"
+        }
+      ]
+    },
+    {
+      "name": "Performance Metrics",
+      "type": "freeform",
+      "description": "Page load performance by page",
+      "dimensions": [
+        "page_path",
+        "connection_type"
+      ],
+      "metrics": [
+        "page_load_time (avg)",
+        "dom_ready_time (avg)",
+        "server_response_time (avg)"
+      ],
+      "visualization": "line_chart",
+      "filters": [
+        {
+          "dimension": "event_name",
+          "operator": "=",
+          "value": "page_performance"
+        }
+      ]
+    }
+  ],
+
+  "alerts": [
+    {
+      "name": "High Affiliate Clicks",
+      "description": "Alert when daily affiliate clicks exceed threshold",
+      "condition": {
+        "metric": "affiliate_click",
+        "operator": ">",
+        "value": 100,
+        "timeframe": "day"
+      },
+      "notification": "email",
+      "priority": "low"
+    },
+    {
+      "name": "Low Newsletter Signups",
+      "description": "Alert when daily signups drop below threshold",
+      "condition": {
+        "metric": "sign_up",
+        "operator": "<",
+        "value": 5,
+        "timeframe": "day"
+      },
+      "notification": "email",
+      "priority": "medium"
+    },
+    {
+      "name": "High Error Rate",
+      "description": "Alert when JavaScript errors spike",
+      "condition": {
+        "metric": "javascript_error",
+        "operator": ">",
+        "value": 50,
+        "timeframe": "hour"
+      },
+      "notification": "email",
+      "priority": "high"
+    },
+    {
+      "name": "Slow Page Load",
+      "description": "Alert when average page load exceeds 5 seconds",
+      "condition": {
+        "metric": "page_load_time",
+        "operator": ">",
+        "value": 5000,
+        "timeframe": "day"
+      },
+      "notification": "email",
+      "priority": "medium"
+    }
+  ],
+
+  "lookerstudioTemplates": [
+    {
+      "name": "Executive Dashboard",
+      "description": "High-level overview for stakeholders",
+      "pages": [
+        {
+          "name": "Overview",
+          "widgets": [
+            {
+              "type": "scorecard",
+              "metric": "Total Users",
+              "comparison": "previous_period"
+            },
+            {
+              "type": "scorecard",
+              "metric": "Affiliate Clicks",
+              "comparison": "previous_period"
+            },
+            {
+              "type": "scorecard",
+              "metric": "Estimated Revenue",
+              "comparison": "previous_period"
+            },
+            {
+              "type": "scorecard",
+              "metric": "Newsletter Signups",
+              "comparison": "previous_period"
+            },
+            {
+              "type": "time_series",
+              "metric": "Users by Date",
+              "dateRange": "last_30_days"
+            },
+            {
+              "type": "table",
+              "dimensions": ["product_name", "retailer"],
+              "metrics": ["affiliate_clicks", "estimated_revenue"],
+              "title": "Top Products by Revenue"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Product Performance",
+      "description": "Detailed product and category analysis",
+      "pages": [
+        {
+          "name": "Products",
+          "widgets": [
+            {
+              "type": "table",
+              "dimensions": ["product_name", "product_category", "retailer"],
+              "metrics": ["view_item", "affiliate_click", "add_to_wishlist", "estimated_revenue"],
+              "title": "Product Performance Table"
+            },
+            {
+              "type": "bar_chart",
+              "dimension": "product_category",
+              "metric": "estimated_revenue",
+              "title": "Revenue by Category"
+            },
+            {
+              "type": "pie_chart",
+              "dimension": "retailer",
+              "metric": "affiliate_click",
+              "title": "Clicks by Retailer"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "User Behavior",
+      "description": "User engagement and behavior analysis",
+      "pages": [
+        {
+          "name": "Engagement",
+          "widgets": [
+            {
+              "type": "scorecard",
+              "metric": "Average Engagement Score"
+            },
+            {
+              "type": "scorecard",
+              "metric": "Average Time on Page"
+            },
+            {
+              "type": "scorecard",
+              "metric": "Bounce Rate"
+            },
+            {
+              "type": "bar_chart",
+              "dimension": "scroll_percent",
+              "metric": "event_count",
+              "title": "Scroll Depth Distribution"
+            },
+            {
+              "type": "funnel",
+              "steps": ["page_view", "view_item", "affiliate_click", "sign_up"],
+              "title": "Conversion Funnel"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+
+  "setupInstructions": {
+    "step1": {
+      "title": "Create Custom Dimensions in GA4",
+      "instructions": [
+        "Go to GA4 Admin → Custom definitions",
+        "Click 'Create custom dimension'",
+        "For each dimension in 'customDimensions' above:",
+        "  - Enter the name",
+        "  - Select 'Event' scope",
+        "  - Enter the parameter name",
+        "  - Save"
+      ]
+    },
+    "step2": {
+      "title": "Mark Conversion Events",
+      "instructions": [
+        "Go to GA4 Admin → Events",
+        "Find each event in 'conversionEvents' above",
+        "Toggle 'Mark as conversion' to ON",
+        "Set the conversion value if applicable"
+      ]
+    },
+    "step3": {
+      "title": "Create Audiences",
+      "instructions": [
+        "Go to GA4 Admin → Audiences",
+        "Click 'New audience'",
+        "For each audience in 'audiences' above:",
+        "  - Enter the name and description",
+        "  - Add conditions as specified",
+        "  - Set membership duration",
+        "  - Save"
+      ]
+    },
+    "step4": {
+      "title": "Create Explorations",
+      "instructions": [
+        "Go to GA4 Explore → Create new exploration",
+        "For each exploration in 'explorations' above:",
+        "  - Select the exploration type",
+        "  - Add dimensions and metrics",
+        "  - Apply filters",
+        "  - Customize visualization",
+        "  - Save with the name specified"
+      ]
+    },
+    "step5": {
+      "title": "Setup Alerts",
+      "instructions": [
+        "Go to GA4 Admin → Custom alerts",
+        "Click 'Create alert'",
+        "For each alert in 'alerts' above:",
+        "  - Enter the name",
+        "  - Set condition",
+        "  - Configure notification",
+        "  - Save"
+      ]
+    },
+    "step6": {
+      "title": "Create Looker Studio Dashboard",
+      "instructions": [
+        "Go to lookerstudio.google.com",
+        "Click 'Create' → 'Report'",
+        "Connect to your GA4 property",
+        "Use the templates in 'lookerstudioTemplates' as guide",
+        "Add widgets as specified",
+        "Customize colors and branding",
+        "Share with stakeholders"
+      ]
+    }
+  },
+
+  "notes": "This configuration file provides all necessary information to set up comprehensive analytics tracking for DealTech365. Follow the setup instructions in order for best results."
+}
