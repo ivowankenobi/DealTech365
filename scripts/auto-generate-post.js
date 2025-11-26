@@ -6,10 +6,23 @@ const dealsData = require('../js/deals.js');
 const OUTPUT_DIR = path.join(__dirname, '../blog/posts');
 const DEALS = dealsData.generateDeals({ isEurope: true, currency: 'EUR', currencySymbol: '€' });
 
+// Helper function to sanitize titles for YAML
+function sanitizeTitle(text, maxLength = 80) {
+    return text
+        .substring(0, maxLength)
+        .replace(/"/g, '\\"')  // Escape quotes
+        .replace(/&/g, 'y')    // Replace & with 'y'
+        .trim();
+}
+
 // Templates
 const TEMPLATES = {
-    single: (deal) => `---
-title: "¡Chollo! ${deal.name} con ${deal.discount}% de descuento"
+    single: (deal) => {
+        const shortTitle = sanitizeTitle(`¡Chollo! ${deal.brand} ${deal.category} con ${deal.discount}% de descuento`);
+        const shortName = sanitizeTitle(deal.name, 60);
+
+        return `---
+title: "${shortTitle}"
 date: "${new Date().toISOString().split('T')[0]}"
 author: "DealTech365 Bot"
 image: "${deal.image}"
@@ -17,16 +30,16 @@ description: "Aprovecha esta oferta increíble en ${deal.brand}. Precio mínimo 
 tags: ['oferta', '${deal.category}', '${deal.brand.toLowerCase()}']
 ---
 
-# ¡Oportunidad Única! ${deal.name}
+# ¡Oportunidad Única! ${shortName}
 
-Si estabas buscando **${deal.name}**, hoy es tu día de suerte. Hemos detectado una bajada de precio brutal en Amazon.
+Si estabas buscando **${deal.brand} ${deal.category}**, hoy es tu día de suerte. Hemos detectado una bajada de precio brutal en Amazon.
 
 ## 📉 Análisis de Precio
 *   **Precio Original:** ${deal.currencySymbol}${deal.basePrice}
 *   **Precio Oferta:** **${deal.currencySymbol}${deal.finalPrice}**
 *   **Ahorro Total:** ${deal.currencySymbol}${deal.savings} (${deal.discount}%)
 
-![${deal.name}](${deal.image})
+![${shortName}](${deal.image})
 
 ## 🚀 Características Destacadas
 ${Object.entries(deal.specs || {}).map(([key, value]) => `*   **${key}:** ${value}`).join('\n')}
@@ -35,9 +48,13 @@ ${Object.entries(deal.specs || {}).map(([key, value]) => `*   **${key}:** ${valu
 Este producto de **${deal.brand}** destaca por su relación calidad-precio. Con este descuento del ${deal.discount}%, se convierte en una compra maestra.
 
 [👉 VER OFERTA EN AMAZON](${deal.affiliateLink})
-`,
+`;
+    },
 
-    comparison: (category, deals) => `---
+    comparison: (category, deals) => {
+        const shortNames = deals.map(d => sanitizeTitle(d.name, 40));
+
+        return `---
 title: "Comparativa: Los ${deals.length} Mejores ${deals[0].categoryName} de 2025"
 date: "${new Date().toISOString().split('T')[0]}"
 author: "DealTech365 Expertos"
@@ -54,13 +71,13 @@ Hemos seleccionado las mejores opciones de **${deals[0].categoryName}** disponib
 
 | Producto | Precio | Descuento | Lo mejor |
 | :--- | :--- | :--- | :--- |
-${deals.map(d => `| ${d.brand} ${d.name.substring(0, 20)}... | **${d.currencySymbol}${d.finalPrice}** | -${d.discount}% | ${Object.values(d.specs || {})[0] || 'Calidad'} |`).join('\n')}
+${deals.map((d, i) => `| ${d.brand} ${shortNames[i]} | **${d.currencySymbol}${d.finalPrice}** | -${d.discount}% | ${Object.values(d.specs || {})[0] || 'Calidad'} |`).join('\n')}
 
 ## Análisis Detallado
 
-${deals.map(d => `
-### ${d.name}
-![${d.name}](${d.image})
+${deals.map((d, i) => `
+### ${shortNames[i]}
+![${shortNames[i]}](${d.image})
 
 *   **Precio:** ${d.currencySymbol}${d.finalPrice} (Antes ${d.currencySymbol}${d.basePrice})
 *   **Ahorro:** ${d.discount}%
@@ -71,10 +88,14 @@ ${deals.map(d => `
 `).join('\n---\n')}
 
 ## Conclusión
-Si buscas la mejor relación calidad-precio, te recomendamos el **${deals[0].name}**.
-`,
+Si buscas la mejor relación calidad-precio, te recomendamos el **${shortNames[0]}**.
+`;
+    },
 
-    topList: (category, deals) => `---
+    topList: (category, deals) => {
+        const shortNames = deals.map(d => sanitizeTitle(d.name, 50));
+
+        return `---
 title: "Top 5 ${deals[0].categoryName} por menos de ${deals[0].currencySymbol}500"
 date: "${new Date().toISOString().split('T')[0]}"
 author: "DealTech365"
@@ -88,17 +109,18 @@ tags: ['top', '${category}', 'barato']
 No hace falta gastar una fortuna para tener buena tecnología. Aquí tienes nuestro Top 5 de ofertas.
 
 ${deals.map((d, i) => `
-## ${i + 1}. ${d.name}
+## ${i + 1}. ${shortNames[i]}
 > **Descuento del ${d.discount}%**
 
-![${d.name}](${d.image})
+![${shortNames[i]}](${d.image})
 
 Este modelo de **${d.brand}** es perfecto para quienes buscan rendimiento sin pagar de más.
 
 *   **Precio Oferta:** **${d.currencySymbol}${d.finalPrice}**
 *   [👉 Comprar en Amazon](${d.affiliateLink})
 `).join('\n\n')}
-`
+`;
+    }
 };
 
 // Logic
