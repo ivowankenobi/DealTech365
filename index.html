@@ -440,9 +440,13 @@
             <li>✓ Guías de compra semanales</li>
           </ul>
         </div>
-        <form class="newsletter__form" id="newsletterForm">
+        <form class="newsletter__form" id="newsletterForm" name="newsletter" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="newsletter">
+          <p style="display:none;">
+            <label>Don't fill this out if you're human: <input name="bot-field"></label>
+          </p>
           <div class="newsletter__input-wrapper">
-            <input type="email" placeholder="tu@email.com" data-i18n="newsletter_email_placeholder" required
+            <input type="email" name="email" placeholder="tu@email.com" data-i18n="newsletter_email_placeholder" required
               class="newsletter__input" id="emailInput" aria-label="Correo electrónico">
             <button type="submit" class="btn primary newsletter__btn"
               data-i18n="newsletter_btn_subscribe">Suscribirme</button>
@@ -536,12 +540,14 @@
   <script src="js/analytics.min.js"></script>
   <script src="js/auth.js"></script>
   <script>
-    // Newsletter form handling
-    document.getElementById('newsletterForm').addEventListener('submit', function (e) {
+    // Newsletter form handling with Netlify Forms
+    document.getElementById('newsletterForm').addEventListener('submit', async function (e) {
       e.preventDefault();
 
+      const form = e.target;
       const emailInput = document.getElementById('emailInput');
       const messageDiv = document.getElementById('newsletterMessage');
+      const submitButton = form.querySelector('button[type="submit"]');
       const email = emailInput.value;
 
       // Simple email validation
@@ -553,24 +559,50 @@
         return;
       }
 
-      // Simulate successful subscription
-      messageDiv.className = 'newsletter__message success';
-      messageDiv.textContent = '¡Gracias por suscribirte! Revisa tu correo para confirmar tu suscripción.';
-      emailInput.value = '';
+      // Disable submit button while processing
+      submitButton.disabled = true;
+      submitButton.textContent = 'Enviando...';
 
-      // Track newsletter signup in analytics
-      if (window.Analytics) {
-        window.Analytics.trackNewsletterSignup(email);
+      try {
+        // Submit to Netlify Forms
+        const formData = new FormData(form);
+        const response = await fetch('/', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: new URLSearchParams(formData).toString()
+        });
+
+        if (response.ok) {
+          // Success
+          messageDiv.className = 'newsletter__message success';
+          messageDiv.textContent = '¡Gracias por suscribirte! Recibirás las mejores ofertas en tu correo.';
+          emailInput.value = '';
+
+          // Track newsletter signup in analytics
+          if (window.Analytics) {
+            window.Analytics.trackNewsletterSignup(email);
+          }
+
+          console.log('Newsletter subscription successful:', email);
+        } else {
+          throw new Error('Submission failed');
+        }
+      } catch (error) {
+        // Error
+        messageDiv.className = 'newsletter__message error';
+        messageDiv.textContent = 'Hubo un error. Por favor intenta nuevamente.';
+        console.error('Newsletter subscription error:', error);
+      } finally {
+        // Re-enable submit button
+        submitButton.disabled = false;
+        submitButton.textContent = 'Suscribirme';
+
+        // Hide message after 5 seconds
+        setTimeout(() => {
+          messageDiv.className = 'newsletter__message';
+          messageDiv.textContent = '';
+        }, 5000);
       }
-
-      // In production, you would send this to your backend/email service
-      console.log('Email subscribed:', email);
-
-      // Hide message after 5 seconds
-      setTimeout(() => {
-        messageDiv.className = 'newsletter__message';
-        messageDiv.textContent = '';
-      }, 5000);
     });
   </script>
 
