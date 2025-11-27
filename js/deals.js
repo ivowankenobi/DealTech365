@@ -766,8 +766,8 @@ const DEAL_CATEGORIES = {
           storage: '512GB SSD'
         },
         affiliateLinks: {
-          US: { amazon: 'https://www.amazon.com/dp/B0C3R3X4D6?tag=blackfridaytech-20' },
-          EU: { amazon: 'https://www.amazon.es/dp/B0C3R3X4D6?tag=dealtech365-21' }
+          US: { amazon: 'https://www.amazon.com/s?k=Lenovo+IdeaPad+Slim+3&tag=blackfridaytech-20' },
+          EU: { amazon: 'https://www.amazon.es/s?k=Lenovo+IdeaPad+Slim+3&tag=dealtech365-21' }
         }
       },
       {
@@ -783,8 +783,8 @@ const DEAL_CATEGORIES = {
           storage: '512GB SSD'
         },
         affiliateLinks: {
-          US: { amazon: 'https://www.amazon.com/dp/B0C6V5M9M6?tag=blackfridaytech-20' },
-          EU: { amazon: 'https://www.amazon.es/dp/B0C6V5M9M6?tag=dealtech365-21' }
+          US: { amazon: 'https://www.amazon.com/s?k=HP+15s&tag=blackfridaytech-20' },
+          EU: { amazon: 'https://www.amazon.es/s?k=HP+15s&tag=dealtech365-21' }
         }
       },
       {
@@ -800,8 +800,8 @@ const DEAL_CATEGORIES = {
           graphics: 'RTX 3050'
         },
         affiliateLinks: {
-          US: { amazon: 'https://www.amazon.com/dp/B0C3R2H6L6?tag=blackfridaytech-20' },
-          EU: { amazon: 'https://www.amazon.es/dp/B0C3R2H6L6?tag=dealtech365-21' }
+          US: { amazon: 'https://www.amazon.com/s?k=ASUS+TUF+Gaming+F15&tag=blackfridaytech-20' },
+          EU: { amazon: 'https://www.amazon.es/s?k=ASUS+TUF+Gaming+F15&tag=dealtech365-21' }
         }
       }
     ]
@@ -823,8 +823,8 @@ const DEAL_CATEGORIES = {
           buttons: '11'
         },
         affiliateLinks: {
-          US: { amazon: 'https://www.amazon.com/dp/B07W5JKFQC?tag=blackfridaytech-20' },
-          EU: { amazon: 'https://www.amazon.es/dp/B07W5JKFQC?tag=dealtech365-21' }
+          US: { amazon: 'https://www.amazon.com/s?k=Logitech+G502+HERO&tag=blackfridaytech-20' },
+          EU: { amazon: 'https://www.amazon.es/s?k=Logitech+G502+HERO&tag=dealtech365-21' }
         }
       },
       {
@@ -839,8 +839,8 @@ const DEAL_CATEGORIES = {
           weight: '250g'
         },
         affiliateLinks: {
-          US: { amazon: 'https://www.amazon.com/dp/B07Y8S9J9R?tag=blackfridaytech-20' },
-          EU: { amazon: 'https://www.amazon.es/dp/B07Y8S9J9R?tag=dealtech365-21' }
+          US: { amazon: 'https://www.amazon.com/s?k=Razer+Kraken+X+Lite&tag=blackfridaytech-20' },
+          EU: { amazon: 'https://www.amazon.es/s?k=Razer+Kraken+X+Lite&tag=dealtech365-21' }
         }
       },
       {
@@ -855,8 +855,8 @@ const DEAL_CATEGORIES = {
           connectivity: 'Wireless'
         },
         affiliateLinks: {
-          US: { amazon: 'https://www.amazon.com/dp/B08H99BPJN?tag=blackfridaytech-20' },
-          EU: { amazon: 'https://www.amazon.es/dp/B08H99BPJN?tag=dealtech365-21' }
+          US: { amazon: 'https://www.amazon.com/s?k=PlayStation+5+DualSense&tag=blackfridaytech-20' },
+          EU: { amazon: 'https://www.amazon.es/s?k=PlayStation+5+DualSense&tag=dealtech365-21' }
         }
       }
     ]
