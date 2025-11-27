@@ -132,7 +132,13 @@ function createDealCard(deal) {
         <a href="${deal.affiliateLinks.EU.amazon}"
            target="_blank"
            rel="noopener noreferrer"
-           class="deal-btn-premium">
+           class="deal-btn-premium"
+           data-asin="${deal.asin}"
+           data-product-name="${deal.name.replace(/"/g, '&quot;')}"
+           data-product-category="${deal.category}"
+           data-product-brand="${deal.brand}"
+           data-product-price="${currentPrice.toFixed(2)}"
+           data-product-discount="${deal.discount}">
           Ver oferta
         </a>
         <button class="deal-btn-favorite" onclick="toggleFavorite('${deal.asin}')" aria-label="Add to favorites">
@@ -154,8 +160,18 @@ function toggleFavorite(asin) {
 
   if (index > -1) {
     favorites.splice(index, 1);
+
+    // Track removal from favorites
+    if (window.Analytics && typeof window.Analytics.trackRemoveFromWishlist === 'function') {
+      window.Analytics.trackRemoveFromWishlist({ asin: asin });
+    }
   } else {
     favorites.push(asin);
+
+    // Track addition to favorites
+    if (window.Analytics && typeof window.Analytics.trackAddToWishlist === 'function') {
+      window.Analytics.trackAddToWishlist({ asin: asin });
+    }
   }
 
   localStorage.setItem('favorites', JSON.stringify(favorites));
@@ -198,6 +214,11 @@ function filterByCategory(category) {
       categoryName: DEAL_CATEGORIES[category].name,
       categoryIcon: DEAL_CATEGORIES[category].icon
     }));
+  }
+
+  // Track filter usage
+  if (window.Analytics && typeof window.Analytics.trackFilter === 'function') {
+    window.Analytics.trackFilter('category', category);
   }
 
   // Update active button
@@ -257,6 +278,11 @@ function searchDeals(query) {
       }
     });
   });
+
+  // Track search
+  if (window.Analytics && typeof window.Analytics.trackSearch === 'function') {
+    window.Analytics.trackSearch(searchTerm, results.length);
+  }
 
   displayDeals(results);
   updateStats(results);
@@ -339,6 +365,36 @@ if (typeof module !== 'undefined' && module.exports) {
   module.exports = { DEAL_CATEGORIES, generateDeals, loadDeals };
 }
 
+// Track affiliate link clicks
+function initAffiliateTracking() {
+  document.addEventListener('click', function(e) {
+    const affiliateLink = e.target.closest('.deal-btn-premium');
+    if (!affiliateLink) return;
+
+    // Extract product data from data attributes
+    const productData = {
+      asin: affiliateLink.dataset.asin,
+      name: affiliateLink.dataset.productName,
+      category: affiliateLink.dataset.productCategory,
+      brand: affiliateLink.dataset.productBrand,
+      basePrice: parseFloat(affiliateLink.dataset.productPrice),
+      discount: parseInt(affiliateLink.dataset.productDiscount)
+    };
+
+    // Track with Analytics if available
+    if (window.Analytics && typeof window.Analytics.trackProductClick === 'function') {
+      window.Analytics.trackProductClick(productData, 'amazon');
+    }
+  });
+}
+
+// Initialize affiliate tracking when DOM is ready
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initAffiliateTracking);
+} else {
+  initAffiliateTracking();
+}
+
 // Make functions available globally for event listeners
 window.filterByCategory = filterByCategory;
 window.filterByBrand = filterByBrand;
@@ -346,3 +402,4 @@ window.searchDeals = searchDeals;
 window.sortDeals = sortDeals;
 window.generateDeals = generateDeals;
 window.loadDeals = loadDeals;
+window.toggleFavorite = toggleFavorite;

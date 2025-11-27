@@ -24,7 +24,18 @@
       "Bash(node -c:*)",
       "Bash(node -e:*)",
       "Bash(start \"c:\\Dealtech365\\test-deals-simple.html\")",
-      "Bash(start \"c:\\Dealtech365\\debug-deals.html\")"
+      "Bash(start \"c:\\Dealtech365\\debug-deals.html\")",
+      "Bash(node scripts/merge-data.js:*)",
+      "Bash(npm run scrape:headful:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nAdd bilingual blog carousel with i18n support\n\n- Created data/blog-posts.json with 6 blog posts in ES/EN\n- Created js/blog-carousel-i18n.js for dynamic language switching\n- Updated index.html to load the bilingual carousel script\n- Blog carousel now translates automatically when user changes language\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(git push:*)",
+      "Bash(git commit:*)",
+      "Bash(node scraper/amazon-scraper-improved.js:*)",
+      "Bash(timeout /t 15 /nobreak)",
+      "Bash(copy:*)",
+      "Bash(curl:*)",
+      "Bash(start \"c:\\Dealtech365\\generate-og-image.html\")"
     ],
     "deny": [],
     "ask": []

@@ -304,7 +304,8 @@ class AmazonScraper {
             const categories = [
                 { url: urls.laptops, name: 'laptops' },
                 { url: urls.headphones, name: 'audio' },
-                { url: urls.smartphones, name: 'smartphones' }
+                { url: urls.smartphones, name: 'smartphones' },
+                { url: urls.gaming, name: 'gaming' }
             ];
 
             for (const category of categories) {

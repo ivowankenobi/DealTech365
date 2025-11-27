@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generate OG Image</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      padding: 20px;
+      background: #1a1a1a;
+      color: white;
+    }
+    #canvas {
+      border: 2px solid #333;
+      margin: 20px 0;
+      display: block;
+    }
+    button {
+      background: #2563EB;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      margin: 10px 5px;
+    }
+    button:hover {
+      background: #1d4ed8;
+    }
+    .info {
+      background: #2a2a2a;
+      padding: 15px;
+      border-radius: 8px;
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>🎨 Generador de Imagen Open Graph - DealTech365</h1>
+
+  <div class="info">
+    <p><strong>Dimensiones:</strong> 1200x630px (Óptimo para Facebook, Twitter, LinkedIn)</p>
+    <p><strong>Formato:</strong> JPEG/PNG</p>
+  </div>
+
+  <canvas id="canvas" width="1200" height="630"></canvas>
+
+  <div>
+    <button onclick="generateImage()">🎨 Generar Imagen</button>
+    <button onclick="downloadImage()">💾 Descargar como og-image.jpg</button>
+  </div>
+
+  <script>
+    const canvas = document.getElementById('canvas');
+    const ctx = canvas.getContext('2d');
+
+    function generateImage() {
+      // Background gradient
+      const gradient = ctx.createLinearGradient(0, 0, 1200, 630);
+      gradient.addColorStop(0, '#1e3a8a'); // Blue dark
+      gradient.addColorStop(0.5, '#2563eb'); // Blue
+      gradient.addColorStop(1, '#3b82f6'); // Blue light
+
+      ctx.fillStyle = gradient;
+      ctx.fillRect(0, 0, 1200, 630);
+
+      // Pattern overlay (dots)
+      ctx.fillStyle = 'rgba(255, 255, 255, 0.05)';
+      for (let x = 0; x < 1200; x += 40) {
+        for (let y = 0; y < 630; y += 40) {
+          ctx.beginPath();
+          ctx.arc(x, y, 2, 0, Math.PI * 2);
+          ctx.fill();
+        }
+      }
+
+      // Logo circle
+      ctx.beginPath();
+      ctx.arc(600, 220, 80, 0, Math.PI * 2);
+      ctx.fillStyle = 'rgba(255, 255, 255, 0.1)';
+      ctx.fill();
+      ctx.strokeStyle = 'rgba(255, 255, 255, 0.3)';
+      ctx.lineWidth = 3;
+      ctx.stroke();
+
+      // Inner circle
+      ctx.beginPath();
+      ctx.arc(600, 220, 65, 0, Math.PI * 2);
+      ctx.strokeStyle = '#ffffff';
+      ctx.lineWidth = 4;
+      ctx.stroke();
+
+      // Letter "D"
+      ctx.fillStyle = '#ffffff';
+      ctx.font = 'bold 72px Arial';
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
+      ctx.fillText('D', 600, 220);
+
+      // Brand name
+      ctx.font = 'bold 72px Arial';
+      ctx.textAlign = 'center';
+
+      // "Deal" in white
+      ctx.fillStyle = '#ffffff';
+      ctx.fillText('Deal', 480, 380);
+
+      // "Tech" in light blue
+      ctx.fillStyle = '#93c5fd';
+      ctx.fillText('Tech', 650, 380);
+
+      // "365" in yellow
+      ctx.fillStyle = '#fbbf24';
+      ctx.fillText('365', 820, 380);
+
+      // Tagline
+      ctx.font = '28px Arial';
+      ctx.fillStyle = '#e0e7ff';
+      ctx.textAlign = 'center';
+      ctx.fillText('Las Mejores Ofertas en Tecnología Todo el Año', 600, 480);
+
+      // Icons (emoji style)
+      ctx.font = '40px Arial';
+      ctx.fillText('💻 📱 🎧 🎮', 600, 540);
+
+      // Border
+      ctx.strokeStyle = 'rgba(255, 255, 255, 0.2)';
+      ctx.lineWidth = 2;
+      ctx.strokeRect(10, 10, 1180, 610);
+
+      console.log('✅ Imagen generada');
+    }
+
+    function downloadImage() {
+      const link = document.createElement('a');
+      link.download = 'og-image.jpg';
+      link.href = canvas.toDataURL('image/jpeg', 0.95);
+      link.click();
+      console.log('✅ Imagen descargada');
+    }
+
+    // Auto-generate on load
+    window.onload = generateImage;
+  </script>
+</body>
+</html>
