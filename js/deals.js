@@ -754,11 +754,11 @@ const DEAL_CATEGORIES = {
     icon: '💻',
     products: [
       {
-        name: 'Lenovo IdeaPad Slim 3 Gen 8 - Portátil 15.6" FHD (Intel Core i5-12450H, 16GB RAM, 512GB SSD, Intel UHD Graphics, Windows 11 Home) Gris Ártico - Teclado QWERTY Español',
+        name: 'Lenovo IdeaPad Slim 3 Gen 8 - Portátil 15.6" FHD (Intel Core i5-12450H, 16GB RAM, 512GB SSD, Windows 11 Home) Gris Ártico',
         brand: 'Lenovo',
         basePrice: 649,
         discount: 23,
-        image: 'https://m.media-amazon.com/images/I/71-gfkIWFBL._AC_SX679_.jpg',
+        image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Lenovo_IdeaPad_S540.jpg/640px-Lenovo_IdeaPad_S540.jpg',
         asin: 'B0C3R3X4D6',
         specs: {
           processor: 'Intel Core i5',
@@ -766,16 +766,16 @@ const DEAL_CATEGORIES = {
           storage: '512GB SSD'
         },
         affiliateLinks: {
-          US: { amazon: 'https://www.amazon.com/s?k=Lenovo+IdeaPad+Slim+3&tag=blackfridaytech-20' },
-          EU: { amazon: 'https://www.amazon.es/s?k=Lenovo+IdeaPad+Slim+3&tag=dealtech365-21' }
+          US: { amazon: 'https://www.amazon.com/s?k=Lenovo+IdeaPad+Slim+3+Gen+8&tag=blackfridaytech-20' },
+          EU: { amazon: 'https://www.amazon.es/s?k=Lenovo+IdeaPad+Slim+3+Gen+8&tag=dealtech365-21' }
         }
       },
       {
-        name: 'HP 15s-fq5085ns - Ordenador Portátil de 15.6" Full HD (Intel Core i5-1235U, 16GB RAM, 512GB SSD, Intel Iris Xe Graphics, Sin Sistema Operativo) Plata - Teclado QWERTY Español',
+        name: 'HP 15s-fq5085ns - Ordenador Portátil de 15.6" Full HD (Intel Core i5-1235U, 16GB RAM, 512GB SSD, Plata)',
         brand: 'HP',
         basePrice: 599,
         discount: 22,
-        image: 'https://m.media-amazon.com/images/I/810g8-iWk8L._AC_SX679_.jpg',
+        image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/HP_Pavilion_15-cs0053cl.png/640px-HP_Pavilion_15-cs0053cl.png',
         asin: 'B0C6V5M9M6',
         specs: {
           processor: 'Intel Core i5',
@@ -783,16 +783,16 @@ const DEAL_CATEGORIES = {
           storage: '512GB SSD'
         },
         affiliateLinks: {
-          US: { amazon: 'https://www.amazon.com/s?k=HP+15s&tag=blackfridaytech-20' },
-          EU: { amazon: 'https://www.amazon.es/s?k=HP+15s&tag=dealtech365-21' }
+          US: { amazon: 'https://www.amazon.com/s?k=HP+15s+laptop&tag=blackfridaytech-20' },
+          EU: { amazon: 'https://www.amazon.es/s?k=HP+15s+ordenador+portatil&tag=dealtech365-21' }
         }
       },
       {
-        name: 'ASUS TUF Gaming F15 FX507ZC4 - Portátil Gaming 15.6" Full HD 144Hz (Intel Core i7-12700H, 16GB RAM, 512GB SSD, RTX 3050 4GB, Sin Sistema Operativo) Gris Mecha - Teclado QWERTY Español',
+        name: 'ASUS TUF Gaming F15 - Portátil Gaming 15.6" Full HD 144Hz (Intel Core i7, 16GB RAM, 512GB SSD, RTX 3050)',
         brand: 'ASUS',
         basePrice: 1099,
         discount: 36,
-        image: 'https://m.media-amazon.com/images/I/716f9-M1jQL._AC_SX679_.jpg',
+        image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Asus_TUF_Gaming_A15.jpg/640px-Asus_TUF_Gaming_A15.jpg',
         asin: 'B0C3R2H6L6',
         specs: {
           processor: 'Intel Core i7',
@@ -811,11 +811,11 @@ const DEAL_CATEGORIES = {
     icon: '🎮',
     products: [
       {
-        name: 'Logitech G502 HERO Ratón Gaming con Cable, Sensor HERO 25K, 25,600 DPI, RGB, Peso Ajustable, 11 Botones Programables, Memoria Integrada, PC/Mac - Negro',
+        name: 'Logitech G502 HERO Ratón Gaming con Cable, Sensor HERO 25K, 25,600 DPI, RGB',
         brand: 'Logitech',
         basePrice: 89.99,
         discount: 56,
-        image: 'https://m.media-amazon.com/images/I/61mpMH5TzkL._AC_SX679_.jpg',
+        image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Logitech_G502_Proteus_Core.jpg/640px-Logitech_G502_Proteus_Core.jpg',
         asin: 'B07W5JKFQC',
         specs: {
           sensor: 'HERO 25K',
@@ -828,11 +828,11 @@ const DEAL_CATEGORIES = {
         }
       },
       {
-        name: 'Razer Kraken X Lite - Auriculares Gaming Ultraligeros para PC, Mac, Xbox One, PS4 y Switch, Diadema Acolchada, Sonido Surround 7.1, Negro',
+        name: 'Razer Kraken X Lite - Auriculares Gaming Ultraligeros, Sonido Surround 7.1',
         brand: 'Razer',
         basePrice: 49.99,
         discount: 40,
-        image: 'https://m.media-amazon.com/images/I/61QIMDB3YTL._AC_SX679_.jpg',
+        image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Razer_Kraken_Pro_Neon_Green.jpg/640px-Razer_Kraken_Pro_Neon_Green.jpg',
         asin: 'B07Y8S9J9R',
         specs: {
           audio: 'Surround 7.1',
@@ -848,7 +848,7 @@ const DEAL_CATEGORIES = {
         brand: 'PlayStation',
         basePrice: 69.99,
         discount: 14,
-        image: 'https://m.media-amazon.com/images/I/51U87xJ-RSL._AC_SX679_.jpg',
+        image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/DualSense_01.jpg/640px-DualSense_01.jpg',
         asin: 'B08H99BPJN',
         specs: {
           platform: 'PS5',
