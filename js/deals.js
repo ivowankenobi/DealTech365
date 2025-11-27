@@ -1,6 +1,6 @@
 // Real Products - Amazon Affiliate Links
-// Auto-generated from scraper on 2025-11-26T15:06:16.682Z
-// Last update: 26/11/2025, 16:06:16
+// Auto-generated from scraper on 2025-11-26T20:50:44.590Z
+// Last update: 26/11/2025, 21:50:44
 
 const DEAL_CATEGORIES = {
   audio: {
@@ -27,25 +27,6 @@ const DEAL_CATEGORIES = {
         }
       },
       {
-        name: 'Auriculares Inalambricos Bluetooth con Pantalla Táctil LED, 2025 48H Auriculares Bluetooth 5.4 HiFi Estéreo con Reducción de Ruido ENC Mic, IPX7 Cascos Inalambricos con 5 Modos EQ para iOS Android',
-        brand: 'Auriculares',
-        basePrice: 129.99,
-        discount: 75,
-        image: 'https://m.media-amazon.com/images/I/71gzkEmCWmL._AC_UL320_.jpg',
-        asin: 'B0FLWN5NYJ',
-        specs: {
-          bluetooth: 'Bluetooth 5.4',
-        },
-        affiliateLinks: {
-          US: {
-            amazon: 'https://www.amazon.com/dp/B0FLWN5NYJ?tag=blackfridaytech-20'
-          },
-          EU: {
-            amazon: 'https://www.amazon.es/dp/B0FLWN5NYJ?tag=dealtech365-21'
-          }
-        }
-      },
-      {
         name: 'Auriculares Inalámbricos Bluetooth, Auriculares Bluetooth 5.4 HiFi Estéreo, 56H Cascos Inalambricos Bluetooth con ENC Reducción de Ruido, Pantalla LED, USB-C, Control Táctil, IP7 Impermeable Audifonos',
         brand: 'Auriculares',
         basePrice: 89.99,
@@ -61,6 +42,22 @@ const DEAL_CATEGORIES = {
           },
           EU: {
             amazon: 'https://www.amazon.es/dp/B0FR4SMRXY?tag=dealtech365-21'
+          }
+        }
+      },
+      {
+        name: 'LG Auriculares intraurales Bluetooth Tone Free T90S con Sonido Dolby Atmos, tecnología Meridian, cancelación Activa de Ruido (ANC), y UVnano+, Negro',
+        brand: 'Unknown',
+        basePrice: 229,
+        discount: 61,
+        image: 'https://m.media-amazon.com/images/I/61OXbN-zpxL._AC_UL320_.jpg',
+        asin: 'B0CG27DV5P',
+        affiliateLinks: {
+          US: {
+            amazon: 'https://www.amazon.com/dp/B0CG27DV5P?tag=blackfridaytech-20'
+          },
+          EU: {
+            amazon: 'https://www.amazon.es/dp/B0CG27DV5P?tag=dealtech365-21'
           }
         }
       },
@@ -122,21 +119,21 @@ const DEAL_CATEGORIES = {
         }
       },
       {
-        name: 'Btootos Auriculares Inalámbricos, Bluetooth 5.3 con HD Micrófono HiFi Estéreo Pantalla LED, Reducción de Ruido, 13 mm Controlador dinámico, IP7 Impermeable 36H Cascos Inalambricos',
-        brand: 'Btootos',
-        basePrice: 49.99,
+        name: 'Soundcore C30i Auriculares Inalámbricos Abiertos Bluetooth Clip, Ligeros y Cómodos, Ajuste Estable, Diseño de Carcasa Firme, Agarres Fijables, Grandes Transductores para Sonido Nítido, 30H, IPX4',
+        brand: 'Soundcore',
+        basePrice: 69.99,
         discount: 57,
-        image: 'https://m.media-amazon.com/images/I/71vfIyTVo5L._AC_UL320_.jpg',
-        asin: 'B0BCKHQGJN',
+        image: 'https://m.media-amazon.com/images/I/61C7zTHoOAL._AC_UL320_.jpg',
+        asin: 'B0D2W27KZC',
         specs: {
-          bluetooth: 'Bluetooth 5.3',
+          processor: 'core C30i',
         },
         affiliateLinks: {
           US: {
-            amazon: 'https://www.amazon.com/dp/B0BCKHQGJN?tag=blackfridaytech-20'
+            amazon: 'https://www.amazon.com/dp/B0D2W27KZC?tag=blackfridaytech-20'
           },
           EU: {
-            amazon: 'https://www.amazon.es/dp/B0BCKHQGJN?tag=dealtech365-21'
+            amazon: 'https://www.amazon.es/dp/B0D2W27KZC?tag=dealtech365-21'
           }
         }
       },
@@ -192,6 +189,22 @@ const DEAL_CATEGORIES = {
         }
       },
       {
+        name: 'Jabra New Evolve 10 Auricular con Cable y micrófono con cancelación de Ruido para PC/portátil - USB-A - Certificado TCO - Ligero - Controles de Llamada/Volumen para reuniones en línea - Negro',
+        brand: 'Jabra',
+        basePrice: 42.35,
+        discount: 53,
+        image: 'https://m.media-amazon.com/images/I/61afZ3q+jtL._AC_UL320_.jpg',
+        asin: 'B0F1DGSZPZ',
+        affiliateLinks: {
+          US: {
+            amazon: 'https://www.amazon.com/dp/B0F1DGSZPZ?tag=blackfridaytech-20'
+          },
+          EU: {
+            amazon: 'https://www.amazon.es/dp/B0F1DGSZPZ?tag=dealtech365-21'
+          }
+        }
+      },
+      {
         name: 'JBL Tune Flex TWS, Auriculares In Ear inalámbricos con cancelación activa del ruido, graves potentes, resistencia al agua IPX4, 8 a 24h de batería, estuche de carga, negro',
         brand: 'JBL',
         basePrice: 99.99,
@@ -240,22 +253,54 @@ const DEAL_CATEGORIES = {
         }
       },
       {
-        name: 'Soundcore P20i Auriculares inalámbricos Bluetooth by Anker, diafragmas de 10mm con Big Bass, Auriculares Bluetooth 5.3, Reproducción 30H, IPX5, 2 micros para Llamadas nítidas con IA, EQ Personalizado',
+        name: 'Sony ULT Wear Auriculares inalámbricos con Noise Cancelling, ULT Power Sound, Ultimate Deep Bass, Mismo procesador Que los WH-1000XM5, Llamadas nítidas, 30 Horas de batería, iOS y Android, Negro',
+        brand: 'Sony',
+        basePrice: 199,
+        discount: 47,
+        image: 'https://m.media-amazon.com/images/I/61mJKW9SGmL._AC_UL320_.jpg',
+        asin: 'B0CX1TJXKV',
+        affiliateLinks: {
+          US: {
+            amazon: 'https://www.amazon.com/dp/B0CX1TJXKV?tag=blackfridaytech-20'
+          },
+          EU: {
+            amazon: 'https://www.amazon.es/dp/B0CX1TJXKV?tag=dealtech365-21'
+          }
+        }
+      },
+      {
+        name: 'Philips TAH4209BK Auriculares on-Ear Ligeros Bluetooth, Aislamiento pasivo del Ruido, 55 Horas de reproducción, Sonido Natural, Llamadas nítidas, Graves dinámicos, 2 Horas de Carga USB-C, 2024, Negro',
+        brand: 'Philips',
+        basePrice: 39.49,
+        discount: 47,
+        image: 'https://m.media-amazon.com/images/I/61BBGbQF9gL._AC_UL320_.jpg',
+        asin: 'B0CZRS76JR',
+        affiliateLinks: {
+          US: {
+            amazon: 'https://www.amazon.com/dp/B0CZRS76JR?tag=blackfridaytech-20'
+          },
+          EU: {
+            amazon: 'https://www.amazon.es/dp/B0CZRS76JR?tag=dealtech365-21'
+          }
+        }
+      },
+      {
+        name: 'Soundcore AeroFit 2 de Anker, Auriculares Open-Ear, Ganchos de Oreja Ajustables, Ajuste, Graves Intensos, Audio Inalámbrico Hi-Res, Reproducción 42 H, Bluetooth 5.4, Carga Inalámbrica, IP55',
         brand: 'Soundcore',
-        basePrice: 29.99,
-        discount: 43,
-        image: 'https://m.media-amazon.com/images/I/51Ze-SzYKFL._AC_UL320_.jpg',
-        asin: 'B0BTYCRJSS',
+        basePrice: 129.99,
+        discount: 46,
+        image: 'https://m.media-amazon.com/images/I/51mOItIaCDL._AC_UL320_.jpg',
+        asin: 'B0DFCHZ699',
         specs: {
-          processor: 'core P20i',
-          bluetooth: 'Bluetooth 5.3',
+          processor: 'core AeroFit',
+          bluetooth: 'Bluetooth 5.4',
         },
         affiliateLinks: {
           US: {
-            amazon: 'https://www.amazon.com/dp/B0BTYCRJSS?tag=blackfridaytech-20'
+            amazon: 'https://www.amazon.com/dp/B0DFCHZ699?tag=blackfridaytech-20'
           },
           EU: {
-            amazon: 'https://www.amazon.es/dp/B0BTYCRJSS?tag=dealtech365-21'
+            amazon: 'https://www.amazon.es/dp/B0DFCHZ699?tag=dealtech365-21'
           }
         }
       },
@@ -292,75 +337,18 @@ const DEAL_CATEGORIES = {
         }
       },
       {
-        name: 'JVC Gumy HA-F160 - Auriculares In Ear con Cable de 1 metro para Android, iPhone, Ordenadores, Portátiles, Consolas y más (Imán de Neodimio, Jack de 3,5 mm, 15 Hz - 20 KHz), Color Negro',
-        brand: 'JVC',
-        basePrice: 9.99,
-        discount: 41,
-        image: 'https://m.media-amazon.com/images/I/51JhiSOihEL._AC_UL320_.jpg',
-        asin: 'B00EO20LFO',
+        name: 'JLab Go Air Pop+ Auriculares Inalambricos Bluetooth, Wireless Earbuds 35+ Horas Rendimiento con Caja de Carga - Audifonos Bluetooth Inalambricos con Micrófono, Dual Connect, App, Tone 7572',
+        brand: 'JLab',
+        basePrice: 29.99,
+        discount: 42,
+        image: 'https://m.media-amazon.com/images/I/71WSN0IMG5L._AC_UL320_.jpg',
+        asin: 'B0CYP6HLXJ',
         affiliateLinks: {
           US: {
-            amazon: 'https://www.amazon.com/dp/B00EO20LFO?tag=blackfridaytech-20'
+            amazon: 'https://www.amazon.com/dp/B0CYP6HLXJ?tag=blackfridaytech-20'
           },
           EU: {
-            amazon: 'https://www.amazon.es/dp/B00EO20LFO?tag=dealtech365-21'
-          }
-        }
-      },
-      {
-        name: 'Soundcore Q20i Cascos Inalámbricos Bluetooth con Cancelación de Ruido Activa Híbrida by Anker, Reproducción ANC 40 Horas, Hi-Res Audio, Personalización vía App, Modo Transparencia, Graves Profundos',
-        brand: 'Soundcore',
-        basePrice: 49.99,
-        discount: 40,
-        image: 'https://m.media-amazon.com/images/I/61+2Wr079NL._AC_UL320_.jpg',
-        asin: 'B0C3HCD34R',
-        specs: {
-          processor: 'core Q20i',
-        },
-        affiliateLinks: {
-          US: {
-            amazon: 'https://www.amazon.com/dp/B0C3HCD34R?tag=blackfridaytech-20'
-          },
-          EU: {
-            amazon: 'https://www.amazon.es/dp/B0C3HCD34R?tag=dealtech365-21'
-          }
-        }
-      },
-      {
-        name: 'XIAOMI Redmi Buds 6 Pro - Auriculares inalámbricos, cancelación de Ruido, Ligeros, hasta 36 Horas de autonomía, Bluetooth 5.3, Negro(Versión ES)',
-        brand: 'Xiaomi',
-        basePrice: 79.99,
-        discount: 40,
-        image: 'https://m.media-amazon.com/images/I/61IPys41pmL._AC_UL320_.jpg',
-        asin: 'B0DPXSS7KX',
-        specs: {
-          bluetooth: 'Bluetooth 5.3',
-        },
-        affiliateLinks: {
-          US: {
-            amazon: 'https://www.amazon.com/dp/B0DPXSS7KX?tag=blackfridaytech-20'
-          },
-          EU: {
-            amazon: 'https://www.amazon.es/dp/B0DPXSS7KX?tag=dealtech365-21'
-          }
-        }
-      },
-      {
-        name: 'Baseus EP10 Pro Auriculares Inalámbricos Blueooth, Auriculares Bluetooth Cancelación de Ruido -50 dB, Audifonos Inalambricos, 7 Modos EQ, Hi-Res, 6 Mic AI, IP55, Duración de 55H, Bluetooth 6.0',
-        brand: 'Baseus',
-        basePrice: 39.99,
-        discount: 40,
-        image: 'https://m.media-amazon.com/images/I/51E8DQv5AlL._AC_UL320_.jpg',
-        asin: 'B0F6C8Y94Z',
-        specs: {
-          bluetooth: 'Bluetooth 6.0',
-        },
-        affiliateLinks: {
-          US: {
-            amazon: 'https://www.amazon.com/dp/B0F6C8Y94Z?tag=blackfridaytech-20'
-          },
-          EU: {
-            amazon: 'https://www.amazon.es/dp/B0F6C8Y94Z?tag=dealtech365-21'
+            amazon: 'https://www.amazon.es/dp/B0CYP6HLXJ?tag=dealtech365-21'
           }
         }
       }
@@ -569,25 +557,6 @@ const DEAL_CATEGORIES = {
         }
       },
       {
-        name: 'Google Pixel 9a – Smartphone Android Libre con cámara con IA, batería para Todo el día y potentes Funciones de Seguridad – Obsidiana, 256GB',
-        brand: 'Google',
-        basePrice: 649,
-        discount: 31,
-        image: 'https://m.media-amazon.com/images/I/71OA-qXBpSL._AC_UL320_.jpg',
-        asin: 'B0DSWJDNY4',
-        specs: {
-          storage: '256GB',
-        },
-        affiliateLinks: {
-          US: {
-            amazon: 'https://www.amazon.com/dp/B0DSWJDNY4?tag=blackfridaytech-20'
-          },
-          EU: {
-            amazon: 'https://www.amazon.es/dp/B0DSWJDNY4?tag=dealtech365-21'
-          }
-        }
-      },
-      {
         name: 'HONOR 400 5G-Smartphone 8GB+256GB, Cámara de 200MP con IA, Super Zoom con IA,6.55” y 120Hz y 5000 nits,Snapdragon 7 Gen 3,Android 15, Dual SIM, NFC, IP65,MagicOS 9.0-Desert Gold',
         brand: 'HONOR',
         basePrice: 499,
@@ -700,6 +669,25 @@ const DEAL_CATEGORIES = {
         }
       },
       {
+        name: 'XIAOMI POCO F7 - Smartphone de 12+256GB, Cámara Sony de 50 MP con OIS, Pantalla AMOLED de 6,83\'\' 1.5K a 120Hz, Snapdragon 8s Gen 4, Hypercharge 90W, Cargador no Incluido, Plata (Versión ES)',
+        brand: 'Sony',
+        basePrice: 449.9,
+        discount: 27,
+        image: 'https://m.media-amazon.com/images/I/61tLKtnLTLL._AC_UL320_.jpg',
+        asin: 'B08NCQXZ8C',
+        specs: {
+          storage: '256GB',
+        },
+        affiliateLinks: {
+          US: {
+            amazon: 'https://www.amazon.com/dp/B08NCQXZ8C?tag=blackfridaytech-20'
+          },
+          EU: {
+            amazon: 'https://www.amazon.es/dp/B08NCQXZ8C?tag=dealtech365-21'
+          }
+        }
+      },
+      {
         name: 'OPPO A40m - Smartphone Libre, 16GB(8GB+8GB) 256GB, Pantalla HD+ LCD 6.7", Cámara 50+2+8 MP, Android, Batería 5100mAh, Carga Rápida 45W - Negro',
         brand: 'OPPO',
         basePrice: 179,
@@ -720,22 +708,22 @@ const DEAL_CATEGORIES = {
         }
       },
       {
-        name: 'Samsung Galaxy A17 5G 256GB - Teléfono Móvil con IA, Marco Fino 7,5mm, Pantalla Grande, Cámara 50MP, 4GB RAM, Batería 5000mAh, Gris, Garantía del Fabricante 3 Años + 1 Año Extra',
-        brand: 'Samsung',
-        basePrice: 309,
-        discount: 26,
-        image: 'https://m.media-amazon.com/images/I/616IXZqnMhL._AC_UL320_.jpg',
-        asin: 'B0FJ8SPP5Q',
+        name: 'XIAOMI Redmi 15 4G 8+256GB Smartphone – Batería 7000mAh | Pantalla 6.9" FHD+ 144Hz | Snapdragon 685 | Cámara Dual 50MP | Carga Rápida 33W | Diseño Quad-Curve (Negro, con Funda)',
+        brand: 'Xiaomi',
+        basePrice: 179.99179,
+        discount: 25,
+        image: 'https://m.media-amazon.com/images/I/710nXIHWqVL._AC_UL320_.jpg',
+        asin: 'B0FMRSCNSN',
         specs: {
-          ram: '4GB',
           storage: '256GB',
+          screen: '6.9"',
         },
         affiliateLinks: {
           US: {
-            amazon: 'https://www.amazon.com/dp/B0FJ8SPP5Q?tag=blackfridaytech-20'
+            amazon: 'https://www.amazon.com/dp/B0FMRSCNSN?tag=blackfridaytech-20'
           },
           EU: {
-            amazon: 'https://www.amazon.es/dp/B0FJ8SPP5Q?tag=dealtech365-21'
+            amazon: 'https://www.amazon.es/dp/B0FMRSCNSN?tag=dealtech365-21'
           }
         }
       },
@@ -761,6 +749,118 @@ const DEAL_CATEGORIES = {
       }
     ]
   },
+  laptops: {
+    name: 'Ordenadores',
+    icon: '💻',
+    products: [
+      {
+        name: 'Lenovo IdeaPad Slim 3 Gen 8 - Portátil 15.6" FHD (Intel Core i5-12450H, 16GB RAM, 512GB SSD, Intel UHD Graphics, Windows 11 Home) Gris Ártico - Teclado QWERTY Español',
+        brand: 'Lenovo',
+        basePrice: 649,
+        discount: 23,
+        image: 'https://m.media-amazon.com/images/I/71-gfkIWFBL._AC_SX679_.jpg',
+        asin: 'B0C3R3X4D6',
+        specs: {
+          processor: 'Intel Core i5',
+          ram: '16GB',
+          storage: '512GB SSD'
+        },
+        affiliateLinks: {
+          US: { amazon: 'https://www.amazon.com/dp/B0C3R3X4D6?tag=blackfridaytech-20' },
+          EU: { amazon: 'https://www.amazon.es/dp/B0C3R3X4D6?tag=dealtech365-21' }
+        }
+      },
+      {
+        name: 'HP 15s-fq5085ns - Ordenador Portátil de 15.6" Full HD (Intel Core i5-1235U, 16GB RAM, 512GB SSD, Intel Iris Xe Graphics, Sin Sistema Operativo) Plata - Teclado QWERTY Español',
+        brand: 'HP',
+        basePrice: 599,
+        discount: 22,
+        image: 'https://m.media-amazon.com/images/I/810g8-iWk8L._AC_SX679_.jpg',
+        asin: 'B0C6V5M9M6',
+        specs: {
+          processor: 'Intel Core i5',
+          ram: '16GB',
+          storage: '512GB SSD'
+        },
+        affiliateLinks: {
+          US: { amazon: 'https://www.amazon.com/dp/B0C6V5M9M6?tag=blackfridaytech-20' },
+          EU: { amazon: 'https://www.amazon.es/dp/B0C6V5M9M6?tag=dealtech365-21' }
+        }
+      },
+      {
+        name: 'ASUS TUF Gaming F15 FX507ZC4 - Portátil Gaming 15.6" Full HD 144Hz (Intel Core i7-12700H, 16GB RAM, 512GB SSD, RTX 3050 4GB, Sin Sistema Operativo) Gris Mecha - Teclado QWERTY Español',
+        brand: 'ASUS',
+        basePrice: 1099,
+        discount: 36,
+        image: 'https://m.media-amazon.com/images/I/716f9-M1jQL._AC_SX679_.jpg',
+        asin: 'B0C3R2H6L6',
+        specs: {
+          processor: 'Intel Core i7',
+          ram: '16GB',
+          graphics: 'RTX 3050'
+        },
+        affiliateLinks: {
+          US: { amazon: 'https://www.amazon.com/dp/B0C3R2H6L6?tag=blackfridaytech-20' },
+          EU: { amazon: 'https://www.amazon.es/dp/B0C3R2H6L6?tag=dealtech365-21' }
+        }
+      }
+    ]
+  },
+  gaming: {
+    name: 'Gaming',
+    icon: '🎮',
+    products: [
+      {
+        name: 'Logitech G502 HERO Ratón Gaming con Cable, Sensor HERO 25K, 25,600 DPI, RGB, Peso Ajustable, 11 Botones Programables, Memoria Integrada, PC/Mac - Negro',
+        brand: 'Logitech',
+        basePrice: 89.99,
+        discount: 56,
+        image: 'https://m.media-amazon.com/images/I/61mpMH5TzkL._AC_SX679_.jpg',
+        asin: 'B07W5JKFQC',
+        specs: {
+          sensor: 'HERO 25K',
+          dpi: '25,600',
+          buttons: '11'
+        },
+        affiliateLinks: {
+          US: { amazon: 'https://www.amazon.com/dp/B07W5JKFQC?tag=blackfridaytech-20' },
+          EU: { amazon: 'https://www.amazon.es/dp/B07W5JKFQC?tag=dealtech365-21' }
+        }
+      },
+      {
+        name: 'Razer Kraken X Lite - Auriculares Gaming Ultraligeros para PC, Mac, Xbox One, PS4 y Switch, Diadema Acolchada, Sonido Surround 7.1, Negro',
+        brand: 'Razer',
+        basePrice: 49.99,
+        discount: 40,
+        image: 'https://m.media-amazon.com/images/I/61QIMDB3YTL._AC_SX679_.jpg',
+        asin: 'B07Y8S9J9R',
+        specs: {
+          audio: 'Surround 7.1',
+          weight: '250g'
+        },
+        affiliateLinks: {
+          US: { amazon: 'https://www.amazon.com/dp/B07Y8S9J9R?tag=blackfridaytech-20' },
+          EU: { amazon: 'https://www.amazon.es/dp/B07Y8S9J9R?tag=dealtech365-21' }
+        }
+      },
+      {
+        name: 'PlayStation 5 - Mando Inalámbrico DualSense, Color White',
+        brand: 'PlayStation',
+        basePrice: 69.99,
+        discount: 14,
+        image: 'https://m.media-amazon.com/images/I/51U87xJ-RSL._AC_SX679_.jpg',
+        asin: 'B08H99BPJN',
+        specs: {
+          platform: 'PS5',
+          connectivity: 'Wireless'
+        },
+        affiliateLinks: {
+          US: { amazon: 'https://www.amazon.com/dp/B08H99BPJN?tag=blackfridaytech-20' },
+          EU: { amazon: 'https://www.amazon.es/dp/B08H99BPJN?tag=dealtech365-21' }
+        }
+      }
+    ]
+  }
 };
 
 // Generate deals with pricing
@@ -805,48 +905,46 @@ if (typeof module !== 'undefined' && module.exports) {
 // Initialize deals on page load
 let allDeals = [];
 
-if (typeof document !== 'undefined') {
-  document.addEventListener('DOMContentLoaded', () => {
-    // Get user region
-    const userRegion = window.getUserRegion ? window.getUserRegion() : {
-      isEurope: true,
-      currency: 'EUR',
-      currencySymbol: '€'
-    };
+document.addEventListener('DOMContentLoaded', () => {
+  // Get user region
+  const userRegion = window.getUserRegion ? window.getUserRegion() : {
+    isEurope: true,
+    currency: 'EUR',
+    currencySymbol: '€'
+  };
 
-    // Generate deals (Try service first, fallback to local generation)
-    if (window.dealsService) {
-      // Show loading state if needed, or just wait
-      window.dealsService.getAllDeals(userRegion.isEurope ? 'EU' : 'US').then(result => {
-        allDeals = result.deals;
-        displayDeals();
-
-        // Update favorite buttons after deals are loaded
-        setTimeout(() => {
-          updateFavoriteButtons();
-        }, 100);
-      });
-    } else {
-      allDeals = generateDeals(userRegion);
+  // Generate deals (Try service first, fallback to local generation)
+  if (window.dealsService) {
+    // Show loading state if needed, or just wait
+    window.dealsService.getAllDeals(userRegion.isEurope ? 'EU' : 'US').then(result => {
+      allDeals = result.deals;
       displayDeals();
-    }
 
-    // Update favorite buttons after a short delay to ensure DOM is ready
-    setTimeout(() => {
-      updateFavoriteButtons();
-      console.log('✅ Favorite buttons updated on page load');
-    }, 100);
-
-    // Also update when deals are displayed
-    const dealsGrid = document.getElementById('dealsGrid');
-    if (dealsGrid) {
-      const observer = new MutationObserver(() => {
+      // Update favorite buttons after deals are loaded
+      setTimeout(() => {
         updateFavoriteButtons();
-      });
-      observer.observe(dealsGrid, { childList: true, subtree: true });
-    }
-  });
-}
+      }, 100);
+    });
+  } else {
+    allDeals = generateDeals(userRegion);
+    displayDeals();
+  }
+
+  // Update favorite buttons after a short delay to ensure DOM is ready
+  setTimeout(() => {
+    updateFavoriteButtons();
+    console.log('✅ Favorite buttons updated on page load');
+  }, 100);
+
+  // Also update when deals are displayed
+  const dealsGrid = document.getElementById('dealsGrid');
+  if (dealsGrid) {
+    const observer = new MutationObserver(() => {
+      updateFavoriteButtons();
+    });
+    observer.observe(dealsGrid, { childList: true, subtree: true });
+  }
+});
 
 // Display deals function
 function displayDeals(dealsToShow = null) {
@@ -877,9 +975,9 @@ function displayDeals(dealsToShow = null) {
           <p class="deal-brand">${deal.brand}</p>
 
           <div class="deal-specs">
-            ${deal.specs && Object.keys(deal.specs).length > 0 ? Object.entries(deal.specs).map(([key, value]) =>
+            ${Object.entries(deal.specs).map(([key, value]) =>
     `<span class="spec-item"><strong>${key}:</strong> ${value}</span>`
-  ).join('') : ''}
+  ).join('')}
           </div>
         </div>
 
@@ -997,10 +1095,8 @@ if (typeof module !== 'undefined' && module.exports) {
 }
 
 // Make functions available globally for event listeners
-if (typeof window !== 'undefined') {
-  window.filterByCategory = filterByCategory;
-  window.filterByBrand = filterByBrand;
-  window.searchDeals = searchDeals;
-  window.sortDeals = sortDeals;
-  window.generateDeals = generateDeals;
-}
+window.filterByCategory = filterByCategory;
+window.filterByBrand = filterByBrand;
+window.searchDeals = searchDeals;
+window.sortDeals = sortDeals;
+window.generateDeals = generateDeals;
