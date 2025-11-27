@@ -100,39 +100,79 @@ function displayDeals(deals) {
 
 // Create a deal card element
 function createDealCard(deal) {
-  const card = document.createElement('article');
+  const card = document.createElement('div');
   card.className = 'deal-card';
   card.dataset.category = deal.category;
-  card.dataset.brand = deal.brand;
+  card.dataset.brand = deal.brand.toLowerCase();
 
   const currentPrice = deal.currentPrice || (deal.basePrice * (1 - deal.discount / 100));
-  const savings = deal.basePrice - currentPrice;
 
   card.innerHTML = `
-    <div class="deal-card__badge">${deal.discount}% OFF</div>
-    <div class="deal-card__image">
-      <img src="${deal.image}" alt="${deal.name}" loading="lazy" onerror="this.src='https://via.placeholder.com/300x300?text=No+Image'">
+    <div class="deal-image" style="background-image: url('${deal.image}')">
+      <div class="deal-badge">${deal.discount}% OFF</div>
     </div>
-    <div class="deal-card__content">
-      <span class="deal-card__category">${deal.categoryIcon} ${deal.categoryName}</span>
-      <h3 class="deal-card__title">${deal.name}</h3>
-      <div class="deal-card__price">
-        <span class="deal-card__price-current">€${currentPrice.toFixed(2)}</span>
-        <span class="deal-card__price-original">€${deal.basePrice.toFixed(2)}</span>
+    <div class="deal-content">
+      <div class="deal-header">
+        <h3 class="deal-title">${deal.name}</h3>
+        <div class="deal-store-badge" data-store="amazon">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon" style="height: 14px; width: auto; vertical-align: middle;">
+        </div>
       </div>
-      <div class="deal-card__savings">Ahorras: €${savings.toFixed(2)}</div>
-      <div class="deal-card__actions">
+
+      <div class="deal-content-main">
+        <p class="deal-brand">${deal.brand}</p>
+      </div>
+
+      <div class="deal-price">
+        <span class="deal-price-current">€${currentPrice.toFixed(2)}</span>
+        <span class="deal-price-original">€${deal.basePrice.toFixed(2)}</span>
+      </div>
+
+      <div class="deal-actions">
         <a href="${deal.affiliateLinks.EU.amazon}"
-           class="deal-card__button"
            target="_blank"
-           rel="nofollow noopener">
-          Ver Oferta en Amazon →
+           rel="noopener noreferrer"
+           class="deal-btn-premium">
+          Ver oferta
         </a>
+        <button class="deal-btn-favorite" onclick="toggleFavorite('${deal.asin}')" aria-label="Add to favorites">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+          </svg>
+        </button>
       </div>
     </div>
   `;
 
   return card;
+}
+
+// Favorites functionality
+function toggleFavorite(asin) {
+  const favorites = JSON.parse(localStorage.getItem('favorites') || '[]');
+  const index = favorites.indexOf(asin);
+
+  if (index > -1) {
+    favorites.splice(index, 1);
+  } else {
+    favorites.push(asin);
+  }
+
+  localStorage.setItem('favorites', JSON.stringify(favorites));
+  updateFavoriteButtons();
+}
+
+function updateFavoriteButtons() {
+  const favorites = JSON.parse(localStorage.getItem('favorites') || '[]');
+  document.querySelectorAll('.deal-btn-favorite').forEach(btn => {
+    const card = btn.closest('.deal-card');
+    const asin = card.querySelector('.deal-btn-premium').href.match(/\/dp\/([A-Z0-9]+)/)?.[1];
+    if (asin && favorites.includes(asin)) {
+      btn.classList.add('active');
+    } else {
+      btn.classList.remove('active');
+    }
+  });
 }
 
 // Filter by category
