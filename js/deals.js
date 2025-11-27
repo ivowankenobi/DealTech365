@@ -958,10 +958,18 @@ function displayDeals(dealsToShow = null) {
     return;
   }
 
-  container.innerHTML = deals.map(deal => `
-    <div class="deal-card" data-category="${deal.category}" data-brand="${deal.brand.toLowerCase()}">
-      <div class="deal-image" style="background-image: url('${deal.image}')">
-        <div class="deal-badge">${deal.discount}% OFF</div>
+  container.innerHTML = deals.map(deal => {
+    try {
+      if (!deal || !deal.name) return '';
+
+      const specsHtml = deal.specs ? Object.entries(deal.specs).map(([key, value]) =>
+        `<span class="spec-item"><strong>${key}:</strong> ${value}</span>`
+      ).join('') : '';
+
+      return `
+    <div class="deal-card" data-category="${deal.category || 'unknown'}" data-brand="${(deal.brand || 'unknown').toLowerCase()}">
+      <div class="deal-image" style="background-image: url('${deal.image || ''}')">
+        <div class="deal-badge">${deal.discount || 0}% OFF</div>
       </div>
       <div class="deal-content">
         <div class="deal-header">
@@ -972,28 +980,26 @@ function displayDeals(dealsToShow = null) {
         </div>
 
         <div class="deal-content-main">
-          <p class="deal-brand">${deal.brand}</p>
+          <p class="deal-brand">${deal.brand || 'Unknown'}</p>
 
           <div class="deal-specs">
-            ${Object.entries(deal.specs).map(([key, value]) =>
-    `<span class="spec-item"><strong>${key}:</strong> ${value}</span>`
-  ).join('')}
+            ${specsHtml}
           </div>
         </div>
 
         <div class="deal-price">
-          <span class="deal-price-current">${deal.currencySymbol}${deal.finalPrice}</span>
-          <span class="deal-price-original">${deal.currencySymbol}${deal.basePrice}</span>
+          <span class="deal-price-current">${deal.currencySymbol || '€'}${deal.finalPrice || 0}</span>
+          <span class="deal-price-original">${deal.currencySymbol || '€'}${deal.basePrice || 0}</span>
         </div>
 
         <div class="deal-actions">
-          <a href="${deal.affiliateLink}"
+          <a href="${deal.affiliateLink || '#'}"
              target="_blank"
              rel="noopener noreferrer"
              class="deal-btn-premium">
             Ver oferta
           </a>
-          <button class="deal-btn-favorite" onclick="toggleFavorite('${deal.asin}')" aria-label="Add to favorites">
+          <button class="deal-btn-favorite" onclick="toggleFavorite('${deal.asin || ''}')" aria-label="Add to favorites">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
             </svg>
@@ -1001,7 +1007,12 @@ function displayDeals(dealsToShow = null) {
         </div>
       </div>
     </div>
-  `).join('');
+  `;
+    } catch (e) {
+      console.error('Error rendering deal:', deal, e);
+      return '';
+    }
+  }).join('');
 }
 
 // Favorites functionality
@@ -1058,13 +1069,15 @@ function filterByBrand(brand) {
 
 function searchDeals(query) {
   const lowerQuery = query.toLowerCase();
-  const filtered = allDeals.filter(deal =>
-    deal.name.toLowerCase().includes(lowerQuery) ||
-    deal.brand.toLowerCase().includes(lowerQuery) ||
-    Object.values(deal.specs).some(spec =>
-      spec.toString().toLowerCase().includes(lowerQuery)
-    )
-  );
+  const filtered = allDeals.filter(deal => {
+    if (!deal) return false;
+    const nameMatch = deal.name && deal.name.toLowerCase().includes(lowerQuery);
+    const brandMatch = deal.brand && deal.brand.toLowerCase().includes(lowerQuery);
+    const specsMatch = deal.specs && Object.values(deal.specs).some(spec =>
+      spec && spec.toString().toLowerCase().includes(lowerQuery)
+    );
+    return nameMatch || brandMatch || specsMatch;
+  });
   displayDeals(filtered);
 }
 
