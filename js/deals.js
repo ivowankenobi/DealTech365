@@ -968,8 +968,9 @@ function displayDeals(dealsToShow = null) {
 
       return `
     <div class="deal-card" data-category="${deal.category || 'unknown'}" data-brand="${(deal.brand || 'unknown').toLowerCase()}">
-      <div class="deal-image" style="background-image: url('${deal.image || ''}')">
-        <div class="deal-badge">${deal.discount || 0}% OFF</div>
+      <div class="deal-card__image">
+        <img src="${deal.image || ''}" alt="${deal.name}" loading="lazy">
+        <div class="deal-card__badge">${deal.discount || 0}% OFF</div>
       </div>
       <div class="deal-content">
         <div class="deal-header">
