@@ -121,7 +121,7 @@ function createDealCard(deal) {
 
       <div class="deal-content-main">
         <p class="deal-brand">${deal.brand}</p>
-        <p class="deal-description">${deal.name.length > 100 ? deal.name.substring(0, 100) + '...' : deal.name}</p>
+        <p class="deal-description">${deal.name.length > 80 ? deal.name.substring(0, 80) + '...' : deal.name}</p>
       </div>
 
       <div class="deal-price">
