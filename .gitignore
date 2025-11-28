@@ -1,0 +1,3 @@
+# Automation logs
+*.log
+logs/*.log
