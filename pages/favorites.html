@@ -8,7 +8,8 @@
   <!-- Primary Meta Tags -->
   <title>Mis Favoritos - DealTech365</title>
   <meta name="title" content="Mis Favoritos - DealTech365">
-  <meta name="description" content="Guarda tus ofertas favoritas y accede a ellas fácilmente. Encuentra las mejores ofertas en tecnología en DealTech365.">
+  <meta name="description"
+    content="Guarda tus ofertas favoritas y accede a ellas fácilmente. Encuentra las mejores ofertas en tecnología en DealTech365.">
   <meta name="keywords" content="favoritos, wishlist, ofertas guardadas, tecnología, descuentos">
   <meta name="robots" content="noindex, follow">
   <link rel="canonical" href="https://dealtech365.com/pages/favorites.html">
@@ -136,9 +137,21 @@
       DealTech365</a>
   </footer>
 
-  <script src="../js/region.js?v=2"></script>
-  <script src="../js/deals.js?v=2"></script>
+  <script src="../js/region.min.js"></script>
+  <script src="../js/auth.js"></script>
+  <script src="../js/deals-real-v2.js" id="dealsScript"></script>
   <script src="../js/deals-service.js"></script>
+  <script>
+    // Wait for deals-real-v2.js to load before initializing
+    document.getElementById('dealsScript').addEventListener('load', function () {
+      console.log('✅ deals-real-v2.js loaded successfully');
+    });
+
+    document.getElementById('dealsScript').addEventListener('error', function () {
+      console.error('❌ Failed to load deals-real-v2.js');
+      document.getElementById('dealsContainer').innerHTML = '<p style="text-align:center;padding:2rem;color:red;">Error: No se pudo cargar el archivo de ofertas. Verifica que deals-real-v2.js existe en /js/</p>';
+    });
+  </script>
   <script>
     window.allDeals = window.allDeals || [];
     window.currentCategory = window.currentCategory || '';
@@ -157,26 +170,44 @@
         // Generate deals
         const region = (window.getRegion && window.getRegion()) || window.userRegion || 'EU';
 
-        if (typeof generateDeals !== 'function') {
-          console.error('generateDeals function not found');
+        // Load deals from DEAL_CATEGORIES (from deals-real.js)
+        if (typeof DEAL_CATEGORIES === 'undefined') {
+          console.error('DEAL_CATEGORIES not found');
           document.getElementById('dealsContainer').innerHTML = '<p style="text-align:center;padding:2rem;color:red;">Error cargando las ofertas. Por favor recarga la página.</p>';
           return;
         }
 
-        if (window.dealsService) {
-          const result = await window.dealsService.getAllDeals(region);
-          window.allDeals = result.deals;
-        } else {
-          window.allDeals = generateDeals(region);
-        }
+        // Flatten all products from all categories
+        window.allDeals = [];
+        Object.keys(DEAL_CATEGORIES).forEach(categoryKey => {
+          const category = DEAL_CATEGORIES[categoryKey];
+          category.products.forEach(product => {
+            const regionData = product.affiliateLinks[region] || product.affiliateLinks['EU'];
+            window.allDeals.push({
+              ...product,
+              category: category.name,
+              affiliateLink: regionData.amazon,
+              network: 'amazon',
+              finalPrice: (product.basePrice * (1 - product.discount / 100)).toFixed(2),
+              currencySymbol: region === 'US' ? '$' : '€'
+            });
+          });
+        });
 
         // Load favorites from localStorage
         const favorites = JSON.parse(localStorage.getItem('favorites') || '[]');
+
+        console.log('🔍 DEBUG: Favorites from localStorage:', favorites);
+        console.log('🔍 DEBUG: Total deals loaded:', window.allDeals.length);
 
         // Mark deals as favorites using ASIN
         window.allDeals.forEach(deal => {
           deal.isFavorite = favorites.includes(deal.asin);
         });
+
+        const favoritedDeals = window.allDeals.filter(d => d.isFavorite);
+        console.log('🔍 DEBUG: Deals marked as favorites:', favoritedDeals.length);
+        console.log('🔍 DEBUG: Favorited ASINs:', favoritedDeals.map(d => d.asin));
 
         // Populate brand filter
         populateBrandFilter();
@@ -345,9 +376,23 @@
       document.getElementById('brandFilter').value = '';
       document.getElementById('searchInput').value = '';
 
-      // Regenerate deals with new discounts
-      const region = window.getRegion ? window.getRegion() : window.userRegion;
-      window.allDeals = generateDeals(region);
+      // Reload deals from DEAL_CATEGORIES
+      const region = window.getRegion ? window.getRegion() : (window.userRegion || 'EU');
+      window.allDeals = [];
+      Object.keys(DEAL_CATEGORIES).forEach(categoryKey => {
+        const category = DEAL_CATEGORIES[categoryKey];
+        category.products.forEach(product => {
+          const regionData = product.affiliateLinks[region] || product.affiliateLinks['EU'];
+          window.allDeals.push({
+            ...product,
+            category: category.name,
+            affiliateLink: regionData.amazon,
+            network: 'amazon',
+            finalPrice: (product.basePrice * (1 - product.discount / 100)).toFixed(2),
+            currencySymbol: region === 'US' ? '$' : '€'
+          });
+        });
+      });
 
       // Restore favorites using ASIN
       const favorites = JSON.parse(localStorage.getItem('favorites') || '[]');
