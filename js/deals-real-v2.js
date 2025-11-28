@@ -1,6 +1,6 @@
 // Real Products - Amazon Affiliate Links
-// Auto-generated from scraper on 2025-11-26T14:37:20.194Z
-// Last update: 26/11/2025, 15:37:20
+// Auto-generated from scraper on 2025-11-26T15:06:16.682Z
+// Last update: 26/11/2025, 16:06:16
 
 const DEAL_CATEGORIES = {
   audio: {
@@ -19,10 +19,10 @@ const DEAL_CATEGORIES = {
         },
         affiliateLinks: {
           US: {
-            amazon: 'https://www.amazon.com/dp/B0FWRVMZPD tag=blackfridaytech-20'
+            amazon: 'https://www.amazon.com/dp/B0FWRVMZPD?tag=blackfridaytech-20'
           },
           EU: {
-            amazon: 'https://www.amazon.es/dp/B0FWRVMZPD tag=dealtech365-21'
+            amazon: 'https://www.amazon.es/dp/B0FWRVMZPD?tag=dealtech365-21'
           }
         }
       },
@@ -38,10 +38,10 @@ const DEAL_CATEGORIES = {
         },
         affiliateLinks: {
           US: {
-            amazon: 'https://www.amazon.com/dp/B0FLWN5NYJ tag=blackfridaytech-20'
+            amazon: 'https://www.amazon.com/dp/B0FLWN5NYJ?tag=blackfridaytech-20'
           },
           EU: {
-            amazon: 'https://www.amazon.es/dp/B0FLWN5NYJ tag=dealtech365-21'
+            amazon: 'https://www.amazon.es/dp/B0FLWN5NYJ?tag=dealtech365-21'
           }
         }
       },
@@ -57,10 +57,10 @@ const DEAL_CATEGORIES = {
         },
         affiliateLinks: {
           US: {
-            amazon: 'https://www.amazon.com/dp/B0FR4SMRXY tag=blackfridaytech-20'
+            amazon: 'https://www.amazon.com/dp/B0FR4SMRXY?tag=blackfridaytech-20'
           },
           EU: {
-            amazon: 'https://www.amazon.es/dp/B0FR4SMRXY tag=dealtech365-21'
+            amazon: 'https://www.amazon.es/dp/B0FR4SMRXY?tag=dealtech365-21'
           }
         }
       },
@@ -76,10 +76,10 @@ const DEAL_CATEGORIES = {
         },
         affiliateLinks: {
           US: {
-            amazon: 'https://www.amazon.com/dp/B0CCDNJS75 tag=blackfridaytech-20'
+            amazon: 'https://www.amazon.com/dp/B0CCDNJS75?tag=blackfridaytech-20'
           },
           EU: {
-            amazon: 'https://www.amazon.es/dp/B0CCDNJS75 tag=dealtech365-21'
+            amazon: 'https://www.amazon.es/dp/B0CCDNJS75?tag=dealtech365-21'
           }
         }
       },
@@ -95,10 +95,10 @@ const DEAL_CATEGORIES = {
         },
         affiliateLinks: {
           US: {
-            amazon: 'https://www.amazon.com/dp/B0C748DZRH tag=blackfridaytech-20'
+            amazon: 'https://www.amazon.com/dp/B0C748DZRH?tag=blackfridaytech-20'
           },
           EU: {
-            amazon: 'https://www.amazon.es/dp/B0C748DZRH tag=dealtech365-21'
+            amazon: 'https://www.amazon.es/dp/B0C748DZRH?tag=dealtech365-21'
           }
         }
       },
@@ -114,10 +114,10 @@ const DEAL_CATEGORIES = {
         },
         affiliateLinks: {
           US: {
-            amazon: 'https://www.amazon.com/dp/B0CNGYY5LZ tag=blackfridaytech-20'
+            amazon: 'https://www.amazon.com/dp/B0CNGYY5LZ?tag=blackfridaytech-20'
           },
           EU: {
-            amazon: 'https://www.amazon.es/dp/B0CNGYY5LZ tag=dealtech365-21'
+            amazon: 'https://www.amazon.es/dp/B0CNGYY5LZ?tag=dealtech365-21'
           }
         }
       },
@@ -133,10 +133,10 @@ const DEAL_CATEGORIES = {
         },
         affiliateLinks: {
           US: {
-            amazon: 'https://www.amazon.com/dp/B0BCKHQGJN tag=blackfridaytech-20'
+            amazon: 'https://www.amazon.com/dp/B0BCKHQGJN?tag=blackfridaytech-20'
           },
           EU: {
-            amazon: 'https://www.amazon.es/dp/B0BCKHQGJN tag=dealtech365-21'
+            amazon: 'https://www.amazon.es/dp/B0BCKHQGJN?tag=dealtech365-21'
           }
         }
       },
@@ -149,10 +149,10 @@ const DEAL_CATEGORIES = {
         asin: 'B0BYWMLVG1',
         affiliateLinks: {
           US: {
-            amazon: 'https://www.amazon.com/dp/B0BYWMLVG1 tag=blackfridaytech-20'
+            amazon: 'https://www.amazon.com/dp/B0BYWMLVG1?tag=blackfridaytech-20'
           },
           EU: {
-            amazon: 'https://www.amazon.es/dp/B0BYWMLVG1 tag=dealtech365-21'
+            amazon: 'https://www.amazon.es/dp/B0BYWMLVG1?tag=dealtech365-21'
           }
         }
       },
@@ -168,10 +168,10 @@ const DEAL_CATEGORIES = {
         },
         affiliateLinks: {
           US: {
-            amazon: 'https://www.amazon.com/dp/B0D4QNYQ1P tag=blackfridaytech-20'
+            amazon: 'https://www.amazon.com/dp/B0D4QNYQ1P?tag=blackfridaytech-20'
           },
           EU: {
-            amazon: 'https://www.amazon.es/dp/B0D4QNYQ1P tag=dealtech365-21'
+            amazon: 'https://www.amazon.es/dp/B0D4QNYQ1P?tag=dealtech365-21'
           }
         }
       },
@@ -184,10 +184,10 @@ const DEAL_CATEGORIES = {
         asin: 'B07Q7S7247',
         affiliateLinks: {
           US: {
-            amazon: 'https://www.amazon.com/dp/B07Q7S7247 tag=blackfridaytech-20'
+            amazon: 'https://www.amazon.com/dp/B07Q7S7247?tag=blackfridaytech-20'
           },
           EU: {
-            amazon: 'https://www.amazon.es/dp/B07Q7S7247 tag=dealtech365-21'
+            amazon: 'https://www.amazon.es/dp/B07Q7S7247?tag=dealtech365-21'
           }
         }
       },
@@ -200,10 +200,10 @@ const DEAL_CATEGORIES = {
         asin: 'B0B5GP9FXN',
         affiliateLinks: {
           US: {
-            amazon: 'https://www.amazon.com/dp/B0B5GP9FXN tag=blackfridaytech-20'
+            amazon: 'https://www.amazon.com/dp/B0B5GP9FXN?tag=blackfridaytech-20'
           },
           EU: {
-            amazon: 'https://www.amazon.es/dp/B0B5GP9FXN tag=dealtech365-21'
+            amazon: 'https://www.amazon.es/dp/B0B5GP9FXN?tag=dealtech365-21'
           }
         }
       },
@@ -216,10 +216,10 @@ const DEAL_CATEGORIES = {
         asin: 'B09CYX92NB',
         affiliateLinks: {
           US: {
-            amazon: 'https://www.amazon.com/dp/B09CYX92NB tag=blackfridaytech-20'
+            amazon: 'https://www.amazon.com/dp/B09CYX92NB?tag=blackfridaytech-20'
           },
           EU: {
-            amazon: 'https://www.amazon.es/dp/B09CYX92NB tag=dealtech365-21'
+            amazon: 'https://www.amazon.es/dp/B09CYX92NB?tag=dealtech365-21'
           }
         }
       },
@@ -232,10 +232,10 @@ const DEAL_CATEGORIES = {
         asin: 'B0BWVQKSSY',
         affiliateLinks: {
           US: {
-            amazon: 'https://www.amazon.com/dp/B0BWVQKSSY tag=blackfridaytech-20'
+            amazon: 'https://www.amazon.com/dp/B0BWVQKSSY?tag=blackfridaytech-20'
           },
           EU: {
-            amazon: 'https://www.amazon.es/dp/B0BWVQKSSY tag=dealtech365-21'
+            amazon: 'https://www.amazon.es/dp/B0BWVQKSSY?tag=dealtech365-21'
           }
         }
       },
@@ -252,10 +252,10 @@ const DEAL_CATEGORIES = {
         },
         affiliateLinks: {
           US: {
-            amazon: 'https://www.amazon.com/dp/B0BTYCRJSS tag=blackfridaytech-20'
+            amazon: 'https://www.amazon.com/dp/B0BTYCRJSS?tag=blackfridaytech-20'
           },
           EU: {
-            amazon: 'https://www.amazon.es/dp/B0BTYCRJSS tag=dealtech365-21'
+            amazon: 'https://www.amazon.es/dp/B0BTYCRJSS?tag=dealtech365-21'
           }
         }
       },
@@ -268,10 +268,10 @@ const DEAL_CATEGORIES = {
         asin: 'B0BJL685Q7',
         affiliateLinks: {
           US: {
-            amazon: 'https://www.amazon.com/dp/B0BJL685Q7 tag=blackfridaytech-20'
+            amazon: 'https://www.amazon.com/dp/B0BJL685Q7?tag=blackfridaytech-20'
           },
           EU: {
-            amazon: 'https://www.amazon.es/dp/B0BJL685Q7 tag=dealtech365-21'
+            amazon: 'https://www.amazon.es/dp/B0BJL685Q7?tag=dealtech365-21'
           }
         }
       },
@@ -284,10 +284,10 @@ const DEAL_CATEGORIES = {
         asin: 'B0DTHRBPJV',
         affiliateLinks: {
           US: {
-            amazon: 'https://www.amazon.com/dp/B0DTHRBPJV tag=blackfridaytech-20'
+            amazon: 'https://www.amazon.com/dp/B0DTHRBPJV?tag=blackfridaytech-20'
           },
           EU: {
-            amazon: 'https://www.amazon.es/dp/B0DTHRBPJV tag=dealtech365-21'
+            amazon: 'https://www.amazon.es/dp/B0DTHRBPJV?tag=dealtech365-21'
           }
         }
       },
@@ -300,10 +300,10 @@ const DEAL_CATEGORIES = {
         asin: 'B00EO20LFO',
         affiliateLinks: {
           US: {
-            amazon: 'https://www.amazon.com/dp/B00EO20LFO tag=blackfridaytech-20'
+            amazon: 'https://www.amazon.com/dp/B00EO20LFO?tag=blackfridaytech-20'
           },
           EU: {
-            amazon: 'https://www.amazon.es/dp/B00EO20LFO tag=dealtech365-21'
+            amazon: 'https://www.amazon.es/dp/B00EO20LFO?tag=dealtech365-21'
           }
         }
       },
@@ -319,10 +319,10 @@ const DEAL_CATEGORIES = {
         },
         affiliateLinks: {
           US: {
-            amazon: 'https://www.amazon.com/dp/B0C3HCD34R tag=blackfridaytech-20'
+            amazon: 'https://www.amazon.com/dp/B0C3HCD34R?tag=blackfridaytech-20'
           },
           EU: {
-            amazon: 'https://www.amazon.es/dp/B0C3HCD34R tag=dealtech365-21'
+            amazon: 'https://www.amazon.es/dp/B0C3HCD34R?tag=dealtech365-21'
           }
         }
       },
@@ -338,10 +338,10 @@ const DEAL_CATEGORIES = {
         },
         affiliateLinks: {
           US: {
-            amazon: 'https://www.amazon.com/dp/B0DPXSS7KX tag=blackfridaytech-20'
+            amazon: 'https://www.amazon.com/dp/B0DPXSS7KX?tag=blackfridaytech-20'
           },
           EU: {
-            amazon: 'https://www.amazon.es/dp/B0DPXSS7KX tag=dealtech365-21'
+            amazon: 'https://www.amazon.es/dp/B0DPXSS7KX?tag=dealtech365-21'
           }
         }
       },
@@ -357,10 +357,10 @@ const DEAL_CATEGORIES = {
         },
         affiliateLinks: {
           US: {
-            amazon: 'https://www.amazon.com/dp/B0F6C8Y94Z tag=blackfridaytech-20'
+            amazon: 'https://www.amazon.com/dp/B0F6C8Y94Z?tag=blackfridaytech-20'
           },
           EU: {
-            amazon: 'https://www.amazon.es/dp/B0F6C8Y94Z tag=dealtech365-21'
+            amazon: 'https://www.amazon.es/dp/B0F6C8Y94Z?tag=dealtech365-21'
           }
         }
       }
@@ -384,10 +384,10 @@ const DEAL_CATEGORIES = {
         },
         affiliateLinks: {
           US: {
-            amazon: 'https://www.amazon.com/dp/B0F7RY35V1 tag=blackfridaytech-20'
+            amazon: 'https://www.amazon.com/dp/B0F7RY35V1?tag=blackfridaytech-20'
           },
           EU: {
-            amazon: 'https://www.amazon.es/dp/B0F7RY35V1 tag=dealtech365-21'
+            amazon: 'https://www.amazon.es/dp/B0F7RY35V1?tag=dealtech365-21'
           }
         }
       },
@@ -404,15 +404,15 @@ const DEAL_CATEGORIES = {
         },
         affiliateLinks: {
           US: {
-            amazon: 'https://www.amazon.com/dp/B0DKP6P66T tag=blackfridaytech-20'
+            amazon: 'https://www.amazon.com/dp/B0DKP6P66T?tag=blackfridaytech-20'
           },
           EU: {
-            amazon: 'https://www.amazon.es/dp/B0DKP6P66T tag=dealtech365-21'
+            amazon: 'https://www.amazon.es/dp/B0DKP6P66T?tag=dealtech365-21'
           }
         }
       },
       {
-        name: 'Motorola Moto g15 24GB (8G+16GB RAM Boost)/256GB Azul, España, Pantalla de 6.72\'\' FHD+, Sistema de cámaras de 50 MP y Objetivo Ultra Gran Angular, Batería 5200 mAh, Carga TurboPower, Soft Luxe',
+        name: 'Motorola Moto g15 24GB (8G+16GB RAM Boost)/256GB Azul, España, Pantalla de 6.72\'\' FHD+, Sistema de cámaras de 50 MP y Objetivo Ultra Gran Angular, Batería 5200 mAh, Carga TurboPower, Soft Luxe',
         brand: 'Motorola',
         basePrice: 199,
         discount: 38,
@@ -424,10 +424,10 @@ const DEAL_CATEGORIES = {
         },
         affiliateLinks: {
           US: {
-            amazon: 'https://www.amazon.com/dp/B0F9X7Z4QM tag=blackfridaytech-20'
+            amazon: 'https://www.amazon.com/dp/B0F9X7Z4QM?tag=blackfridaytech-20'
           },
           EU: {
-            amazon: 'https://www.amazon.es/dp/B0F9X7Z4QM tag=dealtech365-21'
+            amazon: 'https://www.amazon.es/dp/B0F9X7Z4QM?tag=dealtech365-21'
           }
         }
       },
@@ -443,10 +443,10 @@ const DEAL_CATEGORIES = {
         },
         affiliateLinks: {
           US: {
-            amazon: 'https://www.amazon.com/dp/B0DLGVSDL8 tag=blackfridaytech-20'
+            amazon: 'https://www.amazon.com/dp/B0DLGVSDL8?tag=blackfridaytech-20'
           },
           EU: {
-            amazon: 'https://www.amazon.es/dp/B0DLGVSDL8 tag=dealtech365-21'
+            amazon: 'https://www.amazon.es/dp/B0DLGVSDL8?tag=dealtech365-21'
           }
         }
       },
@@ -462,10 +462,10 @@ const DEAL_CATEGORIES = {
         },
         affiliateLinks: {
           US: {
-            amazon: 'https://www.amazon.com/dp/B0F3JD79PH tag=blackfridaytech-20'
+            amazon: 'https://www.amazon.com/dp/B0F3JD79PH?tag=blackfridaytech-20'
           },
           EU: {
-            amazon: 'https://www.amazon.es/dp/B0F3JD79PH tag=dealtech365-21'
+            amazon: 'https://www.amazon.es/dp/B0F3JD79PH?tag=dealtech365-21'
           }
         }
       },
@@ -482,10 +482,10 @@ const DEAL_CATEGORIES = {
         },
         affiliateLinks: {
           US: {
-            amazon: 'https://www.amazon.com/dp/B0FQJB2KK9 tag=blackfridaytech-20'
+            amazon: 'https://www.amazon.com/dp/B0FQJB2KK9?tag=blackfridaytech-20'
           },
           EU: {
-            amazon: 'https://www.amazon.es/dp/B0FQJB2KK9 tag=dealtech365-21'
+            amazon: 'https://www.amazon.es/dp/B0FQJB2KK9?tag=dealtech365-21'
           }
         }
       },
@@ -501,10 +501,10 @@ const DEAL_CATEGORIES = {
         },
         affiliateLinks: {
           US: {
-            amazon: 'https://www.amazon.com/dp/B0DKP5LQGP tag=blackfridaytech-20'
+            amazon: 'https://www.amazon.com/dp/B0DKP5LQGP?tag=blackfridaytech-20'
           },
           EU: {
-            amazon: 'https://www.amazon.es/dp/B0DKP5LQGP tag=dealtech365-21'
+            amazon: 'https://www.amazon.es/dp/B0DKP5LQGP?tag=dealtech365-21'
           }
         }
       },
@@ -522,15 +522,15 @@ const DEAL_CATEGORIES = {
         },
         affiliateLinks: {
           US: {
-            amazon: 'https://www.amazon.com/dp/B0FQ2RSQ41 tag=blackfridaytech-20'
+            amazon: 'https://www.amazon.com/dp/B0FQ2RSQ41?tag=blackfridaytech-20'
           },
           EU: {
-            amazon: 'https://www.amazon.es/dp/B0FQ2RSQ41 tag=dealtech365-21'
+            amazon: 'https://www.amazon.es/dp/B0FQ2RSQ41?tag=dealtech365-21'
           }
         }
       },
       {
-        name: 'XIAOMI REDMI 15 - Smartphone de 6+128GB, Cámara Dual de 50MP con AI, Pantalla inmersiva de 6,9�? FHD+, Snapdragon 685, Carga rápida de 33W, Cargador no Incluido, Morado (Versión ES)',
+        name: 'XIAOMI REDMI 15 - Smartphone de 6+128GB, Cámara Dual de 50MP con AI, Pantalla inmersiva de 6,9” FHD+, Snapdragon 685, Carga rápida de 33W, Cargador no Incluido, Morado (Versión ES)',
         brand: 'Xiaomi',
         basePrice: 179.9,
         discount: 32,
@@ -541,15 +541,15 @@ const DEAL_CATEGORIES = {
         },
         affiliateLinks: {
           US: {
-            amazon: 'https://www.amazon.com/dp/B0FH2TTXHC tag=blackfridaytech-20'
+            amazon: 'https://www.amazon.com/dp/B0FH2TTXHC?tag=blackfridaytech-20'
           },
           EU: {
-            amazon: 'https://www.amazon.es/dp/B0FH2TTXHC tag=dealtech365-21'
+            amazon: 'https://www.amazon.es/dp/B0FH2TTXHC?tag=dealtech365-21'
           }
         }
       },
       {
-        name: 'XIAOMI POCO C85 - Smartphone de 8+256GB, Cámara Dual de 50MP con AI, Pantalla inmersiva de 6,9�?, Potente procesador Octa-Core, Carga rápida de 33W, 6000mAh, Cargador no Incluido, Negro (Versión ES)',
+        name: 'XIAOMI POCO C85 - Smartphone de 8+256GB, Cámara Dual de 50MP con AI, Pantalla inmersiva de 6,9”, Potente procesador Octa-Core, Carga rápida de 33W, 6000mAh, Cargador no Incluido, Negro (Versión ES)',
         brand: 'Xiaomi',
         basePrice: 169.9,
         discount: 31,
@@ -561,10 +561,10 @@ const DEAL_CATEGORIES = {
         },
         affiliateLinks: {
           US: {
-            amazon: 'https://www.amazon.com/dp/B0FHQD5M7D tag=blackfridaytech-20'
+            amazon: 'https://www.amazon.com/dp/B0FHQD5M7D?tag=blackfridaytech-20'
           },
           EU: {
-            amazon: 'https://www.amazon.es/dp/B0FHQD5M7D tag=dealtech365-21'
+            amazon: 'https://www.amazon.es/dp/B0FHQD5M7D?tag=dealtech365-21'
           }
         }
       },
@@ -580,15 +580,15 @@ const DEAL_CATEGORIES = {
         },
         affiliateLinks: {
           US: {
-            amazon: 'https://www.amazon.com/dp/B0DSWJDNY4 tag=blackfridaytech-20'
+            amazon: 'https://www.amazon.com/dp/B0DSWJDNY4?tag=blackfridaytech-20'
           },
           EU: {
-            amazon: 'https://www.amazon.es/dp/B0DSWJDNY4 tag=dealtech365-21'
+            amazon: 'https://www.amazon.es/dp/B0DSWJDNY4?tag=dealtech365-21'
           }
         }
       },
       {
-        name: 'HONOR 400 5G-Smartphone 8GB+256GB, Cámara de 200MP con IA, Super Zoom con IA,6.55�? y 120Hz y 5000 nits,Snapdragon 7 Gen 3,Android 15, Dual SIM, NFC, IP65,MagicOS 9.0-Desert Gold',
+        name: 'HONOR 400 5G-Smartphone 8GB+256GB, Cámara de 200MP con IA, Super Zoom con IA,6.55” y 120Hz y 5000 nits,Snapdragon 7 Gen 3,Android 15, Dual SIM, NFC, IP65,MagicOS 9.0-Desert Gold',
         brand: 'HONOR',
         basePrice: 499,
         discount: 30,
@@ -599,10 +599,10 @@ const DEAL_CATEGORIES = {
         },
         affiliateLinks: {
           US: {
-            amazon: 'https://www.amazon.com/dp/B0F8VCCFHC tag=blackfridaytech-20'
+            amazon: 'https://www.amazon.com/dp/B0F8VCCFHC?tag=blackfridaytech-20'
           },
           EU: {
-            amazon: 'https://www.amazon.es/dp/B0F8VCCFHC tag=dealtech365-21'
+            amazon: 'https://www.amazon.es/dp/B0F8VCCFHC?tag=dealtech365-21'
           }
         }
       },
@@ -618,10 +618,10 @@ const DEAL_CATEGORIES = {
         },
         affiliateLinks: {
           US: {
-            amazon: 'https://www.amazon.com/dp/B0F9NH4685 tag=blackfridaytech-20'
+            amazon: 'https://www.amazon.com/dp/B0F9NH4685?tag=blackfridaytech-20'
           },
           EU: {
-            amazon: 'https://www.amazon.es/dp/B0F9NH4685 tag=dealtech365-21'
+            amazon: 'https://www.amazon.es/dp/B0F9NH4685?tag=dealtech365-21'
           }
         }
       },
@@ -637,10 +637,10 @@ const DEAL_CATEGORIES = {
         },
         affiliateLinks: {
           US: {
-            amazon: 'https://www.amazon.com/dp/B0F4KKD71G tag=blackfridaytech-20'
+            amazon: 'https://www.amazon.com/dp/B0F4KKD71G?tag=blackfridaytech-20'
           },
           EU: {
-            amazon: 'https://www.amazon.es/dp/B0F4KKD71G tag=dealtech365-21'
+            amazon: 'https://www.amazon.es/dp/B0F4KKD71G?tag=dealtech365-21'
           }
         }
       },
@@ -657,10 +657,10 @@ const DEAL_CATEGORIES = {
         },
         affiliateLinks: {
           US: {
-            amazon: 'https://www.amazon.com/dp/B0FLF7YPPR tag=blackfridaytech-20'
+            amazon: 'https://www.amazon.com/dp/B0FLF7YPPR?tag=blackfridaytech-20'
           },
           EU: {
-            amazon: 'https://www.amazon.es/dp/B0FLF7YPPR tag=dealtech365-21'
+            amazon: 'https://www.amazon.es/dp/B0FLF7YPPR?tag=dealtech365-21'
           }
         }
       },
@@ -676,10 +676,10 @@ const DEAL_CATEGORIES = {
         },
         affiliateLinks: {
           US: {
-            amazon: 'https://www.amazon.com/dp/B0DSWFHTL2 tag=blackfridaytech-20'
+            amazon: 'https://www.amazon.com/dp/B0DSWFHTL2?tag=blackfridaytech-20'
           },
           EU: {
-            amazon: 'https://www.amazon.es/dp/B0DSWFHTL2 tag=dealtech365-21'
+            amazon: 'https://www.amazon.es/dp/B0DSWFHTL2?tag=dealtech365-21'
           }
         }
       },
@@ -692,10 +692,10 @@ const DEAL_CATEGORIES = {
         asin: 'B0DPHC4RQW',
         affiliateLinks: {
           US: {
-            amazon: 'https://www.amazon.com/dp/B0DPHC4RQW tag=blackfridaytech-20'
+            amazon: 'https://www.amazon.com/dp/B0DPHC4RQW?tag=blackfridaytech-20'
           },
           EU: {
-            amazon: 'https://www.amazon.es/dp/B0DPHC4RQW tag=dealtech365-21'
+            amazon: 'https://www.amazon.es/dp/B0DPHC4RQW?tag=dealtech365-21'
           }
         }
       },
@@ -712,10 +712,10 @@ const DEAL_CATEGORIES = {
         },
         affiliateLinks: {
           US: {
-            amazon: 'https://www.amazon.com/dp/B0DFGKM1Z5 tag=blackfridaytech-20'
+            amazon: 'https://www.amazon.com/dp/B0DFGKM1Z5?tag=blackfridaytech-20'
           },
           EU: {
-            amazon: 'https://www.amazon.es/dp/B0DFGKM1Z5 tag=dealtech365-21'
+            amazon: 'https://www.amazon.es/dp/B0DFGKM1Z5?tag=dealtech365-21'
           }
         }
       },
@@ -732,10 +732,10 @@ const DEAL_CATEGORIES = {
         },
         affiliateLinks: {
           US: {
-            amazon: 'https://www.amazon.com/dp/B0FJ8SPP5Q tag=blackfridaytech-20'
+            amazon: 'https://www.amazon.com/dp/B0FJ8SPP5Q?tag=blackfridaytech-20'
           },
           EU: {
-            amazon: 'https://www.amazon.es/dp/B0FJ8SPP5Q tag=dealtech365-21'
+            amazon: 'https://www.amazon.es/dp/B0FJ8SPP5Q?tag=dealtech365-21'
           }
         }
       },
@@ -752,10 +752,10 @@ const DEAL_CATEGORIES = {
         },
         affiliateLinks: {
           US: {
-            amazon: 'https://www.amazon.com/dp/B0DKP645L3 tag=blackfridaytech-20'
+            amazon: 'https://www.amazon.com/dp/B0DKP645L3?tag=blackfridaytech-20'
           },
           EU: {
-            amazon: 'https://www.amazon.es/dp/B0DKP645L3 tag=dealtech365-21'
+            amazon: 'https://www.amazon.es/dp/B0DKP645L3?tag=dealtech365-21'
           }
         }
       }
@@ -763,9 +763,9 @@ const DEAL_CATEGORIES = {
   },
 };
 
-// Generate deals with prici�ng
+// Generate deals with pricing
 function generateDeals(userRegion) {
-  const region = userRegion.isEurope   'EU' : 'US';
+  const region = userRegion.isEurope ? 'EU' : 'US';
   const currency = userRegion.currency;
   const currencySymbol = userRegion.currencySymbol;
 
@@ -805,46 +805,48 @@ if (typeof module !== 'undefined' && module.exports) {
 // Initialize deals on page load
 let allDeals = [];
 
-document.addEventListener('DOMContentLoaded', () => {
-  // Get user region
-  const userRegion = window.getUserRegion   window.getUserRegion() : {
-    isEurope: true,
-    currency: 'EUR',
-    currencySymbol: '€'
-  };
+if (typeof document !== 'undefined') {
+  document.addEventListener('DOMContentLoaded', () => {
+    // Get user region
+    const userRegion = window.getUserRegion ? window.getUserRegion() : {
+      isEurope: true,
+      currency: 'EUR',
+      currencySymbol: '€'
+    };
 
-  // Generate deals (Try service first, fallback to local generation)
-  if (window.dealsService) {
-    // Show loading state if needed, or just wait
-    window.dealsService.getAllDeals(userRegion.isEurope   'EU' : 'US').then(result => {
-      allDeals = result.deals;
+    // Generate deals (Try service first, fallback to local generation)
+    if (window.dealsService) {
+      // Show loading state if needed, or just wait
+      window.dealsService.getAllDeals(userRegion.isEurope ? 'EU' : 'US').then(result => {
+        allDeals = result.deals;
+        displayDeals();
+
+        // Update favorite buttons after deals are loaded
+        setTimeout(() => {
+          updateFavoriteButtons();
+        }, 100);
+      });
+    } else {
+      allDeals = generateDeals(userRegion);
       displayDeals();
+    }
 
-      // Update favorite buttons after deals are loaded
-      setTimeout(() => {
-        updateFavoriteButtons();
-      }, 100);
-    });
-  } else {
-    allDeals = generateDeals(userRegion);
-    displayDeals();
-  }
-
-  // Update favorite buttons after a short delay to ensure DOM is ready
-  setTimeout(() => {
-    updateFavoriteButtons();
-    console.log('✅ Favorite buttons updated on page load');
-  }, 100);
-
-  // Also update when deals are displayed
-  const dealsGrid = document.getElementById('dealsGrid');
-  if (dealsGrid) {
-    const observer = new MutationObserver(() => {
+    // Update favorite buttons after a short delay to ensure DOM is ready
+    setTimeout(() => {
       updateFavoriteButtons();
-    });
-    observer.observe(dealsGrid, { childList: true, subtree: true });
-  }
-});
+      console.log('✅ Favorite buttons updated on page load');
+    }, 100);
+
+    // Also update when deals are displayed
+    const dealsGrid = document.getElementById('dealsGrid');
+    if (dealsGrid) {
+      const observer = new MutationObserver(() => {
+        updateFavoriteButtons();
+      });
+      observer.observe(dealsGrid, { childList: true, subtree: true });
+    }
+  });
+}
 
 // Display deals function
 function displayDeals(dealsToShow = null) {
@@ -873,14 +875,12 @@ function displayDeals(dealsToShow = null) {
 
         <div class="deal-content-main">
           <p class="deal-brand">${deal.brand}</p>
-          <p class="deal-description">${deal.name.length > 80 ? deal.name.substring(0, 80) + '...' : deal.name}</p>
-          ${deal.specs && Object.keys(deal.specs).length > 0 ? `
+
           <div class="deal-specs">
-            ${Object.entries(deal.specs).map(([key, value]) =>
+            ${deal.specs && Object.keys(deal.specs).length > 0 ? Object.entries(deal.specs).map(([key, value]) =>
     `<span class="spec-item"><strong>${key}:</strong> ${value}</span>`
-  ).join('')}
+  ).join('') : ''}
           </div>
-          ` : ''}
         </div>
 
         <div class="deal-price">
@@ -997,9 +997,10 @@ if (typeof module !== 'undefined' && module.exports) {
 }
 
 // Make functions available globally for event listeners
-window.filterByCategory = filterByCategory;
-window.filterByBrand = filterByBrand;
-window.searchDeals = searchDeals;
-window.sortDeals = sortDeals;
-window.generateDeals = generateDeals;
-
+if (typeof window !== 'undefined') {
+  window.filterByCategory = filterByCategory;
+  window.filterByBrand = filterByBrand;
+  window.searchDeals = searchDeals;
+  window.sortDeals = sortDeals;
+  window.generateDeals = generateDeals;
+}
