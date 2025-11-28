@@ -874,11 +874,13 @@ function displayDeals(dealsToShow = null) {
         <div class="deal-content-main">
           <p class="deal-brand">${deal.brand}</p>
 
+          ${deal.specs && Object.keys(deal.specs).length > 0 ? `
           <div class="deal-specs">
             ${Object.entries(deal.specs).map(([key, value]) =>
     `<span class="spec-item"><strong>${key}:</strong> ${value}</span>`
   ).join('')}
           </div>
+          ` : ''}
         </div>
 
         <div class="deal-price">
