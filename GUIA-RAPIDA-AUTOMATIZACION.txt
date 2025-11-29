@@ -1,0 +1,174 @@
+╔══════════════════════════════════════════════════════════════╗
+║     GUÍA RÁPIDA: AUTOMATIZACIÓN DEL SCRAPER - DEAL TECH365  ║
+╚══════════════════════════════════════════════════════════════╝
+
+✅ SISTEMA COMPLETADO Y LISTO PARA USAR
+
+═══════════════════════════════════════════════════════════════
+📂 ARCHIVOS CREADOS:
+═══════════════════════════════════════════════════════════════
+
+1. automation/scripts/auto-scrape-and-update.js
+   → Script principal que automatiza todo el proceso
+
+2. automation/run-daily-scraper.bat
+   → Archivo batch para Windows Task Scheduler
+
+3. automation/scripts/upload-to-banahosting.js
+   → Upload automático a Banahosting vía FTP (opcional)
+
+4. automation/README-AUTOMATIZACION.md
+   → Documentación completa con todos los detalles
+
+5. .gitignore
+   → Actualizado para ignorar logs
+
+═══════════════════════════════════════════════════════════════
+🚀 INICIO RÁPIDO (3 PASOS):
+═══════════════════════════════════════════════════════════════
+
+PASO 1: PROBAR MANUALMENTE
+───────────────────────────
+
+cd c:\Dealtech365
+node automation\scripts\auto-scrape-and-update.js
+
+Esto hará:
+✓ Scraping de Amazon (2-5 min)
+✓ Generar deals-real-v2.js
+✓ Commit y push a GitHub
+
+PASO 2: CONFIGURAR AUTOMATIZACIÓN DIARIA
+─────────────────────────────────────────
+
+Opción A - PowerShell (Rápido):
+
+Abre PowerShell como ADMINISTRADOR y ejecuta:
+
+$action = New-ScheduledTaskAction -Execute "c:\Dealtech365\automation\run-daily-scraper.bat"
+$trigger = New-ScheduledTaskTrigger -Daily -At 3:00AM
+$settings = New-ScheduledTaskSettingsSet -AllowStartIfOnBatteries
+Register-ScheduledTask -TaskName "DealTech365 Scraper" -Action $action -Trigger $trigger -Settings $settings
+
+Opción B - Interfaz Gráfica:
+
+1. Win + R → taskschd.msc
+2. Crear tarea básica...
+3. Nombre: DealTech365 Scraper
+4. Diariamente a las 3:00 AM
+5. Programa: c:\Dealtech365\automation\run-daily-scraper.bat
+
+PASO 3: VERIFICAR
+─────────────────
+
+# Ver logs
+type automation\logs\auto-update.log
+
+# Verificar tarea
+Get-ScheduledTask -TaskName "DealTech365 Scraper"
+
+# Forzar ejecución ahora (probar)
+Start-ScheduledTask -TaskName "DealTech365 Scraper"
+
+═══════════════════════════════════════════════════════════════
+🔧 CONFIGURACIÓN OPCIONAL: FTP A BANAHOSTING
+═══════════════════════════════════════════════════════════════
+
+1. INSTALAR DEPENDENCIA:
+
+npm install basic-ftp
+
+2. CREAR ARCHIVO .env en c:\Dealtech365\
+
+FTP_HOST=ftp.dealtech365.com
+FTP_USER=tu_usuario
+FTP_PASSWORD=tu_contraseña
+FTP_PORT=21
+
+3. PROBAR:
+
+node automation\scripts\upload-to-banahosting.js
+
+═══════════════════════════════════════════════════════════════
+📊 QUÉ HACE EL SISTEMA:
+═══════════════════════════════════════════════════════════════
+
+CADA DÍA A LAS 3:00 AM (automático):
+
+1. 🤖 Ejecuta scraper de Amazon
+   └─ Obtiene ofertas frescas de 4 categorías
+   └─ Genera archivo JSON con ~170-200 productos
+
+2. 📝 Genera deals-real-v2.js
+   └─ Convierte JSON a JavaScript
+   └─ Incluye todas las funciones necesarias
+   └─ Listo para usar en el sitio
+
+3. 📤 Sube a GitHub
+   └─ Commit automático con timestamp
+   └─ Push al repositorio
+
+4. 📋 Registra logs
+   └─ Guarda todo en automation/logs/
+   └─ Fácil de revisar si algo falla
+
+5. 🔄 Reintentos automáticos
+   └─ Si algo falla, reintenta 3 veces
+   └─ Delays entre intentos
+
+═══════════════════════════════════════════════════════════════
+✅ BENEFICIOS:
+═══════════════════════════════════════════════════════════════
+
+✓ Ofertas siempre actualizadas (cada día)
+✓ Cero intervención manual
+✓ Mejor posicionamiento SEO (contenido fresco)
+✓ Más credibilidad (ofertas vigentes)
+✓ Logs automáticos para debugging
+✓ Recovery automático de errores
+
+═══════════════════════════════════════════════════════════════
+🆘 PROBLEMAS COMUNES:
+═══════════════════════════════════════════════════════════════
+
+PROBLEMA: Tarea programada no se ejecuta
+SOLUCIÓN:
+  - Verificar que la PC esté encendida a las 3 AM
+  - O cambiar horario: edita el trigger en Task Scheduler
+
+PROBLEMA: Git push falla
+SOLUCIÓN:
+  git config credential.helper store
+  git push  # Ingresa credenciales una vez
+
+PROBLEMA: Scraper no encuentra productos
+SOLUCIÓN:
+  - Amazon puede haber cambiado selectores
+  - Revisar logs: automation/logs/auto-update.log
+  - Actualizar selectores en amazon-scraper-improved.js
+
+═══════════════════════════════════════════════════════════════
+📚 DOCUMENTACIÓN COMPLETA:
+═══════════════════════════════════════════════════════════════
+
+Ver: automation/README-AUTOMATIZACION.md
+
+Incluye:
+- Instalación detallada
+- Configuración FTP
+- Troubleshooting avanzado
+- Ideas para mejoras futuras
+
+═══════════════════════════════════════════════════════════════
+🎯 PRÓXIMOS PASOS:
+═══════════════════════════════════════════════════════════════
+
+1. ☐ Ejecutar manualmente para probar
+2. ☐ Configurar Task Scheduler
+3. ☐ Verificar que funciona
+4. ☐ (Opcional) Configurar FTP
+5. ☐ Esperar a mañana y ver ofertas frescas!
+
+═══════════════════════════════════════════════════════════════
+
+¿Preguntas? Revisa: automation/README-AUTOMATIZACION.md
