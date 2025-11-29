@@ -1,0 +1,196 @@
+╔══════════════════════════════════════════════════════════════╗
+║   CONFIGURAR GITHUB ACTIONS PARA DEPLOYMENT AUTOMÁTICO      ║
+╚══════════════════════════════════════════════════════════════╝
+
+✅ GitHub Actions YA ESTÁ CONFIGURADO en tu repositorio
+✅ Solo falta agregar las credenciales FTP
+
+═══════════════════════════════════════════════════════════════
+📋 PASO 1: OBTENER CREDENCIALES FTP DE BANAHOSTING
+═══════════════════════════════════════════════════════════════
+
+1. Entra a cPanel de Banahosting
+
+2. Busca "FTP Accounts" o "Cuentas FTP"
+
+3. Anota tus credenciales:
+   ┌─────────────────────────────────────────────────────┐
+   │ FTP_HOST: ftp.dealtech365.com                       │
+   │          (o dealtech365.com)                        │
+   │                                                     │
+   │ FTP_USER: xqydfqoq@dealtech365.com                 │
+   │          (tu usuario de cPanel)                     │
+   │                                                     │
+   │ FTP_PASSWORD: tu_contraseña_cpanel                 │
+   └─────────────────────────────────────────────────────┘
+
+⚠️  Si no tienes cuenta FTP:
+   - En cPanel → FTP Accounts
+   - Click "Create FTP Account"
+   - Username: deploy (o cualquier nombre)
+   - Directory: /public_html
+   - Quota: Unlimited
+   - Click "Create FTP Account"
+
+═══════════════════════════════════════════════════════════════
+🔐 PASO 2: AGREGAR SECRETS EN GITHUB
+═══════════════════════════════════════════════════════════════
+
+1. Ve a tu repositorio en GitHub:
+   https://github.com/ivowankenobi/DealTech365
+
+2. Click en "Settings" (Configuración)
+   └─ Está en la barra superior del repo
+
+3. En el menú lateral izquierdo:
+   └─ Click en "Secrets and variables"
+   └─ Click en "Actions"
+
+4. Agregar cada secret (haz esto 3 veces):
+
+   ┌─────────────────────────────────────────────────────┐
+   │ Click "New repository secret"                       │
+   │                                                     │
+   │ Secret 1:                                           │
+   │   Name: FTP_HOST                                    │
+   │   Value: ftp.dealtech365.com                        │
+   │   Click "Add secret"                                │
+   │                                                     │
+   │ Secret 2:                                           │
+   │   Name: FTP_USER                                    │
+   │   Value: xqydfqoq@dealtech365.com                  │
+   │   Click "Add secret"                                │
+   │                                                     │
+   │ Secret 3:                                           │
+   │   Name: FTP_PASSWORD                                │
+   │   Value: tu_contraseña_real                         │
+   │   Click "Add secret"                                │
+   └─────────────────────────────────────────────────────┘
+
+5. Verificar que aparezcan los 3 secrets:
+   ✓ FTP_HOST
+   ✓ FTP_USER
+   ✓ FTP_PASSWORD
+
+═══════════════════════════════════════════════════════════════
+🎯 PASO 3: PROBAR EL DEPLOYMENT AUTOMÁTICO
+═══════════════════════════════════════════════════════════════
+
+Opción A - Forzar ejecución manual:
+
+1. Ve a tu repo en GitHub
+2. Click "Actions" (en la barra superior)
+3. Click en "Deploy to Banahosting" (workflow)
+4. Click "Run workflow"
+5. Click "Run workflow" (botón verde)
+6. Espera 1-2 minutos
+7. ✅ Si sale verde = Éxito!
+
+Opción B - Hacer un cambio y push:
+
+1. En tu PC, edita cualquier archivo:
+
+   echo "Test" >> README.md
+
+2. Commit y push:
+
+   git add .
+   git commit -m "Test GitHub Actions deployment"
+   git push
+
+3. Ve a GitHub → Actions
+4. Verás el workflow ejecutándose
+5. Espera a que termine (1-2 min)
+6. ✅ Si sale verde = Archivos subidos a Banahosting!
+
+═══════════════════════════════════════════════════════════════
+✅ CÓMO FUNCIONA DESPUÉS DE CONFIGURAR
+═══════════════════════════════════════════════════════════════
+
+CADA VEZ que hagas git push:
+
+1. Haces cambios en tu PC (c:\Dealtech365\)
+        ↓
+2. git add .
+   git commit -m "Actualizar ofertas"
+   git push
+        ↓
+3. GitHub Actions detecta el push
+        ↓
+4. Se ejecuta automáticamente el workflow
+        ↓
+5. Sube archivos a Banahosting vía FTP
+        ↓
+6. ✅ Sitio actualizado en dealtech365.com
+
+TODO AUTOMÁTICO - SIN TOCAR CPANEL!
+
+═══════════════════════════════════════════════════════════════
+📊 MONITOREAR DEPLOYMENTS
+═══════════════════════════════════════════════════════════════
+
+1. Ve a: https://github.com/ivowankenobi/DealTech365/actions
+
+2. Verás lista de todos los deployments:
+   ✅ Verde = Exitoso
+   ❌ Rojo = Falló (click para ver error)
+   🟡 Amarillo = En progreso
+
+3. Click en cualquier workflow para ver detalles
+
+═══════════════════════════════════════════════════════════════
+🔧 TROUBLESHOOTING
+═══════════════════════════════════════════════════════════════
+
+PROBLEMA: Workflow falla con "Authentication failed"
+SOLUCIÓN:
+  - Verifica credenciales FTP en Secrets
+  - Prueba conectar con FileZilla usando esas credenciales
+  - Asegúrate FTP_USER incluye @dealtech365.com
+
+PROBLEMA: Workflow exitoso pero archivos no aparecen
+SOLUCIÓN:
+  - Verifica que server-dir sea: /public_html/
+  - O prueba sin la / inicial: public_html/
+
+PROBLEMA: No veo el workflow en Actions
+SOLUCIÓN:
+  - Verifica que el archivo esté en:
+    .github/workflows/deploy-to-banahosting.yml
+  - Haz git push para que GitHub lo detecte
+
+═══════════════════════════════════════════════════════════════
+🎉 BENEFICIOS
+═══════════════════════════════════════════════════════════════
+
+✅ CERO configuración en cPanel
+✅ Un solo comando: git push
+✅ Deployment automático a Banahosting
+✅ Historial de todos los deployments
+✅ Gratis (GitHub Actions free tier)
+✅ Funciona con cualquier hosting que tenga FTP
+
+═══════════════════════════════════════════════════════════════
+📝 RESUMEN DE COMANDOS
+═══════════════════════════════════════════════════════════════
+
+# Tu flujo de trabajo diario:
+cd c:\Dealtech365
+# ... haces cambios en archivos ...
+git add .
+git commit -m "Descripción de cambios"
+git push
+
+# ¡Y LISTO! GitHub Actions hace el resto automáticamente
+
+═══════════════════════════════════════════════════════════════
+🔗 LINKS ÚTILES
+═══════════════════════════════════════════════════════════════
+
+Tu repo: https://github.com/ivowankenobi/DealTech365
+Actions: https://github.com/ivowankenobi/DealTech365/actions
+Settings: https://github.com/ivowankenobi/DealTech365/settings/secrets/actions
+
+═══════════════════════════════════════════════════════════════
+
+¿Problemas? Revisa la sección de Troubleshooting arriba.
