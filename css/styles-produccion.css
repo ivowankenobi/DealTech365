@@ -2712,3 +2712,96 @@ footer .eyebrow {
     min-width: auto;
   }
 }
+
+/* ===== RESPONSIVE NAVBAR STYLES ===== */
+@media (max-width: 768px) {
+
+  /* Show toggle button on mobile */
+  .navbar__toggle {
+    display: block !important;
+    margin-left: auto;
+    z-index: 1001;
+  }
+
+  /* Hide menu by default on mobile */
+  .navbar__menu {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background: var(--bg-primary);
+    flex-direction: column;
+    padding: 1rem 0;
+    margin: 0;
+    gap: 0;
+    box-shadow: 0 4px 12px var(--shadow-md);
+    border-top: 1px solid var(--border);
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+  }
+
+  /* Show menu when active */
+  .navbar__menu.active {
+    max-height: 400px;
+    opacity: 1;
+  }
+
+  .navbar__menu li {
+    width: 100%;
+    border-bottom: 1px solid var(--border-light);
+  }
+
+  .navbar__menu li:last-child {
+    border-bottom: none;
+  }
+
+  .navbar__link {
+    display: block;
+    padding: 1rem 1.5rem;
+    width: 100%;
+    transition: background 0.2s, color 0.2s;
+  }
+
+  .navbar__link:hover {
+    background: var(--bg-secondary);
+  }
+
+  /* Adjust navbar container for mobile */
+  .navbar__container {
+    gap: 1rem;
+    flex-wrap: nowrap;
+  }
+
+  /* Hide region indicator on very small screens */
+  .navbar__region {
+    display: none;
+  }
+
+  /* Hide user email/status on mobile to prevent overlap with menu button */
+  .navbar__user-status {
+    display: none !important;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  .navbar__logo-wordmark {
+    font-size: 0.9rem;
+  }
+
+  .navbar__logo-icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .navbar__logo-icon-center {
+    font-size: 14px;
+  }
+
+  .navbar__user-status .btn.primary {
+    font-size: 0.8rem !important;
+    padding: 0.35rem 0.8rem !important;
+  }
+}

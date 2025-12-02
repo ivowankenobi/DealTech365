@@ -212,12 +212,6 @@
         // Generate deals
         const region = (window.getRegion && window.getRegion()) || window.userRegion || 'EU';
 
-        // Load deals from JSON first
-        if (typeof loadDeals === 'function') {
-          console.log('🔄 Loading deals from JSON...');
-          await loadDeals();
-        }
-
         // Load deals from DEAL_CATEGORIES (from deals-real.js)
         if (typeof DEAL_CATEGORIES === 'undefined') {
           console.error('DEAL_CATEGORIES not found');
@@ -421,7 +415,7 @@
       displayDeals();
     }
 
-    async function refreshDeals() {
+    function refreshDeals() {
       // Reset filters
       window.currentCategory = '';
       window.currentBrand = '';
@@ -429,11 +423,6 @@
       document.getElementById('categoryFilter').value = '';
       document.getElementById('brandFilter').value = '';
       document.getElementById('searchInput').value = '';
-
-      // Reload deals from JSON
-      if (typeof loadDeals === 'function') {
-        await loadDeals();
-      }
 
       // Reload deals from DEAL_CATEGORIES
       const region = window.getRegion ? window.getRegion() : (window.userRegion || 'EU');

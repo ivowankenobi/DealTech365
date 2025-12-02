@@ -35,7 +35,11 @@
       "Bash(timeout /t 15 /nobreak)",
       "Bash(copy:*)",
       "Bash(curl:*)",
-      "Bash(start \"c:\\Dealtech365\\generate-og-image.html\")"
+      "Bash(start \"c:\\Dealtech365\\generate-og-image.html\")",
+      "Bash(python:*)",
+      "Bash(git fetch:*)",
+      "Bash(findstr:*)",
+      "Bash(cp:*)"
     ],
     "deny": [],
     "ask": []

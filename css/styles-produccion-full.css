@@ -340,20 +340,6 @@ body {
   gap: 0.5rem;
 }
 
-.navbar__toggle {
-  display: none;
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 0.5rem;
-  color: var(--text-primary);
-  transition: color 0.2s;
-}
-
-.navbar__toggle:hover {
-  color: var(--primary);
-}
-
 .page {
   max-width: 1200px;
   margin: 0 auto;
@@ -1961,53 +1947,25 @@ footer .eyebrow {
 
   .navbar__container {
     padding: 0.75rem 1rem;
-    position: relative;
-  }
-
-  .navbar__toggle {
-    display: block;
-    order: 2;
+    flex-wrap: wrap;
   }
 
   .navbar__menu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    background: var(--bg-primary);
-    border: 1px solid var(--border);
-    border-radius: 0 0 12px 12px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    padding: 1rem;
-    gap: 0.5rem;
-    flex-direction: column;
-    z-index: 1000;
-  }
-
-  .navbar__menu.active {
-    display: flex;
-  }
-
-  .navbar__link {
-    font-size: 0.95rem;
-    padding: 0.75rem;
-    border-radius: 8px;
-    transition: background 0.2s;
-  }
-
-  .navbar__link:hover {
-    background: var(--bg-secondary);
-  }
-
-  .navbar__region {
-    order: 3;
+    gap: 1rem;
     font-size: 0.85rem;
   }
 
-  #userStatus {
-    order: 1;
-    margin-right: auto;
+  .navbar__link {
+    font-size: 0.85rem;
+  }
+
+  .navbar__region {
+    width: 100%;
+    justify-content: center;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--border);
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
   }
 
   .hero,

@@ -11,9 +11,7 @@ let DEAL_CATEGORIES = {
 // Load deals from JSON file
 async function loadDeals() {
   try {
-    // Detect if we're in a subdirectory (like pages/)
-    const basePath = window.location.pathname.includes('/pages/') ? '../' : '';
-    const response = await fetch(`${basePath}data/deals-ES.json`);
+    const response = await fetch('data/deals-ES.json');
     if (!response.ok) throw new Error('Failed to load deals');
 
     const data = await response.json();
@@ -631,8 +629,6 @@ function initFilterListeners() {
   }
 }
 
-// Export functions and data
-window.DEAL_CATEGORIES = DEAL_CATEGORIES;
-window.loadDeals = loadDeals;
+// Export new functions
 window.applyFilters = applyFilters;
 window.populateBrandFilter = populateBrandFilter;
