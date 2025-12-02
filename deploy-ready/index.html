@@ -13,7 +13,7 @@
 
   <!-- Initialize Firebase immediately after loading -->
   <!-- Firebase Configuration -->
-  <script src="js/firebase-config.min.js"></script>
+  <script src="js/firebase-config.js"></script>
   <script>
     // Initialize Firebase
     window.initFirebase();
@@ -83,16 +83,15 @@
     rel="stylesheet">
 
   <!-- Styles -->
-  <link rel="stylesheet" href="css/styles.min.css?v=1764169647.0">
+  <link rel="stylesheet" href="css/styles.min.css?v=1764333300">
 
   <!-- Preload critical resources -->
-  <link rel="preload" href="css/styles.min.css?v=1764169647.0" as="style">
+  <link rel="preload" href="css/styles.min.css?v=1764333300" as="style">
   <link rel="preload" href="js/i18n.min.js" as="script">
   <link rel="preload" href="js/language-switcher.min.js" as="script">
-  <link rel="preload" href="js/region.js" as="script">
-  <link rel="preload" href="js/cookie-consent.js" as="script">
-  <link rel="preload" href="js/analytics.js" as="script">
-  <link rel="preload" href="js/deals.min.js" as="script">
+  <link rel="preload" href="js/region.min.js" as="script">
+  <link rel="preload" href="js/cookie-consent.min.js" as="script">
+  <link rel="preload" href="js/analytics.min.js" as="script">
 
   <!-- Schema.org JSON-LD -->
   <script type="application/ld+json">
@@ -110,11 +109,84 @@
     "publisher": {
       "@type": "Organization",
       "name": "DealTech365",
+      "url": "https://dealtech365.com",
       "logo": {
         "@type": "ImageObject",
         "url": "https://dealtech365.com/images/logo.png"
+      },
+      "sameAs": [
+        "https://twitter.com/dealtech365",
+        "https://facebook.com/dealtech365"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer support",
+        "email": "hello@dealtech365.com",
+        "url": "https://dealtech365.com/pages/contact.html"
       }
     }
+  }
+  </script>
+
+  <!-- Schema.org - Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "DealTech365",
+    "description": "Plataforma de ofertas tecnológicas con descuentos exclusivos todo el año",
+    "url": "https://dealtech365.com",
+    "logo": "https://dealtech365.com/images/logo.png",
+    "image": "https://dealtech365.com/images/og-image.jpg",
+    "email": "hello@dealtech365.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "ES"
+    },
+    "sameAs": [
+      "https://twitter.com/dealtech365",
+      "https://facebook.com/dealtech365"
+    ]
+  }
+  </script>
+
+  <!-- Schema.org - ItemList for Product Categories -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Categorías de Productos",
+    "description": "Ofertas en tecnología organizadas por categoría",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Laptops",
+        "description": "Ofertas en portátiles y laptops gaming",
+        "url": "https://dealtech365.com/#laptops"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Smartphones",
+        "description": "Ofertas en teléfonos móviles y smartphones",
+        "url": "https://dealtech365.com/#smartphones"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Audio",
+        "description": "Ofertas en auriculares y equipos de audio",
+        "url": "https://dealtech365.com/#audio"
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "name": "Gaming",
+        "description": "Ofertas en accesorios y equipos gaming",
+        "url": "https://dealtech365.com/#gaming"
+      }
+    ]
   }
   </script>
 </head>
@@ -189,6 +261,13 @@
           </div>
         </a>
       </div>
+      <button class="navbar__toggle" aria-label="Toggle menu" onclick="document.querySelector('.navbar__menu').classList.toggle('active')">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="6" x2="21" y2="6"/>
+          <line x1="3" y1="12" x2="21" y2="12"/>
+          <line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
       <ul class="navbar__menu">
         <li><a href="#blog" class="navbar__link" data-i18n="nav_blog">Blog</a></li>
         <li><a href="#deals" class="navbar__link" data-i18n="nav_deals">Ofertas</a></li>
@@ -197,7 +276,12 @@
         <li><a href="#profile" class="navbar__link" data-i18n="nav_profile">Perfil</a></li>
       </ul>
       <div class="navbar__region">
-        <span id="regionIndicator" data-i18n="region_detecting">🌍 Detectando región...</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="flex-shrink: 0;">
+          <circle cx="12" cy="12" r="10"/>
+          <line x1="2" y1="12" x2="22" y2="12"/>
+          <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+        </svg>
+        <span id="regionIndicator" data-i18n="region_detecting">Detectando región...</span>
       </div>
       <div id="userStatus" class="navbar__user-status">
         <button class="btn primary"
@@ -322,17 +406,113 @@
 
         <div class="deals__filters">
           <button class="filter-btn active" data-category="all" data-i18n="deals_all_categories">Todos</button>
-          <button class="filter-btn" data-category="laptops" data-i18n="category_laptops">💻 Laptops</button>
-          <button class="filter-btn" data-category="audio" data-i18n="category_audio">🎧 Audio</button>
-          <button class="filter-btn" data-category="smartphones" data-i18n="category_smartphones">📱
-            Smartphones</button>
-          <button class="filter-btn" data-category="gaming" data-i18n="category_gaming">🎮 Gaming</button>
+          <button class="filter-btn" data-category="laptops" data-i18n="category_laptops">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+              <line x1="2" y1="20" x2="22" y2="20"/>
+            </svg>
+            Laptops
+          </button>
+          <button class="filter-btn" data-category="audio" data-i18n="category_audio">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M3 18v-6a9 9 0 0 1 18 0v6"/>
+              <path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/>
+            </svg>
+            Audio
+          </button>
+          <button class="filter-btn" data-category="smartphones" data-i18n="category_smartphones">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
+              <line x1="12" y1="18" x2="12.01" y2="18"/>
+            </svg>
+            Smartphones
+          </button>
+          <button class="filter-btn" data-category="gaming" data-i18n="category_gaming">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M8 14s1.5 2 4 2 4-2 4-2"/>
+              <line x1="9" y1="9" x2="9.01" y2="9"/>
+              <line x1="15" y1="9" x2="15.01" y2="9"/>
+            </svg>
+            Gaming
+          </button>
         </div>
 
-        <div class="deals__brand-filter">
-          <select id="brandFilter" class="brand-select" aria-label="Filtrar por marca">
-            <option value="all" data-i18n="deals_all_brands">Todas las marcas</option>
-          </select>
+        <div class="deals__advanced-filters">
+          <div class="filter-group">
+            <label for="brandFilter" class="filter-label">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+              </svg>
+              Marca
+            </label>
+            <select id="brandFilter" class="filter-select" aria-label="Filtrar por marca">
+              <option value="all">Todas las marcas</option>
+            </select>
+          </div>
+
+          <div class="filter-group">
+            <label for="priceRangeFilter" class="filter-label">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="12" y1="1" x2="12" y2="23"/>
+                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+              </svg>
+              Precio
+            </label>
+            <select id="priceRangeFilter" class="filter-select" aria-label="Filtrar por rango de precio">
+              <option value="all">Todos los precios</option>
+              <option value="0-100">Menos de €100</option>
+              <option value="100-300">€100 - €300</option>
+              <option value="300-600">€300 - €600</option>
+              <option value="600-1000">€600 - €1000</option>
+              <option value="1000-999999">Más de €1000</option>
+            </select>
+          </div>
+
+          <div class="filter-group">
+            <label for="discountFilter" class="filter-label">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="9" cy="9" r="2"/>
+                <circle cx="15" cy="15" r="2"/>
+                <path d="M3 3l18 18"/>
+              </svg>
+              Descuento
+            </label>
+            <select id="discountFilter" class="filter-select" aria-label="Filtrar por descuento mínimo">
+              <option value="0">Todos</option>
+              <option value="10">Mínimo 10%</option>
+              <option value="20">Mínimo 20%</option>
+              <option value="30">Mínimo 30%</option>
+              <option value="40">Mínimo 40%</option>
+              <option value="50">Mínimo 50%</option>
+            </select>
+          </div>
+
+          <div class="filter-group">
+            <label for="sortFilter" class="filter-label">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="4" y1="6" x2="20" y2="6"/>
+                <line x1="4" y1="12" x2="16" y2="12"/>
+                <line x1="4" y1="18" x2="12" y2="18"/>
+              </svg>
+              Ordenar
+            </label>
+            <select id="sortFilter" class="filter-select" aria-label="Ordenar ofertas">
+              <option value="discount">Mayor descuento</option>
+              <option value="price-low">Menor precio</option>
+              <option value="price-high">Mayor precio</option>
+              <option value="name">Nombre A-Z</option>
+            </select>
+          </div>
+
+          <button id="clearFilters" class="btn-clear-filters" aria-label="Limpiar filtros">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="18" y1="6" x2="6" y2="18"/>
+              <line x1="6" y1="6" x2="18" y2="18"/>
+            </svg>
+            Limpiar
+          </button>
         </div>
       </div>
 
@@ -440,10 +620,16 @@
             <li>✓ Guías de compra semanales</li>
           </ul>
         </div>
-        <form class="newsletter__form" id="newsletterForm">
+        <!-- Netlify Forms - Newsletter Subscription -->
+        <form class="newsletter__form" id="newsletterForm" name="newsletter" method="POST" data-netlify="true"
+          netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="newsletter">
+          <p style="display:none;">
+            <label>Don't fill this out if you're human: <input name="bot-field"></label>
+          </p>
           <div class="newsletter__input-wrapper">
-            <input type="email" placeholder="tu@email.com" data-i18n="newsletter_email_placeholder" required
-              class="newsletter__input" id="emailInput" aria-label="Correo electrónico">
+            <input type="email" name="email" placeholder="tu@email.com" data-i18n="newsletter_email_placeholder"
+              required class="newsletter__input" id="emailInput" aria-label="Correo electrónico">
             <button type="submit" class="btn primary newsletter__btn"
               data-i18n="newsletter_btn_subscribe">Suscribirme</button>
           </div>
@@ -459,50 +645,112 @@
         <h2>Configuración de Perfil</h2>
       </header>
 
+      <!-- ACCOUNT Section -->
       <div class="profile__section">
         <h3 class="profile__category">ACCOUNT</h3>
         <div class="profile__menu">
           <a href="pages/edit-profile.html" class="profile__item">
-            <span class="profile__icon">👤</span>
-            <span class="profile__label">Edit Profile</span>
-            <span class="profile__arrow">›</span>
+            <div class="profile__icon profile__icon--blue">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                <circle cx="12" cy="7" r="4"/>
+              </svg>
+            </div>
+            <div class="profile__info">
+              <span class="profile__label" data-i18n="profile_edit">Editar Perfil</span>
+              <span class="profile__desc" data-i18n="profile_edit_desc">Actualiza tu información personal</span>
+            </div>
+            <svg class="profile__arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <path d="M9 18l6-6-6-6"/>
+            </svg>
           </a>
           <a href="pages/notifications.html" class="profile__item">
-            <span class="profile__icon">🔔</span>
-            <span class="profile__label">Notifications</span>
-            <span class="profile__arrow">›</span>
+            <div class="profile__icon profile__icon--blue">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/>
+                <path d="M13.73 21a2 2 0 0 1-3.46 0"/>
+              </svg>
+            </div>
+            <div class="profile__info">
+              <span class="profile__label" data-i18n="profile_notifications">Notificaciones</span>
+              <span class="profile__desc" data-i18n="profile_notifications_desc">Alertas de precios y ofertas</span>
+            </div>
+            <svg class="profile__arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <path d="M9 18l6-6-6-6"/>
+            </svg>
           </a>
           <a href="pages/favorites.html" class="profile__item">
-            <span class="profile__icon">❤️</span>
-            <span class="profile__label">My Favorites</span>
-            <span class="profile__arrow">›</span>
+            <div class="profile__icon profile__icon--green">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+              </svg>
+            </div>
+            <div class="profile__info">
+              <span class="profile__label" data-i18n="profile_favorites">Mis Favoritos</span>
+              <span class="profile__desc" data-i18n="profile_favorites_desc">Ofertas guardadas</span>
+            </div>
+            <svg class="profile__arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <path d="M9 18l6-6-6-6"/>
+            </svg>
           </a>
         </div>
       </div>
 
+      <!-- PREFERENCES Section -->
       <div class="profile__section">
         <h3 class="profile__category">PREFERENCES</h3>
         <div class="profile__menu">
           <a href="pages/theme.html" class="profile__item">
-            <span class="profile__icon">🎨</span>
-            <span class="profile__label">Theme</span>
-            <span class="profile__arrow">›</span>
+            <div class="profile__icon profile__icon--blue">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="5"/>
+                <path d="M12 1v2m0 18v2M4.22 4.22l1.42 1.42m12.72 12.72 1.42 1.42M1 12h2m18 0h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+              </svg>
+            </div>
+            <div class="profile__info">
+              <span class="profile__label" data-i18n="profile_theme">Tema</span>
+              <span class="profile__desc" data-i18n="profile_theme_desc">Modo claro u oscuro</span>
+            </div>
+            <svg class="profile__arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <path d="M9 18l6-6-6-6"/>
+            </svg>
           </a>
           <a href="pages/language.html" class="profile__item">
-            <span class="profile__icon">🌐</span>
-            <span class="profile__label">Language</span>
-            <span class="profile__arrow">›</span>
+            <div class="profile__icon profile__icon--blue">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+              </svg>
+            </div>
+            <div class="profile__info">
+              <span class="profile__label" data-i18n="profile_language">Idioma</span>
+              <span class="profile__desc" data-i18n="profile_language_desc">Español / English</span>
+            </div>
+            <svg class="profile__arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <path d="M9 18l6-6-6-6"/>
+            </svg>
           </a>
         </div>
       </div>
 
+      <!-- SUPPORT Section -->
       <div class="profile__section">
         <h3 class="profile__category">SUPPORT</h3>
         <div class="profile__menu">
           <a href="pages/about.html" class="profile__item">
-            <span class="profile__icon">ℹ️</span>
-            <span class="profile__label">About</span>
-            <span class="profile__arrow">›</span>
+            <div class="profile__icon profile__icon--gray">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M12 16v-4m0-4h.01"/>
+              </svg>
+            </div>
+            <div class="profile__info">
+              <span class="profile__label" data-i18n="profile_about">Acerca de</span>
+              <span class="profile__desc" data-i18n="profile_about_desc">Información y versión</span>
+            </div>
+            <svg class="profile__arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <path d="M9 18l6-6-6-6"/>
+            </svg>
           </a>
         </div>
       </div>
@@ -536,12 +784,14 @@
   <script src="js/analytics.min.js"></script>
   <script src="js/auth.js"></script>
   <script>
-    // Newsletter form handling
-    document.getElementById('newsletterForm').addEventListener('submit', function (e) {
+    // Newsletter form handling with Netlify Forms
+    document.getElementById('newsletterForm').addEventListener('submit', async function (e) {
       e.preventDefault();
 
+      const form = e.target;
       const emailInput = document.getElementById('emailInput');
       const messageDiv = document.getElementById('newsletterMessage');
+      const submitButton = form.querySelector('button[type="submit"]');
       const email = emailInput.value;
 
       // Simple email validation
@@ -553,30 +803,57 @@
         return;
       }
 
-      // Simulate successful subscription
-      messageDiv.className = 'newsletter__message success';
-      messageDiv.textContent = '¡Gracias por suscribirte! Revisa tu correo para confirmar tu suscripción.';
-      emailInput.value = '';
+      // Disable submit button while processing
+      submitButton.disabled = true;
+      submitButton.textContent = 'Enviando...';
 
-      // Track newsletter signup in analytics
-      if (window.Analytics) {
-        window.Analytics.trackNewsletterSignup(email);
+      try {
+        // Submit to Netlify Forms
+        const formData = new FormData(form);
+        const response = await fetch('/', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: new URLSearchParams(formData).toString()
+        });
+
+        if (response.ok) {
+          // Success
+          messageDiv.className = 'newsletter__message success';
+          messageDiv.textContent = '¡Gracias por suscribirte! Recibirás las mejores ofertas en tu correo.';
+          emailInput.value = '';
+
+          // Track newsletter signup in analytics
+          if (window.Analytics) {
+            window.Analytics.trackNewsletterSignup(email);
+          }
+
+          console.log('Newsletter subscription successful:', email);
+        } else {
+          throw new Error('Submission failed');
+        }
+      } catch (error) {
+        // Error
+        messageDiv.className = 'newsletter__message error';
+        messageDiv.textContent = 'Hubo un error. Por favor intenta nuevamente.';
+        console.error('Newsletter subscription error:', error);
+      } finally {
+        // Re-enable submit button
+        submitButton.disabled = false;
+        submitButton.textContent = 'Suscribirme';
+
+        // Hide message after 5 seconds
+        setTimeout(() => {
+          messageDiv.className = 'newsletter__message';
+          messageDiv.textContent = '';
+        }, 5000);
       }
-
-      // In production, you would send this to your backend/email service
-      console.log('Email subscribed:', email);
-
-      // Hide message after 5 seconds
-      setTimeout(() => {
-        messageDiv.className = 'newsletter__message';
-        messageDiv.textContent = '';
-      }, 5000);
     });
   </script>
 
-  <script src="js/deals.min.js?v=1764169647.4"></script>
-  <script src="js/deals-service.min.js?v=1764169647.4"></script>
+  <script src="js/deals-real-v2.js?v=1764332300"></script>
+  <script src="js/deals-service.js?v=1764190270"></script>
   <script src="js/blog-carousel.min.js"></script>
+  <script src="js/blog-carousel-i18n.js?v=1764191772"></script>
   <script>
     // Event listeners for filter buttons
     document.addEventListener('DOMContentLoaded', function () {
