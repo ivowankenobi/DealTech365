@@ -1,0 +1,4916 @@
+{
+  "metadata": {
+    "scrapedAt": "2025-11-27T01:33:27.748Z",
+    "region": "ES",
+    "totalProducts": 175,
+    "source": "scraper-improved",
+    "categories": [
+      "audio",
+      "smartphones",
+      "gaming",
+      "laptops"
+    ]
+  },
+  "deals": [
+    {
+      "asin": "B0FYG6PN26",
+      "name": "Auriculares Inalámbricos con APP personalización, Bluetooth 5.4 con HD Micrófono HiFi Estéreo Pantalla LED, Reducción de Ruido, 14.2 mm Controlador dinámico, IP7 Impermeable 40H Cascos Inalambricos",
+      "brand": "Auriculares",
+      "category": "audio",
+      "basePrice": 168.99,
+      "currentPrice": 129.99,
+      "discount": 23,
+      "image": "https://m.media-amazon.com/images/I/51Mt3SldhjL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0FYG6PN26?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0FYG6PN26?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:32:16.536Z"
+      }
+    },
+    {
+      "asin": "B0FLWN5NYJ",
+      "name": "Auriculares Inalambricos Bluetooth con Pantalla Táctil LED, 2025 48H Auriculares Bluetooth 5.4 HiFi Estéreo con Reducción de Ruido ENC Mic, IPX7 Cascos Inalambricos con 5 Modos EQ para iOS Android",
+      "brand": "Auriculares",
+      "category": "audio",
+      "basePrice": 129.99,
+      "currentPrice": 32.99,
+      "discount": 75,
+      "image": "https://m.media-amazon.com/images/I/71gzkEmCWmL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0FLWN5NYJ?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0FLWN5NYJ?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": true,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:32:16.536Z"
+      }
+    },
+    {
+      "asin": "B0FLWPKM6S",
+      "name": "Auriculares Inalambricos Bluetooth con Pantalla Táctil LED, 2025 48H Auriculares Bluetooth 5.4 HiFi Estéreo con Reducción de Ruido ENC Mic, IPX7 Cascos Inalambricos con 5 Modos EQ para iOS, Blanco",
+      "brand": "Auriculares",
+      "category": "audio",
+      "basePrice": 129.99,
+      "currentPrice": 33.99,
+      "discount": 74,
+      "image": "https://m.media-amazon.com/images/I/61r8v1bTX4L._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0FLWPKM6S?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0FLWPKM6S?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": true,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:32:16.536Z"
+      }
+    },
+    {
+      "asin": "B0FLWQKGQF",
+      "name": "Auriculares Inalambricos Bluetooth con Pantalla Táctil LED, 2025 48H Auriculares Bluetooth 5.4 HiFi Estéreo con Reducción de Ruido ENC Mic, IPX7 Cascos Inalambricos con 5 Modos EQ para iOS, Oro Rosa",
+      "brand": "Auriculares",
+      "category": "audio",
+      "basePrice": 129.99,
+      "currentPrice": 33.99,
+      "discount": 74,
+      "image": "https://m.media-amazon.com/images/I/71uzSsxhK8L._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0FLWQKGQF?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0FLWQKGQF?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": true,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:32:16.536Z"
+      }
+    },
+    {
+      "asin": "B0FLWP3TWY",
+      "name": "Auriculares Inalambricos Bluetooth con Pantalla Táctil LED, 2025 48H Auriculares Bluetooth 5.4 HiFi Estéreo con Reducción de Ruido ENC Mic, IPX7 Cascos Inalambricos con 5 Modos EQ para iOS, Azul",
+      "brand": "Auriculares",
+      "category": "audio",
+      "basePrice": 129.99,
+      "currentPrice": 33.99,
+      "discount": 74,
+      "image": "https://m.media-amazon.com/images/I/71Ma2YYdPnL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0FLWP3TWY?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0FLWP3TWY?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": true,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:32:16.536Z"
+      }
+    },
+    {
+      "asin": "B0FRSJGCNQ",
+      "name": "Auriculares inalambricos Deportivos, Cascos lnalámbricos Bluetooth V6.0 Hi-Fi Estéreo, Llamada ENC HD, 40H Auriculares Oreja Abierta con Gancho, IPX7 Impermeable Auriculares para Sport/Running, Blanco",
+      "brand": "Auriculares",
+      "category": "audio",
+      "basePrice": 129.99,
+      "currentPrice": 24.99,
+      "discount": 81,
+      "image": "https://m.media-amazon.com/images/I/61R5JJYkPuL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0FRSJGCNQ?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0FRSJGCNQ?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": true,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:32:16.536Z"
+      }
+    },
+    {
+      "asin": "B0FX4D3X84",
+      "name": "Auriculares Inalámbricos Bluetooth, Auriculares Bluetooth 5.4 con 3D HiFi, 4 Mic ENC, Reproducción 46H Cascos Inalambricos Bluetooth con Caja de Carga LED, IPX7 Impermeable, Apto Para Deportes, Negro",
+      "brand": "Auriculares",
+      "category": "audio",
+      "basePrice": 129.99,
+      "currentPrice": 19.99,
+      "discount": 85,
+      "image": "https://m.media-amazon.com/images/I/61vP2NT5rpL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0FX4D3X84?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0FX4D3X84?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": true,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:32:16.536Z"
+      }
+    },
+    {
+      "asin": "B0FX4F5SRL",
+      "name": "Auriculares Inalámbricos Bluetooth, Auriculares Bluetooth 5.4 con 3D HiFi, 4 Mic ENC, Reproducción 46H Cascos Inalambricos Bluetooth con Caja de Carga LED, IPX7 Impermeable, Apto Para Deportes,Blanco",
+      "brand": "Auriculares",
+      "category": "audio",
+      "basePrice": 25.99,
+      "currentPrice": 19.99,
+      "discount": 23,
+      "image": "https://m.media-amazon.com/images/I/619YjHKdcDL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0FX4F5SRL?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0FX4F5SRL?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:32:16.536Z"
+      }
+    },
+    {
+      "asin": "B0FX48NJ9X",
+      "name": "Auriculares Inalámbricos Bluetooth, Auriculares Bluetooth 5.4 con 3D HiFi, 4 Mic ENC, Reproducción 46H Cascos Inalambricos Bluetooth con Caja de Carga LED, IPX7 Impermeable, Apto Para Deportes, Rosa",
+      "brand": "Auriculares",
+      "category": "audio",
+      "basePrice": 25.99,
+      "currentPrice": 19.99,
+      "discount": 23,
+      "image": "https://m.media-amazon.com/images/I/61na-3OxHKL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0FX48NJ9X?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0FX48NJ9X?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:32:16.536Z"
+      }
+    },
+    {
+      "asin": "B0FVRNS1H9",
+      "name": "Auriculares Inalámbricos Deportivos, Auriculares Bluetooth 5.4 con 4 Mics, 50H Cascos Inalambricos Bluetooth HiFi Estéreo, IP7 Impermeable, Cascos Bluetooth con Cancelación de Ruido Pantalla LED",
+      "brand": "Auriculares",
+      "category": "audio",
+      "basePrice": 89.99,
+      "currentPrice": 25.99,
+      "discount": 71,
+      "image": "https://m.media-amazon.com/images/I/71SHE6UpjhL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0FVRNS1H9?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0FVRNS1H9?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": true,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:32:16.537Z"
+      }
+    },
+    {
+      "asin": "B0FVS99WRD",
+      "name": "Auriculares Inalámbricos Deportivos, Auriculares Bluetooth 5.4 con 4 Mics, 50H Cascos Inalambricos Bluetooth HiFi Estéreo, IP7 Impermeable, Cascos Bluetooth con Cancelación de Ruido Pantalla LED",
+      "brand": "Auriculares",
+      "category": "audio",
+      "basePrice": 89.99,
+      "currentPrice": 25.99,
+      "discount": 71,
+      "image": "https://m.media-amazon.com/images/I/71BaC00aaOL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0FVS99WRD?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0FVS99WRD?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": true,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:32:16.537Z"
+      }
+    },
+    {
+      "asin": "B0FVRHF3NW",
+      "name": "Auriculares Inalámbricos Deportivos, Auriculares Bluetooth 5.4 con 4 Mics, 50H Cascos Inalambricos Bluetooth HiFi Estéreo, IP7 Impermeable, Cascos Bluetooth con Cancelación de Ruido Pantalla LED",
+      "brand": "Auriculares",
+      "category": "audio",
+      "basePrice": 33.79,
+      "currentPrice": 25.99,
+      "discount": 23,
+      "image": "https://m.media-amazon.com/images/I/71X47Js2EfL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0FVRHF3NW?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0FVRHF3NW?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:32:16.537Z"
+      }
+    },
+    {
+      "asin": "B0FVS5JR9C",
+      "name": "Auriculares Inalámbricos Deportivos, Auriculares Bluetooth 5.4 con 4 Mics, 50H Cascos Inalambricos Bluetooth HiFi Estéreo, IP7 Impermeable, Cascos Bluetooth con Cancelación de Ruido Pantalla LED",
+      "brand": "Auriculares",
+      "category": "audio",
+      "basePrice": 116.99,
+      "currentPrice": 89.99,
+      "discount": 23,
+      "image": "https://m.media-amazon.com/images/I/61-ZgtHJ+uL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0FVS5JR9C?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0FVS5JR9C?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:32:16.537Z"
+      }
+    },
+    {
+      "asin": "B0F8NS65Z7",
+      "name": "Auriculares Inalambricos Deportivos, Auriculares Bluetooth 5.3 con HD Mic HiFi Estéreo, 50H Cascos Inalambricos Bluetooth con Cancelacion Ruido ENC, IP7 Impermeable Cascos para Running, USB-C, Verde",
+      "brand": "Auriculares",
+      "category": "audio",
+      "basePrice": 168.99,
+      "currentPrice": 129.99,
+      "discount": 23,
+      "image": "https://m.media-amazon.com/images/I/71jucG+JPmL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0F8NS65Z7?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0F8NS65Z7?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:32:16.537Z"
+      }
+    },
+    {
+      "asin": "B0FS1MD6FQ",
+      "name": "Manos Libres Auricular Bluetooth 5.4 con CVC8.0/ENC Doble Micrófono Cancelación, 90H Talk Auriculares Inalambricos Mono Conexión de Dos Dispositivos, Botón Mudo para Conducir/Negocios, IPX7,Morado",
+      "brand": "Manos",
+      "category": "audio",
+      "basePrice": 129.99,
+      "currentPrice": 29.99,
+      "discount": 77,
+      "image": "https://m.media-amazon.com/images/I/61mMOOrhMmL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0FS1MD6FQ?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0FS1MD6FQ?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": true,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:32:16.537Z"
+      }
+    },
+    {
+      "asin": "B0FWRVMZPD",
+      "name": "Auriculares Inalámbricos Deportivos, 2025 Auriculare Deportivos Conduccion Ósea Bluetooth 5.4, Open-Ear Inalambricos con 50H de Reproducción, Cascos Bluetooth con Ruido Pantalla LED",
+      "brand": "Auriculares",
+      "category": "audio",
+      "basePrice": 199.99,
+      "currentPrice": 32.99,
+      "discount": 84,
+      "image": "https://m.media-amazon.com/images/I/61KiM+QNS7L._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0FWRVMZPD?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0FWRVMZPD?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": true,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:32:16.537Z"
+      }
+    },
+    {
+      "asin": "B0G1MFHB7T",
+      "name": "Manos Libres Auricular Bluetooth V5.4 con Doble Micrófono, Reducción de Ruido ENC y CVC8.0, 25H de Conversación, 180H en Espera, Manos Libres Oreja para Conducir, Negocios y Oficina, Negro",
+      "brand": "Manos",
+      "category": "audio",
+      "basePrice": 49.99,
+      "currentPrice": 22.99,
+      "discount": 54,
+      "image": "https://m.media-amazon.com/images/I/61-rY72IBOL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0G1MFHB7T?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0G1MFHB7T?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": true,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:32:16.537Z"
+      }
+    },
+    {
+      "asin": "B0F5459XC5",
+      "name": "Auriculares Inalámbricos Deportivos, Auriculares Bluetooth 5.4 con 4 Mics, 50H Cascos Inalambricos Bluetooth HiFi Estéreo, IP8 Impermeable, Cascos Bluetooth con Cancelación de Ruido Pantalla LED",
+      "brand": "Auriculares",
+      "category": "audio",
+      "basePrice": 77.99,
+      "currentPrice": 59.99,
+      "discount": 23,
+      "image": "https://m.media-amazon.com/images/I/817YA1ejTtL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0F5459XC5?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0F5459XC5?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:32:16.537Z"
+      }
+    },
+    {
+      "asin": "B0F93TN22R",
+      "name": "Auriculares Inalambricos, Mini Auriculares para Dormir con Pantalla Táctil, HiFi Estéreo Cascos Inalambricos Bluetooth 5.4 con Cancelación de Ruido Mic, Impermeable IP7 Auriculares Dormir, Naranja",
+      "brand": "Auriculares",
+      "category": "audio",
+      "basePrice": 168.99,
+      "currentPrice": 129.99,
+      "discount": 23,
+      "image": "https://m.media-amazon.com/images/I/71mKyhfpizL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0F93TN22R?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0F93TN22R?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:32:16.537Z"
+      }
+    },
+    {
+      "asin": "B0FR4SMRXY",
+      "name": "Auriculares Inalámbricos Bluetooth, Auriculares Bluetooth 5.4 HiFi Estéreo, 56H Cascos Inalambricos Bluetooth con ENC Reducción de Ruido, Pantalla LED, USB-C, Control Táctil, IP7 Impermeable Audifonos",
+      "brand": "Auriculares",
+      "category": "audio",
+      "basePrice": 89.99,
+      "currentPrice": 23.99,
+      "discount": 73,
+      "image": "https://m.media-amazon.com/images/I/61AKEgLS-oL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0FR4SMRXY?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0FR4SMRXY?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": true,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:32:16.537Z"
+      }
+    },
+    {
+      "asin": "B0FPLRWRC4",
+      "name": "Auriculares Inalámbricos Bluetooth, Auriculares Bluetooth 5.4 HiFi Estéreo, 32H Cascos Inalambricos Bluetooth con ENC Reducción de Ruido, Pantalla LED, USB-C, Control Táctil,IP7 Impermeable Audifonos",
+      "brand": "Auriculares",
+      "category": "audio",
+      "basePrice": 89.99,
+      "currentPrice": 23.99,
+      "discount": 73,
+      "image": "https://m.media-amazon.com/images/I/61hf2tu4IvL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0FPLRWRC4?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0FPLRWRC4?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": true,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:32:16.537Z"
+      }
+    },
+    {
+      "asin": "B0FXM31LLZ",
+      "name": "Auriculares Inalámbricos Bluetooth, Auriculares Bluetooth 5.4 HiFi Estéreo, 32H Cascos Inalambricos Bluetooth con ENC Reducción de Ruido, Pantalla LED, USB-C, Control Táctil,IP7 Impermeable Audifonos",
+      "brand": "Auriculares",
+      "category": "audio",
+      "basePrice": 89.99,
+      "currentPrice": 22.79,
+      "discount": 75,
+      "image": "https://m.media-amazon.com/images/I/61OIzV8HCmL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0FXM31LLZ?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0FXM31LLZ?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": true,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:32:16.537Z"
+      }
+    },
+    {
+      "asin": "B0FVL5VLWY",
+      "name": "Drsaec Auriculares Inalámbricos Bluetooth, Auriculares Bluetooth 5.4 HiFi Estéreo",
+      "brand": "Drsaec",
+      "category": "audio",
+      "basePrice": 116.99,
+      "currentPrice": 89.99,
+      "discount": 23,
+      "image": "https://m.media-amazon.com/images/I/71SmHGt1xLL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0FVL5VLWY?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0FVL5VLWY?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:32:16.537Z"
+      }
+    },
+    {
+      "asin": "B0CZRRYD1H",
+      "name": "Philips TAH4209BL Auriculares on-Ear Ligeros Bluetooth con Aislamiento pasivo del Ruido,55 Horas de reproducción, Sonido Natural, Llamadas nítidas, Graves dinámicos, 2 Horas de Carga USB-C, 2024 Azul",
+      "brand": "Philips",
+      "category": "audio",
+      "basePrice": 39.49,
+      "currentPrice": 19.99,
+      "discount": 49,
+      "image": "https://m.media-amazon.com/images/I/61CijGqLL9L._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0CZRRYD1H?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0CZRRYD1H?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": true,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:32:16.537Z"
+      }
+    },
+    {
+      "asin": "B0FR4SMRXY",
+      "name": "Auriculares Inalámbricos Bluetooth, Auriculares Bluetooth 5.4 HiFi Estéreo, 56H Cascos Inalambricos Bluetooth con ENC Reducción de Ruido, Pantalla LED, USB-C, Control Táctil, IP7 Impermeable Audifonos",
+      "brand": "Auriculares",
+      "category": "audio",
+      "basePrice": 89.99,
+      "currentPrice": 23.99,
+      "discount": 73,
+      "image": "https://m.media-amazon.com/images/I/61AKEgLS-oL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0FR4SMRXY?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0FR4SMRXY?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": true,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:32:16.537Z"
+      }
+    },
+    {
+      "asin": "B0D31YB2J7",
+      "name": "PHILIPS TAH3209WH Auriculares on-Ear Ligeros Bluetooth con Aislamiento pasivo del Ruido - 55 Horas de reproducción, Sonido Natural, Llamadas nítidas, Graves dinámicos, 2 Horas de Carga USB-C - Blanco",
+      "brand": "PHILIPS",
+      "category": "audio",
+      "basePrice": 39.99,
+      "currentPrice": 24.99,
+      "discount": 38,
+      "image": "https://m.media-amazon.com/images/I/615CbZvmJ6L._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0D31YB2J7?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0D31YB2J7?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:32:16.538Z"
+      }
+    },
+    {
+      "asin": "B0FJRN79H3",
+      "name": "Auriculares inalámbricos, Auriculares inalámbricos, Auriculares Bluetooth",
+      "brand": "Auriculares",
+      "category": "audio",
+      "basePrice": 51.99,
+      "currentPrice": 39.99,
+      "discount": 23,
+      "image": "https://m.media-amazon.com/images/I/61fJP4xoEjL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0FJRN79H3?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0FJRN79H3?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:32:25.553Z"
+      }
+    },
+    {
+      "asin": "B0G1RXZ3K6",
+      "name": "Auriculares inalámbricos Bluetooth, diafragmas de 13mm con Big Bass, Reproducción 60H, Cascos Bluetooth 5.4, IP5, 4 micros para Llamadas nítidas Aptos para iPhone y Android (Pearl)",
+      "brand": "Auriculares",
+      "category": "audio",
+      "basePrice": 12.97,
+      "currentPrice": 9.98,
+      "discount": 23,
+      "image": "https://m.media-amazon.com/images/I/51skWI4emOL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0G1RXZ3K6?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0G1RXZ3K6?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:32:25.553Z"
+      }
+    },
+    {
+      "asin": "B0F48KG9N8",
+      "name": "Auriculares Inalámbricos Bluetooth 5.4, Diseño de Oído Abierto, HiFi Estéreo, IP5, Controlador Magnético Dual, 65H de Reproducción, Auriculares Inalámbricos con Clip para Running Deportivos",
+      "brand": "Auriculares",
+      "category": "audio",
+      "basePrice": 29.19,
+      "currentPrice": 24.73,
+      "discount": 15,
+      "image": "https://m.media-amazon.com/images/I/61bH2VoJKqL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0F48KG9N8?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0F48KG9N8?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:32:25.553Z"
+      }
+    },
+    {
+      "asin": "B0F48HF5SC",
+      "name": "Auriculares Inalámbricos Bluetooth 5.4, Diseño de Oído Abierto, HiFi Estéreo, IP5, Controlador Magnético Dual, 65H de Reproducción, Auriculares Inalámbricos con Clip para Running Deportivos",
+      "brand": "Auriculares",
+      "category": "audio",
+      "basePrice": 29.19,
+      "currentPrice": 24.73,
+      "discount": 15,
+      "image": "https://m.media-amazon.com/images/I/61uko8Mbr2L._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0F48HF5SC?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0F48HF5SC?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:32:25.554Z"
+      }
+    },
+    {
+      "asin": "B0F48H7NJG",
+      "name": "Auriculares Inalámbricos Bluetooth 5.4, Diseño de Oído Abierto, HiFi Estéreo, IP5, Controlador Magnético Dual, 65H de Reproducción, Auriculares Inalámbricos con Clip para Running Deportivos",
+      "brand": "Auriculares",
+      "category": "audio",
+      "basePrice": 29.19,
+      "currentPrice": 24.73,
+      "discount": 15,
+      "image": "https://m.media-amazon.com/images/I/61OjS7ew0WL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0F48H7NJG?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0F48H7NJG?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:32:25.554Z"
+      }
+    },
+    {
+      "asin": "B0FQHZC68D",
+      "name": "Baseus EP10 NC Auriculares Inalámbricos Blueooth 6.0, Auriculares Bluetooth Cancelación Activa de Ruido -43 dB, 24 Modos EQ, SuperBass, Diafragmas de 12mm, 4 Mic AI, IP55, 41H",
+      "brand": "Baseus",
+      "category": "audio",
+      "basePrice": 27.99,
+      "currentPrice": 23.99,
+      "discount": 14,
+      "image": "https://m.media-amazon.com/images/I/51EaUYMGQGL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0FQHZC68D?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0FQHZC68D?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:32:25.554Z"
+      }
+    },
+    {
+      "asin": "B0FQHT2ZLZ",
+      "name": "Baseus EP10 NC Auriculares Inalámbricos Blueooth 6.0, Auriculares Bluetooth Cancelación Activa de Ruido -43 dB, 24 Modos EQ, SuperBass, Diafragmas de 12mm, 4 Mic AI, IP55, 41H",
+      "brand": "Baseus",
+      "category": "audio",
+      "basePrice": 51.99,
+      "currentPrice": 39.99,
+      "discount": 23,
+      "image": "https://m.media-amazon.com/images/I/41LverpZydL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0FQHT2ZLZ?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0FQHT2ZLZ?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:32:25.554Z"
+      }
+    },
+    {
+      "asin": "B0FQNPWHS8",
+      "name": "Auriculares Oreja Abierta Bluetooth 5.4, 2025 Auriculares Inalámbricos Deportivos con Gancho, 38H Estéreo Inalambricos Bluetooth con Pantalla LED, Control Táctil, IP7 Impermeable, Negro",
+      "brand": "Auriculares",
+      "category": "audio",
+      "basePrice": 21.99,
+      "currentPrice": 17.99,
+      "discount": 18,
+      "image": "https://m.media-amazon.com/images/I/712TTWCF2EL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0FQNPWHS8?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0FQNPWHS8?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:32:25.554Z"
+      }
+    },
+    {
+      "asin": "B0FQNJMJR3",
+      "name": "Auriculares Oreja Abierta Bluetooth 5.4, 2025 Auriculares Inalámbricos Deportivos con Gancho, 38H Estéreo Inalambricos Bluetooth con Pantalla LED, Control Táctil, IP7 Impermeable, Morado",
+      "brand": "Auriculares",
+      "category": "audio",
+      "basePrice": 21.99,
+      "currentPrice": 17.99,
+      "discount": 18,
+      "image": "https://m.media-amazon.com/images/I/71Xf9JwQ-YL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0FQNJMJR3?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0FQNJMJR3?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:32:25.554Z"
+      }
+    },
+    {
+      "asin": "B0FY33YVWQ",
+      "name": "Auriculare Inalámbricos Deportivos, Nueva Auriculares Bluetooth HiFi Estéreo, 50H Cascos Inalambricos Bluetooth 5.4 con HD Mic, Cancelacion Ruido ENC Auriculares Running, IP7 Impermeable/Pantalla LED",
+      "brand": "Auriculare",
+      "category": "audio",
+      "basePrice": 69.42,
+      "currentPrice": 19.99,
+      "discount": 71,
+      "image": "https://m.media-amazon.com/images/I/71FEow3okDL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0FY33YVWQ?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0FY33YVWQ?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": true,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:32:25.554Z"
+      }
+    },
+    {
+      "asin": "B0FY2YTJLK",
+      "name": "Auriculare Inalámbricos Deportivos, Nueva Auriculares Bluetooth HiFi Estéreo, 50H Cascos Inalambricos Bluetooth 5.4 con HD Mic, Cancelacion Ruido ENC Auriculares Running, IP7 Impermeable/Pantalla LED",
+      "brand": "Auriculare",
+      "category": "audio",
+      "basePrice": 69.42,
+      "currentPrice": 19.99,
+      "discount": 71,
+      "image": "https://m.media-amazon.com/images/I/71cD5s2tJ8L._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0FY2YTJLK?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0FY2YTJLK?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": true,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:32:25.554Z"
+      }
+    },
+    {
+      "asin": "B0FKMKPHBR",
+      "name": "Nerunsa Auriculares inalámbricos, auriculares Bluetooth impermeables, auriculares inalámbricos para Android iOS, auriculares Bluetooth con micrófono ENC con cancelación de ruido, 45 horas de",
+      "brand": "Nerunsa",
+      "category": "audio",
+      "basePrice": 23.39,
+      "currentPrice": 17.99,
+      "discount": 23,
+      "image": "https://m.media-amazon.com/images/I/61FN98Qe09L._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0FKMKPHBR?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0FKMKPHBR?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:32:25.554Z"
+      }
+    },
+    {
+      "asin": "B0FP4LC115",
+      "name": "Auriculares Inalambricos Bluetooth 5.4 - HiFi Estéreo Deportivos con 4 ENC Cancelacion Ruido HD Microfono, 80H Cascos Inalambricos Bluetooth LED Pantalla, Rosa Claro",
+      "brand": "Auriculares",
+      "category": "audio",
+      "basePrice": 29.99,
+      "currentPrice": 22.79,
+      "discount": 24,
+      "image": "https://m.media-amazon.com/images/I/719StzjC0UL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0FP4LC115?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0FP4LC115?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:32:25.554Z"
+      }
+    },
+    {
+      "asin": "B0FSXNP9PC",
+      "name": "Auriculares Inalámbricos Bluetooth, Bluetooth 5.3 In Ear Auriculares con Cancelacion Ruido HD Mic, 50H Estéreo Control Táctil Cascos Inalambricos, IP7 Impermeable Audifonos para iPhone/iOS/Android",
+      "brand": "Auriculares",
+      "category": "audio",
+      "basePrice": 15.59,
+      "currentPrice": 11.99,
+      "discount": 23,
+      "image": "https://m.media-amazon.com/images/I/51lAcUzt4BL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0FSXNP9PC?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0FSXNP9PC?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:32:25.554Z"
+      }
+    },
+    {
+      "asin": "B0FY3QSPKT",
+      "name": "Auriculares Inalámbricos, Auriculares In Ear Bluetooth 5.3 con 4 HD Mic, 48H HiFi Estéreo Cascos Inalambricos, Reducción de Ruido, Impermeable IPX7 Deportes Audifonos Inalambricos para iPhone Android",
+      "brand": "Auriculares",
+      "category": "audio",
+      "basePrice": 12.99,
+      "currentPrice": 9.99,
+      "discount": 23,
+      "image": "https://m.media-amazon.com/images/I/51n2Q71mCDL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0FY3QSPKT?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0FY3QSPKT?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:32:25.554Z"
+      }
+    },
+    {
+      "asin": "B0G42CTDRB",
+      "name": "Auriculares Inalámbricos, Auriculares Bluetooth 5.4 In Ear con 4 ENC Cancelacion Ruido HD Mic, IP7 Impermeable, 58H Cascos Inalambricos, HiFi Estéreo Audifonos Inalambricos para iPhone/iOS/Android",
+      "brand": "Auriculares",
+      "category": "audio",
+      "basePrice": 10.39,
+      "currentPrice": 7.99,
+      "discount": 23,
+      "image": "https://m.media-amazon.com/images/I/51GPfx5HswL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0G42CTDRB?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0G42CTDRB?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:32:25.554Z"
+      }
+    },
+    {
+      "asin": "B0FG329P1T",
+      "name": "OHAYO Auriculares Open Ear: Ajuste Ceñido, Graves Potentes, 40H de Reproducción, Llamadas Claras, Auriculares Inalambricos Bluetooth 5.4, Pantalla LED, IPX6 Impermeable para Running Sport, Blanco",
+      "brand": "OHAYO",
+      "category": "audio",
+      "basePrice": 49.39,
+      "currentPrice": 37.99,
+      "discount": 23,
+      "image": "https://m.media-amazon.com/images/I/61RD1xNLzvL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0FG329P1T?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0FG329P1T?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:32:25.554Z"
+      }
+    },
+    {
+      "asin": "B0FX417YCT",
+      "name": "Auriculares Inalambricos Bluetooth, Auriculares Bluetooth 5.4 con 40H HiFi Estéreo, Cascos Inalambricos con Reducción de Ruido 4 Mic, Pantalla LED, IP7 Impermeable, Carga Rápida, Ajuste Cómodo Lavanda",
+      "brand": "Auriculares",
+      "category": "audio",
+      "basePrice": 31.19,
+      "currentPrice": 23.99,
+      "discount": 23,
+      "image": "https://m.media-amazon.com/images/I/61ksxTjpZbL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0FX417YCT?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0FX417YCT?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:32:25.554Z"
+      }
+    },
+    {
+      "asin": "B0CZRRYD1H",
+      "name": "Philips TAH4209BL Auriculares on-Ear Ligeros Bluetooth con Aislamiento pasivo del Ruido,55 Horas de reproducción, Sonido Natural, Llamadas nítidas, Graves dinámicos, 2 Horas de Carga USB-C, 2024 Azul",
+      "brand": "Philips",
+      "category": "audio",
+      "basePrice": 39.49,
+      "currentPrice": 19.99,
+      "discount": 49,
+      "image": "https://m.media-amazon.com/images/I/61CijGqLL9L._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0CZRRYD1H?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0CZRRYD1H?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": true,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:32:25.554Z"
+      }
+    },
+    {
+      "asin": "B0D31YB2J7",
+      "name": "PHILIPS TAH3209WH Auriculares on-Ear Ligeros Bluetooth con Aislamiento pasivo del Ruido - 55 Horas de reproducción, Sonido Natural, Llamadas nítidas, Graves dinámicos, 2 Horas de Carga USB-C - Blanco",
+      "brand": "PHILIPS",
+      "category": "audio",
+      "basePrice": 39.99,
+      "currentPrice": 24.99,
+      "discount": 38,
+      "image": "https://m.media-amazon.com/images/I/615CbZvmJ6L._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0D31YB2J7?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0D31YB2J7?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:32:25.554Z"
+      }
+    },
+    {
+      "asin": "B0FR4SMRXY",
+      "name": "Auriculares Inalámbricos Bluetooth, Auriculares Bluetooth 5.4 HiFi Estéreo, 56H Cascos Inalambricos Bluetooth con ENC Reducción de Ruido, Pantalla LED, USB-C, Control Táctil, IP7 Impermeable Audifonos",
+      "brand": "Auriculares",
+      "category": "audio",
+      "basePrice": 89.99,
+      "currentPrice": 23.99,
+      "discount": 73,
+      "image": "https://m.media-amazon.com/images/I/61AKEgLS-oL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0FR4SMRXY?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0FR4SMRXY?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": true,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:32:25.554Z"
+      }
+    },
+    {
+      "asin": "B0CT93136H",
+      "name": "XIAOMI Smartphone Redmi Note 13 6,67\" 8 GB RAM 256 GB Negro (No NFC)",
+      "brand": "XIAOMI",
+      "category": "smartphones",
+      "basePrice": 305.5,
+      "currentPrice": 235,
+      "discount": 23,
+      "image": "https://m.media-amazon.com/images/I/61zUVaOpvhL._AC_UY218_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0CT93136H?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0CT93136H?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:32:35.994Z"
+      }
+    },
+    {
+      "asin": "B09QSC4HN9",
+      "name": "XIAOMI Redmi Note 11 Smartphone (4 + 128, Blau)",
+      "brand": "XIAOMI",
+      "category": "smartphones",
+      "basePrice": 207.99,
+      "currentPrice": 159.99,
+      "discount": 23,
+      "image": "https://m.media-amazon.com/images/I/511+cdqQCFL._AC_UY218_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B09QSC4HN9?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B09QSC4HN9?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:32:35.994Z"
+      }
+    },
+    {
+      "asin": "B09QSBQDLY",
+      "name": "Xiaomi Redmi Note 11 Smartphone (6 + 128, Blau)",
+      "brand": "Xiaomi",
+      "category": "smartphones",
+      "basePrice": 184.59,
+      "currentPrice": 141.99,
+      "discount": 23,
+      "image": "https://m.media-amazon.com/images/I/619JH3SbHCL._AC_UY218_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B09QSBQDLY?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B09QSBQDLY?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:32:35.995Z"
+      }
+    },
+    {
+      "asin": "B0DKNV5XF4",
+      "name": "Xiaomi Teléfono móvil Redmi Note 13 4G de 120 Hz, pantalla AMOLED de 6,67 pulgadas, smartphone de 8 + 512 GB sin contrato con procesador Snapdragon 685 y cámara triple de 108 MP, batería de 5000 mAh,",
+      "brand": "Xiaomi",
+      "category": "smartphones",
+      "basePrice": 246.99,
+      "currentPrice": 189.99,
+      "discount": 23,
+      "image": "https://m.media-amazon.com/images/I/511rDCUrZXL._AC_UY218_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0DKNV5XF4?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0DKNV5XF4?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:32:35.995Z"
+      }
+    },
+    {
+      "asin": "B0BDJJKPT2",
+      "name": "Smartphone Apple iPhone 14 128 GB 6,1''",
+      "brand": "Smartphone",
+      "category": "smartphones",
+      "basePrice": 1855.87,
+      "currentPrice": 1427.59,
+      "discount": 23,
+      "image": "https://m.media-amazon.com/images/I/51JB2JrjfBL._AC_UY218_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0BDJJKPT2?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0BDJJKPT2?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:32:35.995Z"
+      }
+    },
+    {
+      "asin": "B0FR94CMKZ",
+      "name": "OUKITEL C3 2025 Telefono Movil, 16GB (4+12) RAM+128GB ROM/TF 1TB Telefonos Moviles Libres, 6.52\" Smartphone Android 14, Batería 5000mAh Móvil, Cámara 13MP, 4G Dual SIM/Face ID/GPS/3.5mm Jack - Negro",
+      "brand": "OUKITEL",
+      "category": "smartphones",
+      "basePrice": 116.99,
+      "currentPrice": 89.99,
+      "discount": 23,
+      "image": "https://m.media-amazon.com/images/I/81GFL6n+kLL._AC_UY218_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0FR94CMKZ?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0FR94CMKZ?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:32:35.995Z"
+      }
+    },
+    {
+      "asin": "B0FR8VNY84",
+      "name": "OUKITEL C3 Telefonos Moviles Libres, 16GB (4+12) RAM+128GB ROM/TF 1TB Telefono Movil, 6.52\" Smartphone Android 14, Batería 5000mAh Móvil, Cámara 13MP+5MP, 4G Dual SIM/Face ID/GPS/3.5mm Jack - Morado",
+      "brand": "OUKITEL",
+      "category": "smartphones",
+      "basePrice": 116.99,
+      "currentPrice": 89.99,
+      "discount": 23,
+      "image": "https://m.media-amazon.com/images/I/81aqGOVtSPL._AC_UY218_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0FR8VNY84?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0FR8VNY84?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:32:35.996Z"
+      }
+    },
+    {
+      "asin": "B0FPLVFM3K",
+      "name": "DOOGEE Fire3 MAX Teléfono Móvil Irrompible Android 15, 32GB+256GB/2TB, UNISOC T7250, 8350mAh Movil Resistente, 5.5\" Pantalla, 48MP+20MP+8MP Móvil Rugerizado, 1200LM Luz de Camping Smartphone/NFC",
+      "brand": "DOOGEE",
+      "category": "smartphones",
+      "basePrice": 218.99,
+      "currentPrice": 166.24,
+      "discount": 24,
+      "image": "https://m.media-amazon.com/images/I/81LS5PjZhbL._AC_UY218_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0FPLVFM3K?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0FPLVFM3K?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:32:35.996Z"
+      }
+    },
+    {
+      "asin": "B0FPLVFWRR",
+      "name": "DOOGEE Fire3 MAX Telefono Movil Irrompible Android 15, Movil Indestructible 8350mAh, 32GB RAM+256GB ROM/2TB, 5.5\" HD, Gemini AI, Cámara 48MP+20MP+8MP, IP68IP69K/1200LM Luz de Camping Smartphone/NFC",
+      "brand": "DOOGEE",
+      "category": "smartphones",
+      "basePrice": 227.49,
+      "currentPrice": 174.99,
+      "discount": 23,
+      "image": "https://m.media-amazon.com/images/I/81s7kNfrhGL._AC_UY218_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0FPLVFWRR?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0FPLVFWRR?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:32:35.996Z"
+      }
+    },
+    {
+      "asin": "B0F66HHK7K",
+      "name": "Xiaomi POCO C71 4G Smartphone, 3GB+64GB Gold, Unisoc T7250 Octa-Core, Pantalla inmersiva 6.9\" 120Hz, Batería 5200 mAh, Cámara dual 32 MP AI",
+      "brand": "Xiaomi",
+      "category": "smartphones",
+      "basePrice": 100.59,
+      "currentPrice": 77.38,
+      "discount": 23,
+      "image": "https://m.media-amazon.com/images/I/71vhlYBZ-HL._AC_UY218_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0F66HHK7K?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0F66HHK7K?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:32:35.996Z"
+      }
+    },
+    {
+      "asin": "B0BDJGS72G",
+      "name": "Smartphone Apple iPhone 14 Pro",
+      "brand": "Smartphone",
+      "category": "smartphones",
+      "basePrice": 1799.92,
+      "currentPrice": 1384.55,
+      "discount": 23,
+      "image": "https://m.media-amazon.com/images/I/51Q0rrsqgcL._AC_UY218_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0BDJGS72G?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0BDJGS72G?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:32:35.996Z"
+      }
+    },
+    {
+      "asin": "B0FNMLVK19",
+      "name": "XIAOMI Redmi Note 14 Pro 5G Smartphone 8+256GB 200MP Pro-Grade AI Camera System MediaTek Dimensity 7300-Ultra 1.5K 120Hz Eye-Care Display 5110mAh BatteryWith 45W Turbo Charging(Negro)",
+      "brand": "XIAOMI",
+      "category": "smartphones",
+      "basePrice": 374.4,
+      "currentPrice": 288,
+      "discount": 23,
+      "image": "https://m.media-amazon.com/images/I/51BOdECC8kL._AC_UY218_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0FNMLVK19?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0FNMLVK19?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:32:35.996Z"
+      }
+    },
+    {
+      "asin": "B0F6Y8F3QD",
+      "name": "Nothing Phone (3) – Handy mit 50 MP Triple-Kamera, 24h Silizium-Kohlenstoff Akku, 6,67\" 120Hz AMOLED Display, Glyph Matrix, 12GB + 256GB – Schwarz",
+      "brand": "Nothing",
+      "category": "smartphones",
+      "basePrice": 799,
+      "currentPrice": 557,
+      "discount": 30,
+      "image": "https://m.media-amazon.com/images/I/61YbN9tT88L._AC_UY218_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0F6Y8F3QD?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0F6Y8F3QD?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:32:35.996Z"
+      }
+    },
+    {
+      "asin": "B0FHJNDQBR",
+      "name": "Google Pixel 10 - Smartphone Android Libre con Gemini, cámara Trasera Triple Avanzada, batería de más de 24 Horas y Pantalla Actua de 6,3\" - Obsidiana, 128GB",
+      "brand": "Google",
+      "category": "smartphones",
+      "basePrice": 899,
+      "currentPrice": 699,
+      "discount": 22,
+      "image": "https://m.media-amazon.com/images/I/614Qf9iukZL._AC_UY218_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0FHJNDQBR?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0FHJNDQBR?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:32:35.996Z"
+      }
+    },
+    {
+      "asin": "B075FS6DD7",
+      "name": "Smart Phone Sony SmPh. XZ1 SIL OC2,3 4R F19+13 64G IP68",
+      "brand": "Smart",
+      "category": "smartphones",
+      "basePrice": 272.99,
+      "currentPrice": 209.99,
+      "discount": 23,
+      "image": "https://m.media-amazon.com/images/I/71Nd8cXaxYL._AC_UY218_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B075FS6DD7?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B075FS6DD7?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:32:35.997Z"
+      }
+    },
+    {
+      "asin": "B0FP57HP9X",
+      "name": "DOOGEE Fire 5 Pro Teléfono Móvil Irrompible 6,6\" HD+/90Hz 13000mAh, 20GB+128GB/2TB Android 15 Movil Resistente, Cámara 16MP Smartphone/NFC/OTG/Face ID/GPS/GMS/Dual SIM 4G Móvil Rugerizado Gris, 2025",
+      "brand": "DOOGEE",
+      "category": "smartphones",
+      "basePrice": 179.99,
+      "currentPrice": 142.49,
+      "discount": 21,
+      "image": "https://m.media-amazon.com/images/I/81Vz7xxEiBL._AC_UY218_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0FP57HP9X?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0FP57HP9X?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:32:45.431Z"
+      }
+    },
+    {
+      "asin": "B0FP59KQP3",
+      "name": "DOOGEE Fire 5 Pro Movil irrompible, 20GB RAM+128GB ROM (TF 2TB) 6,6\" HD Android 15 Teléfono Móvil Resistente 13000mAh Batería, Octa Core, 16MP Cámara Widevine L1 Smartphone IP68IP69K/GPS/Face ID",
+      "brand": "DOOGEE",
+      "category": "smartphones",
+      "basePrice": 299.99,
+      "currentPrice": 149.99,
+      "discount": 50,
+      "image": "https://m.media-amazon.com/images/I/81gKzOdOsXL._AC_UY218_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0FP59KQP3?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0FP59KQP3?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": true,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:32:45.431Z"
+      }
+    },
+    {
+      "asin": "B0FP57145R",
+      "name": "DOOGEE Fire 5 Pro Movil irrompible, 20GB RAM+128GB ROM (TF 2TB) 6,6\" HD Android 15 Teléfono Móvil Resistente 13000mAh Batería, Octa Core, 16MP Cámara Widevine L1 Smartphone IP68IP69K/GPS/Face ID",
+      "brand": "DOOGEE",
+      "category": "smartphones",
+      "basePrice": 299.99,
+      "currentPrice": 149.99,
+      "discount": 50,
+      "image": "https://m.media-amazon.com/images/I/81KSE3AB2sL._AC_UY218_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0FP57145R?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0FP57145R?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": true,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:32:45.431Z"
+      }
+    },
+    {
+      "asin": "B0FPM383PM",
+      "name": "OUKITEL C62 Telefonos Moviles Libres - 6.88\" Pantalla HD+ Telefono Movil Inteligentes Smartphone 16GB+128GB/1TB Móvil Android 15 5150mAh Cámara 13MP Dual 4G SIM Face ID 1.8\" Pantalla Trasera",
+      "brand": "OUKITEL",
+      "category": "smartphones",
+      "basePrice": 139.99,
+      "currentPrice": 111.99,
+      "discount": 20,
+      "image": "https://m.media-amazon.com/images/I/71MbyB-rQFL._AC_UY218_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0FPM383PM?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0FPM383PM?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:32:45.432Z"
+      }
+    },
+    {
+      "asin": "B0FPM59XFY",
+      "name": "OUKITEL C62 Teléfonos Inteligentes - Telefonos Moviles Libres 6.88\" Pantalla HD+ Smartphone 16GB+128GB/1TB Telefono Móvil Android 15 5150mAh Cámara 13MP Dual 4G SIM Face ID 1.8\" Pantalla Trasera",
+      "brand": "OUKITEL",
+      "category": "smartphones",
+      "basePrice": 139.99,
+      "currentPrice": 111.99,
+      "discount": 20,
+      "image": "https://m.media-amazon.com/images/I/71z8iM5kvjL._AC_UY218_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0FPM59XFY?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0FPM59XFY?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:32:45.432Z"
+      }
+    },
+    {
+      "asin": "B0FPM7CR3V",
+      "name": "OUKITEL C62 Telefonos Moviles Libres - 6.88\" Pantalla HD+ Telefono Movil Inteligentes Smartphone 16GB+128GB/1TB Móvil Android 15 5150mAh Cámara 13MP Dual 4G SIM Face ID 1.8\" Pantalla Trasera",
+      "brand": "OUKITEL",
+      "category": "smartphones",
+      "basePrice": 139.99,
+      "currentPrice": 111.99,
+      "discount": 20,
+      "image": "https://m.media-amazon.com/images/I/71yQX4Qq5QL._AC_UY218_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0FPM7CR3V?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0FPM7CR3V?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:32:45.432Z"
+      }
+    },
+    {
+      "asin": "B0FPM7J68M",
+      "name": "OUKITEL C62 Teléfonos Inteligentes - Telefonos Moviles Libres 6.88\" Pantalla HD+ Smartphone 16GB+128GB/1TB Telefono Móvil Android 15 5150mAh Cámara 13MP Dual 4G SIM Face ID 1.8\" Pantalla Trasera",
+      "brand": "OUKITEL",
+      "category": "smartphones",
+      "basePrice": 139.99,
+      "currentPrice": 111.99,
+      "discount": 20,
+      "image": "https://m.media-amazon.com/images/I/81qJitWzJ0L._AC_UY218_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0FPM7J68M?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0FPM7J68M?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:32:45.432Z"
+      }
+    },
+    {
+      "asin": "B0F8Q8ZRBQ",
+      "name": "OnePlus Nord 5 Smartphone con 12 GB RAM 512 GB, Pantalla AMOLED de 6,83\" y 144 Hz, Snapdragon 8s de 3 generación, cámara Dual de 50 MP, batería de 5200 mAh, con Cargador de 80W, Gris",
+      "brand": "OnePlus",
+      "category": "smartphones",
+      "basePrice": 713.7,
+      "currentPrice": 549,
+      "discount": 23,
+      "image": "https://m.media-amazon.com/images/I/615t6DjrlXL._AC_UY218_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0F8Q8ZRBQ?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0F8Q8ZRBQ?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:32:45.432Z"
+      }
+    },
+    {
+      "asin": "B0FH9CJRDC",
+      "name": "OnePlus Nord 5 Smartphone con 8 GB RAM 256 GB, Pantalla AMOLED de 6,83\" y 144 Hz, Snapdragon 8s de 3 generación, cámara Dual de 50 MP, batería de 5200 mAh, con Cargador de 80W, Gris",
+      "brand": "OnePlus",
+      "category": "smartphones",
+      "basePrice": 518.7,
+      "currentPrice": 399,
+      "discount": 23,
+      "image": "https://m.media-amazon.com/images/I/615t6DjrlXL._AC_UY218_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0FH9CJRDC?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0FH9CJRDC?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:32:45.432Z"
+      }
+    },
+    {
+      "asin": "B0FD3GJBV5",
+      "name": "OnePlus Nord 5 Smartphone con 8 GB RAM 256 GB, Pantalla AMOLED de 6,83\" y 144 Hz, Snapdragon 8s de 3 generación, cámara Dual de 50 MP, batería de 5200 mAh, con Cargador de 80W, Blanco",
+      "brand": "OnePlus",
+      "category": "smartphones",
+      "basePrice": 518.7,
+      "currentPrice": 399,
+      "discount": 23,
+      "image": "https://m.media-amazon.com/images/I/617Cst3lLzL._AC_UY218_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0FD3GJBV5?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0FD3GJBV5?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:32:45.432Z"
+      }
+    },
+    {
+      "asin": "B07FTYPQY9",
+      "name": "Samsung Galaxy Note9 - Smartphone libre de 6.4\" (Android, 6 GB de RAM, cámara trasera 12 MP, frontal 8 MP, 128 GB), morado",
+      "brand": "Samsung",
+      "category": "smartphones",
+      "basePrice": 363.99,
+      "currentPrice": 279.99,
+      "discount": 23,
+      "image": "https://m.media-amazon.com/images/I/71T3s9epqbL._AC_UY218_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B07FTYPQY9?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B07FTYPQY9?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:32:45.432Z"
+      }
+    },
+    {
+      "asin": "B0DTHSVGLY",
+      "name": "Samsung Smartphone Galaxy S25 Ultra con IA, 1 TB, color gris",
+      "brand": "Samsung",
+      "category": "smartphones",
+      "basePrice": 1566.5,
+      "currentPrice": 1205,
+      "discount": 23,
+      "image": "https://m.media-amazon.com/images/I/51jD9OqX+6L._AC_UY218_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0DTHSVGLY?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0DTHSVGLY?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:32:45.432Z"
+      }
+    },
+    {
+      "asin": "B07YCL7DYH",
+      "name": "Huawei Nova 5T, Smartphone (6GB de RAM, 128GB de Memoria Interna, 5 Cámaras IA, FullView Display, Sensor de Huella Lateral, 3750 mAh) Dual-SIM, Infrared USB, Android, 6.26\", Azul",
+      "brand": "Huawei",
+      "category": "smartphones",
+      "basePrice": 349.7,
+      "currentPrice": 269,
+      "discount": 23,
+      "image": "https://m.media-amazon.com/images/I/61t4kJyyBnL._AC_UY218_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B07YCL7DYH?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B07YCL7DYH?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:32:45.432Z"
+      }
+    },
+    {
+      "asin": "B0DSWFHTL2",
+      "name": "Google Pixel 9a – Smartphone Android Libre con cámara con IA, batería para Todo el día y potentes Funciones de Seguridad – Obsidiana, 128GB",
+      "brand": "Google",
+      "category": "smartphones",
+      "basePrice": 549,
+      "currentPrice": 398.99,
+      "discount": 27,
+      "image": "https://m.media-amazon.com/images/I/71OA-qXBpSL._AC_UY218_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0DSWFHTL2?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0DSWFHTL2?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:32:45.432Z"
+      }
+    },
+    {
+      "asin": "B0FHJNDQBR",
+      "name": "Google Pixel 10 - Smartphone Android Libre con Gemini, cámara Trasera Triple Avanzada, batería de más de 24 Horas y Pantalla Actua de 6,3\" - Obsidiana, 128GB",
+      "brand": "Google",
+      "category": "smartphones",
+      "basePrice": 899,
+      "currentPrice": 699,
+      "discount": 22,
+      "image": "https://m.media-amazon.com/images/I/614Qf9iukZL._AC_UY218_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0FHJNDQBR?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0FHJNDQBR?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:32:45.432Z"
+      }
+    },
+    {
+      "asin": "B0BGL6B6ZT",
+      "name": "Alfombrilla ratón XXL Dragon Ball Super Manga - Alfombrilla Escritorio (Mouse Pad XXL: Protector Escritorio) | Accesorios Gaming - Tapete Escritorio : Alfombra Escritorio Impermeable y Antideslizante",
+      "brand": "Alfombrilla",
+      "category": "gaming",
+      "basePrice": 25.99,
+      "currentPrice": 19.99,
+      "discount": 23,
+      "image": "https://m.media-amazon.com/images/I/81iwbwbedML._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0BGL6B6ZT?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0BGL6B6ZT?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:32:57.325Z"
+      }
+    },
+    {
+      "asin": "B0CD2MK16D",
+      "name": "Alfombrilla ratón XXL Marvel Deadpool - Alfombrilla Escritorio (Mouse Pad XXL: Protector Escritorio) | Accesorios Gaming - Tapete Escritorio : Alfombra Escritorio Impermeable y Antideslizante",
+      "brand": "Alfombrilla",
+      "category": "gaming",
+      "basePrice": 25.94,
+      "currentPrice": 19.95,
+      "discount": 23,
+      "image": "https://m.media-amazon.com/images/I/71fBPNER7fL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0CD2MK16D?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0CD2MK16D?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:32:57.325Z"
+      }
+    },
+    {
+      "asin": "B07W6JPM9P",
+      "name": "Logitech G G240 Alfombrilla para juegos, tela, optimada para sensores de juegos, roce superficial medio, alfombrilla antideslizante, accesorios/juegos Mac y PC, 340 x 280 x 1 mm",
+      "brand": "Logitech",
+      "category": "gaming",
+      "basePrice": 12.99,
+      "currentPrice": 9.29,
+      "discount": 28,
+      "image": "https://m.media-amazon.com/images/I/61tZSb-bTUL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B07W6JPM9P?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B07W6JPM9P?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:32:57.325Z"
+      }
+    },
+    {
+      "asin": "B0DGPVWGYR",
+      "name": "KDD Soporte Cascos Gaming con Ranuras para Teléfono -Soporte Mando con 9 Modos de Luz - Porta Auriculares Mesa con Puertos de Carga USB para Almacenamiento para Juegos Accesorios Gaming PC, Blanco",
+      "brand": "KDD",
+      "category": "gaming",
+      "basePrice": 32.44,
+      "currentPrice": 24.95,
+      "discount": 23,
+      "image": "https://m.media-amazon.com/images/I/61WhdgXdUVL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0DGPVWGYR?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0DGPVWGYR?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:32:57.326Z"
+      }
+    },
+    {
+      "asin": "B0DSSWLTTB",
+      "name": "Soporte Mando y Cascos, 3 Niveles Soporte Auriculares para Mesa, 9 de Gran Capacidad para Organizador Mandos, Controller Holder Giratorio para Accesorios Gaming, Fácil de Guardar y Ensamblar, 3 Nivel",
+      "brand": "Soporte",
+      "category": "gaming",
+      "basePrice": 24.99,
+      "currentPrice": 19.99,
+      "discount": 20,
+      "image": "https://m.media-amazon.com/images/I/71uhC6JxdgL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0DSSWLTTB?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0DSSWLTTB?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:32:57.326Z"
+      }
+    },
+    {
+      "asin": "B0D3DTR8Z3",
+      "name": "Mouse Grip Tape para Logitech G Pro Superlight Pegatinas Gaming Mouse Antideslizantes, Absorbentes del Sudor, Ultrafinas y Sin Residuos - Accesorios para Ratones de Juego, Negro",
+      "brand": "Mouse",
+      "category": "gaming",
+      "basePrice": 10.39,
+      "currentPrice": 7.99,
+      "discount": 23,
+      "image": "https://m.media-amazon.com/images/I/71Asr6b4tYL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0D3DTR8Z3?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0D3DTR8Z3?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:32:57.326Z"
+      }
+    },
+    {
+      "asin": "B0CDM1WQYP",
+      "name": "Bandeja de Gestión Cables Debajo Mesa Escritorio, Organizador de Cables Caja Esconder Cables Accesorios para Cable Almacenamiento, Soporte Regleta Cables Bajo Ordenador Mesa para Gaming, Oficina",
+      "brand": "Bandeja",
+      "category": "gaming",
+      "basePrice": 20.79,
+      "currentPrice": 15.99,
+      "discount": 23,
+      "image": "https://m.media-amazon.com/images/I/71RydGhRbRL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0CDM1WQYP?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0CDM1WQYP?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:32:57.326Z"
+      }
+    },
+    {
+      "asin": "B0CY25S136",
+      "name": "SensoryBoost DPS Glides (Juego de 2) para Razer Basilisk V3 Ultra Rápido, Redondeado, Baja Fricción, Durable Reemplazo de Pies de Ratón, Patines Accesorios de Actualización de Ratón par",
+      "brand": "SensoryBoost",
+      "category": "gaming",
+      "basePrice": 22.04,
+      "currentPrice": 16.95,
+      "discount": 23,
+      "image": "https://m.media-amazon.com/images/I/7115PJ6hIcL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0CY25S136?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0CY25S136?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:32:57.326Z"
+      }
+    },
+    {
+      "asin": "B0FGWFH97Z",
+      "name": "Soporte Auriculares Gaming para Escritorio, Soporte Mando y Cascos, Accesorios Gaming, Accesorios Setup Gamer para Habitacion",
+      "brand": "Soporte",
+      "category": "gaming",
+      "basePrice": 42.84,
+      "currentPrice": 32.95,
+      "discount": 23,
+      "image": "https://m.media-amazon.com/images/I/718mc91leFL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0FGWFH97Z?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0FGWFH97Z?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:32:57.326Z"
+      }
+    },
+    {
+      "asin": "B0CYZK68LV",
+      "name": "SensoryBoost DPS Glides (2 Unidades) para Razer Naga X - Ultra rápido, Redondeado, Baja fricción, Duradero, de Repuesto, Patines - Accesorios de actualización de ratón para Juegos",
+      "brand": "SensoryBoost",
+      "category": "gaming",
+      "basePrice": 22.04,
+      "currentPrice": 16.95,
+      "discount": 23,
+      "image": "https://m.media-amazon.com/images/I/71uIhKLtsvL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0CYZK68LV?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0CYZK68LV?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:32:57.326Z"
+      }
+    },
+    {
+      "asin": "B0DS9YYMV3",
+      "name": "UKCOCO Estante De Controlador De Moai Soporte Decorativo para Controladores De Videojuegos Accesorio De Escritorio y Estable para Gamers",
+      "brand": "UKCOCO",
+      "category": "gaming",
+      "basePrice": 54.2,
+      "currentPrice": 41.69,
+      "discount": 23,
+      "image": "https://m.media-amazon.com/images/I/61vM4GdE+RL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0DS9YYMV3?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0DS9YYMV3?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:32:57.326Z"
+      }
+    },
+    {
+      "asin": "B0DFCSTBGJ",
+      "name": "Lokyoyo Funda para ROG Ally X/Rog Ally, a prueba de golpes, portátil, resistente a la abrasión, funda de transporte rígida de EVA para consola de juegos ASUS ROG Ally/Rog Ally X y accesorios",
+      "brand": "Lokyoyo",
+      "category": "gaming",
+      "basePrice": 25.91,
+      "currentPrice": 19.93,
+      "discount": 23,
+      "image": "https://m.media-amazon.com/images/I/51eeinKkmmL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0DFCSTBGJ?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0DFCSTBGJ?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:32:57.326Z"
+      }
+    },
+    {
+      "asin": "B0D1K6P9DH",
+      "name": "SIXRUN Cable RATÓN USB G9/G9X Recambio 2 Metros Longitud Negro Rendimiento Estable [Accesorio RATÓN Gaming]",
+      "brand": "SIXRUN",
+      "category": "gaming",
+      "basePrice": 11.45,
+      "currentPrice": 8.81,
+      "discount": 23,
+      "image": "https://m.media-amazon.com/images/I/41uKcoZJ1tL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0D1K6P9DH?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0D1K6P9DH?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:32:57.326Z"
+      }
+    },
+    {
+      "asin": "B0CWXGXBN2",
+      "name": "Protector de pantalla para MSI Claw A1M Gaming Handheld 7 pulgadas, protector de pantalla de vidrio templado antiarañazos 9H para MSI Claw Kit de accesorios de película de protección de pantalla (5)",
+      "brand": "Protector",
+      "category": "gaming",
+      "basePrice": 13.75,
+      "currentPrice": 10.58,
+      "discount": 23,
+      "image": "https://m.media-amazon.com/images/I/510OKAyym0L._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0CWXGXBN2?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0CWXGXBN2?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:32:57.326Z"
+      }
+    },
+    {
+      "asin": "B09XWJ3H52",
+      "name": "KIWIFOTOS Soporte para auriculares con gancho giratorio de 360° + abrazadera de resorte ajustable, soporte de gancho para auriculares de escritorio para juegos, con USB 3.0 x1 + USB 2.0 x3 - blanco",
+      "brand": "KIWIFOTOS",
+      "category": "gaming",
+      "basePrice": 18.99,
+      "currentPrice": 16.14,
+      "discount": 15,
+      "image": "https://m.media-amazon.com/images/I/51AJkpfSPPL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B09XWJ3H52?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B09XWJ3H52?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:32:57.326Z"
+      }
+    },
+    {
+      "asin": "B0FBRVN8KP",
+      "name": "Escritorio para juegos de 120 cm, escritorio inteligente para gamers con luces LED y alfombrilla para ratón, mesa para juegos con toma de corriente, soporte para monitor, gancho lateral (Negro)",
+      "brand": "Escritorio",
+      "category": "gaming",
+      "basePrice": 63.22,
+      "currentPrice": 53.88,
+      "discount": 15,
+      "image": "https://m.media-amazon.com/images/I/81EoCWMJM2L._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0FBRVN8KP?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0FBRVN8KP?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:32:57.326Z"
+      }
+    },
+    {
+      "asin": "B0F5Q8PYX9",
+      "name": "KDD Soporte Auriculares Gaming con 9 Modos de Luz - Universal Soporte Mando & Cascos Porta Auriculares Mesa Giratorio con 6 Gancho Controlador Desmontables para Escritorio Gamer Accesorios Gaming PC",
+      "brand": "KDD",
+      "category": "gaming",
+      "basePrice": 33.95,
+      "currentPrice": 25.95,
+      "discount": 24,
+      "image": "https://m.media-amazon.com/images/I/61WhrBQo61L._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0F5Q8PYX9?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0F5Q8PYX9?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:32:57.326Z"
+      }
+    },
+    {
+      "asin": "B09XWJ3H52",
+      "name": "KIWIFOTOS Soporte para auriculares con gancho giratorio de 360° + abrazadera de resorte ajustable, soporte de gancho para auriculares de escritorio para juegos, con USB 3.0 x1 + USB 2.0 x3 - blanco",
+      "brand": "KIWIFOTOS",
+      "category": "gaming",
+      "basePrice": 18.99,
+      "currentPrice": 16.14,
+      "discount": 15,
+      "image": "https://m.media-amazon.com/images/I/51AJkpfSPPL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B09XWJ3H52?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B09XWJ3H52?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:33:02.913Z"
+      }
+    },
+    {
+      "asin": "B0FBRVN8KP",
+      "name": "Escritorio para juegos de 120 cm, escritorio inteligente para gamers con luces LED y alfombrilla para ratón, mesa para juegos con toma de corriente, soporte para monitor, gancho lateral (Negro)",
+      "brand": "Escritorio",
+      "category": "gaming",
+      "basePrice": 63.22,
+      "currentPrice": 53.88,
+      "discount": 15,
+      "image": "https://m.media-amazon.com/images/I/81EoCWMJM2L._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0FBRVN8KP?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0FBRVN8KP?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:33:02.913Z"
+      }
+    },
+    {
+      "asin": "B0F5Q8PYX9",
+      "name": "KDD Soporte Auriculares Gaming con 9 Modos de Luz - Universal Soporte Mando & Cascos Porta Auriculares Mesa Giratorio con 6 Gancho Controlador Desmontables para Escritorio Gamer Accesorios Gaming PC",
+      "brand": "KDD",
+      "category": "gaming",
+      "basePrice": 33.95,
+      "currentPrice": 25.95,
+      "discount": 24,
+      "image": "https://m.media-amazon.com/images/I/61WhrBQo61L._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0F5Q8PYX9?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0F5Q8PYX9?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:33:02.913Z"
+      }
+    },
+    {
+      "asin": "B0FRMNSJN1",
+      "name": "Ordenador portatil 32 GB RAM 1TB SSD 15,6 Pulgadas Gaming portatil, Estudiantes portatil R-5 7430U up to 4,3 GHz, 1920 x 1080 p, Teclado retroiluminado, Huella Dactilar/batería 6000 mAh",
+      "brand": "Ordenador",
+      "category": "laptops",
+      "basePrice": 589.99,
+      "currentPrice": 499.99,
+      "discount": 15,
+      "image": "https://m.media-amazon.com/images/I/717HIu+PeDL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0FRMNSJN1?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0FRMNSJN1?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:33:19.263Z"
+      }
+    },
+    {
+      "asin": "B0G2581YCH",
+      "name": "2025 Gaming Ordenador Portátil R7 5700U hasta 4,3 GHz Laptop 15,6 Pulgadas RAM 32 GB SSD 1 TB Teclado Retroiluminado Win11 Notebook, 6000 mAh, WiFi 5, HDMI, USB 3.0, BT 5.0, Huellas Digitales",
+      "brand": "2025",
+      "category": "laptops",
+      "basePrice": 899.99,
+      "currentPrice": 609.99,
+      "discount": 32,
+      "image": "https://m.media-amazon.com/images/I/71vc6owULyL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0G2581YCH?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0G2581YCH?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:33:19.263Z"
+      }
+    },
+    {
+      "asin": "B0G13Z1YBJ",
+      "name": "Portátil Gaming Laptop,Win11pro Notebook, 15.6 Inch Procesador R5-7430U,16 RAM 1TB SSD, FHD 1920 * 1080 Ordenador Portátil, Teclado Retroiluminado, Desbloqueo por Huella Dactilar, BT5.0,HDMI",
+      "brand": "Portátil",
+      "category": "laptops",
+      "basePrice": 779.99,
+      "currentPrice": 599.99,
+      "discount": 23,
+      "image": "https://m.media-amazon.com/images/I/710VIXj53uL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0G13Z1YBJ?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0G13Z1YBJ?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:33:19.263Z"
+      }
+    },
+    {
+      "asin": "B0F9YYBF45",
+      "name": "ASUS TUF Gaming A16 FA608UM-RV005 - Ordenador Portátil Gaming de 16\" WUXGA 165Hz (AMD Ryzen 7 260, 32GB RAM, 1TB SSD, NVIDIA RTX 5060 8GB, Sin Sistema Operativo) Gris Jager - Teclado QWERTY español",
+      "brand": "ASUS",
+      "category": "laptops",
+      "basePrice": 1499,
+      "currentPrice": 999,
+      "discount": 33,
+      "image": "https://m.media-amazon.com/images/I/71Uo0llBaAL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0F9YYBF45?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0F9YYBF45?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:33:19.263Z"
+      }
+    },
+    {
+      "asin": "B0FM8D7GJK",
+      "name": "HP OMEN - Ordenador portátil Gaming 16\" 2.5K WQXGA (AMD Ryzen 9-8940HX, 32GB RAM, 1TB SSD, NVIDIA RTX 5070, FreeDos) Teclado QWERTY Español - Negro",
+      "brand": "HP",
+      "category": "laptops",
+      "basePrice": 1799,
+      "currentPrice": 1299,
+      "discount": 28,
+      "image": "https://m.media-amazon.com/images/I/71bZnEZgfOL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0FM8D7GJK?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0FM8D7GJK?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:33:19.263Z"
+      }
+    },
+    {
+      "asin": "B0FM8DMJQ2",
+      "name": "HP OMEN - Ordenador portátil Gaming 16\" 2.5K WQXGA (AMD Ryzen AI 7 350, 32GB RAM, 1TB SSD, NVIDIA RTX 5060, FreeDos) Teclado QWERTY Español - Negro",
+      "brand": "HP",
+      "category": "laptops",
+      "basePrice": 1599,
+      "currentPrice": 999.99,
+      "discount": 37,
+      "image": "https://m.media-amazon.com/images/I/71z4OYwyZnL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0FM8DMJQ2?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0FM8DMJQ2?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:33:19.263Z"
+      }
+    },
+    {
+      "asin": "B0FJ2JTLSX",
+      "name": "Lenovo LOQ Gen 10 - Portátil Gaming IA 15.6\" FHD (Intel Core i7-13650HX, NVIDIA GeForce RTX 5060, 32 GB RAM, 1 TB SSD, 144 Hz, Wi-Fi 6, Sin Sistema Operativo) QWERTY RGB 24 Zonas Español - Gris",
+      "brand": "Lenovo",
+      "category": "laptops",
+      "basePrice": 1399,
+      "currentPrice": 989,
+      "discount": 29,
+      "image": "https://m.media-amazon.com/images/I/81jsWIHzwBL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0FJ2JTLSX?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0FJ2JTLSX?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:33:19.263Z"
+      }
+    },
+    {
+      "asin": "B0F4XKR6P4",
+      "name": "ACER Nitro V 15 ANV15-52, Ordenador Portátil Gaming 15.6\", Full HD IPS (Intel Core i5 13420H, 16 GB RAM, 512 GB SSD, GeForce RTX 5070, Sin Sistema Operativo), Negro, Teclado QWERTY Español",
+      "brand": "ACER",
+      "category": "laptops",
+      "basePrice": 1049,
+      "currentPrice": 749,
+      "discount": 29,
+      "image": "https://m.media-amazon.com/images/I/71SwETDct0L._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0F4XKR6P4?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0F4XKR6P4?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:33:19.263Z"
+      }
+    },
+    {
+      "asin": "B0D8WGS61V",
+      "name": "2025 Newest Ordenador Portátil 16 Pulgadas Win11 16+512GB SSD Soporte 1TB SSD Expansión Gaming Ventilador Refrigeración Core i3（hasta 3,2 GHz）5G WiFi BT4.2 Mini Puerto Multimedia 1920x1200-Silver",
+      "brand": "2025",
+      "category": "laptops",
+      "basePrice": 480.99,
+      "currentPrice": 369.99,
+      "discount": 23,
+      "image": "https://m.media-amazon.com/images/I/71o9U76lZsL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0D8WGS61V?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0D8WGS61V?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:33:19.263Z"
+      }
+    },
+    {
+      "asin": "B09L5LDMW2",
+      "name": "ASUS Zenbook S 16 OLED UM5606WA-RK297W - Ordenador Portátil 15.6\" WQXGA+ 120Hz (AMD Ryzen AI 9 HX 370, 32GB RAM, 1TB SSD, Radeon 890M, Windows 11 Home) Gris Zumaia - Teclado QWERTY español",
+      "brand": "ASUS",
+      "category": "laptops",
+      "basePrice": 1799,
+      "currentPrice": 1599,
+      "discount": 11,
+      "image": "https://m.media-amazon.com/images/I/61iRjjXuHsL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B09L5LDMW2?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B09L5LDMW2?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:33:19.263Z"
+      }
+    },
+    {
+      "asin": "B0F9B66J9B",
+      "name": "Alienware 16 Aurora Portátil Gaming AC16250 16\" QHD+ 120Hz sRGB 100%, Intel Core 7 240H Series 2, NVIDIA GeForce RTX 5060, 16GB RAM, 1TB SSD, Windows 11 Home, Teclado retroiluminado QWERTY – Indigo",
+      "brand": "Alienware",
+      "category": "laptops",
+      "basePrice": 1349,
+      "currentPrice": 999,
+      "discount": 26,
+      "image": "https://m.media-amazon.com/images/I/71QszyVeYvL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0F9B66J9B?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0F9B66J9B?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:33:19.263Z"
+      }
+    },
+    {
+      "asin": "B0DPHRZS29",
+      "name": "Acer Nitro V 15 ANV15-41-R0ZK, Ordenador Portátil Gaming 15.6\" Full HD 165Hz (AMD Ryzen 7 7735HS, 16GB RAM, 512 GB SSD, NVIDIA GeForce RTX 4050, Sin Sistema Operativo) Negro, Teclado QWERTY Español",
+      "brand": "Acer",
+      "category": "laptops",
+      "basePrice": 1168.7,
+      "currentPrice": 899,
+      "discount": 23,
+      "image": "https://m.media-amazon.com/images/I/71gVXOlNBxL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0DPHRZS29?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0DPHRZS29?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:33:19.263Z"
+      }
+    },
+    {
+      "asin": "B0G1BQX2PV",
+      "name": "Portátil Gaming Laptop,Win11pro Notebook, 15.6 Inch Procesador R5 7430U,32 RAM 1TB SSD, FHD 1920 * 1080 Ordenador Portátil, Teclado Retroiluminado, Desbloqueo por Huella Dactilar, BT5.0,HDMI",
+      "brand": "Portátil",
+      "category": "laptops",
+      "basePrice": 1039.99,
+      "currentPrice": 799.99,
+      "discount": 23,
+      "image": "https://m.media-amazon.com/images/I/71EZqo+uBSL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0G1BQX2PV?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0G1BQX2PV?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:33:19.263Z"
+      }
+    },
+    {
+      "asin": "B0FWC2FJB1",
+      "name": "2025 15.6-Inch Portátil Gaming Laptop,Win11pro Notebook, Procesador R5-7430U,16 RAM 1TB SSD, FHD 1920 * 1080 Ordenador Portátil, Teclado Retroiluminado, BT5.0,Desbloqueo por Huella Dactilar",
+      "brand": "2025",
+      "category": "laptops",
+      "basePrice": 740.99,
+      "currentPrice": 569.99,
+      "discount": 23,
+      "image": "https://m.media-amazon.com/images/I/71bew0t9-JL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0FWC2FJB1?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0FWC2FJB1?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:33:19.264Z"
+      }
+    },
+    {
+      "asin": "B0CFFF13RK",
+      "name": "Acer Nitro ANV15-51-51M7 - Ordenador Portátil Gaming 15.6\" Full HD IPS 144Hz (Intel Core i5-13420H, 16GB RAM, 512GB SSD, NVIDIA GeForce RTX 4050, Sin Sistema Operativo) Negro - Teclado QWERTY Español",
+      "brand": "Acer",
+      "category": "laptops",
+      "basePrice": 843.7,
+      "currentPrice": 649,
+      "discount": 23,
+      "image": "https://m.media-amazon.com/images/I/718qtcsilbL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0CFFF13RK?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0CFFF13RK?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:33:19.264Z"
+      }
+    },
+    {
+      "asin": "B0BSLJX91V",
+      "name": "MSI Thin 15 B12UC-1842XES - Ordenador portátil de 15.6\" Full HD (Intel Core i5-12450H, 16GB RAM, 512GB SSD, NVIDIA RTX 3050, Sin Sistema operativo) Color Gris - Teclado QWERTY español",
+      "brand": "MSI",
+      "category": "laptops",
+      "basePrice": 778.64,
+      "currentPrice": 598.95,
+      "discount": 23,
+      "image": "https://m.media-amazon.com/images/I/71VRmxpi7QL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0BSLJX91V?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0BSLJX91V?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:33:19.264Z"
+      }
+    },
+    {
+      "asin": "B0F22B43LF",
+      "name": "GIGABYTE Portátil Gaming G6 MF - 16,0 Pulgadas, 165Hz FHD, Intel Core i7-13700H, RTX 4050 GPU, 16GB DDR5 4800MHz, 512G SSD, FreeDOS, G6 MF-72ES893KD",
+      "brand": "GIGABYTE",
+      "category": "laptops",
+      "basePrice": 1272.7,
+      "currentPrice": 979,
+      "discount": 23,
+      "image": "https://m.media-amazon.com/images/I/71degToXcSL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0F22B43LF?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0F22B43LF?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:33:19.264Z"
+      }
+    },
+    {
+      "asin": "B0DTJ3B9R9",
+      "name": "Lenovo LOQ Gen 9 - Ordenador Portátil Gaming IA 15.6\" FHD, 144 Hz (AMD Ryzen 5 7235HS, NVIDIA GeForce RTX 3050, 24 GB RAM, 512 GB SSD, Wi-Fi 6, Sin Sistema Operativo) Teclado QWERTY Español - Gris",
+      "brand": "Lenovo",
+      "category": "laptops",
+      "basePrice": 1168.7,
+      "currentPrice": 899,
+      "discount": 23,
+      "image": "https://m.media-amazon.com/images/I/81L8Oejq1jL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0DTJ3B9R9?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0DTJ3B9R9?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:33:19.264Z"
+      }
+    },
+    {
+      "asin": "B0FR4P18XM",
+      "name": "15.6-Inch Portátil Gaming Laptop,Win11pro Notebook, Procesador R5-7430U,16 RAM 1TB SSD, FHD 1920 * 1080 Ordenador Portátil, Teclado Retroiluminado, BT5.0,Desbloqueo por Huella Dactilar",
+      "brand": "15.6-Inch",
+      "category": "laptops",
+      "basePrice": 688.99,
+      "currentPrice": 529.99,
+      "discount": 23,
+      "image": "https://m.media-amazon.com/images/I/716gNRKpGSL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0FR4P18XM?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0FR4P18XM?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:33:19.264Z"
+      }
+    },
+    {
+      "asin": "B0F2TK7LTG",
+      "name": "HP Victus 15-fa2004ns - Ordenador portátil Gaming 15\" FHD (Intel Core 5-210H, 16GB RAM, 512GB SSD, NVIDIA RTX 5050, FreeDos) - Azul - Teclado QWERTY Español",
+      "brand": "HP",
+      "category": "laptops",
+      "basePrice": 999,
+      "currentPrice": 749,
+      "discount": 25,
+      "image": "https://m.media-amazon.com/images/I/815MTersJVL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0F2TK7LTG?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0F2TK7LTG?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:33:19.264Z"
+      }
+    },
+    {
+      "asin": "B0DRCMCM7Z",
+      "name": "ACEMAGIC 2025 Ordenador Portátil Ryzen 7 5825U (hasta 4.5Ghz) Carcasa metálica 16 GB RAM DDR4 512 GB NVME PCIE3.0 hasta 4 GB Portatil 16 Pulgadas Tastiera Retroilluminata,3*USB3.2,WiFi 6,BT5.2",
+      "brand": "ACEMAGIC",
+      "category": "laptops",
+      "basePrice": 1039.99,
+      "currentPrice": 799.99,
+      "discount": 23,
+      "image": "https://m.media-amazon.com/images/I/71xKKAZ7-fL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0DRCMCM7Z?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0DRCMCM7Z?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:33:19.264Z"
+      }
+    },
+    {
+      "asin": "B0G1ZCNN29",
+      "name": "Gamer Ordenador Pc Portatil, 15.6 Pulgadas R7 5700U Procesador(hasta 4.3Ghz) 16GB RAM 1TB SSD Gaming Laptop, Computadora Portatil Teclado Retroiluminado, 1920x1080P/6000mAh/Tipo-C",
+      "brand": "Gamer",
+      "category": "laptops",
+      "basePrice": 1949.99,
+      "currentPrice": 1499.99,
+      "discount": 23,
+      "image": "https://m.media-amazon.com/images/I/71eM-2QmR1L._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0G1ZCNN29?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0G1ZCNN29?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:33:19.264Z"
+      }
+    },
+    {
+      "asin": "B0D8WK4TFP",
+      "name": "2025 Newest Ordenador Portátil 16 Pulgadas Win11 16+512GB SSD Soporte 1TB SSD Expansión Gaming Ventilador Refrigeración Core i3（hasta 3,2 GHz)WiFi BT4.2 Mini Puerto Multimedia Portátil 1200P-Gray",
+      "brand": "2025",
+      "category": "laptops",
+      "basePrice": 699.99,
+      "currentPrice": 349.99,
+      "discount": 50,
+      "image": "https://m.media-amazon.com/images/I/71X54N9n2WL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0D8WK4TFP?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0D8WK4TFP?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": true,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:33:19.264Z"
+      }
+    },
+    {
+      "asin": "B0FVMBX9PT",
+      "name": "Ordenador portátil para juegos, 32 GB RAM 1 TB SSD, R7 5825U Processor (2,0 a 4,5 GHz) Laptop PC portátil Gamer 2025, 51,97 Wh/Teclado completo retroiluminado/Webcam/Touchpad/Type-C",
+      "brand": "Ordenador",
+      "category": "laptops",
+      "basePrice": 909.99,
+      "currentPrice": 699.99,
+      "discount": 23,
+      "image": "https://m.media-amazon.com/images/I/71IR1RkAn0L._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0FVMBX9PT?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0FVMBX9PT?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:33:19.264Z"
+      }
+    },
+    {
+      "asin": "B0FJDNDQGF",
+      "name": "Lenovo Legion Pro 5 Gen10– Portátil Gaming IA 16\" WQXGA (Intel Core i9-14900HX, NVIDIA GeForce RTX 5070, 32GB RAM, 1TB SSD, 240Hz, WiFi 6, Sin Sistema Operativo) QWERTY RGB 24 Zonas Español – Negro",
+      "brand": "Lenovo",
+      "category": "laptops",
+      "basePrice": 1999,
+      "currentPrice": 1699,
+      "discount": 15,
+      "image": "https://m.media-amazon.com/images/I/61U9atY2+UL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0FJDNDQGF?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0FJDNDQGF?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:33:19.264Z"
+      }
+    },
+    {
+      "asin": "B0F7KJ6P55",
+      "name": "Ordenador Portátil 15,6 pulgadas, 16GB RAM 512GB SSD Celeron N95, PC Portatil IPS Full HD 1920 x 1080, desbloqueo por huella dactilar y teclado retroiluminado de tamaño completo Computadora Portátil",
+      "brand": "Ordenador",
+      "category": "laptops",
+      "basePrice": 279.99,
+      "currentPrice": 246.99,
+      "discount": 12,
+      "image": "https://m.media-amazon.com/images/I/71NIJUBD1cL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0F7KJ6P55?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0F7KJ6P55?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:33:19.264Z"
+      }
+    },
+    {
+      "asin": "B0FBMN88BZ",
+      "name": "Gigabyte Gaming A16 Portátil – 16\", 165Hz WUXGA, Intel Core i7-13620H, RTX 5050, 16GB DDR5 5200MHz, SSD Gen4 de 1TB, Dos, Garantía de 2 años, Dolby Atmos, Gaming A16 CTHI3ES894SD",
+      "brand": "Gigabyte",
+      "category": "laptops",
+      "basePrice": 1049,
+      "currentPrice": 879.95,
+      "discount": 16,
+      "image": "https://m.media-amazon.com/images/I/61WouP8f1iL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0FBMN88BZ?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0FBMN88BZ?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:33:19.264Z"
+      }
+    },
+    {
+      "asin": "B0F6YBR1GC",
+      "name": "Lenovo LOQ Gen 9 - Ordenador Portátil Gaming IA 15.6\" FHD, 144 Hz (Intel Core i5-12450HX, NVIDIA GeForce RTX 3050, 24 GB RAM, 512 GB SSD, Wi-Fi 6, Sin Sistema Operativo) Teclado QWERTY Español - Gris",
+      "brand": "Lenovo",
+      "category": "laptops",
+      "basePrice": 1168.7,
+      "currentPrice": 899,
+      "discount": 23,
+      "image": "https://m.media-amazon.com/images/I/81z8W9JvcVL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0F6YBR1GC?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0F6YBR1GC?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:33:19.264Z"
+      }
+    },
+    {
+      "asin": "B0DMNY618Q",
+      "name": "ASUS ROG Strix G18 G815LP-S9004 - Ordenador Portátil Gaming de 18\" WQXGA 240Hz (Intel Core Ultra 9 275HX, 32GB RAM, 1TB SSD, RTX 5070 8GB, Sin Sistema Operativo) Gris Eclipse - Teclado QWERTY español",
+      "brand": "ASUS",
+      "category": "laptops",
+      "basePrice": 2577.43,
+      "currentPrice": 1982.64,
+      "discount": 23,
+      "image": "https://m.media-amazon.com/images/I/81-u9g8ftqL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0DMNY618Q?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0DMNY618Q?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:33:19.264Z"
+      }
+    },
+    {
+      "asin": "B0F2TGCBXR",
+      "name": "HP OMEN 16-ap0000ns, Ordenador portátil Gaming 16\" 2K AMD Ryzen AI 7 350, 32GB RAM, 1TB SSD, NVIDIA GeForce RTX 5070, FreeDos, Negro - Teclado QWERTY Español",
+      "brand": "HP",
+      "category": "laptops",
+      "basePrice": 1688.7,
+      "currentPrice": 1299,
+      "discount": 23,
+      "image": "https://m.media-amazon.com/images/I/71oSF3adROL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0F2TGCBXR?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0F2TGCBXR?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:33:19.264Z"
+      }
+    },
+    {
+      "asin": "B0DX2K4271",
+      "name": "HP OMEN MAX - Ordenador Portátil Gaming de 16\" 2.5K WQXGA, 240Hz Intel Ultra 7-255HX, 32GB RAM, 1 TB, NVIDIA GeForce RTX 5070 TI 12GB, Windows 11, WiFi 7 Negro - Teclado QWERTY Español",
+      "brand": "HP",
+      "category": "laptops",
+      "basePrice": 2649,
+      "currentPrice": 1939,
+      "discount": 27,
+      "image": "https://m.media-amazon.com/images/I/71K+aAm+99L._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0DX2K4271?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0DX2K4271?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:33:19.264Z"
+      }
+    },
+    {
+      "asin": "B0FM8DT5V7",
+      "name": "HP OMEN MAX 16-ah0006ns - Ordenador Portátil Gaming de 16\" OLED 240Hz (Ultra 9-275HX, 64GB RAM, 1 TB, NVIDIA GeForce RTX 5090 24GB, WiFi 7, Windows 11) Negro - Teclado QWERTY Español",
+      "brand": "HP",
+      "category": "laptops",
+      "basePrice": 3799,
+      "currentPrice": 3299,
+      "discount": 13,
+      "image": "https://m.media-amazon.com/images/I/71KMsW6cWJL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0FM8DT5V7?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0FM8DT5V7?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:33:19.264Z"
+      }
+    },
+    {
+      "asin": "B0FVFFYDRJ",
+      "name": "15.6 Pulgadas Gaming Pc Ordenador Portatil i9-11900H Procesador (2.5 to 4.9Ghz), 32GB RAM 1TB SSD Gamer Laptop 2025, Teclado Retroiluminado/Desbloqueo por Huella/RJ45/Tipo-C",
+      "brand": "15.6",
+      "category": "laptops",
+      "basePrice": 1039.99,
+      "currentPrice": 799.99,
+      "discount": 23,
+      "image": "https://m.media-amazon.com/images/I/71RZnlMZEmL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0FVFFYDRJ?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0FVFFYDRJ?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:33:19.264Z"
+      }
+    },
+    {
+      "asin": "B0FFB1NBJJ",
+      "name": "HP Ordenador portátil 15.6\" FHD (AMD Ryzen 7-7730U, 16 GB RAM, 1TB SSD, AMD Radeon Graphics, Sin Sistema operativo) Plata - Teclado QWERTY Español",
+      "brand": "HP",
+      "category": "laptops",
+      "basePrice": 599,
+      "currentPrice": 424.99,
+      "discount": 29,
+      "image": "https://m.media-amazon.com/images/I/61-mqc4lvjL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0FFB1NBJJ?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0FFB1NBJJ?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:33:19.265Z"
+      }
+    },
+    {
+      "asin": "B0FDGDGQBY",
+      "name": "16 Pulgadas Pc Ordenador Portatil Computadora 2025, 13th Gen Twin Lake Processor N150(1,2 a 3,6GHz) Laptop, RAM 16GB SSD 1TB Notebook, Teclado Completo Retroiluminado, 1920x1200P/Webcam",
+      "brand": "16",
+      "category": "laptops",
+      "basePrice": 382.48,
+      "currentPrice": 300.05,
+      "discount": 22,
+      "image": "https://m.media-amazon.com/images/I/712+utpWl8L._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0FDGDGQBY?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0FDGDGQBY?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:33:19.265Z"
+      }
+    },
+    {
+      "asin": "B0FC6B3KGH",
+      "name": "Ordenador Portatil Gaming 15.6 Pulgadas 16GB RAM+512GB SDD NVMe PCIe 3.0 SSD Soporte 4TB Expansión SSD,Procesador Ryzen5 7430U, Gaming Laptop, Leichtgewicht,WiFi6,HDMI",
+      "brand": "Ordenador",
+      "category": "laptops",
+      "basePrice": 499.95,
+      "currentPrice": 370.49,
+      "discount": 26,
+      "image": "https://m.media-amazon.com/images/I/71CKXmcsVkL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0FC6B3KGH?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0FC6B3KGH?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:33:19.265Z"
+      }
+    },
+    {
+      "asin": "B0BSN876L8",
+      "name": "MSI Modern 15 B7M-440XES portátil Profesional 15.6 Pulgadas, FHD (1920x1080), Ryzen 7 7730U, AMD Radeon Graphics, 16GB RAM, 512GB SSD, Free Dos, QWERTY Español",
+      "brand": "MSI",
+      "category": "laptops",
+      "basePrice": 699,
+      "currentPrice": 515.87,
+      "discount": 26,
+      "image": "https://m.media-amazon.com/images/I/71GCpwCjihL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0BSN876L8?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0BSN876L8?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:33:19.265Z"
+      }
+    },
+    {
+      "asin": "B0D6B8ZNFV",
+      "name": "16K Cable DisplayPort 3M, 2.1 DP to DP Cable Support 16K@60Hz,8K@120Hz,4K@240Hz, HBR3 32.4Gbps, HDR, G-Sync & FreeSync Display Cable 2.0 Lead for Laptop Gaming Monitor PC TV",
+      "brand": "16K",
+      "category": "laptops",
+      "basePrice": 14.29,
+      "currentPrice": 10.99,
+      "discount": 23,
+      "image": "https://m.media-amazon.com/images/I/71IrzlMj17L._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0D6B8ZNFV?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0D6B8ZNFV?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:33:19.265Z"
+      }
+    },
+    {
+      "asin": "B0F638ZFX9",
+      "name": "LG gram 15ZD80T-G.AX55B Portátil 15\", FreeOS, AMD Ryzen AI 5, 16 GB RAM, 512GB SSD, AMD Radeon Graphics 860M, Pantalla IPS (1920x1080), Ligero, 1.290 g, 27 Horas, AI, Negro",
+      "brand": "LG",
+      "category": "laptops",
+      "basePrice": 799,
+      "currentPrice": 669.99,
+      "discount": 16,
+      "image": "https://m.media-amazon.com/images/I/61IDjfC7avL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0F638ZFX9?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0F638ZFX9?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:33:19.265Z"
+      }
+    },
+    {
+      "asin": "B0FRMNSJN1",
+      "name": "Ordenador portatil 32 GB RAM 1TB SSD 15,6 Pulgadas Gaming portatil, Estudiantes portatil R-5 7430U up to 4,3 GHz, 1920 x 1080 p, Teclado retroiluminado, Huella Dactilar/batería 6000 mAh",
+      "brand": "Ordenador",
+      "category": "laptops",
+      "basePrice": 589.99,
+      "currentPrice": 499.99,
+      "discount": 15,
+      "image": "https://m.media-amazon.com/images/I/717HIu+PeDL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0FRMNSJN1?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0FRMNSJN1?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:33:27.585Z"
+      }
+    },
+    {
+      "asin": "B0G13Z1YBJ",
+      "name": "Portátil Gaming Laptop,Win11pro Notebook, 15.6 Inch Procesador R5-7430U,16 RAM 1TB SSD, FHD 1920 * 1080 Ordenador Portátil, Teclado Retroiluminado, Desbloqueo por Huella Dactilar, BT5.0,HDMI",
+      "brand": "Portátil",
+      "category": "laptops",
+      "basePrice": 779.99,
+      "currentPrice": 599.99,
+      "discount": 23,
+      "image": "https://m.media-amazon.com/images/I/710VIXj53uL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0G13Z1YBJ?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0G13Z1YBJ?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:33:27.585Z"
+      }
+    },
+    {
+      "asin": "B0F9YYBF45",
+      "name": "ASUS TUF Gaming A16 FA608UM-RV005 - Ordenador Portátil Gaming de 16\" WUXGA 165Hz (AMD Ryzen 7 260, 32GB RAM, 1TB SSD, NVIDIA RTX 5060 8GB, Sin Sistema Operativo) Gris Jager - Teclado QWERTY español",
+      "brand": "ASUS",
+      "category": "laptops",
+      "basePrice": 1499,
+      "currentPrice": 999,
+      "discount": 33,
+      "image": "https://m.media-amazon.com/images/I/71Uo0llBaAL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0F9YYBF45?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0F9YYBF45?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:33:27.585Z"
+      }
+    },
+    {
+      "asin": "B0FM8D7GJK",
+      "name": "HP OMEN - Ordenador portátil Gaming 16\" 2.5K WQXGA (AMD Ryzen 9-8940HX, 32GB RAM, 1TB SSD, NVIDIA RTX 5070, FreeDos) Teclado QWERTY Español - Negro",
+      "brand": "HP",
+      "category": "laptops",
+      "basePrice": 1799,
+      "currentPrice": 1299,
+      "discount": 28,
+      "image": "https://m.media-amazon.com/images/I/71bZnEZgfOL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0FM8D7GJK?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0FM8D7GJK?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:33:27.585Z"
+      }
+    },
+    {
+      "asin": "B0FM8DMJQ2",
+      "name": "HP OMEN - Ordenador portátil Gaming 16\" 2.5K WQXGA (AMD Ryzen AI 7 350, 32GB RAM, 1TB SSD, NVIDIA RTX 5060, FreeDos) Teclado QWERTY Español - Negro",
+      "brand": "HP",
+      "category": "laptops",
+      "basePrice": 1599,
+      "currentPrice": 999.99,
+      "discount": 37,
+      "image": "https://m.media-amazon.com/images/I/71z4OYwyZnL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0FM8DMJQ2?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0FM8DMJQ2?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:33:27.585Z"
+      }
+    },
+    {
+      "asin": "B0FJ2JTLSX",
+      "name": "Lenovo LOQ Gen 10 - Portátil Gaming IA 15.6\" FHD (Intel Core i7-13650HX, NVIDIA GeForce RTX 5060, 32 GB RAM, 1 TB SSD, 144 Hz, Wi-Fi 6, Sin Sistema Operativo) QWERTY RGB 24 Zonas Español - Gris",
+      "brand": "Lenovo",
+      "category": "laptops",
+      "basePrice": 1399,
+      "currentPrice": 989,
+      "discount": 29,
+      "image": "https://m.media-amazon.com/images/I/81jsWIHzwBL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0FJ2JTLSX?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0FJ2JTLSX?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:33:27.585Z"
+      }
+    },
+    {
+      "asin": "B0F4XKR6P4",
+      "name": "ACER Nitro V 15 ANV15-52, Ordenador Portátil Gaming 15.6\", Full HD IPS (Intel Core i5 13420H, 16 GB RAM, 512 GB SSD, GeForce RTX 5070, Sin Sistema Operativo), Negro, Teclado QWERTY Español",
+      "brand": "ACER",
+      "category": "laptops",
+      "basePrice": 1049,
+      "currentPrice": 749,
+      "discount": 29,
+      "image": "https://m.media-amazon.com/images/I/71SwETDct0L._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0F4XKR6P4?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0F4XKR6P4?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:33:27.585Z"
+      }
+    },
+    {
+      "asin": "B0D8WGS61V",
+      "name": "2025 Newest Ordenador Portátil 16 Pulgadas Win11 16+512GB SSD Soporte 1TB SSD Expansión Gaming Ventilador Refrigeración Core i3（hasta 3,2 GHz）5G WiFi BT4.2 Mini Puerto Multimedia 1920x1200-Silver",
+      "brand": "2025",
+      "category": "laptops",
+      "basePrice": 480.99,
+      "currentPrice": 369.99,
+      "discount": 23,
+      "image": "https://m.media-amazon.com/images/I/71o9U76lZsL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0D8WGS61V?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0D8WGS61V?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:33:27.585Z"
+      }
+    },
+    {
+      "asin": "B09L5LDMW2",
+      "name": "ASUS Zenbook S 16 OLED UM5606WA-RK297W - Ordenador Portátil 15.6\" WQXGA+ 120Hz (AMD Ryzen AI 9 HX 370, 32GB RAM, 1TB SSD, Radeon 890M, Windows 11 Home) Gris Zumaia - Teclado QWERTY español",
+      "brand": "ASUS",
+      "category": "laptops",
+      "basePrice": 1799,
+      "currentPrice": 1599,
+      "discount": 11,
+      "image": "https://m.media-amazon.com/images/I/61iRjjXuHsL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B09L5LDMW2?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B09L5LDMW2?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:33:27.586Z"
+      }
+    },
+    {
+      "asin": "B0F9B66J9B",
+      "name": "Alienware 16 Aurora Portátil Gaming AC16250 16\" QHD+ 120Hz sRGB 100%, Intel Core 7 240H Series 2, NVIDIA GeForce RTX 5060, 16GB RAM, 1TB SSD, Windows 11 Home, Teclado retroiluminado QWERTY – Indigo",
+      "brand": "Alienware",
+      "category": "laptops",
+      "basePrice": 1349,
+      "currentPrice": 999,
+      "discount": 26,
+      "image": "https://m.media-amazon.com/images/I/71QszyVeYvL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0F9B66J9B?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0F9B66J9B?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:33:27.586Z"
+      }
+    },
+    {
+      "asin": "B0DPHRZS29",
+      "name": "Acer Nitro V 15 ANV15-41-R0ZK, Ordenador Portátil Gaming 15.6\" Full HD 165Hz (AMD Ryzen 7 7735HS, 16GB RAM, 512 GB SSD, NVIDIA GeForce RTX 4050, Sin Sistema Operativo) Negro, Teclado QWERTY Español",
+      "brand": "Acer",
+      "category": "laptops",
+      "basePrice": 1168.7,
+      "currentPrice": 899,
+      "discount": 23,
+      "image": "https://m.media-amazon.com/images/I/71gVXOlNBxL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0DPHRZS29?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0DPHRZS29?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:33:27.586Z"
+      }
+    },
+    {
+      "asin": "B0G1BQX2PV",
+      "name": "Portátil Gaming Laptop,Win11pro Notebook, 15.6 Inch Procesador R5 7430U,32 RAM 1TB SSD, FHD 1920 * 1080 Ordenador Portátil, Teclado Retroiluminado, Desbloqueo por Huella Dactilar, BT5.0,HDMI",
+      "brand": "Portátil",
+      "category": "laptops",
+      "basePrice": 1039.99,
+      "currentPrice": 799.99,
+      "discount": 23,
+      "image": "https://m.media-amazon.com/images/I/71EZqo+uBSL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0G1BQX2PV?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0G1BQX2PV?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:33:27.586Z"
+      }
+    },
+    {
+      "asin": "B0FWC2FJB1",
+      "name": "2025 15.6-Inch Portátil Gaming Laptop,Win11pro Notebook, Procesador R5-7430U,16 RAM 1TB SSD, FHD 1920 * 1080 Ordenador Portátil, Teclado Retroiluminado, BT5.0,Desbloqueo por Huella Dactilar",
+      "brand": "2025",
+      "category": "laptops",
+      "basePrice": 740.99,
+      "currentPrice": 569.99,
+      "discount": 23,
+      "image": "https://m.media-amazon.com/images/I/71bew0t9-JL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0FWC2FJB1?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0FWC2FJB1?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:33:27.586Z"
+      }
+    },
+    {
+      "asin": "B0CFFF13RK",
+      "name": "Acer Nitro ANV15-51-51M7 - Ordenador Portátil Gaming 15.6\" Full HD IPS 144Hz (Intel Core i5-13420H, 16GB RAM, 512GB SSD, NVIDIA GeForce RTX 4050, Sin Sistema Operativo) Negro - Teclado QWERTY Español",
+      "brand": "Acer",
+      "category": "laptops",
+      "basePrice": 843.7,
+      "currentPrice": 649,
+      "discount": 23,
+      "image": "https://m.media-amazon.com/images/I/718qtcsilbL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0CFFF13RK?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0CFFF13RK?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:33:27.586Z"
+      }
+    },
+    {
+      "asin": "B0BSLJX91V",
+      "name": "MSI Thin 15 B12UC-1842XES - Ordenador portátil de 15.6\" Full HD (Intel Core i5-12450H, 16GB RAM, 512GB SSD, NVIDIA RTX 3050, Sin Sistema operativo) Color Gris - Teclado QWERTY español",
+      "brand": "MSI",
+      "category": "laptops",
+      "basePrice": 778.64,
+      "currentPrice": 598.95,
+      "discount": 23,
+      "image": "https://m.media-amazon.com/images/I/71VRmxpi7QL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0BSLJX91V?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0BSLJX91V?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:33:27.586Z"
+      }
+    },
+    {
+      "asin": "B0F22B43LF",
+      "name": "GIGABYTE Portátil Gaming G6 MF - 16,0 Pulgadas, 165Hz FHD, Intel Core i7-13700H, RTX 4050 GPU, 16GB DDR5 4800MHz, 512G SSD, FreeDOS, G6 MF-72ES893KD",
+      "brand": "GIGABYTE",
+      "category": "laptops",
+      "basePrice": 1272.7,
+      "currentPrice": 979,
+      "discount": 23,
+      "image": "https://m.media-amazon.com/images/I/71degToXcSL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0F22B43LF?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0F22B43LF?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:33:27.586Z"
+      }
+    },
+    {
+      "asin": "B0DTJ3B9R9",
+      "name": "Lenovo LOQ Gen 9 - Ordenador Portátil Gaming IA 15.6\" FHD, 144 Hz (AMD Ryzen 5 7235HS, NVIDIA GeForce RTX 3050, 24 GB RAM, 512 GB SSD, Wi-Fi 6, Sin Sistema Operativo) Teclado QWERTY Español - Gris",
+      "brand": "Lenovo",
+      "category": "laptops",
+      "basePrice": 1168.7,
+      "currentPrice": 899,
+      "discount": 23,
+      "image": "https://m.media-amazon.com/images/I/81L8Oejq1jL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0DTJ3B9R9?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0DTJ3B9R9?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:33:27.586Z"
+      }
+    },
+    {
+      "asin": "B0FR4P18XM",
+      "name": "15.6-Inch Portátil Gaming Laptop,Win11pro Notebook, Procesador R5-7430U,16 RAM 1TB SSD, FHD 1920 * 1080 Ordenador Portátil, Teclado Retroiluminado, BT5.0,Desbloqueo por Huella Dactilar",
+      "brand": "15.6-Inch",
+      "category": "laptops",
+      "basePrice": 688.99,
+      "currentPrice": 529.99,
+      "discount": 23,
+      "image": "https://m.media-amazon.com/images/I/716gNRKpGSL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0FR4P18XM?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0FR4P18XM?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:33:27.586Z"
+      }
+    },
+    {
+      "asin": "B0F2TK7LTG",
+      "name": "HP Victus 15-fa2004ns - Ordenador portátil Gaming 15\" FHD (Intel Core 5-210H, 16GB RAM, 512GB SSD, NVIDIA RTX 5050, FreeDos) - Azul - Teclado QWERTY Español",
+      "brand": "HP",
+      "category": "laptops",
+      "basePrice": 999,
+      "currentPrice": 749,
+      "discount": 25,
+      "image": "https://m.media-amazon.com/images/I/815MTersJVL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0F2TK7LTG?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0F2TK7LTG?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:33:27.586Z"
+      }
+    },
+    {
+      "asin": "B0DRCMCM7Z",
+      "name": "ACEMAGIC 2025 Ordenador Portátil Ryzen 7 5825U (hasta 4.5Ghz) Carcasa metálica 16 GB RAM DDR4 512 GB NVME PCIE3.0 hasta 4 GB Portatil 16 Pulgadas Tastiera Retroilluminata,3*USB3.2,WiFi 6,BT5.2",
+      "brand": "ACEMAGIC",
+      "category": "laptops",
+      "basePrice": 1039.99,
+      "currentPrice": 799.99,
+      "discount": 23,
+      "image": "https://m.media-amazon.com/images/I/71xKKAZ7-fL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0DRCMCM7Z?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0DRCMCM7Z?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:33:27.586Z"
+      }
+    },
+    {
+      "asin": "B0G1ZCNN29",
+      "name": "Gamer Ordenador Pc Portatil, 15.6 Pulgadas R7 5700U Procesador(hasta 4.3Ghz) 16GB RAM 1TB SSD Gaming Laptop, Computadora Portatil Teclado Retroiluminado, 1920x1080P/6000mAh/Tipo-C",
+      "brand": "Gamer",
+      "category": "laptops",
+      "basePrice": 1949.99,
+      "currentPrice": 1499.99,
+      "discount": 23,
+      "image": "https://m.media-amazon.com/images/I/71eM-2QmR1L._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0G1ZCNN29?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0G1ZCNN29?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:33:27.586Z"
+      }
+    },
+    {
+      "asin": "B0D8WK4TFP",
+      "name": "2025 Newest Ordenador Portátil 16 Pulgadas Win11 16+512GB SSD Soporte 1TB SSD Expansión Gaming Ventilador Refrigeración Core i3（hasta 3,2 GHz)WiFi BT4.2 Mini Puerto Multimedia Portátil 1200P-Gray",
+      "brand": "2025",
+      "category": "laptops",
+      "basePrice": 699.99,
+      "currentPrice": 349.99,
+      "discount": 50,
+      "image": "https://m.media-amazon.com/images/I/71X54N9n2WL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0D8WK4TFP?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0D8WK4TFP?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": true,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:33:27.586Z"
+      }
+    },
+    {
+      "asin": "B0FVMBX9PT",
+      "name": "Ordenador portátil para juegos, 32 GB RAM 1 TB SSD, R7 5825U Processor (2,0 a 4,5 GHz) Laptop PC portátil Gamer 2025, 51,97 Wh/Teclado completo retroiluminado/Webcam/Touchpad/Type-C",
+      "brand": "Ordenador",
+      "category": "laptops",
+      "basePrice": 909.99,
+      "currentPrice": 699.99,
+      "discount": 23,
+      "image": "https://m.media-amazon.com/images/I/71IR1RkAn0L._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0FVMBX9PT?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0FVMBX9PT?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:33:27.586Z"
+      }
+    },
+    {
+      "asin": "B0FVFFYDRJ",
+      "name": "15.6 Pulgadas Gaming Pc Ordenador Portatil i9-11900H Procesador (2.5 to 4.9Ghz), 32GB RAM 1TB SSD Gamer Laptop 2025, Teclado Retroiluminado/Desbloqueo por Huella/RJ45/Tipo-C",
+      "brand": "15.6",
+      "category": "laptops",
+      "basePrice": 1039.99,
+      "currentPrice": 799.99,
+      "discount": 23,
+      "image": "https://m.media-amazon.com/images/I/71RZnlMZEmL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0FVFFYDRJ?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0FVFFYDRJ?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:33:27.586Z"
+      }
+    },
+    {
+      "asin": "B0FJDNDQGF",
+      "name": "Lenovo Legion Pro 5 Gen10– Portátil Gaming IA 16\" WQXGA (Intel Core i9-14900HX, NVIDIA GeForce RTX 5070, 32GB RAM, 1TB SSD, 240Hz, WiFi 6, Sin Sistema Operativo) QWERTY RGB 24 Zonas Español – Negro",
+      "brand": "Lenovo",
+      "category": "laptops",
+      "basePrice": 1999,
+      "currentPrice": 1699,
+      "discount": 15,
+      "image": "https://m.media-amazon.com/images/I/61U9atY2+UL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0FJDNDQGF?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0FJDNDQGF?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:33:27.586Z"
+      }
+    },
+    {
+      "asin": "B0F7KJ6P55",
+      "name": "Ordenador Portátil 15,6 pulgadas, 16GB RAM 512GB SSD Celeron N95, PC Portatil IPS Full HD 1920 x 1080, desbloqueo por huella dactilar y teclado retroiluminado de tamaño completo Computadora Portátil",
+      "brand": "Ordenador",
+      "category": "laptops",
+      "basePrice": 279.99,
+      "currentPrice": 246.99,
+      "discount": 12,
+      "image": "https://m.media-amazon.com/images/I/71NIJUBD1cL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0F7KJ6P55?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0F7KJ6P55?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:33:27.586Z"
+      }
+    },
+    {
+      "asin": "B0FBMN88BZ",
+      "name": "Gigabyte Gaming A16 Portátil – 16\", 165Hz WUXGA, Intel Core i7-13620H, RTX 5050, 16GB DDR5 5200MHz, SSD Gen4 de 1TB, Dos, Garantía de 2 años, Dolby Atmos, Gaming A16 CTHI3ES894SD",
+      "brand": "Gigabyte",
+      "category": "laptops",
+      "basePrice": 1049,
+      "currentPrice": 879.95,
+      "discount": 16,
+      "image": "https://m.media-amazon.com/images/I/61WouP8f1iL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0FBMN88BZ?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0FBMN88BZ?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:33:27.586Z"
+      }
+    },
+    {
+      "asin": "B0F6YBR1GC",
+      "name": "Lenovo LOQ Gen 9 - Ordenador Portátil Gaming IA 15.6\" FHD, 144 Hz (Intel Core i5-12450HX, NVIDIA GeForce RTX 3050, 24 GB RAM, 512 GB SSD, Wi-Fi 6, Sin Sistema Operativo) Teclado QWERTY Español - Gris",
+      "brand": "Lenovo",
+      "category": "laptops",
+      "basePrice": 1168.7,
+      "currentPrice": 899,
+      "discount": 23,
+      "image": "https://m.media-amazon.com/images/I/81z8W9JvcVL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0F6YBR1GC?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0F6YBR1GC?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:33:27.586Z"
+      }
+    },
+    {
+      "asin": "B0DMNY618Q",
+      "name": "ASUS ROG Strix G18 G815LP-S9004 - Ordenador Portátil Gaming de 18\" WQXGA 240Hz (Intel Core Ultra 9 275HX, 32GB RAM, 1TB SSD, RTX 5070 8GB, Sin Sistema Operativo) Gris Eclipse - Teclado QWERTY español",
+      "brand": "ASUS",
+      "category": "laptops",
+      "basePrice": 2577.43,
+      "currentPrice": 1982.64,
+      "discount": 23,
+      "image": "https://m.media-amazon.com/images/I/81-u9g8ftqL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0DMNY618Q?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0DMNY618Q?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:33:27.586Z"
+      }
+    },
+    {
+      "asin": "B0F2TGCBXR",
+      "name": "HP OMEN 16-ap0000ns, Ordenador portátil Gaming 16\" 2K AMD Ryzen AI 7 350, 32GB RAM, 1TB SSD, NVIDIA GeForce RTX 5070, FreeDos, Negro - Teclado QWERTY Español",
+      "brand": "HP",
+      "category": "laptops",
+      "basePrice": 1688.7,
+      "currentPrice": 1299,
+      "discount": 23,
+      "image": "https://m.media-amazon.com/images/I/71oSF3adROL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0F2TGCBXR?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0F2TGCBXR?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:33:27.586Z"
+      }
+    },
+    {
+      "asin": "B0DX2K4271",
+      "name": "HP OMEN MAX - Ordenador Portátil Gaming de 16\" 2.5K WQXGA, 240Hz Intel Ultra 7-255HX, 32GB RAM, 1 TB, NVIDIA GeForce RTX 5070 TI 12GB, Windows 11, WiFi 7 Negro - Teclado QWERTY Español",
+      "brand": "HP",
+      "category": "laptops",
+      "basePrice": 2649,
+      "currentPrice": 1939,
+      "discount": 27,
+      "image": "https://m.media-amazon.com/images/I/71K+aAm+99L._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0DX2K4271?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0DX2K4271?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:33:27.586Z"
+      }
+    },
+    {
+      "asin": "B0FM8DT5V7",
+      "name": "HP OMEN MAX 16-ah0006ns - Ordenador Portátil Gaming de 16\" OLED 240Hz (Ultra 9-275HX, 64GB RAM, 1 TB, NVIDIA GeForce RTX 5090 24GB, WiFi 7, Windows 11) Negro - Teclado QWERTY Español",
+      "brand": "HP",
+      "category": "laptops",
+      "basePrice": 3799,
+      "currentPrice": 3299,
+      "discount": 13,
+      "image": "https://m.media-amazon.com/images/I/71KMsW6cWJL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0FM8DT5V7?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0FM8DT5V7?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:33:27.586Z"
+      }
+    },
+    {
+      "asin": "B0FVFFYDRJ",
+      "name": "15.6 Pulgadas Gaming Pc Ordenador Portatil i9-11900H Procesador (2.5 to 4.9Ghz), 32GB RAM 1TB SSD Gamer Laptop 2025, Teclado Retroiluminado/Desbloqueo por Huella/RJ45/Tipo-C",
+      "brand": "15.6",
+      "category": "laptops",
+      "basePrice": 1039.99,
+      "currentPrice": 799.99,
+      "discount": 23,
+      "image": "https://m.media-amazon.com/images/I/71RZnlMZEmL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0FVFFYDRJ?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0FVFFYDRJ?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:33:27.586Z"
+      }
+    },
+    {
+      "asin": "B0FFB1NBJJ",
+      "name": "HP Ordenador portátil 15.6\" FHD (AMD Ryzen 7-7730U, 16 GB RAM, 1TB SSD, AMD Radeon Graphics, Sin Sistema operativo) Plata - Teclado QWERTY Español",
+      "brand": "HP",
+      "category": "laptops",
+      "basePrice": 599,
+      "currentPrice": 424.99,
+      "discount": 29,
+      "image": "https://m.media-amazon.com/images/I/61-mqc4lvjL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0FFB1NBJJ?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0FFB1NBJJ?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:33:27.586Z"
+      }
+    },
+    {
+      "asin": "B0FDGDGQBY",
+      "name": "16 Pulgadas Pc Ordenador Portatil Computadora 2025, 13th Gen Twin Lake Processor N150(1,2 a 3,6GHz) Laptop, RAM 16GB SSD 1TB Notebook, Teclado Completo Retroiluminado, 1920x1200P/Webcam",
+      "brand": "16",
+      "category": "laptops",
+      "basePrice": 382.48,
+      "currentPrice": 300.05,
+      "discount": 22,
+      "image": "https://m.media-amazon.com/images/I/712+utpWl8L._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0FDGDGQBY?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0FDGDGQBY?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:33:27.586Z"
+      }
+    },
+    {
+      "asin": "B0FC6B3KGH",
+      "name": "Ordenador Portatil Gaming 15.6 Pulgadas 16GB RAM+512GB SDD NVMe PCIe 3.0 SSD Soporte 4TB Expansión SSD,Procesador Ryzen5 7430U, Gaming Laptop, Leichtgewicht,WiFi6,HDMI",
+      "brand": "Ordenador",
+      "category": "laptops",
+      "basePrice": 499.95,
+      "currentPrice": 370.49,
+      "discount": 26,
+      "image": "https://m.media-amazon.com/images/I/71CKXmcsVkL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0FC6B3KGH?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0FC6B3KGH?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:33:27.586Z"
+      }
+    },
+    {
+      "asin": "B0BSN876L8",
+      "name": "MSI Modern 15 B7M-440XES portátil Profesional 15.6 Pulgadas, FHD (1920x1080), Ryzen 7 7730U, AMD Radeon Graphics, 16GB RAM, 512GB SSD, Free Dos, QWERTY Español",
+      "brand": "MSI",
+      "category": "laptops",
+      "basePrice": 699,
+      "currentPrice": 515.87,
+      "discount": 26,
+      "image": "https://m.media-amazon.com/images/I/71GCpwCjihL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0BSN876L8?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0BSN876L8?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:33:27.586Z"
+      }
+    },
+    {
+      "asin": "B0D6B8ZNFV",
+      "name": "16K Cable DisplayPort 3M, 2.1 DP to DP Cable Support 16K@60Hz,8K@120Hz,4K@240Hz, HBR3 32.4Gbps, HDR, G-Sync & FreeSync Display Cable 2.0 Lead for Laptop Gaming Monitor PC TV",
+      "brand": "16K",
+      "category": "laptops",
+      "basePrice": 14.29,
+      "currentPrice": 10.99,
+      "discount": 23,
+      "image": "https://m.media-amazon.com/images/I/71IrzlMj17L._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0D6B8ZNFV?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0D6B8ZNFV?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:33:27.586Z"
+      }
+    },
+    {
+      "asin": "B0F638ZFX9",
+      "name": "LG gram 15ZD80T-G.AX55B Portátil 15\", FreeOS, AMD Ryzen AI 5, 16 GB RAM, 512GB SSD, AMD Radeon Graphics 860M, Pantalla IPS (1920x1080), Ligero, 1.290 g, 27 Horas, AI, Negro",
+      "brand": "LG",
+      "category": "laptops",
+      "basePrice": 799,
+      "currentPrice": 669.99,
+      "discount": 16,
+      "image": "https://m.media-amazon.com/images/I/61IDjfC7avL._AC_UL320_.jpg",
+      "affiliateLinks": {
+        "EU": {
+          "amazon": "https://www.amazon.es/dp/B0F638ZFX9?tag=dealtech365-21"
+        },
+        "US": {
+          "amazon": "https://www.amazon.com/dp/B0F638ZFX9?tag=blackfridaytech-20"
+        }
+      },
+      "active": true,
+      "featured": false,
+      "source": "scraper-improved",
+      "metadata": {
+        "scrapedFrom": "scraper-improved",
+        "rating": 4,
+        "reviewCount": 0,
+        "stockStatus": "available",
+        "scrapedAt": "2025-11-27T01:33:27.587Z"
+      }
+    }
+  ]
+}
