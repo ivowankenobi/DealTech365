@@ -1,0 +1,421 @@
+/* Blog Article Styles - DealTech365 */
+/* Shared styles for all blog articles */
+
+:root {
+    --primary: #2563eb;
+    --accent: #10b981;
+    --secondary: #64748b;
+    --bg-primary: #ffffff;
+    --bg-secondary: #f8fafc;
+    --text-primary: #1a1a1a;
+    --text-secondary: #64748b;
+    --border: #e2e8f0;
+}
+
+.blog-article {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    font-family: 'Space Grotesk', system-ui, sans-serif;
+    color: var(--text-primary);
+    line-height: 1.7;
+}
+
+.blog-header {
+    margin-bottom: 3rem;
+    border-bottom: 2px solid var(--border);
+    padding-bottom: 2rem;
+}
+
+.blog-header__title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.blog-header__meta {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
+.blog-header__meta-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.blog-header__meta-item svg {
+    width: 18px;
+    height: 18px;
+    stroke: var(--primary);
+    stroke-width: 2;
+}
+
+.blog-content {
+    font-size: 1.1rem;
+    color: var(--text-primary);
+}
+
+.blog-content h2 {
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin: 2.5rem 0 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--primary);
+}
+
+.blog-content h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: 2rem 0 1rem;
+}
+
+.blog-content p {
+    margin-bottom: 1.5rem;
+    color: var(--text-primary);
+}
+
+.blog-content ul {
+    margin-bottom: 1.5rem;
+    padding-left: 2rem;
+}
+
+.blog-content li {
+    margin-bottom: 0.75rem;
+}
+
+.blog-content strong {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+/* Product Cards */
+.product-cards {
+    display: grid;
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.product-card {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 2rem;
+    transition: all 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(37, 99, 235, 0.15);
+    border-color: var(--primary);
+}
+
+.product-card__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.product-card__title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.product-card__subtitle {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
+.product-card__badge {
+    background: linear-gradient(135deg, var(--primary), var(--accent));
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+/* Improved Specs Grid */
+.product-card__specs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.spec-item {
+    background: var(--bg-primary);
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.spec-item__label {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.spec-item__value {
+    font-weight: 600;
+    color: var(--text-primary);
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+.product-card__description {
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.product-card__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+}
+
+.product-card__price {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.product-card__price-current {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--primary);
+}
+
+.product-card__price-original {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    text-decoration: line-through;
+}
+
+.product-card__cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    background: linear-gradient(135deg, var(--primary), var(--accent));
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.25);
+}
+
+.product-card__cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(37, 99, 235, 0.35);
+}
+
+.product-card__cta svg {
+    width: 20px;
+    height: 20px;
+    stroke: currentColor;
+    stroke-width: 2;
+}
+
+/* Comparison Table */
+.comparison-table {
+    width: 100%;
+    margin: 3rem 0;
+    border-collapse: collapse;
+    background: var(--bg-primary);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    border: 1px solid var(--border);
+}
+
+.comparison-table th {
+    background: var(--primary);
+    color: white;
+    padding: 1.25rem;
+    text-align: left;
+    font-weight: 700;
+    font-size: 1.05rem;
+}
+
+.comparison-table td {
+    padding: 1.25rem;
+    border-bottom: 1px solid var(--border);
+    color: var(--text-primary);
+}
+
+.comparison-table tr:last-child td {
+    border-bottom: none;
+}
+
+.comparison-table tr:hover {
+    background: var(--bg-secondary);
+}
+
+/* Pros & Cons */
+.pros-cons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.pros-cons__section {
+    background: var(--bg-secondary);
+    border-radius: 12px;
+    padding: 2rem;
+    border: 1px solid var(--border);
+}
+
+.pros-cons__section--pros {
+    border-top: 4px solid var(--accent);
+}
+
+.pros-cons__section--cons {
+    border-top: 4px solid #ef4444;
+}
+
+.pros-cons__title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.pros-cons__title--pros {
+    color: var(--accent);
+}
+
+.pros-cons__title--cons {
+    color: #ef4444;
+}
+
+.pros-cons__list {
+    display: grid;
+    gap: 1rem;
+}
+
+.pros-cons__item {
+    display: flex;
+    align-items: start;
+    gap: 0.75rem;
+    font-size: 1rem;
+    color: var(--text-primary);
+}
+
+.pros-cons__item svg {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.pros-cons__item--pro svg {
+    stroke: var(--accent);
+}
+
+.pros-cons__item--con svg {
+    stroke: #ef4444;
+}
+
+/* Highlight Box */
+.highlight-box {
+    background: linear-gradient(135deg, var(--primary), var(--accent));
+    color: white;
+    padding: 2rem;
+    border-radius: 16px;
+    margin: 3rem 0;
+    box-shadow: 0 8px 24px rgba(37, 99, 235, 0.25);
+}
+
+.highlight-box h3 {
+    color: white;
+    margin-top: 0;
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+.highlight-box p {
+    margin-bottom: 1rem;
+    opacity: 0.95;
+}
+
+.highlight-box ul {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+}
+
+.highlight-box li {
+    margin-bottom: 0.75rem;
+    opacity: 0.95;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .blog-header__title {
+        font-size: 1.875rem;
+    }
+
+    .blog-content {
+        font-size: 1rem;
+    }
+
+    .product-card {
+        padding: 1.5rem;
+    }
+
+    .product-card__title {
+        font-size: 1.25rem;
+    }
+
+    .product-card__specs {
+        grid-template-columns: 1fr;
+    }
+
+    .product-card__footer {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .product-card__cta {
+        justify-content: center;
+    }
+
+    .comparison-table {
+        font-size: 0.9rem;
+    }
+
+    .comparison-table th,
+    .comparison-table td {
+        padding: 0.75rem;
+    }
+
+    .pros-cons {
+        grid-template-columns: 1fr;
+    }
+}
